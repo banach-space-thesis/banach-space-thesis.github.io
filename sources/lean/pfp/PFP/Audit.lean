@@ -1,0 +1,883 @@
+import PFP.BanachMazurApproximateBounds
+import PFP.CountableCoordinateCounterexamples
+import PFP.JamesTreeProofs
+
+import PFP.GowersMaureyProofs
+import PFP.GowersMaureyConditionalProofs
+
+import PFP.StoneCechVectorPFP
+import Posets.OrdinalPaddedCofinalTailFactorization
+import PFP.HigherCofinalOrdinalSumProofs
+import PFP.UncountableCofinalOrdinalSumProofs
+import PFP.SmallUniverseOrdinalSumProofs
+import PFP.OrdinalRegularSquarePolymorphic
+import PFP.OrdinalMatrixRepeatedFactorization
+import PFP.OrdinalMatrixScalarCZero
+import PFP.OrdinalFixedExponentNormalization
+import PFP.OrdinalRegularInitialRows
+import PFP.OrdinalRegularInitialQuantitative
+import PFP.OrdinalPrincipalInitialPolymorphic
+import PFP.OrdinalInitialQuotientPolymorphic
+import PFP.OrdinalSingularInitialEquivalences
+import PFP.OrdinalInitialCoefficientPolymorphic
+import PFP.InitialOrdinalFiniteQuotientPolymorphic
+import PFP.OrdinalSumFinalProofs
+import PFP.CountableOrdinalSumProofs
+import Posets.OrdinalPaddedBandColours
+import Posets.OrdinalCofinalPaddedRanks
+import Posets.CZeroSupportedRestriction
+import Posets.OrdinalClosedCoreOffBandNorm
+import Posets.CZeroOffBandSynthesis
+import Posets.OrdinalClosedCoreSynthesisSelection
+import Posets.ConvergentBandReadback
+import Posets.OrdinalCofinalBandReadback
+import Posets.ClopenBandSectionIsometry
+import Posets.CZeroCenteredCompression
+import PFP
+
+#print PFP.Theorem_5_4_asPrinted
+#print PFP.Theorem_5_4_consecutive
+#print axioms PFP.theorem_2_3
+#print axioms PFP.theorem_A_1_square
+#print axioms PFP.theorem_A_1_sequence
+#print axioms PFP.theorem_A_1
+
+#print PFP.Proposition_2_5
+#print PFP.Proposition_2_6
+#print PFP.Lemma_3_1
+#print PFP.Lemma_3_2
+#print PFP.Theorem_3_3
+#print PFP.Lemma_3_6
+#print PFP.Lemma_3_7
+#print PFP.Theorem_3_8
+#print PFP.Theorem_3_15
+#print PFP.Theorem_3_26
+#print PFP.SupportedOperator
+#print PFP.SelectedTreeSpan
+#print ThesisCommon.MemSchauderSum
+#print ThesisCommon.SchauderSum
+#print ThesisCommon.SchauderSum.normVector
+#print ThesisCommon.SchauderSum.basisNorm
+#print ThesisCommon.BanachSpaceData
+#print ThesisCommon.BasisSumFactor
+#print ThesisCommon.iteratedSchauderSum
+#print ThesisCommon.iteratedBasisVector
+#print ThesisCommon.iteratedBasisCoordinate
+#print ThesisCommon.InfinitelySupported
+#print ThesisCommon.SupportsPrefix
+#print ThesisCommon.NatTreeEmbedding
+#print ThesisCommon.NatTreeEmbedding.map
+#print ThesisCommon.SchauderSum.productBasis
+#print ThesisCommon.iteratedUnconditionalBasis
+#print ThesisCommon.natTupleEnumeration
+#check ThesisCommon.iteratedBasis_weakly_null
+#check ThesisCommon.iterated_matrix_row_tendsto_zero
+#check ThesisCommon.iterated_matrix_column_tendsto_zero
+#check PFP.supporting_tree
+#check PFP.lemma_3_7
+#check PFP.theorem_3_8
+#check ThesisCommon.iterated_tree_selection
+#check ThesisCommon.iterated_tree_span_isometric
+#check ThesisCommon.iterated_supported_diagonal_compression
+#check ThesisCommon.iterated_supported_factorization
+#print ThesisCommon.NormalizedSchauderBasis
+#print ThesisCommon.NormalizedSchauderBasis.UnconditionalWith
+#print ThesisCommon.NormalizedSchauderBasis.HasSymmetricNorm
+#print ThesisCommon.NormalizedSchauderBasis.EquivalentEllOne
+#print ThesisCommon.NormalizedSchauderBasis.subsequenceSpan
+#print ThesisCommon.NormalizedSchauderBasis.IsDiagonal
+#print PFP.Theorem_3_11
+#print PFP.Corollary_3_16
+#print PFP.Theorem_3_21
+#print PFP.Corollary_3_27
+#print PFP.Corollary_4_7
+#print PFP.Corollary_4_10_i
+#print PFP.Corollary_4_10_ii
+#print PFP.MatrixBlock
+#print PFP.MatrixSum
+#print PFP.Theorem_5_14
+#print PFP.Theorem_5_15
+#print PFP.Theorem_4_1
+#print PFP.Theorem_4_3_i
+#print PFP.Corollary_4_6
+#print PFP.PrimarinessTransfer
+#print PFP.HasUncountableCofinality
+#print ThesisCommon.IsUniformlyPrimary
+#print ThesisCommon.IsomorphicWithBound
+#print ThesisCommon.IsWeaklyCompactlyGenerated
+#print ThesisCommon.HasCPlusPFP
+#print ThesisCommon.HasCPFP
+#print ThesisCommon.HasPFP
+#print ThesisCommon.HasUPFP
+#print ThesisCommon.FactorsIdentityWith
+#print ThesisCommon.IsPrimary
+#check PFP.proposition_2_5
+#check PFP.proposition_2_6_nontrivial
+#check PFP.lemma_3_2
+#check PFP.theorem_3_3
+#check PFP.lemma_3_6
+#check PFP.theorem_3_11
+#check PFP.lemma_3_9
+#check PFP.lemma_3_10
+#check PFP.lemma_4_12_lp
+#check PFP.lemma_4_12_cZero
+#check PFP.lemma_4_13_lp
+#check PFP.lemma_4_13_cZero
+#check PFP.lemma_5_3
+
+#print axioms PFP.proposition_2_5
+#print axioms PFP.lemma_3_2
+#print axioms PFP.theorem_3_3
+#print axioms PFP.lemma_3_6
+#print axioms PFP.supporting_tree
+#print axioms PFP.lemma_3_7
+#print axioms PFP.theorem_3_8
+#print axioms PFP.proposition_2_6_nontrivial
+#print axioms PFP.proposition_2_6_false_on_zero
+#print axioms PFP.proposition_2_6_counterexample
+#print axioms PFP.lemma_3_9
+#print axioms PFP.lemma_3_10
+#print axioms PFP.theorem_3_11
+#print axioms PFP.ellOne_hasUPFP
+#print axioms PFP.lemma_4_12_lp
+#print axioms PFP.lemma_4_12_cZero
+#print axioms PFP.lemma_4_13_lp
+#print axioms PFP.lemma_4_13_cZero
+#print axioms PFP.lemma_5_3
+
+#print PFP.Lemma_3_12
+#print PFP.Lemma_3_13
+#print PFP.Lemma_3_14
+#print PFP.Theorem_3_15
+#print ThesisCommon.SchauderSum.ellOneEntry
+#print ThesisCommon.SchauderSum.IsProductDiagonal
+#print ThesisCommon.AsymmetricMatrixSelection.State
+#check PFP.lemma_3_12
+#check PFP.lemma_3_13
+#check PFP.lemma_3_14
+#check PFP.theorem_3_15
+#check ThesisCommon.asymmetric_matrix_selection
+#check ThesisCommon.SchauderSum.product_diagonal_dichotomy
+#check ThesisCommon.SchauderSum.ellOne_approximate_diagonal_compression
+#print axioms PFP.lemma_3_12
+#print axioms PFP.lemma_3_13
+#print axioms PFP.lemma_3_14
+#print axioms PFP.theorem_3_15
+
+#print PFP.Lemma_3_17
+#print PFP.Lemma_3_18
+#print PFP.Proposition_3_19
+#print ThesisCommon.HasBoundedFiniteSums
+#print ThesisCommon.infinityBadSets
+#check PFP.lemma_3_17
+#check PFP.lemma_3_18
+#check PFP.proposition_3_19
+#check PFP.theorem_3_21
+#check ThesisCommon.infinity_common_annihilator
+#check ThesisCommon.infinity_matrix_restriction
+#check ThesisCommon.infinity_diagonal_compression
+#print axioms PFP.lemma_3_17
+#print axioms PFP.lemma_3_18
+#print axioms PFP.proposition_3_19
+#print axioms PFP.theorem_3_21
+
+#print PFP.Lemma_3_22
+#print PFP.Lemma_3_23
+#print PFP.Lemma_3_24
+#print PFP.Proposition_3_25
+#print ThesisCommon.SchauderSum.infinityEntry
+#check PFP.lemma_3_22
+#check PFP.lemma_3_23
+#check PFP.lemma_3_24
+#check PFP.proposition_3_25
+#print axioms PFP.lemma_3_22
+#print axioms PFP.lemma_3_23
+#print axioms PFP.lemma_3_24
+#print axioms PFP.proposition_3_25
+#print PFP.Theorem_3_26
+#print ThesisCommon.SchauderSum.IsInfinityDiagonal
+#print ThesisCommon.SchauderSum.HasInfinityMatrix
+#check PFP.theorem_3_26
+#check ThesisCommon.SchauderSum.infinity_approximate_diagonal_compression
+#print axioms PFP.theorem_3_26
+
+#print PFP.Corollary_3_20
+#print ThesisCommon.infinityWeakStarPair
+#print ThesisCommon.infinityWeakStarTopology
+#print ThesisCommon.infinityWeakStarPreadjoint
+#print ThesisCommon.infinityWeakStarCompression
+#check ThesisCommon.infinityWeakStarDualEquiv
+#check ThesisCommon.infinityWeakStarCompression_pair
+#print axioms PFP.corollary_3_20
+
+#print PFP.Corollary_3_16
+#print PFP.Corollary_3_27
+#check ThesisCommon.cZeroSchauderSumEquiv
+#check ThesisCommon.lpSchauderSumEquiv
+#check ThesisCommon.HasPFP.isPrimary_of_sequenceSelfSimilar
+#print axioms PFP.corollary_3_16
+#print axioms PFP.corollary_3_27
+
+#print ThesisCommon.filterNullSubmodule
+#print ThesisCommon.FilterNullSpace
+#print ThesisCommon.filterSupportedSubmodule
+#print ThesisCommon.filterTrace
+#print ThesisCommon.IsFilterCopyingSet
+#print ThesisCommon.IsFilterPrimaryUnderSums
+#print ThesisCommon.filterCompression
+#print ThesisCommon.IsFilterDiagonalisable
+#print ThesisCommon.IsFilterPrimaryForFactorisation
+#print ThesisCommon.IsFilterCoordinateCopy
+#print ThesisCommon.ContainsFilterCoordinateCopy
+#print ThesisCommon.IsLargeSetSelfSimilarFilter
+#print ThesisCommon.BoundedScalarCharge
+#print ThesisCommon.BoundedScalarCharge.variationValues
+#print ThesisCommon.BoundedScalarCharge.variation
+#print ThesisCommon.BoundedScalarCharge.UniformlyBounded
+#print ThesisCommon.coSmallFilter
+#print PFP.Theorem_6_5
+#print PFP.Lemma_6_8
+#print PFP.Proposition_6_9
+#print PFP.Example_6_10_general
+#print PFP.Example_6_10_cofinite
+#print PFP.Example_6_10_cocountable
+#print PFP.Example_6_10
+#print PFP.Remark_6_11
+#print axioms PFP.example_6_10_self_similarity
+#print axioms PFP.example_6_10_cofinite
+#print axioms PFP.example_6_10_cocountable
+#print ThesisCommon.scalarCZeroSubmodule
+#print ThesisCommon.InfinityCZeroQuotient
+#print PFP.Proposition_5_1
+#print axioms PFP.lemma_3_1
+#check ThesisCommon.NormalizedSchauderBasis.no_ellOne_subsequence_iff_weakly_null
+#check ThesisCommon.scalar_ellOne_schur
+#check ThesisCommon.filter_hasCPlusPFP
+#print axioms PFP.theorem_6_5
+#print ThesisCommon.filterReciprocal
+#print ThesisCommon.filterInverseTo
+#print ThesisCommon.functionalCharge
+#print ThesisCommon.functionalResidual
+#print ThesisCommon.filterCoordinateResidual
+#print ThesisCommon.filterCopyDiagonal
+#check ThesisCommon.rosenthal_charge_selection
+#check ThesisCommon.functionalCharge_support_bound
+#check ThesisCommon.IsLargeSetSelfSimilarFilter.diagonalisable
+#print axioms PFP.lemma_6_8
+#print axioms PFP.proposition_6_9
+#print axioms PFP.example_6_10_general
+#print axioms PFP.example_6_10
+#print axioms PFP.remark_6_11
+#check ThesisCommon.filterCoordinateSplitEquiv
+#print ThesisCommon.matrixUnit
+#print ThesisCommon.matrixEntry
+#print ThesisCommon.matrixInsert
+#print ThesisCommon.matrixRestrict
+#print ThesisCommon.matrixBlockProjection
+#print ThesisCommon.matrixHilbertSchmidtNorm
+#print ThesisCommon.matrixSumMask
+#print ThesisCommon.matrixSumSupport
+#print ThesisCommon.IsMatrixSumDiagonal
+#print PFP.Lemma_5_6
+#print PFP.HasMatrixInverseBound
+#print PFP.FiniteMatrixScalarisation
+#print PFP.Proposition_5_7
+#print PFP.Lemma_5_8
+#print PFP.Lemma_5_9
+#print PFP.Lemma_5_10
+#print PFP.Lemma_5_11
+#print PFP.Lemma_5_12
+#print PFP.Proposition_5_13
+
+#print ThesisCommon.NormalizedSchauderFamily
+#print ThesisCommon.NormalizedSchauderFamily.HasSymmetricNorm
+#print ThesisCommon.NormalizedSchauderFamily.EquivalentEllOne
+#print ThesisCommon.MemUncountableSchauderSum
+#print ThesisCommon.UncountableSchauderSum
+#print ThesisCommon.UncountableSchauderSum.normVector
+#print ThesisCommon.UncountableSchauderSum.basisNorm
+#print ThesisCommon.UncountableSchauderSum.coordinateProjection
+#print ThesisCommon.UncountableSchauderSum.supportedSubmodule
+#print ThesisCommon.HasCountableTotalDual
+#print ThesisCommon.banachMazurDistance
+#print PFP.Definition_2_1_asPrinted
+#print ThesisCommon.HasComplementedCopyWithBound
+#print ThesisCommon.BanachDirectSum
+#print ThesisCommon.decompositionAuxBound
+#print ThesisCommon.decompositionSquareBound
+#print ThesisCommon.decompositionSequenceBound
+#print PFP.Theorem_2_3
+#print PFP.Theorem_A_1_square
+#print PFP.Theorem_A_1_sequence
+#print PFP.Theorem_A_1
+#print ThesisCommon.IsQuasiReflexiveOfOrder
+#print ThesisCommon.IsClosedHyperplane
+#print ThesisCommon.IsIsomorphicToEveryHyperplane
+#print PFP.Lemma_B_1
+#print PFP.Lemma_B_2
+#print PFP.Proposition_B_3
+#print PFP.FactorisationTransfer
+#print PFP.Theorem_4_3_ii
+#print PFP.Theorem_4_3_iii
+#print PFP.Theorem_4_3
+#print PFP.Corollary_4_9_general
+#print PFP.Corollary_4_9_concrete
+#print PFP.Corollary_4_9
+#print PFP.Lemma_4_12
+#print PFP.Lemma_4_13
+#print PFP.Lemma_4_14
+#print PFP.Lemma_4_15
+#print PFP.Corollary_4_16
+#print PFP.Corollary_4_16_separable
+#print PFP.Corollary_4_16_ellOne
+#print PFP.Lemma_4_17
+#print PFP.Lemma_4_18
+#print PFP.Lemma_4_19
+#print PFP.Lemma_4_20
+#print PFP.Proposition_4_21
+#print PFP.Proposition_4_22
+#print PFP.Remark_4_23
+#print PFP.IsCountableCoordinatePartition
+#print PFP.EllOneTriangularBlockDecomposition
+#print PFP.Lemma_4_24
+#print PFP.Lemma_4_25
+#print PFP.LpLargeDiagonalBlocks
+#print PFP.CZeroLargeDiagonalBlocks
+#print PFP.Lemma_4_26
+#print PFP.Lemma_4_26_asPrinted
+#print PFP.Lemma_4_27
+#print PFP.Lemma_4_27_asPrinted
+#print PFP.Lemma_4_28
+#print PFP.Lemma_4_29
+#print PFP.Lemma_4_30
+#print PFP.Lemma_4_30_asPrinted
+#print axioms PFP.definition_2_1_forward
+#print axioms PFP.lemma_4_20
+#print axioms PFP.remark_4_23
+#print axioms PFP.lemma_4_12
+#print axioms PFP.lemma_4_13
+#print axioms PFP.lemma_4_19
+#print axioms PFP.proposition_4_22
+#print axioms PFP.lemma_4_14
+#print axioms PFP.lemma_4_15
+#print axioms PFP.corollary_4_16
+#print axioms PFP.lemma_4_17
+#print axioms PFP.lemma_4_18
+#print axioms PFP.lemma_4_30_uncountable
+#print axioms PFP.lemma_B_1
+#print axioms PFP.proposition_4_21
+#print axioms PFP.lemma_4_27_uncountable
+#print axioms PFP.lemma_4_29
+#print axioms PFP.lemma_4_28
+#print axioms PFP.lemma_B_2
+#print axioms PFP.proposition_B_3
+#print axioms PFP.lemma_4_24
+#print axioms PFP.lemma_4_25
+#print axioms PFP.theorem_4_3_i
+#print axioms PFP.lemma_4_26_asPrinted
+#print axioms PFP.lemma_4_26_uncountable
+#print axioms PFP.theorem_4_3_ii
+#print axioms PFP.theorem_4_3_iii
+#print axioms PFP.theorem_4_3
+#print axioms PFP.corollary_4_9_general
+#print axioms PFP.corollary_4_9_concrete
+#print axioms PFP.corollary_4_9
+#print axioms PFP.theorem_4_1_ellOne
+#print axioms PFP.theorem_4_1_lp
+#print axioms PFP.theorem_4_1_cZero
+#print axioms PFP.theorem_4_1
+#print axioms PFP.lemma_5_12
+#print axioms PFP.lemma_5_6
+#print axioms PFP.lemma_5_8
+#print axioms PFP.lemma_5_9
+#print axioms PFP.finiteMatrixScalarisation
+#print axioms PFP.proposition_5_7
+#print axioms PFP.lemma_5_11
+#print axioms PFP.matrixDiagonal_component_norm_le
+#print axioms PFP.exists_matrix_scalarisation_sequence
+#print axioms PFP.matrix_diagonal_factors_of_infinite_compressions
+#print axioms PFP.matrix_diagonal_dichotomy
+#print axioms PFP.proposition_5_13
+#print axioms PFP.matrixSum_hasCPlusPFP_four
+#print axioms PFP.theorem_5_14
+#print axioms PFP.theorem_5_15
+#print axioms PFP.theorem_B_4_classical
+#print axioms PFP.theorem_B_4
+#print axioms PFP.theorem_B_4_general
+#print axioms PFP.corollary_4_6
+#print axioms PFP.lemma_5_10
+#print ThesisCommon.IsLiteralTreeSegment
+#print ThesisCommon.IsConsecutiveTreeSegment
+#print ThesisCommon.SegmentJamesTreeSpace
+#print ThesisCommon.LiteralChainJamesTreeSpace
+#print ThesisCommon.ConsecutiveJamesTreeSpace
+#print ThesisCommon.JamesPath
+#print ThesisCommon.HasBoundedJamesVariation
+#print ThesisCommon.JamesSequenceSpace
+#print ThesisCommon.JamesSequenceSpace.variationNorm
+#print PFP.Theorem_B_4_general
+#print PFP.Theorem_B_4_classical
+#print PFP.Theorem_B_4
+
+#print axioms PFP.proposition_5_1
+#print axioms PFP.gowersMaureyConstructionExists
+#print axioms PFP.example_7_1_named_iff
+#print PFP.Example_7_1_named
+#print PFP.Example_7_1
+#print PFP.Example_7_1_all_constructions
+#print PFP.GowersMaureyConstructionExists
+
+#print axioms PFP.corollary_4_10_i_of_finite
+#print axioms PFP.corollary_4_10_ii_of_finite
+#print axioms PFP.corollary_4_10_i_omega
+#print axioms PFP.corollary_4_10_ii_omega
+#print axioms PFP.ordinalContinuous_hasUPFP_of_countable_infinite_smallScalar
+#print axioms PFP.ordinalContinuous_hasUPFP_of_countable_infinite
+#print axioms PFP.corollary_4_10_i_of_countable
+#print axioms PFP.corollary_4_10_ii
+#print axioms PFP.remark_4_5_ellOne
+#print axioms PFP.remark_4_5_general
+#print axioms PFP.remark_4_5
+#print axioms PFP.remark_4_31
+#print axioms PFP.remark_3_4
+#print axioms Posets.ordinalTowerFactorBound
+#print axioms Posets.one_le_ordinalTowerFactorBound
+#print axioms Posets.ordinalTower_identity_factorization_with_bound
+#print axioms Posets.countableCanonicalOrdinal_hasUPFP
+#print axioms Posets.countableOrdinal_hasUPFP
+#print axioms Posets.exists_countableOrdinal_normal_form
+#print axioms Posets.ordinalIicContinuousCZeroEquiv
+#print axioms Posets.ordinalTower_exists_cofinal_cross_bands
+#print axioms Posets.ordinalCofinalBlockEquiv
+#print axioms Posets.ordinalCofinalBlockLowerBound_pos
+#print axioms Posets.exists_ordinalCofinalBlockEmbedding_boundedBelow
+#print axioms Posets.exists_ordinal_embedding_identity_factors
+#print axioms Posets.ordinalOmega_hasUPFP
+
+#print PFP.Remark_3_4
+#print PFP.Remark_4_5_ellOne
+#print PFP.Remark_4_5_general
+#print PFP.Remark_4_5
+#print PFP.Remark_4_31
+
+#print axioms PFP.corollary_4_10_i_initial
+#print axioms PFP.corollary_4_10_i_initial_finite_quotient
+#print axioms PFP.corollary_4_10_i_below_initial_omega_power
+#print axioms PFP.corollary_4_7_of_lebesgueL1_primary
+#print axioms PFP.lpOrdinalFiniteMultipleEquiv
+#print axioms PFP.cZeroOrdinalFiniteMultipleEquiv
+#print axioms PFP.scatteredContinuousDualEllOneEquiv
+#print axioms PFP.scatteredContinuous_lp_operator_separable_range
+#print axioms PFP.ordinalContinuousDualEllOneEquiv
+#print axioms PFP.ordinalContinuous_lp_operator_separable_range
+#print axioms PFP.corollary_4_10_i_of_coefficient_hasUPFP
+#print axioms Posets.ordinalEndpointExtend
+#print axioms Posets.ordinalEndpointExtend_apply
+#print axioms Posets.ordinalEndpointRead
+#print axioms Posets.ordinalEndpointRead_apply
+#print axioms Posets.ordinalEndpointRead_extend
+#print axioms Posets.norm_ordinalEndpointExtend_le
+#print axioms Posets.norm_ordinalEndpointRead_le
+#print axioms Posets.norm_ordinalEndpointExtend
+#print axioms Posets.TransfiniteCZero.cZeroSum_insertFun
+#print axioms Posets.TransfiniteCZero.cZeroSum_insertFun_apply
+#print axioms Posets.TransfiniteCZero.cZeroSum_insert
+#print axioms Posets.TransfiniteCZero.cZeroSum_insert_apply
+#print axioms Posets.TransfiniteCZero.cZeroSum_insertCLM
+#print axioms Posets.TransfiniteCZero.cZeroSum_insertCLM_apply_selected
+#print axioms Posets.TransfiniteCZero.norm_cZeroSum_insertCLM_le
+#print axioms Posets.TransfiniteCZero.norm_cZeroSum_comapCLM_le
+#print axioms Posets.TransfiniteOrdinal.exists_regularOrdinal_cofinal_selection
+#print axioms Posets.TransfiniteOrdinal.exists_regularOrdinal_twoColor_selection
+#print axioms Posets.ordinalEndpointSum_factors_of_selected_diagonal
+#print axioms Posets.ordinalEndpointSum_diagonal_dichotomy
+#print axioms Posets.norm_cZeroOperatorBlock_le
+#print axioms Posets.cZeroOperatorDiagonal
+#print axioms Posets.cZeroOperatorDiagonal_apply
+#print axioms Posets.norm_cZeroOperatorDiagonal_le
+#print axioms Posets.cZeroOperatorBlock_diagonal_self
+#print axioms Posets.cZeroOperatorBlock_diagonal_ne
+#print axioms Posets.norm_sub_cZeroOperatorDiagonal_le
+#print axioms Posets.ordinalEndpointSum_nearDiagonal_dichotomy
+#print axioms Posets.ordinalPowerLimitBlockOrdinal
+#print axioms Posets.ordinalPowerLimitBlockOrdinal_monotone
+#print axioms Posets.ordinalPowerLimitFactorModel
+#print axioms Posets.ordinalPowerLimitOperatorBound
+#print axioms Posets.ordinalPowerLimit_nearDiagonal_dichotomy
+#print axioms Posets.ordinalEndpointFamilyExtend
+#print axioms Posets.ordinalEndpointFamilyRead
+#print axioms Posets.ordinalEndpointFamilyExtend_apply
+#print axioms Posets.ordinalEndpointFamilyRead_apply
+#print axioms Posets.norm_ordinalEndpointFamilyExtend_le
+#print axioms Posets.norm_ordinalEndpointFamilyRead_le
+#print axioms Posets.ordinalEndpointFamilyRead_comp_extend
+#print axioms Posets.norm_ordinalEndpointFamilyExtend
+#print axioms Posets.infiniteInitialOrdinal_hasUPFP
+#print axioms Posets.initialOrdinalInfiniteQuotient_hasUPFP
+#print axioms Posets.singularInitialBelowSquare_hasUPFP
+#print axioms Posets.initialHigherBelowOmega_hasUPFP
+#print axioms Posets.cZeroSupportedOn
+#print axioms Posets.cZeroSupportedOn_support
+#print axioms Posets.cZeroSupportedOn_isClosed
+#print axioms Posets.cZeroSupportedRead
+#print axioms Posets.cZeroSupportedRead_apply
+#print axioms Posets.cZero_operator_apply_le_of_supported_mass
+#print axioms Posets.norm_cZeroSupportedRead_le_of_mass
+#print axioms Posets.ordinalClosedCore_operator_offBandNorm
+#print axioms Posets.cZeroSumErase
+#print axioms Posets.cZeroSumErase_apply_self
+#print axioms Posets.cZeroSumErase_apply_ne
+#print axioms Posets.norm_cZeroSumErase_le
+#print axioms Posets.wolfeDisjointSynthesis_erase_support
+#print axioms Posets.cZeroOffBandSynthesis
+#print axioms Posets.cZeroOffBandSynthesis_apply
+#print axioms Posets.norm_cZeroOffBandSynthesis_le
+#print axioms Posets.norm_offBandCompression_le
+#print axioms Posets.ordinalClosedCore_operator_offBandSynthesis
+#print axioms Posets.centeredBandCoordinate
+#print axioms Posets.centeredBandCoordinate_apply
+#print axioms Posets.centeredBandCoordinate_norm_le
+#print axioms Posets.centeredBandCoordinate_tendsto
+#print axioms Posets.convergentBandReadback
+#print axioms Posets.convergentBandReadback_apply
+#print axioms Posets.norm_convergentBandReadback_le
+#print axioms Posets.wolfeDisjointSynthesis_apply_outside
+#print axioms Posets.convergentBandReadback_comp_synthesis
+#print axioms Posets.ordinal_cof_aleph0_exists_strictMono_cofinal
+#print axioms Posets.ordinal_cofinal_maps_converge_uniform
+#print axioms Posets.ordinalCofinalBandReadback
+#print axioms Posets.ordinalCofinalBandReadback_apply
+#print axioms Posets.norm_ordinalCofinalBandReadback_le
+#print axioms Posets.clopenBandSectionIsometry
+#print axioms Posets.clopenBandSectionIsometry_apply
+#print axioms Posets.convergent_clopen_band_retraction
+#print axioms Posets.norm_sub_cZeroOperatorDiagonal_le_of_erase
+#print axioms Posets.wolfeMass_endpoint_disjoint_tail_small
+#print axioms Posets.centeredBandCompression
+#print axioms Posets.centeredBandCompression_apply
+#print axioms Posets.norm_centeredBandCompression_sub_diagonal_le
+#print axioms Posets.ordinal_finite_band_threshold_lt
+#print axioms Posets.ordinal_finite_band_power_decomposition
+#print axioms Posets.ordinal_finite_band_exists_geometry
+#print axioms Posets.ordinalPaddedBandLevels
+#print axioms Posets.ordinalPaddedBandLevels_monotone
+#print axioms Posets.ordinalPaddedBandLevels_apply
+#print axioms Posets.ordinalPaddedBand_top_level
+#print axioms Posets.ordinalPaddedBand_operator_coloured_geometry
+#print axioms Posets.ordinal_power_cofinal_exists_finitely_padded_ranks
+#print axioms Posets.ordinal_cofinal_exists_finitely_padded_ranks
+#print axioms PFP.corollary_4_7
+#print axioms Posets.ordinalBand_coordinate_inverse_from_closure
+#print axioms Posets.ordinalBand_coordinate_inverse_from_leaf_mass
+#print axioms Posets.wolfeDisjointSynthesis_single_coordinate
+#print axioms Posets.wolfeDisjointSynthesis_support_union
+#print axioms Posets.norm_ordinalBandCompression_isometry_le
+#print axioms Posets.rawBandDiagonal
+#print axioms Posets.rawBandDiagonal_apply
+#print axioms Posets.norm_centeredBandCompression_sub_rawDiagonal_le
+#print axioms Posets.exists_centered_cZero_factor_of_coordinate_inverses
+#print axioms Posets.ordinalSeparatedBand_coordinate_inverse_of_colour
+#print axioms Posets.ordinalColouredCofinal_factorization
+#print axioms Posets.ordinalPaddedCofinal_factorization_of_endpoint_bound
+#print axioms Posets.ordinalPaddedCofinal_factorization
+#print axioms Posets.exists_ordinalVaryingRankUnits
+#print axioms Posets.exists_ordinalVariableUnitParameters
+#print axioms Posets.OrdinalVariableUnitParameters.embedding
+#print axioms Posets.OrdinalVariableUnitParameters.embedding_isOpen
+#print axioms Posets.OrdinalVariableUnitParameters.outerBlock_disjoint
+#print axioms Posets.OrdinalVariableUnitParameters.outerBlock_escape
+#print axioms Posets.exists_ordinalVariableUnitColouredCores
+#print axioms Posets.OrdinalVariableUnitColouredCores.bandGeometry
+#print axioms Posets.OrdinalVariableUnitColouredCores.selectedP
+#print axioms Posets.OrdinalVariableUnitColouredCores.selectedQ
+#print axioms Posets.OrdinalVariableUnitColouredCores.selected_section
+#print axioms Posets.OrdinalVariableUnitColouredCores.selectedQ_core
+#print axioms Posets.OrdinalVariableUnitColouredCores.selected_block_factorization
+#print axioms Posets.OrdinalPrincipalCofinalSequence.halfOpenBlockSumEquiv
+#print axioms Posets.OrdinalPrincipalCofinalSequence.halfOpenBlockSumEquiv_norm_le
+#print axioms Posets.OrdinalPrincipalCofinalSequence.halfOpenBlockSumEquiv_symm_norm_le
+#print axioms Posets.ordinalCofinalBlocks_factorizationWith160
+#print axioms Posets.ordinalVariableUnit_halfOpen_hasCPFP
+#print axioms Posets.ordinalVariableUnit_hasUPFP
+#print axioms Posets.ordinalInitialHigherLimit_hasUPFP
+#print axioms Posets.ordinalInitialHigherSuccessorLimit_hasUPFP
+#print axioms Posets.ordinalInitialHigherCountableCofinalLimit_hasUPFP
+#print axioms PFP.ordinalContinuous_hasUPFP_of_real_complex
+#print axioms PFP.ordinalContinuous_hasUPFP_of_principal_countable_cofinal_rank
+#print axioms PFP.ordinalContinuous_hasUPFP_of_initial_higher_limit
+#print axioms PFP.ordinalContinuous_hasUPFP_of_initial_higher_successor_limit
+#print axioms PFP.ordinalContinuous_hasUPFP_of_initial_higher_countable_cofinal_limit
+#print axioms PFP.corollary_4_10_i_of_principal_countable_cofinal_rank
+#print axioms PFP.corollary_4_10_i_of_initial_higher_limit
+#print axioms PFP.corollary_4_10_i_of_initial_higher_successor_limit
+#print axioms PFP.corollary_4_10_i_of_initial_higher_countable_cofinal_limit
+#print axioms Posets.pfpOrdinalAnchorProjection
+#print axioms Posets.pfpOrdinalAnchorProjection_apply
+#print axioms Posets.norm_pfpOrdinalAnchorProjection_le
+#print axioms Posets.pfpOrdinalAnchorProjection_idempotent
+#print axioms Posets.pfpOrdinalAnchorNormalize
+#print axioms Posets.pfpOrdinalAnchorNormalize_apply
+#print axioms Posets.norm_pfpOrdinalAnchorNormalize_le
+#print axioms Posets.pfpOrdinalAnchorNormalize_boundary_zero
+#print axioms Posets.pfpOrdinalAnchorNormalize_complement_boundary_zero
+#print axioms Posets.pfpOrdinalAnchorNormalize_budget
+#print axioms Posets.pfpOrdinalAnchoredRead_projection_eq_zero
+#print axioms Posets.pfpOrdinalAnchoredRead_normalize
+#print axioms Posets.pfpOrdinalAnchoredRead_complement_normalize
+#print axioms Posets.pfpOrdinalAnchoredRead_branch_normalize
+#print axioms Posets.pfpOrdinalAnchoredRead_factor_transfer
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedSequence
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedEmbedding
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedEmbedding_isOpen
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedEmbedding_disjoint
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpNormalizedOperator
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpNormalizedZeroOperator
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpNormalizedZeroOperator_budget
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedLevels
+#print axioms Posets.OrdinalTransfiniteRankUnits.pfpPaddedTop
+#print axioms Posets.exists_pfpOrdinalTransfinitePaddedCores
+#print axioms Posets.exists_pfpOrdinalTransfinitePaddedSelection
+#print axioms Posets.PFPOrdinalTransfinitePaddedCores.exists_local_factors
+#print axioms Posets.PFPOrdinalTransfinitePaddedCores.exists_block_factorization
+#print axioms Posets.PFPTransfinite.ordinalInitial_injective_range_cofinal
+#print axioms Posets.PFPTransfinite.ordinalPrincipalEndpoint_successor_selection_gap
+#print axioms Posets.PFPTransfinite.exists_regularOrdinal_injective_principal_gap_selection
+#print axioms Posets.pfpOrdinalUncountableCofinal_hasCPFP
+#print axioms Posets.pfpOrdinalUncountableCofinal_hasUPFP
+#print axioms PFP.ordinalContinuous_hasUPFP_of_principal_uncountable_cofinal_rank
+#print axioms PFP.ordinalContinuous_hasUPFP_of_principal_noninitial_rank
+#print axioms PFP.corollary_4_10_i_of_principal_uncountable_cofinal_rank
+#print axioms PFP.corollary_4_10_i_of_principal_noninitial_rank
+#print axioms Posets.exists_ordinalTransfiniteRankUnits
+#print axioms Posets.exists_ordinalPrincipalTransfiniteRankUnits
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.sourceEmbedding
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.sourceEmbedding_isOpen
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.sourceEmbedding_range_disjoint_boundary
+#print axioms Posets.ordinalAmbientCore_infinite_crossMass
+#print axioms Posets.ordinalIndexedCore_operator_crossMass
+#print axioms Posets.ordinalAnchoredBlockReadback
+#print axioms Posets.ordinalAnchoredBlockReadback_norm_le
+#print axioms Posets.ordinalIndexed_factors_of_coordinate_inverses
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.halfOpenBlockSumEquiv
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.halfOpenBlockSumEquiv_norm_le
+#print axioms Posets.OrdinalPrincipalTransfiniteSequence.halfOpenBlockSumEquiv_symm_norm_le
+#print axioms Posets.ordinalTransfiniteBlocks_full_factorizationWith1280
+#print axioms PFP.ordinalContinuous_hasUPFP_of_principal_initial_rank
+#print axioms PFP.ordinalContinuous_hasUPFP_of_principal_rank
+#print axioms PFP.ordinalContinuous_hasUPFP_above_initial_square_small
+#print axioms PFP.corollary_4_10_i_small_universe
+#print axioms Posets.initialOrdinal_hasUPFP_poly
+#print axioms Posets.ordinalAboveSquare_hasUPFP_of_principal_preservation
+#print axioms Posets.exists_ordinalSpace_canonical_power_normalForm
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertFun
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertFun_apply
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insert
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insert_apply
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertCLM
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertCLM_apply_selected
+#print axioms Posets.UniverseRegularMatrix.norm_cZeroSum_insertCLM_le
+#print axioms Posets.UniverseRegularMatrix.norm_cZeroSum_comapCLM_le
+#print axioms Posets.UniverseRegularMatrix.ordinalInitialSegmentRead
+#print axioms Posets.UniverseRegularMatrix.ordinalInitialSegmentExtend
+#print axioms Posets.UniverseRegularMatrix.ordinalInitialSegmentRead_extend
+#print axioms Posets.UniverseRegularMatrix.norm_ordinalInitialSegmentRead_le
+#print axioms Posets.UniverseRegularMatrix.norm_ordinalInitialSegmentExtend_le
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadInclusion
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadInclusion_read
+#print axioms Posets.UniverseRegularMatrix.exists_ordinalOperator_head_image_tail
+#print axioms Posets.UniverseRegularMatrix.exists_ordinalOperator_early_rows_cutoff
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertCLM_single_scalar
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_factorsIdentityWith_of_selected_matrix
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_factorsIdentityWith_of_large_diagonal
+#print axioms Posets.UniverseRegularMatrix.uncountableScalarCZero_hasCPFP_two
+#print axioms Posets.UniverseRegularMatrix.cZeroSumScalarMatrix
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_scalar_finite_sum_norm_le
+#print axioms Posets.UniverseRegularMatrix.cZeroSumScalarMatrix_finite_row_bound
+#print axioms Posets.UniverseRegularMatrix.cZeroSumScalarMatrix_countable_row
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_countable_support
+#print axioms Posets.UniverseRegularMatrix.cZeroSumScalarMatrix_countable_column
+#print axioms Posets.UniverseRegularMatrix.cZeroSumMatrixForbidden
+#print axioms Posets.UniverseRegularMatrix.cZeroSumMatrixForbidden_countable
+#print axioms Posets.UniverseRegularMatrix.cZeroSumMatrixForbidden_self
+#print axioms Posets.UniverseRegularMatrix.cZeroSumMatrixForbidden_symm
+#print axioms Posets.UniverseRegularMatrix.UncountableSelectionStage
+#print axioms Posets.UniverseRegularMatrix.countableForbiddenHistory
+#print axioms Posets.UniverseRegularMatrix.countableForbiddenHistory_card_lt
+#print axioms Posets.UniverseRegularMatrix.exists_outside_countableForbiddenHistory
+#print axioms Posets.UniverseRegularMatrix.chooseOutsideCountableHistory
+#print axioms Posets.UniverseRegularMatrix.uncountableIndependentChoice
+#print axioms Posets.UniverseRegularMatrix.uncountableIndependentChoice_spec
+#print axioms Posets.UniverseRegularMatrix.exists_uncountable_independent_embedding
+#print axioms Posets.UniverseRegularMatrix.infinite_twoColor_large
+#print axioms Posets.UniverseRegularMatrix.ordinalDiagonalIntersection
+#print axioms Posets.UniverseRegularMatrix.isClosed_ordinalDiagonalIntersection
+#print axioms Posets.UniverseRegularMatrix.exists_regularOrdinal_diagonalIntersection_above
+#print axioms Posets.UniverseRegularMatrix.ordinalSum_factorsIdentityWith_of_selected_diagonal
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_diagonal_family_tail_rows
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_bounded_family_compression
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_family_tail_rows
+#print axioms Posets.UniverseRegularMatrix.exists_initialOrdinal_scalar_family_compression
+#print axioms Posets.UniverseRegularMatrix.exists_initialOrdinal_scalar_countable_compression
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadIndicator_mul
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadIndicator_star
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadIndicatorMonoid
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadIndicatorMonoid_star
+#print axioms Posets.UniverseRegularMatrix.ordinalHeadIndicators_dense
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalBlock_sub
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalBlockJump_sub
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpOperator_sub
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpOperator_id
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalBlock
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalBlockJump
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalBlockJump_column_tendsto
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpColumn
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpColumn_apply
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpColumns_bound
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpOperator
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalJumpOperator_single
+#print axioms Posets.UniverseRegularMatrix.norm_regularOrdinalJumpOperator_le
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorLeft
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorExtension
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorRight
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorRight_read
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorLeft_right
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorLeft_eq_zero_of_read_constant
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorRight_head_zero
+#print axioms Posets.UniverseRegularMatrix.ordinalSelectorRight_endpoint_zero
+#print axioms Posets.UniverseRegularMatrix.norm_ordinalSelectorLeft_le
+#print axioms Posets.UniverseRegularMatrix.norm_ordinalSelectorRight_le
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixCode
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixPredecessorBound
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixPredecessorBound_lt
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixPredecessorBound_diag
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixPredecessorBound_outgoing
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixPredecessorBound_incoming
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_regular_matrix_compression
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_regular_matrix_rows
+#print axioms Posets.UniverseRegularMatrix.exists_initialOrdinal_scalar_matrix_compression
+#print axioms Posets.UniverseRegularMatrix.exists_regularOrdinalSum_diagonal_compression
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_insertCLM_single_constant
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalSum_factorsIdentityWith_of_selected_jump
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_tail_rows_above
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_bounded_tail_compression
+#print axioms Posets.UniverseRegularMatrix.factorsIdentityWith_cZeroContinuousAmplification
+#print axioms Posets.UniverseRegularMatrix.smallRepeatedRegularOrdinal_hasUPFP_of_scalar
+#print axioms Posets.UniverseRegularMatrix.jlmsScalarCZero_infinite_hasUPFP
+#print axioms Posets.UniverseRegularMatrix.exists_smallCodomain_operator_annihilating_tail
+#print axioms Posets.UniverseRegularMatrix.exists_smallCodomain_operator_tail_projection
+#print axioms Posets.UniverseRegularMatrix.exists_smallFamily_ordinal_tail
+#print axioms Posets.UniverseRegularMatrix.exists_smallDomain_operator_tail
+#print axioms Posets.UniverseRegularMatrix.exists_smallIndex_ordinal_tail
+#print axioms Posets.UniverseRegularMatrix.exists_smallIndex_ordinal_ellOne_cutoff
+#print axioms Posets.UniverseRegularMatrix.exists_smallIndex_closed_ordinal_above
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyCuts
+#print axioms Posets.UniverseRegularMatrix.isClosed_ordinalMatrixSmallFamilyCuts
+#print axioms Posets.UniverseRegularMatrix.not_bddAbove_ordinalMatrixSmallFamilyCuts
+#print axioms Posets.UniverseRegularMatrix.exists_initialOrdinalMatrix_smallFamilyCut
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockMap
+#print axioms Posets.UniverseRegularMatrix.isNormal_ordinalMatrixSmallFamilyBlockMap
+#print axioms Posets.UniverseRegularMatrix.isOrdinalMatrixCut_smallFamilyBlockMap
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockMap_zero
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockMap_lt
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockMap_endpoint
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockContinuousMap
+#print axioms Posets.UniverseRegularMatrix.strictMono_ordinalMatrixSmallFamilyBlockContinuousMap
+#print axioms Posets.UniverseRegularMatrix.ordinalMatrixSmallFamilyBlockContinuousMap_endpoint
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_bounded_smallFamily_compression
+#print axioms Posets.UniverseRegularMatrix.exists_smallIndex_ordinalOperatorEndpointRows_cutoff
+#print axioms Posets.UniverseRegularMatrix.exists_smallIndex_ordinalOperator_zero_row_sums
+#print axioms Posets.UniverseRegularMatrix.exists_loyWillis_zeroEndpoint_smallFamily_tail_rows
+#print axioms Posets.UniverseRegularMatrix.exists_initialOrdinal_scalar_smallFamily_compression
+#print axioms Posets.UniverseRegularMatrix.exists_smallRepeatedRegularOrdinal_scalar_blocks
+#print axioms Posets.UniverseRegularMatrix.cZeroSum_mapCLM_single
+#print axioms Posets.UniverseRegularMatrix.regularOrdinalSum_factorsIdentityWith_of_large_jump
+#print axioms Posets.UniverseRegularMatrix.fullRepeatedRegularOrdinal_hasCPFP_sixteen
+#print axioms Posets.UniverseRegularMatrix.fullRepeatedRegularOrdinal_hasUPFP
+#print axioms Posets.UniverseRegularMatrix.initialOrdinalSquareSumEquiv
+#print axioms Posets.UniverseRegularMatrix.regularInitialSquare_hasUPFP
+#print axioms Posets.UniverseFixedExponent.cZeroSum_smallerReplication
+#print axioms Posets.UniverseFixedExponent.finitePiCollapseEquiv
+#print axioms Posets.UniverseFixedExponent.OrdinalFixedExponentEndpoint
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponent_base_card
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointReplication
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointSmallerReplication
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentConstantSumEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointMultiplyEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointMultipleEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointRemainderEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentEndpointPowerEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentPowerEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentPowerMultipleEquiv
+#print axioms Posets.UniverseFixedExponent.ordinalFixedExponentMiddleEquiv
+#print axioms Posets.UniverseFixedExponent.exists_ordinalFixedExponentCanonical
+#print axioms Posets.UniverseFixedExponent.exists_ordinalSpace_canonical_power_normalForm
+#print axioms Posets.exists_ordinalSpace_canonical_power_normalForm_poly
+#print axioms JLMS.nonempty_ordinalEndpointZeroPowerReplication
+#print axioms JLMS.ordinalSpaceInitialPowerSquareEquiv
+#print axioms JLMS.ordinalEndpointZeroMultipleSumEquiv
+#print axioms JLMS.ordinalSpaceFinitePower
+#print axioms JLMS.ordinalSpaceEndpointZeroBoundedEquiv
+#print axioms JLMS.ordinalSpacePowerRemainder
+#print axioms JLMS.CZeroSum.prodIsometry
+#print axioms JLMS.CZeroSum.reindex
+#print axioms Posets.UniverseRegularInitial.exists_loyWillis_zeroEndpoint_tail_rows
+#print axioms Posets.UniverseRegularInitial.ordinalEndpointZeroProjection
+#print axioms Posets.UniverseRegularInitial.ordinalEndpointZeroProjection_subtype
+#print axioms Posets.UniverseRegularInitial.norm_ordinalEndpointZeroProjection_apply_le
+#print axioms Posets.UniverseRegularInitial.exists_loyWillis_zeroEndpoint_bounded_compression
+#print axioms Posets.UniverseRegularInitial.initialOrdinal_factorsIdentityWith_of_jump_bound
+#print axioms Posets.UniverseRegularInitial.initialOrdinal_hasCPFP_sixteen
+#print axioms Posets.UniverseRegularInitial.initialOrdinal_hasUPFP
+#print axioms Posets.initialOrdinal_hasCPFP_sixteen_poly
+#print axioms Posets.ordinalPrincipalInitialRank_hasUPFP_poly
+#print axioms JLMS.exists_ordinalOperatorEndpointRows_cutoff
+#print axioms JLMS.exists_common_ordinal_tail
+#print axioms JLMS.exists_common_ordinalOperator_zero_row_sums
+#print axioms JLMS.ordinalMatrixFamilyBlockContinuousMap
+#print axioms JLMS.strictMono_ordinalMatrixFamilyBlockContinuousMap
+#print axioms JLMS.ordinalOperatorRow_comp_tail_eq_zero_at_cut
+#print axioms JLMS.ordinalTailLimitRowsSelector
+#print axioms JLMS.sub_jump_smul_id_mem_loyWillisSubspace
+#print axioms JLMS.loyWillis_sub_endpointRankOne_mem
+#print axioms JLMS.initialEndpointJump_id
+#print axioms Posets.ordinal_uncountable_initial_omega_power
+#print axioms Posets.UniverseInitialQuotient.initialOrdinalInfiniteQuotientSumEquiv
+#print axioms Posets.UniverseInitialQuotient.initialOrdinalInfiniteQuotient_index_small
+#print axioms Posets.UniverseInitialQuotient.initialOrdinalInfiniteQuotient_index_infinite
+#print axioms Posets.UniverseSingularInitial.singularEndpointSmallerReplication
+#print axioms Posets.UniverseSingularInitial.singularInitialInfiniteQuotientEquiv
+#print axioms Posets.UniverseSingularInitial.ordinalSingularFiniteMultipleEquiv
+#print axioms Posets.UniverseSingularInitial.singularInitialBelowSquareEquiv
+#print axioms PFP.ordinalContinuous_hasUPFP_of_uncountable_initial
+#print axioms PFP.ordinalContinuous_hasUPFP_of_infinite_initial
+#print axioms PFP.ordinalContinuous_hasUPFP_of_singular_below_square
+#print axioms PFP.ordinalContinuous_hasUPFP_of_singular_square
+#print axioms PFP.corollary_4_10_i_initial_poly
+#print axioms PFP.corollary_4_10_i_initial_finite_quotient_poly
+#print axioms JLMS.ordinalSpaceInitialInfiniteSumEquiv
+#print axioms JLMS.ordinalEndpointZeroSingularInitialReplication
+#print axioms JLMS.ordinalSpaceSingularInitialSquareEquiv
+#print axioms JLMS.ordinalSpaceSmallRemainder
+#print axioms JLMS.exists_initial_finite_quotient_remainder
+#print axioms PFP.ordinalContinuous_hasUPFP_of_regular_infinite_quotient_smallScalar
+#print axioms PFP.ordinalContinuous_hasUPFP_of_regular_infinite_quotient
+#print axioms PFP.ordinalContinuous_hasUPFP_of_regular_square
+#print axioms PFP.ordinalContinuous_hasUPFP_of_initial_square
+#print axioms PFP.ordinalContinuous_hasUPFP_of_initial_principal_power
+#print axioms PFP.ordinalContinuous_hasUPFP_above_initial_square
+#print axioms PFP.corollary_4_10_i
+#print axioms PFP.corollary_4_10
+#print axioms PFP.Remark_5_2_asPrinted
+#print axioms PFP.Remark_5_2_separable
+#print axioms PFP.remark_5_2_separable
+#print axioms PFP.remark_5_2_separable_same_constant
+#print axioms PFP.example_7_1_of_finiteSpreadApproximation
+#print axioms PFP.example_7_1
+#print axioms PFP.example_7_1_all_constructions
+#print axioms PFP.example_7_1_named
+#print axioms PFP.definition_2_1_approximate_bound
+#print axioms PFP.lemma_4_27_asPrinted_false_countable_cZero
+#print axioms PFP.lemma_4_30_asPrinted_false_countable_cZero
+#print axioms PFP.theorem_5_4
+#print axioms PFP.theorem_5_4_asPrinted
+#print axioms PFP.theorem_5_4_consecutive

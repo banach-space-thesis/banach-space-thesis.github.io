@@ -1,0 +1,63 @@
+{
+  "repository": "https://github.com/harfe/fixed-point-theorems-lean4",
+  "commit": "770940ddf9878cf61952ed53d910b92bca841838",
+  "license": "MIT",
+  "upstream_lean": "4.30.0",
+  "local_lean": "4.24.0",
+  "local_mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "status": "Six-file port builds on pinned Lean4.24.0; terminal10-report axiom audit PASS, only propext/Classical.choice/Quot.sound; generic operator fixed-point and finite-orbit compactness included.",
+  "files": [
+    {
+      "original_path": "FixedPointTheorems/apply_cubical_sperner.lean",
+      "original_sha256": "2D54E51371C1AF001BAE11920240F8436F0AD89FB799B6398E1B742090BD77C8",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\apply_cubical_sperner.lean",
+      "initial_port_sha256": "D3659C46F42642C99D1A6A7D5AE0B6F12C2434233D39A8DD37E85C4C6649B45F",
+      "checked_port_sha256": "7C710E01FE0523AB5FC7F3980A77D44C7EB1A842D7888488262CE5BC2EC8D640"
+    },
+    {
+      "original_path": "FixedPointTheorems/brouwer.lean",
+      "original_sha256": "9D041BCFD166A6BE80212F069542A2801182B08AE3FEDAE1E066EE3B7729EEE5",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\brouwer.lean",
+      "initial_port_sha256": "EF2F34957F4E5980E34BBBCFC63BDA2B4A1632A5366064D791E94ED017182CDF",
+      "checked_port_sha256": "EF2F34957F4E5980E34BBBCFC63BDA2B4A1632A5366064D791E94ED017182CDF"
+    },
+    {
+      "original_path": "FixedPointTheorems/convex_homeos.lean",
+      "original_sha256": "2705E0B6F2D7C637041A1FA06ED7F0C81303F8363E2FF5C9D221F4028E0540CA",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\convex_homeos.lean",
+      "initial_port_sha256": "8FBEEFAA0A4A63F5DD2F5360153D9A306D6B830991187E00AFB3DD2ED3CE2144",
+      "checked_port_sha256": "8FBEEFAA0A4A63F5DD2F5360153D9A306D6B830991187E00AFB3DD2ED3CE2144"
+    },
+    {
+      "original_path": "FixedPointTheorems/cubical_sperner_prep.lean",
+      "original_sha256": "1F37423D270F32778C023B2C8D2560F479E543D3E176958CF7A583A39850995F",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\cubical_sperner_prep.lean",
+      "initial_port_sha256": "7B5A5E26032C6391709077335A9CB78653A4B3AFCEAC2A8DF21B8D36B6298331",
+      "checked_port_sha256": "795DBF73C04D41D8F93B1B25035FF66C2DC1EADA9E4667BD4126D0D6A758BB60"
+    },
+    {
+      "original_path": "FixedPointTheorems/cubical_sperner.lean",
+      "original_sha256": "328AC2CBEC911A59EEA1F6ECC94C72DB6280BCC84A3312E2466C63136FAF6E37",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\cubical_sperner.lean",
+      "initial_port_sha256": "B30535B53FFFCA1EE74D7CDF7B95830E32406EC6C44764B2F94C51A9861C7DD2",
+      "checked_port_sha256": "17E5005CC2026459730D9260EEDFE3E49F6FA8E2F28273D30C6F5FE68987213B"
+    },
+    {
+      "original_path": "FixedPointTheorems/kakutani.lean",
+      "original_sha256": "6FF1420CD6ACBB3A0B308643A12A04826942747171C9E07A3B374DA9C0B9CCA6",
+      "local_path": "formalization\\common\\ThesisCommon\\FixedPoint\\kakutani.lean",
+      "initial_port_sha256": "961F3A93BB5E7DEBF8567A5A30859280DE705EB2CD57949381EDF27730FF51AA",
+      "checked_port_sha256": "BDEA48126FE7F225453E5FFB348684C97AB1D89F33430F1A31F48FF57ADBDCE9"
+    }
+  ],
+  "local_changes": [
+    "Imports and declarations placed in ThesisCommon.FixedPoint",
+    "not_lt_zero replaced by Nat.not_lt_zero",
+    "Finite.injective_iff_surjective used for finite surjection",
+    "Redundant Finset membership wrapper simplified",
+    "Natural reciprocal-limit theorem uses its specialized Lean4.24 API",
+    "tendsto_finsetSum renamed to tendsto_finset_sum"
+  ],
+  "audit_source": "tmp/pfp-fixed-point-audit.lean",
+  "audit_log": "tmp/pfp-fixed-point-audit.txt"
+}

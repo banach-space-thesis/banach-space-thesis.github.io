@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "completedAtUtc": "2026-10-02T20:28:26.0934488Z",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "method": "fresh mkEmptyEnvironment 0; Kernel.Environment.addDeclCore; generated constructor/recursor equality",
+  "scope": "All declarations of the full private imported environment of JFA, including external libraries",
+  "declarationsRechecked": 399466,
+  "modules": 4868,
+  "declarationsSkipped": 0,
+  "unsafeDeclarationsIncluded": 628,
+  "partialDeclarationsIncluded": 3445,
+  "kernelDeclarationCalls": 388456,
+  "mainResults": [
+    {
+      "paperResult": "Theorem 1.1",
+      "proof": "JFA.theorem_1_1",
+      "statement": "JFA.Theorem_1_1",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "kernelRechecked": true
+    },
+    {
+      "paperResult": "Corollary 1.2",
+      "proof": "JFA.corollary_1_2",
+      "statement": "JFA.Corollary_1_2",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "kernelRechecked": true
+    },
+    {
+      "paperResult": "Corollary 1.3",
+      "proof": "JFA.corollary_1_3",
+      "statement": "JFA.Corollary_1_3",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "kernelRechecked": true
+    },
+    {
+      "paperResult": "Theorem 1.4",
+      "proof": "JFA.theorem_1_4",
+      "statement": "JFA.Theorem_1_4",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "kernelRechecked": true
+    },
+    {
+      "paperResult": "Theorem 1.6",
+      "proof": "JFA.theorem_1_6",
+      "statement": "JFA.Theorem_1_6",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "kernelRechecked": true
+    }
+  ],
+  "negativeControl": "passed: in-memory corrupted imported theorem rejected",
+  "inputHashesBeforeAndAfter": "passed",
+  "snapshotBytes": 4240244000,
+  "snapshotFiles": 19437,
+  "elapsedSeconds": 4836.1478565,
+  "sha256": {
+    "files.json": "cfb54061ba659fd8f13cdd599ec2d316310bc32a97d9999f629c084330ed1a51",
+    "modules.json": "5785f2da760c21bbe398a9c0c96f5f68c98912dc5a65ba3304c7f2be985d6a21",
+    "snapshot.json": "68bf9d5282fdcf06b4e948b39538c07e1fb000ace6d690f8bacf8efda21672dd",
+    "run/run-certificate.json": "77c3dd97713e6f9c46f9b92391c7be5d5652a87a972d8747c97500c63cf30dee",
+    "run/main-results.json": "144aa522b50258705d97b06f2cc0e3293a2a6fb82123a47656f463902b6cb7a2",
+    "run/result.json": "4808660200101e4517e401f23efac48bc1a41989aa44523ef6720485b1289685",
+    "run/negative-control.json": "b445ded6e84a7f4515e3da51001257cb62a7093851039a8bf3abfede7312f06f",
+    "attempts/failed-replay-1/command.json": "babb1f316a179d0b2131bd8bc24400aa62d8f4ba0021178e4fa232be7036a52f",
+    "attempts/failed-replay-1/declarations.jsonl": "6cc8efcdd4b3d2d12a22b479fdf0d5225282a347a8a123970c9db5fde1f3ae85",
+    "attempts/failed-replay-1/files.json": "748f8c59a24440a89c1da04a69d149084d5624b0da64d439b48f4365520f8869",
+    "attempts/failed-replay-1/FreshKernelCheck.lean": "35022137cee58903213a3e511a1b58e0ef4e39d9a305c0dfc01465d4e2e080b9",
+    "attempts/failed-replay-1/input-manifest.json": "97af63272251cd92b7527663ba1cbcdf9a589ba149fae386046ac274d58b5e7e",
+    "attempts/failed-replay-1/kernel-replay.log": "ed92ea0c8c536874278b8b422afc8d9cc46ba19ef546ce39b56747fb9dab89b0",
+    "attempts/failed-replay-1/snapshot.json": "3263b16a1f52f82c82ac35e5efa756e0c61bad0c9040f344c475b8360b4f79c8"
+  },
+  "attemptHistory": [
+    {
+      "preservedAt": "attempts/failed-replay-1",
+      "previousFilesManifestSha256": "748f8c59a24440a89c1da04a69d149084d5624b0da64d439b48f4365520f8869",
+      "reason": "Checker grouping metadata assumption; mathematical proof objects unchanged"
+    }
+  ],
+  "verifyCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Verify-Certificate.ps1",
+  "proofObjects": "modules/**/*.olean, including corresponding private parts and runtime IR",
+  "certificateMeaning": "This JSON records a completed run and binds its inputs and outputs by hashes. Replaying the saved proof objects with the provided checker verifies the result; the JSON is not a signed attestation."
+}

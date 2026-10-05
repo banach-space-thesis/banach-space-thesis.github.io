@@ -1,0 +1,10 @@
+{
+  "bundle": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\primariness\\verification\\fresh-kernel\\20261003T085843Z-f7ce7816",
+  "run": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\primariness\\verification\\fresh-kernel\\20261003T085843Z-f7ce7816\\runs\\20261003T090658Z-36770c63",
+  "status": "passed",
+  "runCertificateSha256": "ed4a25afb4ac567c868d0d22431d8ec0597fd5b0593cccda043aac39c3fa839f",
+  "filesManifestSha256": "cb7c960a25548632ccbba481848244287019ccb5cb19109cdcf2713ef07122d6",
+  "modules": 6083,
+  "declarationsRechecked": 420034,
+  "mainStatementsChecked": 8
+}

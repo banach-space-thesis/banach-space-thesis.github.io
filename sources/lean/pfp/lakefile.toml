@@ -1,0 +1,15 @@
+name = "primarity_pfp"
+version = "0.1.0"
+defaultTargets = ["PFP"]
+packagesDir = "../common/.lake/packages"
+
+[[require]]
+name = "thesis_common"
+path = "../common"
+
+[[require]]
+name = "posets"
+path = "../posets"
+
+[[lean_lib]]
+name = "PFP"

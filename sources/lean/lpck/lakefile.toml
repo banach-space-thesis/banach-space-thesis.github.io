@@ -1,0 +1,14 @@
+name = "lpck_primariness"
+version = "0.1.0"
+defaultTargets = ["LPCK"]
+
+[[require]]
+name = "thesis_common"
+path = "../common"
+
+[[require]]
+name = "posets"
+path = "../posets"
+
+[[lean_lib]]
+name = "LPCK"

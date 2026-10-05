@@ -1,0 +1,6 @@
+{"status": "passed: corrupted proof rejected",
+ "sourceTheorem": "Posets.proposition_3_1_proof",
+ "mutation":
+ "Copied theorem renamed; its proof body replaced by Sort 0. No mutation is added to the success environment.",
+ "kernelException":
+ "(kernel) declaration type mismatch, 'FreshKernelAuditCorruptedProof' has type\n  Type\nbut it is expected to have type\n  ∀ {𝕜 : Type} [inst : RCLike 𝕜] (α : Ordinal), Posets.Proposition_3_1 𝕜 α"}

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "method": "empty-environment replay; reporting recovered after memory exhaustion",
+  "declarationsRechecked": 428781,
+  "declarationsSkipped": 0,
+  "modules": 6747,
+  "kernelDeclarationCalls": 417513,
+  "unsafeDeclarationsIncluded": 628,
+  "partialDeclarationsIncluded": 3479,
+  "negativeControl": "passed: corrupted main theorem rejected after complete structural comparisons"
+}

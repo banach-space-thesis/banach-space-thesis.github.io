@@ -1,0 +1,75 @@
+{
+  "startedAtUtc": "2026-10-02T19:36:26.6417003Z",
+  "certificateId": "20261002T191819Z-0f46c1a21169",
+  "status": "passed",
+  "certificateManifestSha256": "599402565646714343FAD4EAFA25B162CC32B26F34ABBC2B9F7BC045D0CC3A8E",
+  "leanPath": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\modules",
+  "nativeLean": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\runtime\\bin\\lean.exe",
+  "imports": [
+    "Posets",
+    "PosetsCommon",
+    "Lean.Replay",
+    "Lean.Elab.Command",
+    "Lean.Data.Json"
+  ],
+  "stages": [
+    {
+      "name": "kernel",
+      "startedAtUtc": "2026-10-02T19:36:26.7624258Z",
+      "arguments": [
+        "--run",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\KernelAudit.lean",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\replay-runs\\20261002T191819Z-0f46c1a21169\\20261002T193626Z-84af664f5a75",
+        "Posets",
+        "PosetsCommon",
+        "Lean.Replay",
+        "Lean.Elab.Command",
+        "Lean.Data.Json"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:09:40.8443014Z"
+    },
+    {
+      "name": "resolver",
+      "startedAtUtc": "2026-10-02T21:09:40.8736417Z",
+      "arguments": [
+        "--run",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\KernelExport.lean",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\replay-runs\\20261002T191819Z-0f46c1a21169\\20261002T193626Z-84af664f5a75\\resolved-import-manifest.json",
+        "Posets",
+        "PosetsCommon",
+        "Lean.Replay",
+        "Lean.Elab.Command",
+        "Lean.Data.Json"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:11:11.0825860Z"
+    },
+    {
+      "name": "axiom-audit",
+      "startedAtUtc": "2026-10-02T21:11:46.1074331Z",
+      "arguments": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\Audit.lean"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:12:10.5086494Z"
+    },
+    {
+      "name": "statements",
+      "startedAtUtc": "2026-10-02T21:12:10.5551941Z",
+      "arguments": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\Statements.lean"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:12:19.8878151Z"
+    }
+  ],
+  "replayDriverSha256": "8C0744A648975ED23F049CC9B71956BF0276C23AF1BDB11166BFF17AF14B0AA9",
+  "integrityHelperSha256": "E9D0F4DD876EEEA687B725B7612D3B92BC5AD21404895E05021A40624A32E187",
+  "replayDriver": "tools/Fast-Replay.ps1",
+  "integrityHelper": "tools/Verify-KernelCertificateFast.ps1",
+  "resolver": "passed; every real imported artifact is inside snapshot/modules",
+  "foundationalAxiomAudit": "passed",
+  "sourceProvenance": "passed; final-paper and verified Lean-source hashes match",
+  "finishedAtUtc": "2026-10-02T21:14:49.7693963Z"
+}

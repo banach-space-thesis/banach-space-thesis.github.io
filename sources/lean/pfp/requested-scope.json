@@ -1,0 +1,41 @@
+{
+  "source": "Primarity_and_the_PFP.zip",
+  "request": "Formalise the results in Lean",
+  "explicit_exclusions": [
+    {
+      "source_id": "4.32",
+      "date": "2026-10-02",
+      "user_instruction": "No need to formalise that remarj",
+      "interpretation": "Remark 4.32 is excluded from the requested formalisation. Its original text remains preserved in the source inventory."
+    }
+  ],
+  "approved_conventions": [
+    {
+      "definition": "uniform primariness",
+      "convention": "C(max(1, norm(P)))"
+    }
+  ],
+  "pending_source_choices": [],
+  "optional_environments": [
+    {
+      "kind": "remark",
+      "date": "2026-10-03",
+      "user_instruction": "In general do not worry about proving remarks!",
+      "interpretation": "Remarks are optional additional results; preserved statement-only remarks are not required proof obligations."
+    }
+  ],
+  "approved_source_corrections": [
+    {
+      "source_id": "5.2",
+      "date": "2026-10-03",
+      "user_instruction": "Also it should be X separable, so if it is general X that is that the remark is incorrect",
+      "interpretation": "Use the already proved separable-coefficient version; preserve the unrestricted printed formula and its missing-hypothesis discrepancy."
+    }
+  ],
+  "additional_formulations": [
+    {
+      "source_id": "5.4",
+      "handling": "Both the manuscript finite-chain norm and the cited consecutive-segment norm are proved under separate explicit names; no equivalence of norms or unqualified JT_p alias is assumed."
+    }
+  ]
+}

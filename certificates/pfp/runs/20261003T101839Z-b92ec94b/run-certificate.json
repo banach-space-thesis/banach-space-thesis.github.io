@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "completionMode": "post-replay reporting recovery",
+  "startedAtUtc": "2026-10-03T12:40:06.767954+00:00",
+  "completedAtUtc": "2026-10-03T12:51:22.763415+00:00",
+  "elapsedSeconds": 676.0,
+  "inputHashesBeforeAndAfter": "passed",
+  "filesManifestSha256": "a7cd878a1858cb9a4cf804a1dc5db37c3433bbfa9ee2efa409b53d5b25c85362",
+  "modulesManifestSha256": "72da58446ff92bcd8826b31a1e50743dbcdf2ed1c0cb73027f17513e4b1b06eb",
+  "modules": 6747,
+  "declarationsRechecked": 428781,
+  "declarationsSkipped": 0,
+  "originalResultsCovered": 77,
+  "proofAudits": 177,
+  "negativeControl": "passed: corrupted main theorem rejected after complete structural comparisons",
+  "runtimeVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "methods": {
+    "kernel_inductive_declaration": 4305,
+    "kernel_definition_body": 135348,
+    "kernel_theorem_proof": 271038,
+    "kernel_axiom_type": 14,
+    "kernel_quotient_primitive": 4,
+    "kernel_opaque_body": 3250,
+    "kernel_mutual_definition_body": 4053,
+    "kernel_generated_constructor_equality": 6347,
+    "kernel_generated_recursor_equality": 4422
+  },
+  "outputFiles": [
+    {
+      "path": "audit-input-names.json",
+      "bytes": 37639766,
+      "sha256": "3eaf70d519dfca218ea9ea6488492081df450e9e429b049fe26afbcc156f90f8"
+    },
+    {
+      "path": "canonical-foundations.json",
+      "bytes": 174,
+      "sha256": "894c353c5dd57d2d1686cea741fbbb4ee4d345c6ba5d83310c278ddabb309d48"
+    },
+    {
+      "path": "compact-audit.command.json",
+      "bytes": 1729,
+      "sha256": "221f3b205bcea64587976d9cbe2f6067ac5c3387f48cb6d723a6de2de99aba34"
+    },
+    {
+      "path": "compact-audit.log",
+      "bytes": 9388,
+      "sha256": "d6fa904a52724cca0748b6b609416e124e25e5f44659f84ef7d6a28fe8f19bd0"
+    },
+    {
+      "path": "CompactResultAudit.lean",
+      "bytes": 18804,
+      "sha256": "5eccbec50bb8181bb862b98f48e8f481ed49c3e17f1cd97c5f480717d8725514"
+    },
+    {
+      "path": "complete-kernel-record.py",
+      "bytes": 14083,
+      "sha256": "2fabdc654b5aac835ea88fba8ca8d3843b14883b97fd5d1e0f6b89f63ecd14c6"
+    },
+    {
+      "path": "completion-evidence.json",
+      "bytes": 898,
+      "sha256": "e91eecdf1592b10b11233461d5d7b13adcab825adf109ed771d451620b5a025d"
+    },
+    {
+      "path": "declarations.jsonl",
+      "bytes": 62509179,
+      "sha256": "8de8bc9200fcfeb00e04f1a0524919874533b69a43543d5ed660e55437a0f5dc"
+    },
+    {
+      "path": "input-manifest.json",
+      "bytes": 271369,
+      "sha256": "59ca8a7c139fff68fbf47d0d7a8223e6f3089c6ff81b863c7591679ac54ff79e"
+    },
+    {
+      "path": "interrupted-supervision.json",
+      "bytes": 2037,
+      "sha256": "8e5f09b9d7f9084179253018342ab66ceeb5097e2d968824fe2928671f72e06b"
+    },
+    {
+      "path": "kernel-replay.command.json",
+      "bytes": 1670,
+      "sha256": "a1c764b20d52e0d21d4b925c005398b100219525117ab0ae661a0eca79e2d6ac"
+    },
+    {
+      "path": "kernel-replay.log",
+      "bytes": 3888,
+      "sha256": "f3a2266073f7a398ca0e46dd945ba5bf05c670f3adf544063cc5e2fdb98117ab"
+    },
+    {
+      "path": "main-results.json",
+      "bytes": 58104,
+      "sha256": "b17024f66e4570332f7144aff6736e942f2e6daa0a7cda0a8acf8af95f7dd0f8"
+    },
+    {
+      "path": "negative-control.json",
+      "bytes": 440,
+      "sha256": "eafd9c2074d1959a922e4ce1b34f1fba97b0ecc1d73619b832fa7c18a268317f"
+    },
+    {
+      "path": "REPORT.txt",
+      "bytes": 2109,
+      "sha256": "237849053cd3e7966572c2a139ea4538aafc3025898e9f16bbecd45325b5cae6"
+    },
+    {
+      "path": "result.json",
+      "bytes": 417,
+      "sha256": "240bf53e5d0d60f995973b6e15389aeb93d63ba3fabc67f74e40264e175631ae"
+    },
+    {
+      "path": "runtime-definition-groups.json",
+      "bytes": 260625,
+      "sha256": "89eab692aa5aaa3f5c51ac7bca2b97da06e7e3d66742b9affcf74846efb60090"
+    }
+  ],
+  "originalReplayExitCode": 1,
+  "reportingAuditExitCode": 0,
+  "completionEvidence": "completion-evidence.json"
+}

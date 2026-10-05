@@ -1,0 +1,35 @@
+PASS: fresh kernel replay of all eight original primariness results and imported libraries.
+
+Lean: Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+Modules: 6083
+Declarations: 420034
+Kernel declaration calls: 408851
+Skipped declarations: 0
+Unsafe declarations included: 628
+Partial declarations included: 3468
+Method: private imports are used only to obtain stored declaration types and bodies;
+every declaration is submitted to Kernel.Environment.addDeclCore at trust 0 in an
+initially empty kernel environment. Mutually recursive runtime definitions are grouped
+by strongly connected components. Generated constructors/recursors are compared exactly.
+
+All eight proof declarations conclude their original named propositions. Their exact
+public signatures were additionally checked from StatementSignatures.lean; no extra
+analytic hypotheses, scalar exclusions or ordinal-universe restrictions were added.
+Their complete axiom closures in the fresh environment contain only propext,
+Classical.choice and Quot.sound. Library/runtime axioms outside these proof closures
+remain visible in input-manifest.json and are not admitted as theorem assumptions.
+Negative control: a copied main theorem with its proof replaced by Sort 0 was rejected.
+All frozen input hashes matched before and after replay.
+
+Scope: kernel verification of the eight main statements and all declarations in their
+imported module environment. This is not a line-by-line formalisation of every source
+proof method or every cited result; the signed/complex Weis method remains separate.
+Mathematical correspondence is documented separately. A kernel audit validates the
+formal propositions and proof objects relative to Lean's kernel and listed foundations.
+These hashes and reports are reproducibility evidence, not a cryptographic attestation.
+
+Rerun without Lake, downloads or the original checkout using Python 3.11 or later:
+  python "scripts/fresh-kernel.py" replay "."
+Run that command from the frozen bundle; it creates a new output directory each time.
+Input files manifest SHA256: cb7c960a25548632ccbba481848244287019ccb5cb19109cdcf2713ef07122d6
+Module manifest SHA256: 288a24f70587a997f3fb7a7c0e883e04c6951f5038ccda735c4f20f76785d261

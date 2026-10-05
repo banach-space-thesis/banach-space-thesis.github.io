@@ -1,0 +1,2005 @@
+{
+  "coverage": {
+    "ThesisCommon.IsomorphicWithBound": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsomorphicWithBound",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsUniformlyPrimary": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsUniformlyPrimary",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.HasUPFP": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.HasUPFP",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_17": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_17": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_11": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.ContainsFilterCoordinateCopy": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.ContainsFilterCoordinateCopy",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsLargeSetSelfSimilarFilter": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsLargeSetSelfSimilarFilter",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsFilterCopyingSet": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsFilterCopyingSet",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsFilterPrimaryUnderSums": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsFilterPrimaryUnderSums",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_22": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_22",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_22": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_22",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_4_23": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_4_23",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsFilterDiagonalisable": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsFilterDiagonalisable",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.IsFilterPrimaryForFactorisation": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.IsFilterPrimaryForFactorisation",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_6_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_6_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_5_15": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_5_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_24": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_24",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_4_9": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_4_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_4_9": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_4_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_14": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_19": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_19",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_19": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_19",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_21": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_21",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_23": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_23",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_23": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_23",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_26_asPrinted": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_26_asPrinted",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_11": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_11": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Example_7_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Example_7_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_4_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_4_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_4_5": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_4_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_11": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_30": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_30",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_30_uncountable": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_30_uncountable",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_13": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_5_2_separable": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_5_2_separable",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_25": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_25",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_25": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_25",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_3_19": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_3_19",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_4_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_4_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_4_6": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_4_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_A_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_A_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_15": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_26": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_26",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_4_10": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_4_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_5_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_5_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_10": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_10": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_4_21": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_4_21",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_4_21": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_4_21",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_B_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_B_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_B_4": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_B_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_3_25": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_3_25",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_3_25": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_3_25",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_3_27": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_3_27",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_12": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_4_7": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_4_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_12": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_12": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_B_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_B_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_4_16": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_4_16",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_4_16": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_4_16",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_4_23": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_4_23",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_B_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_B_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.example_7_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.example_7_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_6_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_6_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_6_8": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_6_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_18": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_18": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_6_11": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_6_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_6_11": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_6_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_12": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_28": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_28",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_2_6_nontrivial": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_2_6_nontrivial",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.SupportedOperator": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.SupportedOperator",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_4_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_4_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_4_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_4_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_2_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_2_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_2_5": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_2_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_3_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_3_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_B_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_B_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_9": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Example_6_10": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Example_6_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.example_6_10": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.example_6_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_13": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_24": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_24",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_15": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_15": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_2_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_2_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_2_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_2_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_5_13": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_5_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_5_13": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_5_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_20": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_20",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_20": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_20",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_18": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_3_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_3_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_3_4": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_3_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_2": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Remark_4_31": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Remark_4_31",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_5_14": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_5_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_5_14": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_5_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_5_15": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_5_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_24": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_24",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_3_16": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_3_16",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_3_16": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_3_16",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_17": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_6_9": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_6_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_9": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_21": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_21",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_7": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Theorem_4_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Theorem_4_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_4_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_4_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Corollary_3_20": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Corollary_3_20",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_B_2": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_B_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_29": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_29",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_26": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_26",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_13": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_13": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_13",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_24": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_24",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_6": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.definition_2_1_approximate_bound": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.definition_2_1_approximate_bound",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_15": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_5_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_5_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_A_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_A_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_5_4": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_5_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_27": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_27",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_27_uncountable": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_27_uncountable",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_29": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_29",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_4_12": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_4_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_5_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_5_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_5_2_separable": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_5_2_separable",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_3_14": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_3_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_12": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_12",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_14": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_3_20": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_3_20",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_8": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_10": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_17": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_14": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_14",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_28": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_28",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.remark_4_31": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.remark_4_31",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_3_27": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_3_27",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_6_5": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_6_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_5_7": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_5_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_3_19": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_3_19",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Proposition_4_22": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Proposition_4_22",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_26_asPrinted": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_26_asPrinted",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.Lemma_B_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "PFP.Lemma_B_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.corollary_4_7": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.corollary_4_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_4_18": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_4_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_6_9": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_6_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_6": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.theorem_3_8": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.theorem_3_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_5_7": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_5_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.proposition_4_22": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.proposition_4_22",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_3_7": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_3_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_5_9": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_5_9",
+      "partial": false,
+      "unsafe": false
+    },
+    "PFP.lemma_B_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "PFP.lemma_B_1",
+      "partial": false,
+      "unsafe": false
+    }
+  },
+  "axiomReports": {
+    "PFP.theorem_2_3": {
+      "statementHead": "PFP.Theorem_2_3",
+      "kernelRechecked": true,
+      "dependencyCount": 20571,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_A_1": {
+      "statementHead": "PFP.Theorem_A_1",
+      "kernelRechecked": true,
+      "dependencyCount": 20566,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_2_5": {
+      "statementHead": "PFP.Proposition_2_5",
+      "kernelRechecked": true,
+      "dependencyCount": 13487,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_2": {
+      "statementHead": "PFP.Lemma_3_2",
+      "kernelRechecked": true,
+      "dependencyCount": 14816,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_3": {
+      "statementHead": "PFP.Theorem_3_3",
+      "kernelRechecked": true,
+      "dependencyCount": 19303,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_6": {
+      "statementHead": "PFP.Lemma_3_6",
+      "kernelRechecked": true,
+      "dependencyCount": 16554,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_7": {
+      "statementHead": "PFP.Lemma_3_7",
+      "kernelRechecked": true,
+      "dependencyCount": 17599,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_8": {
+      "statementHead": "PFP.Theorem_3_8",
+      "kernelRechecked": true,
+      "dependencyCount": 19688,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_2_6_nontrivial": {
+      "statementHead": "PFP.Proposition_2_6",
+      "kernelRechecked": true,
+      "dependencyCount": 11926,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_9": {
+      "statementHead": "Exists",
+      "kernelRechecked": true,
+      "dependencyCount": 18208,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_10": {
+      "statementHead": "LE.le",
+      "kernelRechecked": true,
+      "dependencyCount": 18017,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_11": {
+      "statementHead": "PFP.Theorem_3_11",
+      "kernelRechecked": true,
+      "dependencyCount": 21625,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_3": {
+      "statementHead": "ThesisCommon.FactorsIdentity",
+      "kernelRechecked": true,
+      "dependencyCount": 11431,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_12": {
+      "statementHead": "PFP.Lemma_3_12",
+      "kernelRechecked": true,
+      "dependencyCount": 20461,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_13": {
+      "statementHead": "PFP.Lemma_3_13",
+      "kernelRechecked": true,
+      "dependencyCount": 20050,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_14": {
+      "statementHead": "PFP.Lemma_3_14",
+      "kernelRechecked": true,
+      "dependencyCount": 20576,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_15": {
+      "statementHead": "PFP.Theorem_3_15",
+      "kernelRechecked": true,
+      "dependencyCount": 22258,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_17": {
+      "statementHead": "PFP.Lemma_3_17",
+      "kernelRechecked": true,
+      "dependencyCount": 18668,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_18": {
+      "statementHead": "PFP.Lemma_3_18",
+      "kernelRechecked": true,
+      "dependencyCount": 18821,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_3_19": {
+      "statementHead": "PFP.Proposition_3_19",
+      "kernelRechecked": true,
+      "dependencyCount": 19856,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_21": {
+      "statementHead": "PFP.Theorem_3_21",
+      "kernelRechecked": true,
+      "dependencyCount": 22466,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_22": {
+      "statementHead": "PFP.Lemma_3_22",
+      "kernelRechecked": true,
+      "dependencyCount": 20657,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_23": {
+      "statementHead": "PFP.Lemma_3_23",
+      "kernelRechecked": true,
+      "dependencyCount": 21027,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_24": {
+      "statementHead": "PFP.Lemma_3_24",
+      "kernelRechecked": true,
+      "dependencyCount": 20235,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_3_25": {
+      "statementHead": "PFP.Proposition_3_25",
+      "kernelRechecked": true,
+      "dependencyCount": 20784,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_3_26": {
+      "statementHead": "PFP.Theorem_3_26",
+      "kernelRechecked": true,
+      "dependencyCount": 23160,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_3_20": {
+      "statementHead": "PFP.Corollary_3_20",
+      "kernelRechecked": true,
+      "dependencyCount": 20418,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_3_16": {
+      "statementHead": "PFP.Corollary_3_16",
+      "kernelRechecked": true,
+      "dependencyCount": 23632,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_3_27": {
+      "statementHead": "PFP.Corollary_3_27",
+      "kernelRechecked": true,
+      "dependencyCount": 24304,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_3_1": {
+      "statementHead": "PFP.Lemma_3_1",
+      "kernelRechecked": true,
+      "dependencyCount": 21419,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_6_5": {
+      "statementHead": "PFP.Theorem_6_5",
+      "kernelRechecked": true,
+      "dependencyCount": 21711,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_6_8": {
+      "statementHead": "PFP.Lemma_6_8",
+      "kernelRechecked": true,
+      "dependencyCount": 13072,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_6_9": {
+      "statementHead": "PFP.Proposition_6_9",
+      "kernelRechecked": true,
+      "dependencyCount": 27499,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.example_6_10": {
+      "statementHead": "PFP.Example_6_10",
+      "kernelRechecked": true,
+      "dependencyCount": 27659,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_6_11": {
+      "statementHead": "PFP.Remark_6_11",
+      "kernelRechecked": true,
+      "dependencyCount": 27499,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_20": {
+      "statementHead": "PFP.Lemma_4_20",
+      "kernelRechecked": true,
+      "dependencyCount": 5691,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_4_23": {
+      "statementHead": "PFP.Remark_4_23",
+      "kernelRechecked": true,
+      "dependencyCount": 5549,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_12": {
+      "statementHead": "PFP.Lemma_4_12",
+      "kernelRechecked": true,
+      "dependencyCount": 16146,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_13": {
+      "statementHead": "PFP.Lemma_4_13",
+      "kernelRechecked": true,
+      "dependencyCount": 16291,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_19": {
+      "statementHead": "PFP.Lemma_4_19",
+      "kernelRechecked": true,
+      "dependencyCount": 19923,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_4_22": {
+      "statementHead": "PFP.Proposition_4_22",
+      "kernelRechecked": true,
+      "dependencyCount": 6533,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_14": {
+      "statementHead": "PFP.Lemma_4_14",
+      "kernelRechecked": true,
+      "dependencyCount": 17665,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_15": {
+      "statementHead": "PFP.Lemma_4_15",
+      "kernelRechecked": true,
+      "dependencyCount": 18256,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_4_16": {
+      "statementHead": "PFP.Corollary_4_16",
+      "kernelRechecked": true,
+      "dependencyCount": 26751,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_17": {
+      "statementHead": "PFP.Lemma_4_17",
+      "kernelRechecked": true,
+      "dependencyCount": 15982,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_18": {
+      "statementHead": "PFP.Lemma_4_18",
+      "kernelRechecked": true,
+      "dependencyCount": 15984,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_30_uncountable": {
+      "statementHead": "PFP.Lemma_4_30",
+      "kernelRechecked": true,
+      "dependencyCount": 19621,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_B_1": {
+      "statementHead": "PFP.Lemma_B_1",
+      "kernelRechecked": true,
+      "dependencyCount": 23152,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_4_21": {
+      "statementHead": "PFP.Proposition_4_21",
+      "kernelRechecked": true,
+      "dependencyCount": 6014,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_27_uncountable": {
+      "statementHead": "PFP.Lemma_4_27",
+      "kernelRechecked": true,
+      "dependencyCount": 16356,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_29": {
+      "statementHead": "PFP.Lemma_4_29",
+      "kernelRechecked": true,
+      "dependencyCount": 17859,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_28": {
+      "statementHead": "PFP.Lemma_4_28",
+      "kernelRechecked": true,
+      "dependencyCount": 26969,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_B_2": {
+      "statementHead": "PFP.Lemma_B_2",
+      "kernelRechecked": true,
+      "dependencyCount": 29093,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_B_3": {
+      "statementHead": "PFP.Proposition_B_3",
+      "kernelRechecked": true,
+      "dependencyCount": 28903,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_24": {
+      "statementHead": "PFP.Lemma_4_24",
+      "kernelRechecked": true,
+      "dependencyCount": 26691,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_25": {
+      "statementHead": "PFP.Lemma_4_25",
+      "kernelRechecked": true,
+      "dependencyCount": 20686,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_4_26_asPrinted": {
+      "statementHead": "PFP.Lemma_4_26_asPrinted",
+      "kernelRechecked": true,
+      "dependencyCount": 22442,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_4_3": {
+      "statementHead": "PFP.Theorem_4_3",
+      "kernelRechecked": true,
+      "dependencyCount": 27368,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_4_9": {
+      "statementHead": "PFP.Corollary_4_9",
+      "kernelRechecked": true,
+      "dependencyCount": 23731,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_4_1": {
+      "statementHead": "PFP.Theorem_4_1",
+      "kernelRechecked": true,
+      "dependencyCount": 28642,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_12": {
+      "statementHead": "PFP.Lemma_5_12",
+      "kernelRechecked": true,
+      "dependencyCount": 19212,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_6": {
+      "statementHead": "PFP.Lemma_5_6",
+      "kernelRechecked": true,
+      "dependencyCount": 18840,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_8": {
+      "statementHead": "PFP.Lemma_5_8",
+      "kernelRechecked": true,
+      "dependencyCount": 19050,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_9": {
+      "statementHead": "PFP.Lemma_5_9",
+      "kernelRechecked": true,
+      "dependencyCount": 33249,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_5_7": {
+      "statementHead": "PFP.Proposition_5_7",
+      "kernelRechecked": true,
+      "dependencyCount": 34675,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_11": {
+      "statementHead": "PFP.Lemma_5_11",
+      "kernelRechecked": true,
+      "dependencyCount": 34071,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_5_13": {
+      "statementHead": "PFP.Proposition_5_13",
+      "kernelRechecked": true,
+      "dependencyCount": 34776,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_5_14": {
+      "statementHead": "PFP.Theorem_5_14",
+      "kernelRechecked": true,
+      "dependencyCount": 35553,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_5_15": {
+      "statementHead": "PFP.Theorem_5_15",
+      "kernelRechecked": true,
+      "dependencyCount": 36109,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_B_4": {
+      "statementHead": "PFP.Theorem_B_4",
+      "kernelRechecked": true,
+      "dependencyCount": 33480,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_4_6": {
+      "statementHead": "PFP.Corollary_4_6",
+      "kernelRechecked": true,
+      "dependencyCount": 27885,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.lemma_5_10": {
+      "statementHead": "PFP.Lemma_5_10",
+      "kernelRechecked": true,
+      "dependencyCount": 25857,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.proposition_5_1": {
+      "statementHead": "PFP.Proposition_5_1",
+      "kernelRechecked": true,
+      "dependencyCount": 26485,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_4_5": {
+      "statementHead": "PFP.Remark_4_5",
+      "kernelRechecked": true,
+      "dependencyCount": 22835,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_4_31": {
+      "statementHead": "PFP.Remark_4_31",
+      "kernelRechecked": true,
+      "dependencyCount": 22837,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_3_4": {
+      "statementHead": "PFP.Remark_3_4",
+      "kernelRechecked": true,
+      "dependencyCount": 19251,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_4_7": {
+      "statementHead": "PFP.Corollary_4_7",
+      "kernelRechecked": true,
+      "dependencyCount": 44520,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.corollary_4_10": {
+      "statementHead": "And",
+      "kernelRechecked": true,
+      "dependencyCount": 44102,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.Remark_5_2_separable": {
+      "statementHead": null,
+      "kernelRechecked": true,
+      "dependencyCount": 13399,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.remark_5_2_separable": {
+      "statementHead": "PFP.Remark_5_2_separable",
+      "kernelRechecked": true,
+      "dependencyCount": 29027,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.example_7_1": {
+      "statementHead": "PFP.Example_7_1",
+      "kernelRechecked": true,
+      "dependencyCount": 49277,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.definition_2_1_approximate_bound": {
+      "statementHead": "Iff",
+      "kernelRechecked": true,
+      "dependencyCount": 13843,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "PFP.theorem_5_4": {
+      "statementHead": "PFP.Theorem_5_4_asPrinted",
+      "kernelRechecked": true,
+      "dependencyCount": 28590,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

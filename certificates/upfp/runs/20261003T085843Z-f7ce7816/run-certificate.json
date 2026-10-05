@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "startedAtUtc": "2026-10-03T09:06:58.510383+00:00",
+  "completedAtUtc": "2026-10-03T09:56:24.248802+00:00",
+  "elapsedSeconds": 2965.75,
+  "inputHashesBeforeAndAfter": "passed",
+  "filesManifestSha256": "cb7c960a25548632ccbba481848244287019ccb5cb19109cdcf2713ef07122d6",
+  "modulesManifestSha256": "288a24f70587a997f3fb7a7c0e883e04c6951f5038ccda735c4f20f76785d261",
+  "modules": 6083,
+  "declarationsRechecked": 420034,
+  "declarationsSkipped": 0,
+  "mainStatementsChecked": 8,
+  "negativeControl": "passed: in-memory corrupted imported theorem rejected",
+  "runtimeVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "methods": {
+    "kernel_inductive_declaration": 4265,
+    "kernel_definition_body": 133901,
+    "kernel_theorem_proof": 263874,
+    "kernel_axiom_type": 14,
+    "kernel_quotient_primitive": 4,
+    "kernel_opaque_body": 3250,
+    "kernel_mutual_definition_body": 4042,
+    "kernel_generated_constructor_equality": 6302,
+    "kernel_generated_recursor_equality": 4382
+  },
+  "outputFiles": [
+    {
+      "path": "command.json",
+      "bytes": 1459,
+      "sha256": "cf61e5fa97d4ef8d9411762ecd353e5a86fdf644a7a5b0ae0e3046b795f6f32e"
+    },
+    {
+      "path": "declarations.jsonl",
+      "bytes": 61160080,
+      "sha256": "123e009a3969f652ba641deef0d7018a51d567e7f1b3550db3bfd4746ff57934"
+    },
+    {
+      "path": "final-theorem-axioms.json",
+      "bytes": 1142,
+      "sha256": "e7a0829a4d48d86ef897b3a35c2863c3f9a0af99d807ae609f5b3a1ac97ca426"
+    },
+    {
+      "path": "input-manifest.json",
+      "bytes": 237476,
+      "sha256": "bd371aeeb6996c9f49dd9533971f143efb0828c153bf7f86ae8c89df99f1a084"
+    },
+    {
+      "path": "kernel-replay.log",
+      "bytes": 3891,
+      "sha256": "4045623e19ce6b22f96daf6313b9991b5bf2768fb153cab32f62b17ba1e1a6b4"
+    },
+    {
+      "path": "main-results.json",
+      "bytes": 10986121,
+      "sha256": "be093071a7d9111789f9490525986c99327988745e02f8044cc98c9d5f3957ce"
+    },
+    {
+      "path": "negative-control.json",
+      "bytes": 432,
+      "sha256": "9bab1fec05cd529ad8b401c42369bd5c1451fe6ee402f3a90f27e326dfdd5f16"
+    },
+    {
+      "path": "REPORT.txt",
+      "bytes": 2303,
+      "sha256": "22dbe3b3218e901ad5555c2b87b209d12bf37afabb635aee27cb17386b250b73"
+    },
+    {
+      "path": "result.json",
+      "bytes": 1187,
+      "sha256": "cd0ef649b02b30bde023a78d213086c9f59fdd9092864d5c0145480377c95b1b"
+    },
+    {
+      "path": "runtime-definition-groups.json",
+      "bytes": 259981,
+      "sha256": "851f90dbdd4d68c75ea4ae5ea335831b5ae92e710c5478813adced3835274b63"
+    }
+  ]
+}

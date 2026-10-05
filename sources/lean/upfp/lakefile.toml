@@ -1,0 +1,14 @@
+name = "upfp_preservation"
+version = "0.1.0"
+defaultTargets = ["UPFP"]
+
+[[require]]
+name = "thesis_common"
+path = "../common"
+
+[[require]]
+name = "lpck_primariness"
+path = "../lpck"
+
+[[lean_lib]]
+name = "UPFP"

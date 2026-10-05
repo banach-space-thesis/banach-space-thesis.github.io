@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>An Interactive Thesis in Banach Space Theory</title>
+  <link rel="stylesheet" href="./reader.css">
+  <link rel="stylesheet" href="./reader-edition.css">
+  <script>
+    window.mathReady = new Promise(resolve => window.mathReadyResolve = resolve);
+    window.MathJax = {
+      tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],tags:'none',packages:{'[+]':['reader-terms']},
+        macros:{norm:['\\left\\lVert #1\\right\\rVert',1],vertiii:['\\left\\vert\\kern-0.25ex\\left\\vert\\kern-0.25ex\\left\\vert #1\\right\\vert\\kern-0.25ex\\right\\vert\\kern-0.25ex\\right\\vert',1],
+          Z:'\\mathbb{Z}',R:'\\mathbb{R}',C:'\\mathbb{C}',Q:'\\mathbb{Q}',T:'\\mathbb{T}',D:'\\mathbb{D}',N:'\\mathbb{N}',
+          JL:'\\operatorname{JL}',fs:'\\operatorname{fin}',stone:'\\operatorname{ult}',Boolean:'\\operatorname{Boo}',Booleantilde:'\\widetilde{\\operatorname{Boo}}',height:'\\operatorname{ht}',incomp:'\\operatorname{Inc}',smll:'\\operatorname{small}',esssup:'\\operatorname*{ess\\,sup}',normT:['\\left\\lVert #1\\right\\rVert',1],
+          dist:'\\operatorname{dist}',spn:'\\operatorname{span}',sgn:'\\operatorname{sgn}',supp:'\\operatorname{supp}',identity:'\\operatorname{Id}',real:'\\operatorname{Re}',iman:'\\operatorname{Im}',rk:'\\operatorname{rk}',proj:'\\operatorname{Proj}',X:'\\mathcal{X}',Y:'\\mathcal{Y}',
+          finset:['\\left[#1\\right]^{<\\omega}',1],inset:['\\left[#1\\right]^{\\leq\\omega}',1],infset:['\\left[#1\\right]^{\\omega}',1],spnn:['\\left[#1\\right]',1],
+          id:['\\mathbb{1}_{#1}',1],Tsupp:['\\supp\\left(T^*#1\\right)',1],nonvan:['\\mathbf{Z}^c\\left(#1\\right)',1],absv:['\\lvert#1\\rvert',1],realpart:['\\real\\left(#1\\right)',1],mathds:['\\mathbb{#1}',1],CH:'\\mathsf{CH}',ZFC:'\\mathsf{ZFC}'}},
+      svg:{fontCache:'global'},options:{enableMenu:false},startup:{typeset:false,ready(){
+        const {CommandMap}=MathJax._.input.tex.SymbolMap;
+        const {Configuration}=MathJax._.input.tex.Configuration;
+        new CommandMap('reader-terms',{readerterm:'ReaderTerm'},{ReaderTerm(parser,name){
+          const reference=parser.GetArgument(name);
+          const content=parser.ParseArg(name);
+          parser.Push(parser.create('node','mrow',[content],{class:'reading-formula-token formula-ref-'+reference}));
+        }});
+        Configuration.create('reader-terms',{handler:{macro:['reader-terms']}});
+        MathJax.startup.defaultReady();
+      }}
+    };
+  </script>
+  <script defer src="./vendor/mathjax-tex-svg.js" onload="MathJax.startup.promise.then(mathReadyResolve)" onerror="document.getElementById('loading').textContent='The local mathematics renderer could not load.'"></script>
+  <script type="module" src="./reader.js"></script>
+</head>
+<body>
+  <header class="reader-bar">
+    <div class="edition-mark"><button id="contents-button" aria-expanded="false" aria-controls="contents" aria-label="Table of contents">Contents</button><label class="paper-choice"><span class="sr-only">Choose paper</span><select id="paper-select" aria-label="Choose paper">
+      <option value="jlms">Factorizations and minimality of the Calkin Algebra norm for C(K)-spaces</option>
+      <option value="pems">Quantifying (non-)weak compactness of operators on AL- and C(K)-spaces</option>
+      <option value="sigma">The class of Banach lattices is not primary</option>
+      <option value="pfp">Primariness and the Primary Factorisation Property</option>
+      <option value="upfp">Preservation of primariness under ℓ₁-, c₀-, and ℓ∞-sums of Banach spaces</option>
+      <option value="lpck">Primariness of the spaces ℓₚ(C(K)) for 1 ≤ p ≤ ∞</option>
+      <option value="posets">C(K)-spaces with few operators relative to posets</option>
+      <option value="jfa">Operators on injective tensor products of separable Banach spaces and spaces with few operators</option>
+    </select></label><a href="#top" class="journal-mark" aria-label="Beginning of paper">Paper <span>Author manuscript</span></a></div>
+    <nav class="mode-switch" aria-label="Reading mode"><button id="paper-mode" aria-pressed="true">Paper</button><button id="split-mode" aria-pressed="false">Paper + Lean</button><button id="lean-mode" aria-pressed="false">Lean &amp; certificates</button></nav>
+    <div class="reading-tools"><button id="fold-proofs" aria-pressed="false">Fold proofs</button><button id="fold-sections" aria-pressed="false">Fold sections</button><button id="about-button" aria-label="About this edition">⋯</button></div>
+  </header>
+  <nav id="contents" aria-label="Contents" hidden><div class="contents-head"><span>CONTENTS</span><button id="close-contents" aria-label="Close table of contents">×</button></div><div id="toc-list"></div><div id="lean-toc-list" hidden></div><div class="contents-foot"><button data-target="top">Title &amp; abstract</button><button data-target="references">References</button></div></nav>
+  <main id="reading-desk">
+    <section id="paper-column" aria-label="Paper">
+      <div class="running-head"><button id="current-section" aria-label="Current section; open contents">The paper</button><div class="type-controls" role="group" aria-label="Text size"><button id="text-smaller" aria-label="Smaller text" title="Smaller text">A−</button><button id="text-larger" aria-label="Larger text" title="Larger text">A+</button></div></div>
+    <div id="paper-scroll" tabindex="0" aria-label="Mathematical paper">
+      <article id="paper" class="mathematical-paper">
+        <header id="top" class="paper-title-block"><p class="publication">AUTHOR MANUSCRIPT · INTERACTIVE EDITION</p><h1 id="article-title">Factorizations and minimality of the Calkin Algebra norm for <i>C(K)</i>-spaces</h1><p class="author">Antonio Acuaviva</p><p class="affiliation">Lancaster University</p><div class="title-rule"></div><section class="abstract"><h2>Abstract.</h2><div id="abstract-text"></div></section></header>
+        <p id="loading" role="status">Preparing the mathematical text…</p>
+        <div id="article-body"></div>
+        <footer class="article-colophon"><span>Author manuscript · interactive edition</span><button id="edition-details">Source &amp; edition details</button></footer>
+      </article>
+    </div>
+    </section>
+    <div id="split-divider" role="separator" aria-label="Resize paper and Lean" aria-orientation="vertical" aria-valuenow="55" aria-valuemin="35" aria-valuemax="70" tabindex="0" hidden></div>
+    <aside id="lean-side" aria-label="Reading and Lean companion" hidden></aside>
+  </main>
+  <template id="lean-template">
+    <section class="lean-companion">
+      <header class="companion-head"><span class="lean-wordmark">Lean <span>Formalisation</span></span><div><button class="follow-paper" aria-pressed="true" title="Pause following to keep this Lean passage here">Following paper</button><button class="source-search-button" aria-label="Browse Lean source">Browse</button><button class="close-lean" aria-label="Close Lean view">×</button></div></header>
+      <nav class="lean-result-nav" aria-label="Choose a result" hidden><label for="lean-result-select">Result</label><select id="lean-result-select"></select><button class="previous-result" aria-label="Previous result" title="Previous result">←</button><button class="next-result" aria-label="Next result" title="Next result">→</button><button class="show-in-paper">Show in paper</button></nav>
+      <div class="companion-context"><h2 class="selected-name" id="lean-passage-title">Choose a result in the paper</h2><p class="correspondence-kind" hidden>Related formalisation</p><details class="correspondence"><summary>Correspondence with the paper</summary><p class="selected-note">Click a theorem, lemma or definition to bring its formalisation here.</p><div class="paper-statement-preview" hidden></div></details></div>
+      <div class="lean-tabs" role="tablist" aria-label="Formalisation and evidence"><button role="tab" aria-selected="true" data-tab="statement">Statement</button><button role="tab" aria-selected="false" data-tab="proof">Proof</button><button role="tab" aria-selected="false" data-tab="verification">Verification</button></div>
+      <div class="lean-tab-body"><section class="formal-correspondence" aria-label="Relation to the paper" hidden><h3>What is formalised here</h3><p></p></section><div class="passage-note" role="region" aria-labelledby="lean-passage-title" data-panel="note" hidden></div><div class="lean-tab-panel" role="tabpanel" data-panel="statement"></div><div class="lean-tab-panel" role="tabpanel" data-panel="proof" hidden></div><div class="lean-tab-panel" role="tabpanel" data-panel="verification" hidden></div></div>
+      <footer class="companion-footer"><span>JLMS · Lean library</span><button class="refresh-lean">Refresh Lean</button></footer>
+    </section>
+  </template>
+  <dialog id="citation-dialog" aria-label="Reference"><div class="dialog-top"><span>REFERENCE</span><button data-close-dialog aria-label="Close reference">×</button></div><div id="citation-content"></div><button id="citation-jump">Go to bibliography</button></dialog>
+  <dialog id="source-dialog" aria-label="Lean source browser"><div class="dialog-top"><h2>JLMS Lean library</h2><button data-close-dialog aria-label="Close source browser">×</button></div><label for="source-search">Declaration or module</label><input type="search" id="source-search" placeholder="essentialNorm, Rudin, factorization…"><div id="source-results"></div></dialog>
+  <dialog id="about-dialog" aria-label="About this interactive edition"><div class="dialog-top"><h2>The paper, with a formal companion</h2><button data-close-dialog aria-label="Close edition details">×</button></div><p>This edition typesets the author manuscript provided on 1 October 2026 as a continuous mathematical article. Its source uses the amsart class. Statements, proofs, sections, references and the original figure come from that archive, with the correction recorded below; publisher typesetting is not used.</p><p>Fold individual proofs or whole sections. Click a numbered result to open its Lean companion on the right, with the paper alongside. Close the companion or choose <strong>Paper</strong> to return to the full-width article. Hover over dotted terms, notation or numbered references for a reminder. Click a term or reference to keep its definition or statement on the right. Use Go to source and Return to passage to visit its location without losing your place.</p><p>Where <strong>More detail</strong> is available, choose <strong>The idea</strong>, <strong>The notation</strong>, or <strong>Step by step</strong>. Fold the explanation steps individually and switch back to <strong>Paper wording</strong> at any time. These authored notes are additions to this edition. For another question, use <strong>Ask a further question</strong> to copy the passage and your question into a chat.</p><h3>Formalisation and verification</h3><p>Choose <strong>Lean &amp; certificates</strong> to read the formalisation on its own. Use the result selector, the arrows, or <strong>Results</strong> to choose a passage. <strong>Show in paper</strong> opens the same result beside its formalisation.</p><p>A proposition definition is labelled as a statement, not a completed proof. Supporting results retain their hypotheses. Verification records have a dedicated tab and are checked against the source hashes they record; this reader does not run Lean.</p><p id="edition-source"></p><p><a data-source-author href="./downloads/jlms-author.zip" download="Factorizations_and_minimality_corrected_source.zip">Download the corrected LaTeX source ZIP</a> · <a data-source-original href="./downloads/jlms-original.zip" download="v3Text_File_Article_for_JLMS___Antonio_Acuaviva.zip">Original archive</a></p><p>No full-paper PDF accompanies this archive. A PDF in the author’s format can be linked when available.</p><details><summary>Correction in Section 3</summary><p>The inequality in the definition of vanishing at infinity has been corrected from ≤ to ≥: the sets where |f(k)| ≥ ε must be compact for every ε > 0. This is the correction adopted for the thesis.</p></details></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
+

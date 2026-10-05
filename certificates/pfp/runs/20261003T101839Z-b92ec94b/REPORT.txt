@@ -1,0 +1,33 @@
+PASS: fresh empty-environment Lean kernel validation and completed axiom audit.
+
+Lean: Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+Imported modules: 6747
+Declarations checked: 428781; skipped:0; kernel calls:417513
+Unsafe runtime declarations included:628
+Partial runtime declarations included:3479
+Original numbered results covered:77
+Proof/construction axiom audits:177; original statement commands:279
+Allowed mathematical axioms: propext, Classical.choice, Quot.sound.
+Both negative controls passed. Frozen SHA256 hashes matched before replay,
+before the reporting continuation and after the continuation.
+
+The original command exited1 from memory exhaustion during the final audit,
+after replaying all428,781 declarations, comparing every type/universe/body
+and generated metadata, and rejecting the corrupted Theorem5.4 proof.
+Its complete log and exit code are preserved. It is not reported as exit0.
+The final compact audit ran separately (exit0) on the identical frozen inputs.
+The raw expression printout was omitted; exact structural comparisons remain.
+completion-evidence.json records the program-order completion marker and
+the name/kind inventory correspondence. run-certificate.json hashes outputs.
+
+All imported library declarations were replayed from mkEmptyEnvironment0
+with Kernel.Environment.addDeclCore0. The compiled libraries were inputs to
+that check. Library/runtime axioms outside the paper proof closures are listed
+in input-manifest.json. This is a verification record relative to Lean's
+kernel and foundations, not an independent signed attestation.
+The existing source corrections and open Definition2.1 assertion retain the
+scope documented in README.txt and SOURCE_ISSUES.txt.
+
+Complete inputs, library sources, runtime and manifests: C:\Users\Antonio Acuaviva\Documents\ChatGPT\PhD Thesis\formalization\pfp\verification\fresh-kernel\20261003T101839Z-b92ec94b
+Repeat the whole replay with bounded reporting on Windows, Python3.11+:
+  python scripts/complete-kernel-record.py rerun .

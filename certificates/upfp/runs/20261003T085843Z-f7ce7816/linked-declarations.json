@@ -1,0 +1,372 @@
+{
+  "coverage": {
+    "ThesisCommon.FactorsIdentityWith": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.FactorsIdentityWith",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.HasUPFP": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.HasUPFP",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.Theorem_1_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "LPCK.Theorem_1_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_4_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_4_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_3_4_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_3_4_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.interval_hasUPFP": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "ThesisCommon.interval_hasUPFP",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_3_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_3_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_3_8_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_3_8_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_4_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_4_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_3_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_3_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.Corollary_1_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "UPFP.Corollary_1_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_5_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_5_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_4_9_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_4_9_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.theorem_1_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "LPCK.theorem_1_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_4_7_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_4_7_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.Theorem_1_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "LPCK.Theorem_1_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_4_8_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_4_8_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.Corollary_1_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "UPFP.Corollary_1_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.Corollary_1_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "LPCK.Corollary_1_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_4_6_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_4_6_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_5_6": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_5_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_4_7_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_4_7_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.Theorem_1_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "UPFP.Theorem_1_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.theorem_1_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.theorem_1_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_4_6_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_4_6_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.corollary_1_5_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.corollary_1_5_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_5_ellOne": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_5_ellOne",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_4_9_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_4_9_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_3_8_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_3_8_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.corollary_6_2_L1_hasUPFP": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.corollary_6_2_L1_hasUPFP",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.corollary_1_3_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "LPCK.corollary_1_3_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.Theorem_1_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "UPFP.Theorem_1_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.theorem_1_6_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.theorem_1_6_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_3_4_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_3_4_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.corollary_1_3_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.corollary_1_3_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.Theorem_1_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "UPFP.Theorem_1_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_3_7_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_3_7_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.proposition_5_5_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.proposition_5_5_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_3_7_cZero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_3_7_cZero",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.theorem_1_2_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.theorem_1_2_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "UPFP.lemma_4_8_infinity": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "UPFP.lemma_4_8_infinity",
+      "partial": false,
+      "unsafe": false
+    },
+    "LPCK.theorem_1_2_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "LPCK.theorem_1_2_proof",
+      "partial": false,
+      "unsafe": false
+    }
+  },
+  "axiomReports": {
+    "LPCK.theorem_1_1_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 42812,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "LPCK.theorem_1_2_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 38566,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "LPCK.corollary_1_3_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 43457,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "UPFP.theorem_1_1_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 23728,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "UPFP.theorem_1_2_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 23444,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "UPFP.corollary_1_3_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 42558,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "UPFP.corollary_1_5_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 42815,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "UPFP.theorem_1_6_proof": {
+      "kernelRechecked": true,
+      "dependencyCount": 44084,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

@@ -1,0 +1,483 @@
+warning: manifest out of date: packages directory changed; use `lake update` to rebuild the manifest (warning: this will update ALL workspace dependencies)
+✔ [3121/3355] Built JLMS.ClopenFunctionExtension (17s)
+✔ [3122/3355] Built JLMS.Definitions (18s)
+✔ [3123/3355] Built JLMS.CohenSequenceSpace (18s)
+✔ [3124/3355] Built JLMS.CZeroSum (19s)
+✔ [3125/3355] Built JLMS.OrdinalOmegaBlocks (19s)
+✔ [3126/3355] Built JLMS.OrthogonalCopies (19s)
+✔ [3127/3355] Built JLMS.FiniteMass (20s)
+⚠ [3128/3355] Built JLMS.MatrixAutomaticContinuity (36s)
+warning: JLMS/MatrixAutomaticContinuity.lean:35:0: automatically included section variable(s) unused in theorem `JLMS.continuous_matrix_hom_of_corners`:
+  [IsScalarTower 𝕜 B B]
+  [SMulCommClass 𝕜 B B]
+  [IsScalarTower 𝕜 A A]
+  [SMulCommClass 𝕜 A A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsScalarTower 𝕜 B B] [SMulCommClass 𝕜 B B] [IsScalarTower 𝕜 A A] [SMulCommClass 𝕜 A A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3129/3355] Built JLMS.OrdinalScattered (37s)
+✔ [3130/3355] Built JLMS.OrdinalTailConstancy (37s)
+✔ [3131/3355] Built JLMS.CompetingNorms (43s)
+✔ [3132/3355] Built JLMS.PairedMatrix (43s)
+✔ [3133/3355] Built JLMS.DiscontinuousLinearWitness (43s)
+✔ [3134/3355] Built JLMS.MainStatements (45s)
+⚠ [3135/3355] Built JLMS.CohenFactorization (46s)
+warning: JLMS/CohenFactorization.lean:195:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3136/3355] Built JLMS.MatrixSelection (48s)
+✔ [3137/3355] Built JLMS.CodimensionOneContinuity (49s)
+✔ [3138/3355] Built JLMS.EssentialNorm (49s)
+✔ [3139/3355] Built JLMS.ContinuityIdeal (49s)
+✔ [3140/3355] Built JLMS.CZeroSumEquiv (52s)
+✔ [3141/3355] Built JLMS.CZeroSumFinite (52s)
+⚠ [3142/3355] Built JLMS.CZeroSumProduct (52s)
+warning: JLMS/CZeroSumProduct.lean:20:52: unused variable `i`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JLMS/CZeroSumProduct.lean:24:52: unused variable `i`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3143/3355] Built JLMS.CZeroSumSynthesis (52s)
+⚠ [3144/3355] Built JLMS.CZeroSumOperators (53s)
+warning: JLMS/CZeroSumOperators.lean:26:49: unused variable `hC`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3145/3355] Built JLMS.OrdinalConstantTailContinuity (31s)
+✔ [3146/3355] Built JLMS.OrdinalInteriorTailConstancy (32s)
+✔ [3147/3355] Built JLMS.OrdinalSpaceCofinalSequence (32s)
+✔ [3148/3355] Built JLMS.OrdinalCountableTails (32s)
+✔ [3149/3355] Built JLMS.OrdinalSpaceMultiples (40s)
+✔ [3150/3355] Built JLMS.OrdinalSpaceSplit (40s)
+⚠ [3151/3355] Built JLMS.FinitePowerAutomaticContinuity (43s)
+warning: JLMS/FinitePowerAutomaticContinuity.lean:25:8: automatically included section variable(s) unused in theorem `JLMS.operatorFiniteCorner_apply`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/FinitePowerAutomaticContinuity.lean:43:0: automatically included section variable(s) unused in theorem `JLMS.operatorFiniteCorner_eq_diagonal_mul`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3152/3355] Built JLMS.OrthogonalContinuityExceptions (42s)
+✔ [3153/3355] Built JLMS.CodimensionTwoContinuity (36s)
+✔ [3154/3355] Built JLMS.IdentityEssentialNorm (38s)
+✔ [3155/3355] Built JLMS.ContinuityIdealGeneration (35s)
+✔ [3156/3355] Built JLMS.OrthogonalAutomaticContinuity (44s)
+⚠ [3157/3355] Built JLMS.AlgebraNormCompletion (48s)
+warning: JLMS/AlgebraNormCompletion.lean:53:0: automatically included section variable(s) unused in theorem `JLMS.algebraNorm_bound_of_hom_automaticContinuity`:
+  [IsScalarTower 𝕜 B B]
+  [SMulCommClass 𝕜 B B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [IsScalarTower 𝕜 B B] [SMulCommClass 𝕜 B B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3158/3355] Built JLMS.FiniteRank (38s)
+✔ [3159/3355] Built JLMS.NullFactorizationContinuity (39s)
+✔ [3160/3355] Built JLMS.NullSequenceContinuity (39s)
+✔ [3161/3355] Built JLMS.EssentialNormCoordinates (51s)
+⚠ [3162/3355] Built JLMS.CalkinRing (51s)
+warning: JLMS/CalkinRing.lean:35:81: This simp argument is unused:
+  ContinuousLinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.add_apply, Function.comp_apply, ContinuousLinearMap.mul_apply, ̵C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵
+        ContinuousLinearMap.sub_apply, ContinuousLinearMap.comp_apply, map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JLMS/CalkinRing.lean:36:37: This simp argument is unused:
+  ContinuousLinearMap.comp_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.add_apply, Function.comp_apply, ContinuousLinearMap.mul_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲ContinuousLinearMap.add_apply, ContinuousLinearMap.sub_apply, C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵c̵o̵m̵p̵_̵a̵p̵p̵l̵y̵,̵ ̵map_sub]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3163/3355] Built JLMS.Adjoint (47s)
+✔ [3164/3355] Built JLMS.CompleteUniqueness (57s)
+✔ [3165/3355] Built JLMS.OrdinalSpaceSumAbsorption (41s)
+✔ [3166/3355] Built JLMS.CZeroSumSigma (47s)
+✔ [3167/3355] Built JLMS.OrthogonalProjectionsIdeal (37s)
+✔ [3168/3355] Built JLMS.QuantitativeNeumann (37s)
+✔ [3169/3355] Built JLMS.CZeroSumFubini (55s)
+✔ [3170/3355] Built JLMS.JohnsonSquare (38s)
+✔ [3171/3355] Built JLMS.FiniteAutomaticContinuity (36s)
+✔ [3172/3355] Built JLMS.CohenContinuity (40s)
+✔ [3173/3355] Built JLMS.CZeroTools (48s)
+✔ [3174/3355] Built JLMS.Bonsall (48s)
+✔ [3175/3355] Built JLMS.FiniteCases (48s)
+✔ [3176/3355] Built JLMS.OperatorNormComparison (48s)
+✔ [3177/3355] Built JLMS.OrdinalSpaceEndpointZero (72s)
+✔ [3178/3355] Built JLMS.OperatorConjugation (49s)
+✔ [3179/3355] Built JLMS.BoundedBelowDual (50s)
+✔ [3180/3355] Built JLMS.OrdinalSpaceSumAbsorptionBounded (43s)
+✔ [3181/3355] Built JLMS.CZeroSumCoordinateAbsorption (43s)
+✔ [3182/3355] Built JLMS.L1Restriction (62s)
+✔ [3183/3355] Built JLMS.ComplementedCopyIdeal (40s)
+✔ [3184/3355] Built JLMS.OrdinalSpaceFinite (49s)
+✔ [3185/3355] Built JLMS.CZeroSumReplicationFromBlocks (77s)
+✔ [3186/3355] Built JLMS.CZeroPositive (56s)
+✔ [3187/3355] Built JLMS.CZeroScalarParts (58s)
+✔ [3188/3355] Built JLMS.CZeroIdentity (60s)
+✔ [3189/3355] Built JLMS.CZeroMultiplier (62s)
+✔ [3190/3355] Built JLMS.OperatorNormUniqueness (62s)
+✔ [3191/3355] Built JLMS.WeakStarSequenceOperator (63s)
+✔ [3192/3355] Built JLMS.Minimality (63s)
+✔ [3193/3355] Built JLMS.CZeroCoordinateExtensions (63s)
+✔ [3194/3355] Built JLMS.CompactCZeroEquiv (63s)
+✔ [3195/3355] Built JLMS.NeighborhoodProjection (60s)
+✔ [3196/3355] Built JLMS.OrdinalHeadProjection (64s)
+✔ [3197/3355] Built JLMS.CalkinConjugation (68s)
+✔ [3198/3355] Built JLMS.OrdinalSpaceFinitePower (70s)
+✔ [3199/3355] Built JLMS.OrdinalSupportBounds (47s)
+✔ [3200/3355] Built JLMS.OrdinalSpaceEndpointZeroBounded (83s)
+✔ [3201/3355] Built JLMS.OrdinalSpaceOmega (83s)
+⚠ [3202/3355] Built JLMS.MatrixCompactness (38s)
+warning: JLMS/MatrixCompactness.lean:22:69: unused variable `hM`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3203/3355] Built JLMS.EllOneSynthesis (45s)
+warning: JLMS/EllOneSynthesis.lean:27:0: automatically included section variable(s) unused in theorem `JLMS.norm_ellOne_synthesis_le`:
+  [CompleteSpace E]
+  hC
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [CompleteSpace E] hC in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3204/3355] Built JLMS.CZeroSumReplication (127s)
+✔ [3205/3355] Built JLMS.CZeroSumAdjacentAbsorption (127s)
+✔ [3206/3355] Built JLMS.LargeAtomicPieces (42s)
+✔ [3207/3355] Built JLMS.ScatteredTopology (40s)
+✔ [3208/3355] Built JLMS.PhaseFunctions (42s)
+✔ [3209/3355] Built JLMS.OperatorProjectionIdeal (45s)
+✔ [3210/3355] Built JLMS.PositiveDecomposition (45s)
+✔ [3211/3355] Built JLMS.EllOneIndicatorDual (51s)
+✔ [3212/3355] Built JLMS.AtomicDual (96s)
+✔ [3213/3355] Built JLMS.Simultaneous (52s)
+⚠ [3214/3355] Built JLMS.OrdinalSpaceBlocksTopology (44s)
+warning: JLMS/OrdinalSpaceBlocksTopology.lean:84:51: unused variable `hL`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3215/3355] Built JLMS.OrdinalSpaceReduction (44s)
+✔ [3216/3355] Built JLMS.DisjointSynthesis (57s)
+⚠ [3217/3355] Built JLMS.ApproximateDiagonalFactorization (57s)
+warning: JLMS/ApproximateDiagonalFactorization.lean:32:4: Try `simp at he` instead of `simpa using he`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: JLMS/ApproximateDiagonalFactorization.lean:24:20: unused variable `hV`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3218/3355] Built JLMS.OrdinalClosedIntersections (45s)
+✔ [3219/3355] Built JLMS.Factorization (66s)
+✔ [3220/3355] Built JLMS.OrdinalSpaceAbsorption (62s)
+✔ [3221/3355] Built JLMS.EllOneFiniteLower (44s)
+✔ [3222/3355] Built JLMS.OrdinalSpaceEndpointAbsorption (60s)
+✔ [3223/3355] Built JLMS.MinimalCompactImage (42s)
+⚠ [3224/3355] Built JLMS.ScatteredSequences (42s)
+warning: JLMS/ScatteredSequences.lean:63:6: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3225/3355] Built JLMS.ScatteredMeasures (45s)
+warning: JLMS/ScatteredMeasures.lean:46:0: automatically included section variable(s) unused in theorem `JLMS.measure_compl_support_eq_zero_of_regular`:
+  [BorelSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [BorelSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3226/3355] Built JLMS.EssentialWeight (46s)
+✔ [3227/3355] Built JLMS.EllOneDualNonseparable (52s)
+✔ [3228/3355] Built JLMS.OrdinalSpacePowerBlocks (44s)
+✔ [3229/3355] Built JLMS.OrdinalSpaceSingularSequence (42s)
+✔ [3230/3355] Built JLMS.OrdinalSpaceBlocksRestriction (45s)
+✔ [3231/3355] Built JLMS.AtomicNormingFunction (61s)
+✔ [3232/3355] Built JLMS.AtomicOperatorMatrix (66s)
+✔ [3233/3355] Built JLMS.OrdinalSpaceInitialFiniteReduction (41s)
+✔ [3234/3355] Built JLMS.OrdinalProjectionCopies (72s)
+✔ [3235/3355] Built JLMS.OrdinalSpacePowerReduction (44s)
+✔ [3236/3355] Built JLMS.ScatteredImages (42s)
+✔ [3237/3355] Built JLMS.CZeroBlocks (73s)
+✔ [3238/3355] Built JLMS.CZeroSumOrdinalReplication (86s)
+✔ [3239/3355] Built JLMS.PointNeighborhoodSelection (43s)
+✔ [3240/3355] Built JLMS.SignTreeLower (48s)
+⚠ [3241/3355] Built JLMS.AtomicSynthesis (84s)
+warning: JLMS/AtomicSynthesis.lean:39:33: `tsum_le_tsum` has been deprecated: Use `Summable.tsum_le_tsum` instead
+✔ [3242/3355] Built JLMS.MeasureCoordinates (43s)
+✔ [3243/3355] Built JLMS.PositiveRiesz (46s)
+✔ [3244/3355] Built JLMS.PointDifferenceEvaluation (50s)
+✔ [3245/3355] Built JLMS.ProofTargets (68s)
+✔ [3246/3355] Built JLMS.Rescaling (72s)
+✔ [3247/3355] Built JLMS.DiagonalSelection (47s)
+✔ [3248/3355] Built JLMS.OrdinalProjectionCopiesRange (39s)
+✔ [3249/3355] Built JLMS.PairedDisjointFunctions (31s)
+✔ [3250/3355] Built JLMS.OrdinalSpaceFiniteSquare (42s)
+✔ [3251/3355] Built JLMS.SignTreeEstimates (32s)
+✔ [3252/3355] Built JLMS.AtomicApplications (63s)
+✔ [3253/3355] Built JLMS.CZeroDensity (28s)
+✔ [3254/3355] Built JLMS.SeparatedAtoms (31s)
+⚠ [3255/3355] Built JLMS.CZeroNormingSequence (37s)
+warning: JLMS/CZeroNormingSequence.lean:29:8: automatically included section variable(s) unused in theorem `JLMS.onePointEvaluation_apply`:
+  [LocallyCompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/CZeroNormingSequence.lean:35:0: automatically included section variable(s) unused in theorem `JLMS.norm_onePointEvaluation_le`:
+  [LocallyCompactSpace K]
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/CZeroNormingSequence.lean:41:0: automatically included section variable(s) unused in theorem `JLMS.exists_CZero_point_norm_gt`:
+  [LocallyCompactSpace K]
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3256/3355] Built JLMS.SimultaneousAssembly (34s)
+⚠ [3257/3355] Built JLMS.CZeroSubsequencePairs (25s)
+warning: JLMS/CZeroSubsequencePairs.lean:91:39: This simp argument is unused:
+  ho
+
+Hint: Omit it from the simp argument list.
+  simp [he, ho̵,̵ ̵h̵ni]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3258/3355] Built JLMS.RealAtomicRepresentation (23s)
+⚠ [3259/3355] Built JLMS.CZeroRetract (31s)
+warning: JLMS/CZeroRetract.lean:26:0: automatically included section variable(s) unused in theorem `JLMS.exists_cZero_retract_of_pointNeighborhoods`:
+  [LocallyCompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/CZeroRetract.lean:62:42: This simp argument is unused:
+  heq
+
+Hint: Omit it from the simp argument list.
+  simp [heven, he̵q̵,̵ ̵h̵ji]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JLMS/CZeroRetract.lean:88:10: This simp argument is unused:
+  RCLike.ofReal_div
+
+Hint: Omit it from the simp argument list.
+  simp [̵R̵C̵L̵i̵k̵e̵.̵o̵f̵R̵e̵a̵l̵_̵d̵i̵v̵,̵ ̵R̵C̵L̵i̵k̵e̵.̵o̵f̵R̵e̵a̵l̵_̵o̵f̵N̵a̵t̵]̵[̲R̲C̲L̲i̲k̲e̲.̲o̲f̲R̲e̲a̲l̲_̲o̲f̲N̲a̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3260/3355] Built JLMS.OrdinalLimitProjection (37s)
+✔ [3261/3355] Built JLMS.HalfAtomicPieces (40s)
+✔ [3262/3355] Built JLMS.PairedNormingOperator (23s)
+✔ [3263/3355] Built JLMS.MatrixLowerBound (30s)
+✔ [3264/3355] Built JLMS.CZeroMatrixNorm (30s)
+⚠ [3265/3355] Built JLMS.WeakStarCZeroProjection (30s)
+warning: JLMS/WeakStarCZeroProjection.lean:72:10: This simp argument is unused:
+  RCLike.ofReal_div
+
+Hint: Omit it from the simp argument list.
+  simp [̵R̵C̵L̵i̵k̵e̵.̵o̵f̵R̵e̵a̵l̵_̵d̵i̵v̵,̵ ̵R̵C̵L̵i̵k̵e̵.̵o̵f̵R̵e̵a̵l̵_̵o̵f̵N̵a̵t̵]̵[̲R̲C̲L̲i̲k̲e̲.̲o̲f̲R̲e̲a̲l̲_̲o̲f̲N̲a̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3266/3355] Built JLMS.Rudin (30s)
+✔ [3267/3355] Built JLMS.OrdinalLimitRows (24s)
+✔ [3268/3355] Built JLMS.OrdinalSpaceRetraction (34s)
+✔ [3269/3355] Built JLMS.DisjointConstruction (28s)
+⚠ [3270/3355] Built JLMS.CZeroFiniteBlocks (25s)
+warning: JLMS/CZeroFiniteBlocks.lean:64:9: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3271/3355] Built JLMS.PairedDiagonal (26s)
+✔ [3272/3355] Built JLMS.CountableAtomicDual (25s)
+✔ [3273/3355] Built JLMS.DisjointWeakNull (26s)
+✔ [3274/3355] Built JLMS.OrdinalAtomicMatrix (26s)
+✔ [3275/3355] Built JLMS.OrdinalLimitRowsTail (25s)
+✔ [3276/3355] Built JLMS.FactorizationAssembly (23s)
+✔ [3277/3355] Built JLMS.DualFiniteBlocks (25s)
+⚠ [3278/3355] Built JLMS.CZeroFamilyImage (24s)
+warning: JLMS/CZeroFamilyImage.lean:27:0: automatically included section variable(s) unused in theorem `JLMS.continuous_cZeroFamilyValueMap`:
+  [LocallyCompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/CZeroFamilyImage.lean:50:0: automatically included section variable(s) unused in theorem `JLMS.cZeroFamilyImageMap_surjective`:
+  [LocallyCompactSpace K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3279/3355] Built JLMS.OrdinalOrdinaryColumnTail (26s)
+✔ [3280/3355] Built JLMS.ConvergentNormingMatrix (29s)
+✔ [3281/3355] Built JLMS.RosenthalRestriction (30s)
+✔ [3282/3355] Built JLMS.OrdinalSpaceRetractionBounded (45s)
+✔ [3283/3355] Built JLMS.OrdinalSpaceBlocksKernel (45s)
+✔ [3284/3355] Built JLMS.SectionEightAssembly (26s)
+⚠ [3285/3355] Built JLMS.FamilyImageCoordinates (19s)
+warning: JLMS/FamilyImageCoordinates.lean:34:39: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3286/3355] Built JLMS.NormalizedBlocks (21s)
+✔ [3287/3355] Built JLMS.BlockCZeroProjection (21s)
+✔ [3288/3355] Built JLMS.IsolatedMatrixColumns (50s)
+✔ [3289/3355] Built JLMS.AtomicRankOneMatrix (50s)
+✔ [3290/3355] Built JLMS.OrdinalColumnLocality (50s)
+✔ [3291/3355] Built JLMS.OrdinalLimitRow (50s)
+✔ [3292/3355] Built JLMS.AtomicMatrixEntry (50s)
+⚠ [3293/3355] Built JLMS.ConvergentNormingFactorization (22s)
+warning: JLMS/ConvergentNormingFactorization.lean:66:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: JLMS/ConvergentNormingFactorization.lean:66:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [3294/3355] Built JLMS.PaperConstructions (18s)
+⚠ [3295/3355] Built JLMS.DualAsymptoticRadius (22s)
+warning: JLMS/DualAsymptoticRadius.lean:41:19: unused variable `s`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3296/3355] Built JLMS.BlockComposition (23s)
+⚠ [3297/3355] Built JLMS.CZeroEllOneImage (28s)
+warning: JLMS/CZeroEllOneImage.lean:55:41: This simp argument is unused:
+  cZeroFamilyCoordinate_imageMap
+
+Hint: Omit it from the simp argument list.
+  simp only [map_smul, evaluation_apply,̵ ̵c̵Z̵e̵r̵o̵F̵a̵m̵i̵l̵y̵C̵o̵o̵r̵d̵i̵n̵a̵t̵e̵_̵i̵m̵a̵g̵e̵M̵a̵p̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: JLMS/CZeroEllOneImage.lean:72:41: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [3298/3355] Built JLMS.OrdinalEndpointColumnTail (24s)
+✔ [3299/3355] Built JLMS.OrdinalSpaceBlocksEquiv (45s)
+✔ [3300/3355] Built JLMS.OrdinalMatrixAlgebra (35s)
+✔ [3301/3355] Built JLMS.BlockRadiusInfimum (29s)
+✔ [3302/3355] Built JLMS.DualCompactUniformBound (32s)
+✔ [3303/3355] Built JLMS.CZeroAdmissibility (30s)
+✔ [3304/3355] Built JLMS.SectionEightConclusions (48s)
+⚠ [3305/3355] Built JLMS.WeakStarFactorization (48s)
+warning: JLMS/WeakStarFactorization.lean:25:0: automatically included section variable(s) unused in theorem `JLMS.factorizationFromDisjointFunctions_weakStar`:
+  [LocallyCompactSpace K]
+  [T2Space K]
+  [CompleteSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] [T2Space K] [CompleteSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3306/3355] Built JLMS.BlockFactorization (48s)
+warning: JLMS/BlockFactorization.lean:23:0: automatically included section variable(s) unused in theorem `JLMS.factorizationFromDisjointFunctions_of_blocks`:
+  [LocallyCompactSpace K]
+  [T2Space K]
+  [CompleteSpace X]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] [T2Space K] [CompleteSpace X] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [3307/3355] Built JLMS.InitialEndpointColumnLimit (36s)
+✔ [3308/3355] Built JLMS.OrdinalMatrixHead (29s)
+⚠ [3309/3355] Built JLMS.OrdinalMatrixBlocks (29s)
+warning: JLMS/OrdinalMatrixBlocks.lean:207:5: unused variable `hc`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JLMS/OrdinalMatrixBlocks.lean:207:24: unused variable `hu`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JLMS/OrdinalMatrixBlocks.lean:209:5: unused variable `hτlt`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: JLMS/OrdinalMatrixBlocks.lean:210:5: unused variable `hτ`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3310/3355] Built JLMS.NestedBlocks (23s)
+✔ [3311/3355] Built JLMS.SectionEightReduced (21s)
+✔ [3312/3355] Built JLMS.OrdinalMatrixTailRows (27s)
+✔ [3313/3355] Built JLMS.LoyWillisIdeal (31s)
+✔ [3314/3355] Built JLMS.OrdinalMatrixFamilyBlocks (28s)
+✔ [3315/3355] Built JLMS.BlockTails (25s)
+✔ [3316/3355] Built JLMS.OrdinalSpaceBlocksDecomposition (75s)
+⚠ [3317/3355] Built JLMS.ScatteredCZeroFactorization (41s)
+warning: JLMS/ScatteredCZeroFactorization.lean:20:0: automatically included section variable(s) unused in theorem `JLMS.factorizationFromDisjointFunctions_scatteredCZero`:
+  [LocallyCompactSpace K]
+  [T2Space K]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LocallyCompactSpace K] [T2Space K] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3318/3355] Built JLMS.BlockDiagonal (36s)
+warning: JLMS/BlockDiagonal.lean:26:70: unused variable `n`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3319/3355] Built JLMS.LoyWillisDecomposition (41s)
+✔ [3320/3355] Built JLMS.LoyWillisAlgebra (45s)
+✔ [3321/3355] Built JLMS.CalkinNormUniqueness (36s)
+✔ [3322/3355] Built JLMS.BlockStabilization (23s)
+✔ [3323/3355] Built JLMS.OrdinalEndpointIdeal (27s)
+✔ [3324/3355] Built JLMS.LoyWillisZeroEndpoint (27s)
+✔ [3325/3355] Built JLMS.FiniteRowBlocks (24s)
+✔ [3326/3355] Built JLMS.DualRadiusScaling (24s)
+✔ [3327/3355] Built JLMS.OrdinalSpaceMultipleSum (78s)
+✔ [3328/3355] Built JLMS.OgdenCommonProjections (32s)
+✔ [3329/3355] Built JLMS.OrderedFiniteRows (22s)
+⚠ [3330/3355] Built JLMS.DualRadiusWitness (25s)
+warning: JLMS/DualRadiusWitness.lean:33:4: Try `simp at hfreq` instead of `simpa using hfreq`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: JLMS/DualRadiusWitness.lean:46:5: unused variable `hC`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [3331/3355] Built JLMS.OrdinalSpaceMultipleSquare (43s)
+✔ [3332/3355] Built JLMS.OrdinalSpaceSumFactorAbsorption (47s)
+✔ [3333/3355] Built JLMS.BinaryBranchIndices (28s)
+⚠ [3334/3355] Built JLMS.PairedFiniteBlocks (32s)
+warning: JLMS/PairedFiniteBlocks.lean:21:0: automatically included section variable(s) unused in theorem `JLMS.pairedFiniteRowIndex_injective`:
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/PairedFiniteBlocks.lean:34:0: automatically included section variable(s) unused in theorem `JLMS.pairedFiniteRowIndex_strictMono`:
+  [Fintype ι]
+  [Nonempty ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] [Nonempty ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: JLMS/PairedFiniteBlocks.lean:72:45: This simp argument is unused:
+  neg_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [a, Fintype.sum_prod_type, Fin.sum_univ_two,
+  ̵  ̵ ̵ ̵if_true, h10, if_false,
+  ̲  ̲ ̲ ̲pairedFiniteRowIndex, h,
+  ̵  ̵ ̵ ̵Fin.val_zero, Fin.val_one, Nat.add_zero,̵ ̵n̵e̵g̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3335/3355] Built JLMS.OgdenInitialAutomaticContinuity (40s)
+✔ [3336/3355] Built JLMS.OgdenIdealContainment (40s)
+✔ [3337/3355] Built JLMS.OrdinalSpaceInitialInfiniteReduction (60s)
+✔ [3338/3355] Built JLMS.OrdinalSpacePowerSuccessor (60s)
+✔ [3339/3355] Built JLMS.OrdinalAutomaticContinuity (26s)
+✔ [3340/3355] Built JLMS.OrdinalSpaceClassificationAssembly (27s)
+✔ [3341/3355] Built JLMS.SignTreeSplitting (37s)
+✔ [3342/3355] Built JLMS.OrdinalSpaceInitialFiniteAutomaticContinuity (21s)
+✔ [3343/3355] Built JLMS.SignTreeLevels (25s)
+✔ [3344/3355] Built JLMS.OrdinalSpaceSingularBlocks (69s)
+✔ [3345/3355] Built JLMS.SignTreeConstruction (22s)
+✔ [3346/3355] Built JLMS.OrdinalSpaceSingularReplication (26s)
+✔ [3347/3355] Built JLMS.HaglerJohnson (18s)
+⚠ [3348/3355] Built JLMS.OrdinalSpacePowerLimit (95s)
+warning: JLMS/OrdinalSpacePowerLimit.lean:77:6: 'change ordinalSpaceBlockLength L ξ = c.ord ^ Order.succ (ordinalPowerBlockPredecessor γ ξ.val)' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [3349/3355] Built JLMS.MainFactorizations (18s)
+✔ [3350/3355] Built JLMS.OrdinalSpacePowerSquare (23s)
+✔ [3351/3355] Built JLMS.OrdinalSpaceSingularFullReplication (52s)
+✔ [3352/3355] Built JLMS.OrdinalSpaceClassification (18s)
+✔ [3353/3355] Built JLMS.OrdinalClassificationAutomaticContinuity (19s)
+✔ [3354/3355] Built JLMS (15s)
+Build completed successfully (3355 jobs).

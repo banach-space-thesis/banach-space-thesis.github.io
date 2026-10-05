@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "mode": "post-replay reporting recovery",
+  "originalReplayExitCode": 1,
+  "originalFailure": "out of memory after all declaration comparisons and corrupted-proof control",
+  "phaseCompletionEvidence": "negative-control.json is written only after all replay/coverage/type/body/universe/generated-metadata checks",
+  "auditExitCode": 0,
+  "auditEnvironment": "identical frozen declaration inputs; name/kind inventory compared to complete replay log",
+  "originalRun": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel\\20261003T101839Z-b92ec94b\\runs\\20261003T105948Z-fb26aeae",
+  "originalCheckerSha256": "bb380082c0c4298f1d38ea3a7b2cbc3234e1b383279a7a5e9bf92a7273b8e35d",
+  "compactAuditSha256": "5eccbec50bb8181bb862b98f48e8f481ed49c3e17f1cd97c5f480717d8725514",
+  "frozenInputsUnchanged": true
+}

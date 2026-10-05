@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "startedAtUtc": "2026-10-02T19:07:49.1261864Z",
+  "completedAtUtc": "2026-10-02T20:28:26.0934488Z",
+  "elapsedSeconds": 4836.1478565,
+  "inputHashesBeforeAndAfter": "passed",
+  "filesManifestSha256": "cfb54061ba659fd8f13cdd599ec2d316310bc32a97d9999f629c084330ed1a51",
+  "modulesManifestSha256": "5785f2da760c21bbe398a9c0c96f5f68c98912dc5a65ba3304c7f2be985d6a21",
+  "declarationsRechecked": 399466,
+  "modules": 4868,
+  "declarationsSkipped": 0,
+  "mainResults": "all five proved and axiom-checked in the replayed environment",
+  "negativeControl": "passed: in-memory corrupted imported theorem rejected",
+  "runtimeVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "outputFiles": [
+    {
+      "path": "command.json",
+      "bytes": 1241,
+      "sha256": "c6418795729da64bfdd55f41282f2766d4b3e237229ded8914f551255de9dd9c"
+    },
+    {
+      "path": "declarations.jsonl",
+      "bytes": 58053038,
+      "sha256": "e007826b8d369858f989371553958148b3d7aad8102fe2fdf9523cc6b79a7b3e"
+    },
+    {
+      "path": "input-manifest.json",
+      "bytes": 181581,
+      "sha256": "97af63272251cd92b7527663ba1cbcdf9a589ba149fae386046ac274d58b5e7e"
+    },
+    {
+      "path": "kernel-replay.log",
+      "bytes": 3666,
+      "sha256": "30024bbb0bb23f7b3a337cdf89042d4f2cc885b11393d4904cdceec75fe29bc6"
+    },
+    {
+      "path": "main-results.json",
+      "bytes": 5494220,
+      "sha256": "144aa522b50258705d97b06f2cc0e3293a2a6fb82123a47656f463902b6cb7a2"
+    },
+    {
+      "path": "negative-control.json",
+      "bytes": 723,
+      "sha256": "b445ded6e84a7f4515e3da51001257cb62a7093851039a8bf3abfede7312f06f"
+    },
+    {
+      "path": "result.json",
+      "bytes": 964,
+      "sha256": "4808660200101e4517e401f23efac48bc1a41989aa44523ef6720485b1289685"
+    }
+  ],
+  "meaning": "Reproducibility record and hashes. The frozen compiled modules contain the proof objects; rerun this script to verify them with the saved Lean kernel."
+}

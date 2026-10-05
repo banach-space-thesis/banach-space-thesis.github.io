@@ -1,0 +1,65 @@
+{
+  "archive": "C:/Users/Antonio Acuaviva/Downloads/Primarity_and_the_PFP.zip",
+  "sha256": "50DFF715B3ADC34585D22E320A8C9E633CFB022CC58438DC744F0F27C1E18DC6",
+  "title": "Primariness and the Primary Factorisation Property",
+  "authors": "Antonio Acuaviva and Tomasz Kania",
+  "received": "2026-10-01",
+  "files": [
+    {
+      "file": "source/0_Introduction.tex",
+      "sha256": "75142752B3DB64D6118F04DFF01121A4FE069E65019A6FC8CD71A9FF83E3DED3"
+    },
+    {
+      "file": "source/1_Preliminaries.tex",
+      "sha256": "5D8F505FD102E228A8D48B6C829B6989E61FDF72A6FD12C18BDB7C74947168DB"
+    },
+    {
+      "file": "source/2_Separable_symmetric_basis.tex",
+      "sha256": "EB8C594EE952A0332BA7A24024015882CA81B4C9FBA95EC6814CACAD0550CA07"
+    },
+    {
+      "file": "source/3_Uncountable_direct.tex",
+      "sha256": "73B9740904ADEFD4AAEEAC1213BCC2293B0BF9AE18AEE0A9E984664B723BAFDE"
+    },
+    {
+      "file": "source/4_PFP_other_spaces.tex",
+      "sha256": "27B25331AA9BF66522CD133D4C2A81B3D24461167D5F53E44178638DF5E2F861"
+    },
+    {
+      "file": "source/5_Primary_filters.tex",
+      "sha256": "C018721E19ADD7B6058F0E0490137489E573623C2F06EFC3DA0AEC25E52B1021"
+    },
+    {
+      "file": "source/Appendix_Jp_Dual_Primary.tex",
+      "sha256": "D67E9322BE0347D340DC8F7C3F957FD445596454E22837C4F24067AF804E2814"
+    },
+    {
+      "file": "source/Appendix_Quantitative_Pelczynski.tex",
+      "sha256": "959B94489CD6BCB9A7438E4442B8E32B74C59EE8255B7993D44E3FAB5DDA621F"
+    },
+    {
+      "file": "source/main.tex",
+      "sha256": "20D26ED6ADC7FBA011936FAF280E14F0159216A087BBEFD1011C9097F9DB0014"
+    },
+    {
+      "file": "source/primarity_zbmath_enriched.json",
+      "sha256": "A2FEE1807FAC96369F4C64CB61B885E3793E21DCA373295FEDBBE21E61ED19BD"
+    },
+    {
+      "file": "source/QuantitativeP.tex",
+      "sha256": "87E88625BC6675901E4D353B03E2B87860B7B2B9E3639FD4C87B69CEBC77C59D"
+    },
+    {
+      "file": "source/w_Open_Questions.tex",
+      "sha256": "74CCC6E7F65EDD8821C59B153FF5C22024A42F46254D5E453D47BECB06132681"
+    },
+    {
+      "file": "source/z_Bibliography.tex",
+      "sha256": "9241FE790A97367BC7B493C466FF6717FC387617D975BCF99EF4DCE1F3395F1B"
+    }
+  ],
+  "excluded_from_compiled_manuscript": [
+    "QuantitativeP.tex",
+    "primarity_zbmath_enriched.json"
+  ]
+}

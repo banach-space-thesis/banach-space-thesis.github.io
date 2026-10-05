@@ -1,0 +1,163 @@
+{
+  "coverage": {
+    "JFA.Mrowka": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Mrowka",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.mrowkaFunctionSupport": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.mrowkaFunctionSupport",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.mrowka_function_support_countable": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.mrowka_function_support_countable",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Theorem_1_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Theorem_1_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.theorem_1_6": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.theorem_1_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.projection_factorization_complemented": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.projection_factorization_complemented",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.ReasonableCrossnorm": {
+      "kind": "Lean.ConstantKind.induct",
+      "method": "kernel_inductive_declaration",
+      "name": "JFA.ReasonableCrossnorm",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Corollary_1_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Corollary_1_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.UniformCrossnorm": {
+      "kind": "Lean.ConstantKind.induct",
+      "method": "kernel_inductive_declaration",
+      "name": "JFA.UniformCrossnorm",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.corollary_1_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.corollary_1_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Theorem_1_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Theorem_1_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Corollary_1_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Corollary_1_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.corollary_1_2": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.corollary_1_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Theorem_1_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Theorem_1_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.theorem_1_4": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.theorem_1_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.theorem_1_1": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "JFA.theorem_1_1",
+      "partial": false,
+      "unsafe": false
+    }
+  },
+  "axiomReports": {
+    "JFA.theorem_1_1": {
+      "kernelRechecked": true,
+      "dependencyCount": 26750,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "JFA.corollary_1_2": {
+      "kernelRechecked": true,
+      "dependencyCount": 26662,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "JFA.corollary_1_3": {
+      "kernelRechecked": true,
+      "dependencyCount": 28266,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "JFA.theorem_1_4": {
+      "kernelRechecked": true,
+      "dependencyCount": 38072,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "JFA.theorem_1_6": {
+      "kernelRechecked": true,
+      "dependencyCount": 36801,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

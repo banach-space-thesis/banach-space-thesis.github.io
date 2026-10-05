@@ -1,0 +1,34 @@
+{
+  "stages": [
+    {
+      "name": "project-checker-build",
+      "command": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\tmp\\lean-runtime\\lean-4.24.0-windows\\bin\\lake.exe",
+        "--no-cache",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\paper-lean-reader\\verification\\runs\\20261002T155903Z\\project-checker",
+      "startedAt": "2026-10-02T17:38:49.898296+00:00",
+      "log": "project-checker-build.log",
+      "exitCode": 0,
+      "completedAt": "2026-10-02T17:38:55.279732+00:00",
+      "seconds": 5.38,
+      "sha256": "4c625a2cbf03462226f8d6943c30ec455b6f4d0dda895a0206c730c32857b270"
+    },
+    {
+      "name": "project-kernel",
+      "command": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\tmp\\lean-runtime\\lean-4.24.0-windows\\bin\\lake.exe",
+        "env",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\paper-lean-reader\\verification\\runs\\20261002T155903Z\\project-checker\\.lake\\build\\bin\\jlms_kernel_check.exe"
+      ],
+      "cwd": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\paper-lean-reader\\verification\\runs\\20261002T155903Z\\project",
+      "startedAt": "2026-10-02T17:38:55.292243+00:00",
+      "log": "project-kernel.log",
+      "exitCode": 0,
+      "completedAt": "2026-10-02T17:43:33.781053+00:00",
+      "seconds": 278.48,
+      "sha256": "6cafa4c9f00d0943e975bf4f96f2261dc4626c986fbde7c6f4f21d16de0fb01e"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+warning: manifest out of date: packages directory changed; use `lake update` to rebuild the manifest (warning: this will update ALL workspace dependencies)
+replaying PaperLeanKernel with --fresh

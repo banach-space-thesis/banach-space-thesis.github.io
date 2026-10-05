@@ -1,0 +1,64 @@
+{
+  "axioms": [
+    "Classical.choice",
+    "Lean.ofReduceBool",
+    "Lean.ofReduceNat",
+    "Lean.trustCompiler",
+    "Quot.lcInv",
+    "Quot.sound",
+    "lcAny",
+    "lcCast",
+    "lcErased",
+    "lcProof",
+    "lcRealWorld",
+    "lcUnreachable",
+    "propext",
+    "sorryAx"
+  ],
+  "bothUnsafeAndPartial": 0,
+  "declarations": 416285,
+  "declarationsSha256": "3FD27C684395CCF7E107EF455FB4A1572BC8D7EDC323CBE2656E6BEDA82FF9B5",
+  "declarationsWithBodies": 401433,
+  "elapsedMilliseconds": 1618,
+  "inputManifestSha256": "D04290FCBD11C18C7958DA6C9DC20E19FA5C609EAE58E9302713BBD2BBC283AA",
+  "kindCounts": {
+    "Lean.ConstantKind.axiom": 14,
+    "Lean.ConstantKind.ctor": 6261,
+    "Lean.ConstantKind.defn": 137587,
+    "Lean.ConstantKind.induct": 4228,
+    "Lean.ConstantKind.opaque": 3239,
+    "Lean.ConstantKind.quot": 4,
+    "Lean.ConstantKind.recursor": 4345,
+    "Lean.ConstantKind.thm": 260607
+  },
+  "methodCounts": {
+    "kernel_axiom_type": 14,
+    "kernel_definition_body": 133546,
+    "kernel_generated_constructor_equality": 6261,
+    "kernel_generated_recursor_equality": 4345,
+    "kernel_inductive_declaration": 4228,
+    "kernel_opaque_body": 3239,
+    "kernel_quotient_primitive": 4,
+    "kernel_runtime_dependency_scc_body": 4041,
+    "kernel_theorem_proof": 260607
+  },
+  "partialDeclarations": 3467,
+  "partialKindCounts": {
+    "Lean.ConstantKind.defn": 3467
+  },
+  "replayDirectory": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\replay-runs\\20261002T191819Z-0f46c1a21169\\20261002T193626Z-84af664f5a75",
+  "resultSha256": "A1E6A85FDDEA1EC1B4B4907570D75DCF8528438B1013B7CB7228B4200D11712A",
+  "runtimeDefinitionMethod": "kernel_runtime_dependency_scc_body",
+  "scope": "Completed JSONL coverage, unique names, kind/method counts, safety flags and axiom names match input/result manifests; proof checking is performed by the separate Lean kernel replay.",
+  "status": "passed",
+  "uniqueDeclarations": 416285,
+  "unsafeDeclarations": 628,
+  "unsafeKindCounts": {
+    "Lean.ConstantKind.axiom": 7,
+    "Lean.ConstantKind.ctor": 10,
+    "Lean.ConstantKind.defn": 574,
+    "Lean.ConstantKind.induct": 7,
+    "Lean.ConstantKind.opaque": 12,
+    "Lean.ConstantKind.recursor": 18
+  }
+}

@@ -1,0 +1,470 @@
+{
+  "theorem-1-1": {
+    "declaration": "Theorem_1_1",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "Both conclusions are proved: minimality of the essential norm and uniqueness of the complete algebra norm. The statement includes finite as well as infinite K.",
+    "proofs": [
+      {
+        "file": "JLMS/ScatteredCZeroFactorization.lean",
+        "declaration": "theorem_1_1",
+        "qualifiedName": "JLMS.theorem_1_1",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Theorem_1_1"
+  },
+  "theorem-1-3": {
+    "declaration": "Theorem_1_3",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "Proved for arbitrary ordinals over the real or complex field. Continuity is a conclusion; neither the homomorphism nor the Banach algebra is assumed unital.",
+    "proofs": [
+      {
+        "file": "JLMS/OrdinalClassificationAutomaticContinuity.lean",
+        "declaration": "theorem_1_3",
+        "qualifiedName": "JLMS.theorem_1_3",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Theorem_1_3"
+  },
+  "corollary-1-4": {
+    "declaration": "Corollary_1_4",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "Both the operator algebra and the Calkin algebra are covered. The competing algebra norm need not be complete. Uniqueness means equivalence of norms.",
+    "proofs": [
+      {
+        "file": "JLMS/OrdinalClassificationAutomaticContinuity.lean",
+        "declaration": "corollary_1_4",
+        "qualifiedName": "JLMS.corollary_1_4",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Corollary_1_4"
+  },
+  "theorem-1-5": {
+    "declaration": "Theorem_1_5",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "Bonsall minimality is proved for the dual essential norm: every algebra norm dominated by it agrees with it.",
+    "proofs": [
+      {
+        "file": "JLMS/ScatteredCZeroFactorization.lean",
+        "declaration": "theorem_1_5",
+        "qualifiedName": "JLMS.theorem_1_5",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Theorem_1_5"
+  },
+  "theorem-1-6": {
+    "declaration": "Theorem_1_6",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "The strict bound and both alternatives for X are proved. No additional factorisation or representation hypothesis remains.",
+    "proofs": [
+      {
+        "file": "JLMS/MainFactorizations.lean",
+        "declaration": "theorem_1_6",
+        "qualifiedName": "JLMS.theorem_1_6",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Theorem_1_6"
+  },
+  "theorem-1-7": {
+    "declaration": "Theorem_1_7",
+    "file": "JLMS/MainStatements.lean",
+    "relation": "statement",
+    "scope": "complete",
+    "note": "The exact supremum formula is proved for both alternatives for X. IsLUB expresses the least-upper-bound property, without assuming the supremum is attained.",
+    "proofs": [
+      {
+        "file": "JLMS/MainFactorizations.lean",
+        "declaration": "theorem_1_7",
+        "qualifiedName": "JLMS.theorem_1_7",
+        "label": "Complete proof"
+      }
+    ],
+    "qualifiedName": "JLMS.Theorem_1_7"
+  },
+  "theorem-3-1": {
+    "file": "JLMS/MainFactorizations.lean",
+    "declaration": "factorizationFromDisjointFunctions",
+    "qualifiedName": "JLMS.factorizationFromDisjointFunctions",
+    "label": "factorizationFromDisjointFunctions",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The proved consequence used here starts with disjoint unit-ball functions and a strict uniform lower bound. It gives the required factorisation for either alternative for X. The full equivalence for an arbitrary sequence satisfying the pointwise sum bound is not a theorem in this project.",
+    "proofs": [
+      {
+        "file": "JLMS/MainFactorizations.lean",
+        "declaration": "factorizationFromDisjointFunctions",
+        "qualifiedName": "JLMS.factorizationFromDisjointFunctions",
+        "label": "Factorisation from disjoint functions"
+      },
+      {
+        "file": "JLMS/ProofTargets.lean",
+        "declaration": "arnottLaustsen_conditions_of_uniform",
+        "qualifiedName": "JLMS.arnottLaustsen_conditions_of_uniform",
+        "label": "Pointwise sum and strict infimum"
+      }
+    ]
+  },
+  "theorem-3-3": {
+    "declaration": "disjointFunctionsHalf",
+    "file": "JLMS/PaperConstructions.lean",
+    "relation": "proof",
+    "note": "The normalized disjoint-function theorem is proved from the scattered, locally compact Hausdorff hypotheses. DisjointFunctionsHalf spells out the norm-one normalization and the interval 0 < δ < 1/2.",
+    "scope": "complete",
+    "qualifiedName": "JLMS.disjointFunctionsHalf"
+  },
+  "lemma-4-5": {
+    "declaration": "exists_neighborhoodFamily",
+    "file": "JLMS/ScatteredTopology.lean",
+    "relation": "proof",
+    "note": "For any finite family of distinct points, the proof constructs pairwise disjoint compact clopen neighbourhoods. This is the stronger form used throughout Sections 4–6.",
+    "scope": "complete",
+    "qualifiedName": "JLMS.exists_neighborhoodFamily"
+  },
+  "definition-4-2": {
+    "declaration": "NeighborhoodFamily",
+    "file": "JLMS/NeighborhoodProjection.lean",
+    "relation": "related",
+    "note": "This finite, indexed structure includes compact clopen neighbourhoods and pairwise disjointness, combining Definitions 4.1–4.2 with the convention in Section 4.",
+    "scope": "definition",
+    "qualifiedName": "JLMS.NeighborhoodFamily"
+  },
+  "definition-4-6": {
+    "declaration": "neighborhoodProjection",
+    "file": "JLMS/NeighborhoodProjection.lean",
+    "relation": "definition",
+    "scope": "definition",
+    "qualifiedName": "JLMS.neighborhoodProjection",
+    "note": "The finite-rank operator is the sum of the point evaluations multiplied by the corresponding compact clopen indicators. Its projection and norm properties are proved in Lemma 4.7."
+  },
+  "lemma-4-7": {
+    "declaration": "neighborhoodProjection_idempotent",
+    "file": "JLMS/NeighborhoodProjection.lean",
+    "relation": "proof",
+    "note": "All three clauses are proved. The norm-one assertion has the necessary nonempty-family hypothesis; the estimate for I − P holds for every finite family.",
+    "scope": "complete",
+    "proofs": [
+      {
+        "file": "JLMS/NeighborhoodProjection.lean",
+        "declaration": "neighborhoodProjection_idempotent",
+        "qualifiedName": "JLMS.neighborhoodProjection_idempotent",
+        "label": "(a) Projection"
+      },
+      {
+        "file": "JLMS/NeighborhoodProjection.lean",
+        "declaration": "neighborhoodProjection_finiteRank",
+        "qualifiedName": "JLMS.neighborhoodProjection_finiteRank",
+        "label": "(a) Finite rank"
+      },
+      {
+        "file": "JLMS/NeighborhoodProjection.lean",
+        "declaration": "neighborhoodProjection_norm_eq_one",
+        "qualifiedName": "JLMS.neighborhoodProjection_norm_eq_one",
+        "label": "(b) Norm one for a nonempty family"
+      },
+      {
+        "file": "JLMS/NeighborhoodProjection.lean",
+        "declaration": "norm_id_sub_neighborhoodProjection_le_two",
+        "qualifiedName": "JLMS.norm_id_sub_neighborhoodProjection_le_two",
+        "label": "(b) The factor-two bound"
+      },
+      {
+        "file": "JLMS/NeighborhoodProjection.lean",
+        "declaration": "neighborhoodProjection_adjoint_evaluation",
+        "qualifiedName": "JLMS.neighborhoodProjection_adjoint_evaluation",
+        "label": "(c) Fixed point evaluations"
+      }
+    ],
+    "qualifiedName": "JLMS.neighborhoodProjection_idempotent"
+  },
+  "theorem-4-8": {
+    "declaration": "exists_atomicDualModel",
+    "file": "JLMS/Rudin.lean",
+    "relation": "proof",
+    "note": "The isometric dual representation is proved over either scalar field, with point masses identified with evaluation functionals. The proof treats locally compact K directly.",
+    "scope": "complete",
+    "qualifiedName": "JLMS.exists_atomicDualModel"
+  },
+  "definition-4-10": {
+    "declaration": "atomicRestriction",
+    "file": "JLMS/AtomicDual.lean",
+    "relation": "definition",
+    "scope": "definition",
+    "qualifiedName": "JLMS.atomicRestriction",
+    "note": "Restriction is defined in the atomic representation of the dual: retain the coordinates in C and set the others to zero. Rudin.lean proves that this representation exists."
+  },
+  "lemma-4-11": {
+    "declaration": "atomicRestriction_norm_union",
+    "file": "JLMS/AtomicDual.lean",
+    "relation": "related",
+    "note": "The restriction identity and norm additivity are proved for two disjoint sets, giving the finite version by iteration. The general operator estimate recorded here is ≤ 1. Equality requires a nonempty union; it does not hold for the empty restriction.",
+    "scope": "supporting",
+    "proofs": [
+      {
+        "file": "JLMS/L1Restriction.lean",
+        "declaration": "restrictionL1_union",
+        "qualifiedName": "JLMS.restrictionL1_union",
+        "label": "Restriction to a disjoint union"
+      },
+      {
+        "file": "JLMS/AtomicDual.lean",
+        "declaration": "atomicRestriction_norm_union",
+        "qualifiedName": "JLMS.atomicRestriction_norm_union",
+        "label": "Additivity of the norm"
+      },
+      {
+        "file": "JLMS/AtomicDual.lean",
+        "declaration": "atomicRestriction_norm_le",
+        "qualifiedName": "JLMS.atomicRestriction_norm_le",
+        "label": "The operator norm bound"
+      }
+    ],
+    "qualifiedName": "JLMS.atomicRestriction_norm_union"
+  },
+  "proposition-5-2": {
+    "declaration": "exists_disjoint_large_dual_atoms_of_primal",
+    "file": "JLMS/HalfAtomicPieces.lean",
+    "relation": "related",
+    "note": "The finite-atom construction is proved in atomic coordinates. Its representation hypothesis is established by exists_atomicDualModel; the displayed threshold is the Section 5 bound.",
+    "scope": "supporting",
+    "qualifiedName": "JLMS.exists_disjoint_large_dual_atoms_of_primal"
+  },
+  "lemma-5-4": {
+    "declaration": "exists_neighborhood_arbitrarily_late_small_weight",
+    "file": "JLMS/EssentialWeight.lean",
+    "relation": "related",
+    "note": "The essential-weight argument is proved for a bounded operator into ℓ¹(K). Substituting the atomic form of T* gives the paper’s statement.",
+    "scope": "supporting",
+    "qualifiedName": "JLMS.exists_neighborhood_arbitrarily_late_small_weight"
+  },
+  "corollary-5-5": {
+    "declaration": "exists_neighborhood_subsequence_small_weight",
+    "file": "JLMS/EssentialWeight.lean",
+    "relation": "related",
+    "note": "Both the subsequence selection in atomic coordinates and its application to T* are proved.",
+    "scope": "supporting",
+    "proofs": [
+      {
+        "file": "JLMS/EssentialWeight.lean",
+        "declaration": "exists_neighborhood_subsequence_small_weight",
+        "qualifiedName": "JLMS.exists_neighborhood_subsequence_small_weight",
+        "label": "Selection in atomic coordinates"
+      },
+      {
+        "file": "JLMS/AtomicApplications.lean",
+        "declaration": "exists_neighborhood_subsequence_small_dual_weight",
+        "qualifiedName": "JLMS.exists_neighborhood_subsequence_small_dual_weight",
+        "label": "Application to T*"
+      }
+    ],
+    "qualifiedName": "JLMS.exists_neighborhood_subsequence_small_weight"
+  },
+  "lemma-6-1": {
+    "declaration": "exists_separated_atomic_pieces",
+    "file": "JLMS/DiagonalSelection.lean",
+    "relation": "related",
+    "note": "The infinite diagonal selection is proved in atomic coordinates, from pairwise disjoint finite pieces of sufficiently large mass. The chosen neighbourhoods are disjoint across all stages.",
+    "scope": "supporting",
+    "qualifiedName": "JLMS.exists_separated_atomic_pieces"
+  },
+  "proposition-7-1": {
+    "declaration": "exists_disjoint_large_dual_atoms",
+    "file": "JLMS/AtomicApplications.lean",
+    "relation": "related",
+    "note": "The dual finite-piece construction is proved for every threshold below ‖T*‖ₑ. The atomic representation appearing in the statement is proved in Rudin.lean.",
+    "scope": "supporting",
+    "qualifiedName": "JLMS.exists_disjoint_large_dual_atoms"
+  },
+  "lemma-8-1": {
+    "declaration": "exists_cZero_retract",
+    "file": "JLMS/CZeroRetract.lean",
+    "relation": "related",
+    "note": "The norm-one complemented copy of c₀ is proved for infinite K. That hypothesis is necessary: finite K gives a finite-dimensional C₀(K). The main theorems handle finite K separately.",
+    "scope": "supporting",
+    "qualifiedName": "JLMS.exists_cZero_retract"
+  },
+  "lemma-8-2": {
+    "declaration": "simultaneousFactorizations_of_factor_two",
+    "file": "JLMS/SimultaneousAssembly.lean",
+    "relation": "related",
+    "note": "The simultaneous factorisation is proved for an orthogonal c₀ block family and the individual factorisation theorem. The completed main proof constructs that family from the complemented c₀ copy and proves the individual factorisations. Choosing ρₙ = 2⁻ⁿ gives the paper’s thresholds.",
+    "scope": "supporting",
+    "proofs": [
+      {
+        "file": "JLMS/SimultaneousAssembly.lean",
+        "declaration": "simultaneousFactorizations_of_factor_two",
+        "qualifiedName": "JLMS.simultaneousFactorizations_of_factor_two",
+        "label": "The simultaneous factorisation"
+      },
+      {
+        "file": "JLMS/SimultaneousAssembly.lean",
+        "declaration": "exists_summable_factor_maps",
+        "qualifiedName": "JLMS.exists_summable_factor_maps",
+        "label": "Summable factor maps"
+      },
+      {
+        "file": "JLMS/ScatteredCZeroFactorization.lean",
+        "declaration": "theorem_1_1",
+        "qualifiedName": "JLMS.theorem_1_1",
+        "label": "Completed assembly"
+      }
+    ],
+    "qualifiedName": "JLMS.simultaneousFactorizations_of_factor_two"
+  },
+  "theorem-3-2": {
+    "file": "JLMS/HaglerJohnson.lean",
+    "declaration": "dualNormalizedBlockNull_of_not_containsEllOne",
+    "qualifiedName": "JLMS.dualNormalizedBlockNull_of_not_containsEllOne",
+    "label": "dualNormalizedBlockNull_of_not_containsEllOne",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The formal argument proves the normalized weak* null block consequence needed when X contains no copy of ℓ¹. This is the part used in the factorisation proof; the cited closed-subspace formulation is not separately stated.",
+    "proofs": [
+      {
+        "file": "JLMS/HaglerJohnson.lean",
+        "declaration": "dualNormalizedBlockNull_of_not_containsEllOne",
+        "qualifiedName": "JLMS.dualNormalizedBlockNull_of_not_containsEllOne",
+        "label": "The consequence used"
+      },
+      {
+        "file": "JLMS/HaglerJohnson.lean",
+        "declaration": "exists_normalizedBlock_pointwise_null",
+        "qualifiedName": "JLMS.exists_normalizedBlock_pointwise_null",
+        "label": "Construction of the blocks"
+      }
+    ]
+  },
+  "proposition-9-1": {
+    "file": "JLMS/MatrixAutomaticContinuity.lean",
+    "declaration": "continuous_matrix_hom_of_corners",
+    "qualifiedName": "JLMS.continuous_matrix_hom_of_corners",
+    "label": "continuous_matrix_hom_of_corners",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The substantive forward implication is proved by the diagonal-corner argument for every finite matrix algebra. The reverse implication in the paper follows by taking n = 1; it is not packaged as a separate equivalence."
+  },
+  "corollary-9-2": {
+    "file": "JLMS/FinitePowerAutomaticContinuity.lean",
+    "declaration": "continuous_operator_hom_of_finitePower",
+    "qualifiedName": "JLMS.continuous_operator_hom_of_finitePower",
+    "label": "continuous_operator_hom_of_finitePower",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The finite-power transfer used in Section 9 is proved at the level of automatic continuity. This declaration is not the paper’s norm-maximality equivalence itself."
+  },
+  "theorem-9-3": {
+    "file": "JLMS/OrdinalSpaceClassification.lean",
+    "declaration": "ordinalSpaceReduction",
+    "qualifiedName": "JLMS.ordinalSpaceReduction",
+    "label": "ordinalSpaceReduction",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The project proves the classification consequence needed for Theorem 1.3: the space is finite-dimensional, isomorphic to its square, or isomorphic to a positive finite power of the space on a regular uncountable initial ordinal. The full two-way classification printed here is not formalised."
+  },
+  "question-1-2": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "This is a question posed by the paper. The project does not claim an answer."
+  },
+  "theorem-1-10": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "Pełczyński’s theorem is quoted as background. Its full non-weak-compactness equivalence is not formalised in this JLMS project; the six main results are proved without using it as an axiom."
+  },
+  "remark-1-8": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "This describes an alternative route through a cited duality theorem. The completed proof of Theorem 1.6 uses the direct disjoint-function construction instead."
+  },
+  "remark-1-9": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "The sharpness examples in this remark are not separately formalised. The factor-two upper bound itself is proved in Theorem 1.6."
+  },
+  "remark-1-11": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "This discusses a proposed extension and work elsewhere. No formal theorem for this discussion is recorded in this project."
+  },
+  "definition-4-1": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "Pairwise disjointness is expressed by Pairwise (fun i j => Disjoint (U i) (U j)). For sets, Disjoint means that their intersection is empty. The fields of NeighborhoodFamily use this condition."
+  },
+  "definition-4-3": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "The support of an indexed neighbourhood family U is written ⋃ i, U.sets i. This union is used directly in the essential-weight and diagonal-selection statements; there is no separate named definition."
+  },
+  "definition-4-4": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "Finite subsets are represented by Finset K. Countability of a subset A is expressed by A.Countable. These are existing notions in Lean’s libraries, rather than new definitions of this paper."
+  },
+  "definition-4-9": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "In atomic coordinates, the support of μ is Function.support (M.representation μ). The representation theorem identifies these coefficients with point masses; atomicDual_countable_support proves the support is countable."
+  },
+  "definition-5-1": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "Function.support η denotes {k | η k ≠ 0}; its complement is the zero set. Vanishing on F is written as a pointwise condition ∀ k ∈ F, η k = 0. The constructions use these expressions directly."
+  },
+  "remark-5-3": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "The bound ‖I − P‖ ≤ 2 is proved in norm_id_sub_neighborhoodProjection_le_two, linked under Lemma 4.7. It accounts for the threshold δ < 1/2."
+  },
+  "remark-7-2": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "The coordinate restriction onto a complement has norm at most one, as proved in norm_id_sub_restrictionL1_le. This is the estimate used by the dual argument. Equality needs a nonempty complement."
+  },
+  "remark-8-3": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "Parts of the argument are developed for general factor spaces, but the entire Schauder-decomposition generalisation and all its examples are not recorded as a theorem in this project."
+  },
+  "remark-8-4": {
+    "relation": "discussion",
+    "scope": "discussion",
+    "note": "This places the result among related work on uniform incompressibility. The main minimality theorems are formalised; the bibliographical discussion is not a separate Lean theorem."
+  },
+  "corollary-7-3": {
+    "file": "JLMS/MainFactorizations.lean",
+    "declaration": "theorem_1_7",
+    "qualifiedName": "JLMS.theorem_1_7",
+    "label": "theorem_1_7",
+    "relation": "related",
+    "scope": "supporting",
+    "note": "The sharp supremum theorem gives this epsilon estimate by choosing a factorisation value sufficiently close to ‖T*‖ₑ. The project’s general result is stated as Theorem 1.7; the separately named epsilon lemma treats the C₀(K) endomorphism case.",
+    "proofs": [
+      {
+        "file": "JLMS/MainFactorizations.lean",
+        "declaration": "theorem_1_7",
+        "qualifiedName": "JLMS.theorem_1_7",
+        "label": "The sharp supremum theorem"
+      },
+      {
+        "file": "JLMS/SectionEightAssembly.lean",
+        "declaration": "sharp_factorization_epsilon",
+        "qualifiedName": "JLMS.sharp_factorization_epsilon",
+        "label": "The C₀(K) endomorphism case"
+      }
+    ]
+  }
+}

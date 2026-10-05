@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checkedAtUtc": "2026-10-02T21:14:49.7693963Z",
+  "certificateId": "20261002T191819Z-0f46c1a21169",
+  "declarations": 416285,
+  "modules": 5930,
+  "declarationsSkipped": 0,
+  "snapshotManifestSha256": "599402565646714343FAD4EAFA25B162CC32B26F34ABBC2B9F7BC045D0CC3A8E",
+  "replayManifestSha256": "AAB0370059E521997749D1EA64B246D5500B7D45D759C3A4D0BBD8AA33B9FE9F",
+  "completionRecord": "completion-records/20261002T191819Z-0f46c1a21169/acceptance.json",
+  "completionManifestSha256": "859CE6B021391F3165200CC0FC3244E3755E8312E48348ACC1A35B5EB1B9D81D",
+  "declarationSummary": "completion-records/20261002T191819Z-0f46c1a21169/declaration-summary.json",
+  "replayRecord": "replay-runs/20261002T191819Z-0f46c1a21169/20261002T193626Z-84af664f5a75/replay-record.json",
+  "kernelResult": "replay-runs/20261002T191819Z-0f46c1a21169/20261002T193626Z-84af664f5a75/result.json"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "verifiedAtUtc": "2026-10-03T12:51:49.546806+00:00",
+  "bundle": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel\\20261003T101839Z-b92ec94b",
+  "run": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel\\20261003T101839Z-b92ec94b\\runs\\20261003T124006Z-report-recovery-029ba3cb",
+  "runCertificateSha256": "8ec67db30317bef9b3e3e0d6f42d628331d4178dfc1fe325022cbe5a5c04c848",
+  "report": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel\\20261003T101839Z-b92ec94b\\runs\\20261003T124006Z-report-recovery-029ba3cb\\REPORT.txt",
+  "filesManifestSha256": "a7cd878a1858cb9a4cf804a1dc5db37c3433bbfa9ee2efa409b53d5b25c85362",
+  "modulesManifestSha256": "72da58446ff92bcd8826b31a1e50743dbcdf2ed1c0cb73027f17513e4b1b06eb",
+  "modules": 6747,
+  "declarationsRechecked": 428781,
+  "declarationsSkipped": 0,
+  "originalResultsCovered": 77,
+  "PFPProofAndConstructionAudits": 177,
+  "auditedDeclarationKinds": {
+    "Lean.ConstantKind.thm": 171,
+    "Lean.ConstantKind.defn": 6
+  },
+  "kernelControls": "Corrupted theorem body and altered canonical axiom signature rejected",
+  "liveCheckedInputs": 1884,
+  "liveSourcesAndConfigurationsMatch": true,
+  "liveInputMismatches": [],
+  "runtimeVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "runtimeIncluded": true,
+  "importedLibrariesIncluded": true,
+  "replayCommand": "python scripts/complete-kernel-record.py rerun .",
+  "supervisionRecord": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel-supervision.json",
+  "completionMode": "post-replay reporting recovery",
+  "originalReplayExitCode": 1,
+  "reportingAuditExitCode": 0,
+  "recoveryProcessRecord": "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\pfp\\verification\\fresh-kernel-recovery-process.json"
+}

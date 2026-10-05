@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "checkedAtUtc": "2026-10-02T21:14:49.7693963Z",
+  "certificateId": "20261002T191819Z-0f46c1a21169",
+  "pathBase": "formalization/posets/certificates",
+  "snapshot": "20261002T191819Z-0f46c1a21169",
+  "snapshotManifestSha256": "599402565646714343FAD4EAFA25B162CC32B26F34ABBC2B9F7BC045D0CC3A8E",
+  "snapshotFilesVerified": 25823,
+  "replayRun": "replay-runs/20261002T191819Z-0f46c1a21169/20261002T193626Z-84af664f5a75",
+  "replayManifestSha256": "AAB0370059E521997749D1EA64B246D5500B7D45D759C3A4D0BBD8AA33B9FE9F",
+  "replayStartedAtUtc": "2026-10-02T19:36:26.6417003Z",
+  "kernelFinishedAtUtc": "2026-10-02T21:09:40.8443014Z",
+  "stages": [
+    {
+      "name": "kernel",
+      "startedAtUtc": "2026-10-02T19:36:26.7624258Z",
+      "arguments": [
+        "--run",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\KernelAudit.lean",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\replay-runs\\20261002T191819Z-0f46c1a21169\\20261002T193626Z-84af664f5a75",
+        "Posets",
+        "PosetsCommon",
+        "Lean.Replay",
+        "Lean.Elab.Command",
+        "Lean.Data.Json"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:09:40.8443014Z"
+    },
+    {
+      "name": "resolver",
+      "startedAtUtc": "2026-10-02T21:09:40.8736417Z",
+      "arguments": [
+        "--run",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\KernelExport.lean",
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\replay-runs\\20261002T191819Z-0f46c1a21169\\20261002T193626Z-84af664f5a75\\resolved-import-manifest.json",
+        "Posets",
+        "PosetsCommon",
+        "Lean.Replay",
+        "Lean.Elab.Command",
+        "Lean.Data.Json"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:11:11.082586Z"
+    },
+    {
+      "name": "axiom-audit",
+      "startedAtUtc": "2026-10-02T21:11:46.1074331Z",
+      "arguments": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\Audit.lean"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:12:10.5086494Z"
+    },
+    {
+      "name": "statements",
+      "startedAtUtc": "2026-10-02T21:12:10.5551941Z",
+      "arguments": [
+        "C:\\Users\\Antonio Acuaviva\\Documents\\ChatGPT\\PhD Thesis\\formalization\\posets\\certificates\\20261002T191819Z-0f46c1a21169\\checker\\Statements.lean"
+      ],
+      "exitCode": 0,
+      "finishedAtUtc": "2026-10-02T21:12:19.8878151Z"
+    }
+  ],
+  "method": "fresh mkEmptyEnvironment 0; Kernel.Environment.addDeclCore; generated constructor/recursor equality",
+  "kernelDeclarationCalls": 405180,
+  "coverage": {
+    "declarations": 416285,
+    "uniqueDeclarations": 416285,
+    "declarationsWithBodies": 401433,
+    "modules": 5930,
+    "declarationsSkipped": 0,
+    "unsafeDeclarations": 628,
+    "partialDeclarations": 3467,
+    "kindCounts": {
+      "Lean.ConstantKind.axiom": 14,
+      "Lean.ConstantKind.ctor": 6261,
+      "Lean.ConstantKind.defn": 137587,
+      "Lean.ConstantKind.induct": 4228,
+      "Lean.ConstantKind.opaque": 3239,
+      "Lean.ConstantKind.quot": 4,
+      "Lean.ConstantKind.recursor": 4345,
+      "Lean.ConstantKind.thm": 260607
+    },
+    "methodCounts": {
+      "kernel_axiom_type": 14,
+      "kernel_definition_body": 133546,
+      "kernel_generated_constructor_equality": 6261,
+      "kernel_generated_recursor_equality": 4345,
+      "kernel_inductive_declaration": 4228,
+      "kernel_opaque_body": 3239,
+      "kernel_quotient_primitive": 4,
+      "kernel_runtime_dependency_scc_body": 4041,
+      "kernel_theorem_proof": 260607
+    }
+  },
+  "negativeControl": "passed: corrupted proof rejected",
+  "negativeControlSourceTheorem": "Posets.proposition_3_1_proof",
+  "resolver": "passed; every real imported artifact is inside snapshot/modules",
+  "sourceProvenance": "passed; final-paper and verified Lean-source hashes match",
+  "paper": {
+    "fullPaperProved": true,
+    "numberedResults": 37,
+    "totalNumberedResults": 37,
+    "auditRoots": 11062,
+    "foundationalAxiomAudit": "passed",
+    "allowedAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "originalTeXFiles": 8,
+    "ordinaryVerificationAtUtc": "2026-10-02T18:22:37.9275141Z",
+    "completionScope": "Established results with author-approved nonempty conventions; conjectures, open questions and the unexplored definition proposal remain source context."
+  },
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "checkerSha256": "F3C4CC269650C1CF969547CF3908F03579498D65D26DB5CE56FAE1E0B2EF7F64",
+  "summarySourceSha256": "12859160DBABB53FA48942DB2DF4BFB90496F2A9A04C3F2C3B904D32A578AEC5",
+  "summarySha256": "DBBA7E3C6FE62B68FBA13742FC6803A76711DFE8DB49FEDB3E25674AD4C42DE8",
+  "importedAxioms": [
+    "Classical.choice",
+    "Lean.ofReduceBool",
+    "Lean.ofReduceNat",
+    "Lean.trustCompiler",
+    "Quot.lcInv",
+    "Quot.sound",
+    "lcAny",
+    "lcCast",
+    "lcErased",
+    "lcProof",
+    "lcRealWorld",
+    "lcUnreachable",
+    "propext",
+    "sorryAx"
+  ],
+  "trustSemantics": "Every declaration in the complete private import closure was checked in an initially empty kernel environment. Axiom types were checked; axioms remain assumptions. Unsafe and partial runtime bodies were typechecked, without proving program totality. The paper proof dependency closure uses only the three allowed foundational axioms.",
+  "certificates": "The saved .olean and .olean.private facets contain the actual checked proof objects. JSON records and SHA256 inventories record coverage and integrity; they are not digital signatures.",
+  "reproduce": "./20261002T191819Z-0f46c1a21169/Replay.ps1 -ExpectedManifestHash 599402565646714343FAD4EAFA25B162CC32B26F34ABBC2B9F7BC045D0CC3A8E"
+}

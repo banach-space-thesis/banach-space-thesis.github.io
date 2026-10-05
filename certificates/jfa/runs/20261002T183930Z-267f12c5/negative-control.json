@@ -1,0 +1,6 @@
+{"status": "passed: corrupted proof rejected",
+ "sourceTheorem": "JFA.theorem_1_1",
+ "mutation":
+ "Copied theorem renamed; its proof body replaced by Sort 0. No mutation is added to the success environment.",
+ "kernelException":
+ "(kernel) declaration type mismatch, 'FreshKernelAuditCorruptedProof' has type\n  Type\nbut it is expected to have type\n  ∀ {𝕜 : Type u} [inst : RCLike 𝕜] {E F X : Type u} [inst_1 : NormedAddCommGroup E] [inst_2 : NormedSpace 𝕜 E]\n    [inst_3 : NormedAddCommGroup F] [inst_4 : NormedSpace 𝕜 F] [inst_5 : CompleteSpace F]\n    [inst_6 : NormedAddCommGroup X] [inst_7 : NormedSpace 𝕜 X] [inst_8 : CompleteSpace X] [inst_9 : CompleteSpace E],\n    JFA.Theorem_1_1 𝕜 E F X"}

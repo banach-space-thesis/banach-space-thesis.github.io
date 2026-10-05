@@ -1,0 +1,740 @@
+{
+  "coverage": {
+    "Posets.incidenceOperators": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.incidenceOperators",
+      "partial": false,
+      "unsafe": false
+    },
+    "JFA.Mrowka": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "JFA.Mrowka",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.BoundedExtension": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.BoundedExtension",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.FewOperators": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.FewOperators",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.oppositeIncidenceSubalgebra": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.oppositeIncidenceSubalgebra",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.BoundedRowsOn": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.BoundedRowsOn",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.nat_incidence_iff_upperTriangular": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.nat_incidence_iff_upperTriangular",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.reducedMatrix": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.reducedMatrix",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.HasBoundedRows": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.HasBoundedRows",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.familySupport": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.familySupport",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_4_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_4_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.nat_oppositeIncidence_iff_lowerTriangular": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.nat_oppositeIncidence_iff_lowerTriangular",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_8_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_8_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.matrixTail": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.matrixTail",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_5_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_5_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Admits": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Admits",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_1_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_1_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_3_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_3_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_3_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_3_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_1_10": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_1_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_5_2_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_5_2_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_8_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_8_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_8_5_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_8_5_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_1_6_continuous_right_inverse": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_1_6_continuous_right_inverse",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_1_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_1_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_1_3_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_1_3_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_6_19": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_6_19",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_6_18": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_6_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_6_18_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_6_18_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_6_19_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_6_19_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_3_3": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_3_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_3_4_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_3_4_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_1_10_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_1_10_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_3_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_3_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Theorem_1_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Theorem_1_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_3_1_regular_belowSquare": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_3_1_regular_belowSquare",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_5_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_5_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_5_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_5_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_5_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_5_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_18": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_18",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_6_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_6_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Theorem_1_5": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Theorem_1_5",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_8_2": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_8_2",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_8_2_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_8_2_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_17": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_6_17": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_6_17",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_8_1": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_8_1",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_1_7": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_1_7",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_1_6_single_factor_equiv": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.remark_1_6_single_factor_equiv",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_1_6_single_factor_mul": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_1_6_single_factor_mul",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_6_11": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_6_11",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_6_5_convolution": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_6_5_convolution",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.oppositeIncidenceSubalgebra_carrier": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.oppositeIncidenceSubalgebra_carrier",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_8_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_8_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_6_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_6_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_6_6_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_6_6_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.theorem_1_5_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.theorem_1_5_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_8_6_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_8_6_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_6_22": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_6_22",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_6_22_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_6_22_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_17_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_17_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_3": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_3",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_3_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_3_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_4_14_acceptance_iff": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_4_14_acceptance_iff",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_6_17_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_6_17_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_6_3_off_order_zero": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_6_3_off_order_zero",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_6": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_6",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_15": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_15_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_15_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_8_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_8_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Theorem_1_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Theorem_1_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_8_3_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_8_3_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.CanonicalEmbeddingExists": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.CanonicalEmbeddingExists",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.theorem_1_8_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.theorem_1_8_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_8_4": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_8_4",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_6_21": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_6_21",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_6_21_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_6_21_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_4_7_discontinuous_onePoint_extension": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_4_7_discontinuous_onePoint_extension",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_4_8": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_4_8",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Lemma_6_20": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Lemma_6_20",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.theorem_1_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.theorem_1_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_6_2_embedding_injective": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_6_2_embedding_injective",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_6_11_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_6_11_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_8_4_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_8_4_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Proposition_6_15": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Proposition_6_15",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_6_15_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_6_15_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_6_5_zero_pattern": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_6_5_zero_pattern",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.ShortExact": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.ShortExact",
+      "partial": false,
+      "unsafe": false
+    },
+    "ThesisCommon.StronglySplit": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "ThesisCommon.StronglySplit",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_6_20_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_6_20_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_6_23_countable_incidence_quotient": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_6_23_countable_incidence_quotient",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_6_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_6_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.Corollary_4_10": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "Posets.Corollary_4_10",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_1_4_strict_chain": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_1_4_strict_chain",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_8_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_8_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.remark_1_4_closed_ideal_cases": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.remark_1_4_closed_ideal_cases",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_4_10_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_4_10_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_1_7_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_1_7_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_6_8_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_6_8_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.corollary_1_2_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.corollary_1_2_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.proposition_3_1_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.proposition_3_1_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.lemma_4_18_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.lemma_4_18_proof",
+      "partial": false,
+      "unsafe": false
+    },
+    "Posets.canonicalEmbeddingExists_proof": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "Posets.canonicalEmbeddingExists_proof",
+      "partial": false,
+      "unsafe": false
+    }
+  },
+  "axiomReports": {}
+}
