@@ -2,7 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Choose the palette before the first page is painted.
+    (() => {
+      const root = document.documentElement;
+      const system = matchMedia('(prefers-color-scheme: dark)');
+      let preference;
+      try { preference = localStorage.getItem('paper-reader-theme'); } catch {}
+      if (!['day', 'night'].includes(preference)) preference = null;
+      function apply(theme) {
+        root.dataset.theme = theme;
+        const button = document.getElementById('theme-toggle');
+        if (button) {
+          const label = theme === 'night' ? 'Switch to day mode' : 'Switch to night mode';
+          button.setAttribute('aria-label', label);
+          button.title = label;
+        }
+      }
+      apply(preference || (system.matches ? 'night' : 'day'));
+      document.addEventListener('DOMContentLoaded', () => {
+        const button = document.getElementById('theme-toggle');
+        apply(root.dataset.theme);
+        button.addEventListener('click', () => {
+          preference = root.dataset.theme === 'night' ? 'day' : 'night';
+          apply(preference);
+          try { localStorage.setItem('paper-reader-theme', preference); } catch {}
+        });
+      }, {once: true});
+      system.addEventListener('change', () => {
+        if (!preference) apply(system.matches ? 'night' : 'day');
+      });
+    })();
+  </script>
   <title>An Interactive Thesis in Banach Space Theory</title>
   <link rel="stylesheet" href="./reader.css">
   <link rel="stylesheet" href="./reader-edition.css">
@@ -34,23 +66,30 @@
 </head>
 <body>
   <header class="reader-bar">
-    <div class="edition-mark"><button id="contents-button" aria-expanded="false" aria-controls="contents" aria-label="Table of contents">Contents</button><label class="paper-choice"><span class="sr-only">Choose paper</span><select id="paper-select" aria-label="Choose paper">
+    <div class="edition-mark"><button id="thesis-library-button" aria-haspopup="dialog" aria-expanded="false" aria-controls="thesis-library">Thesis &amp; papers</button><button id="contents-button" aria-expanded="false" aria-controls="contents" aria-label="Table of contents">Contents</button><label class="paper-choice"><span class="sr-only">Choose paper</span><select id="paper-select" aria-label="Choose paper">
+      <optgroup label="Part I · Uniqueness of algebra norms">
       <option value="jlms">Factorizations and minimality of the Calkin Algebra norm for C(K)-spaces</option>
       <option value="pems">Quantifying (non-)weak compactness of operators on AL- and C(K)-spaces</option>
-      <option value="sigma">The class of Banach lattices is not primary</option>
+      </optgroup>
+      <optgroup label="Part II · Primariness and factorisation properties">
       <option value="pfp">Primariness and the Primary Factorisation Property</option>
       <option value="upfp">Preservation of primariness under ℓ₁-, c₀-, and ℓ∞-sums of Banach spaces</option>
       <option value="lpck">Primariness of the spaces ℓₚ(C(K)) for 1 ≤ p ≤ ∞</option>
+      </optgroup>
+      <optgroup label="Part III · Exotic spaces of continuous functions">
+      <option value="sigma">The class of Banach lattices is not primary</option>
       <option value="posets">C(K)-spaces with few operators relative to posets</option>
       <option value="jfa">Operators on injective tensor products of separable Banach spaces and spaces with few operators</option>
+      </optgroup>
     </select></label><a href="#top" class="journal-mark" aria-label="Beginning of paper">Paper <span>Author manuscript</span></a></div>
     <nav class="mode-switch" aria-label="Reading mode"><button id="paper-mode" aria-pressed="true">Paper</button><button id="split-mode" aria-pressed="false">Paper + Lean</button><button id="lean-mode" aria-pressed="false">Lean &amp; certificates</button></nav>
-    <div class="reading-tools"><button id="fold-proofs" aria-pressed="false">Fold proofs</button><button id="fold-sections" aria-pressed="false">Fold sections</button><button id="about-button" aria-label="About this edition">⋯</button></div>
+    <div class="reading-tools"><button id="fold-proofs" aria-pressed="false">Fold proofs</button><button id="fold-sections" aria-pressed="false">Fold sections</button><button id="theme-toggle" aria-label="Switch to night mode" title="Switch to night mode"><svg class="night-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg><svg class="day-symbol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button><button id="about-button" aria-label="About this edition">⋯</button></div>
   </header>
+  <aside class="edition-notice" aria-label="Edition status"><strong>Work in progress.</strong> This interactive edition is under construction.</aside>
   <nav id="contents" aria-label="Contents" hidden><div class="contents-head"><span>CONTENTS</span><button id="close-contents" aria-label="Close table of contents">×</button></div><div id="toc-list"></div><div id="lean-toc-list" hidden></div><div class="contents-foot"><button data-target="top">Title &amp; abstract</button><button data-target="references">References</button></div></nav>
   <main id="reading-desk">
     <section id="paper-column" aria-label="Paper">
-      <div class="running-head"><button id="current-section" aria-label="Current section; open contents">The paper</button><div class="type-controls" role="group" aria-label="Text size"><button id="text-smaller" aria-label="Smaller text" title="Smaller text">A−</button><button id="text-larger" aria-label="Larger text" title="Larger text">A+</button></div></div>
+      <div class="running-head"><div class="running-location"><button id="thesis-context" aria-haspopup="dialog" aria-controls="thesis-library">Thesis</button><span class="running-location-divider" aria-hidden="true">/</span><button id="current-section" aria-label="Current section; open contents">The paper</button></div><div class="type-controls" role="group" aria-label="Text size"><button id="text-smaller" aria-label="Smaller text" title="Smaller text">A−</button><button id="text-larger" aria-label="Larger text" title="Larger text">A+</button></div></div>
     <div id="paper-scroll" tabindex="0" aria-label="Mathematical paper">
       <article id="paper" class="mathematical-paper">
         <header id="top" class="paper-title-block"><p class="publication">AUTHOR MANUSCRIPT · INTERACTIVE EDITION</p><h1 id="article-title">Factorizations and minimality of the Calkin Algebra norm for <i>C(K)</i>-spaces</h1><p class="author">Antonio Acuaviva</p><p class="affiliation">Lancaster University</p><div class="title-rule"></div><section class="abstract"><h2>Abstract.</h2><div id="abstract-text"></div></section></header>
@@ -73,6 +112,17 @@
       <footer class="companion-footer"><span>JLMS · Lean library</span><button class="refresh-lean">Refresh Lean</button></footer>
     </section>
   </template>
+  <dialog id="thesis-library" aria-labelledby="thesis-library-title" aria-modal="false">
+    <header class="thesis-library-heading"><h2 id="thesis-library-title">Thesis &amp; papers</h2><button data-close-thesis-library aria-label="Close thesis and papers" autofocus>×</button></header>
+    <nav id="thesis-collections" aria-label="Research collections">
+      <button class="thesis-collection-choice" data-thesis-view="thesis"><span>The full thesis</span><small>Interactive edition to follow</small></button>
+      <button class="thesis-collection-choice" data-choose-papers><span>Papers · Parts I–III</span><small>Choose a paper from the grouped list</small></button>
+      <button class="thesis-collection-choice" data-thesis-view="later"><span>AI-assisted research</span><small>A separate collection of later work</small></button>
+    </nav>
+    <section id="thesis-full-preview" class="thesis-collection-preview" hidden><h3>Factorisation, Primariness and Few Operators in Banach Spaces</h3><p>The complete thesis will have its own interactive reading edition here.</p><p class="thesis-awaiting">To be added.</p></section>
+    <section id="thesis-later-preview" class="thesis-collection-preview" hidden><h3>AI-assisted research</h3><p>Later papers will be collected here, alongside the thesis’s Afterword.</p><p class="thesis-awaiting">No papers added yet.</p></section>
+    <footer id="thesis-library-back" hidden><button data-thesis-view="collections">‹ Back</button></footer>
+  </dialog>
   <dialog id="citation-dialog" aria-label="Reference"><div class="dialog-top"><span>REFERENCE</span><button data-close-dialog aria-label="Close reference">×</button></div><div id="citation-content"></div><button id="citation-jump">Go to bibliography</button></dialog>
   <dialog id="source-dialog" aria-label="Lean source browser"><div class="dialog-top"><h2>JLMS Lean library</h2><button data-close-dialog aria-label="Close source browser">×</button></div><label for="source-search">Declaration or module</label><input type="search" id="source-search" placeholder="essentialNorm, Rudin, factorization…"><div id="source-results"></div></dialog>
   <dialog id="about-dialog" aria-label="About this interactive edition"><div class="dialog-top"><h2>The paper, with a formal companion</h2><button data-close-dialog aria-label="Close edition details">×</button></div><p>This edition typesets the author manuscript provided on 1 October 2026 as a continuous mathematical article. Its source uses the amsart class. Statements, proofs, sections, references and the original figure come from that archive, with the correction recorded below; publisher typesetting is not used.</p><p>Fold individual proofs or whole sections. Click a numbered result to open its Lean companion on the right, with the paper alongside. Close the companion or choose <strong>Paper</strong> to return to the full-width article. Hover over dotted terms, notation or numbered references for a reminder. Click a term or reference to keep its definition or statement on the right. Use Go to source and Return to passage to visit its location without losing your place.</p><p>Where <strong>More detail</strong> is available, choose <strong>The idea</strong>, <strong>The notation</strong>, or <strong>Step by step</strong>. Fold the explanation steps individually and switch back to <strong>Paper wording</strong> at any time. These authored notes are additions to this edition. For another question, use <strong>Ask a further question</strong> to copy the passage and your question into a chat.</p><h3>Formalisation and verification</h3><p>Choose <strong>Lean &amp; certificates</strong> to read the formalisation on its own. Use the result selector, the arrows, or <strong>Results</strong> to choose a passage. <strong>Show in paper</strong> opens the same result beside its formalisation.</p><p>A proposition definition is labelled as a statement, not a completed proof. Supporting results retain their hypotheses. Verification records have a dedicated tab and are checked against the source hashes they record; this reader does not run Lean.</p><p id="edition-source"></p><p><a data-source-author href="./downloads/jlms-author.zip" download="Factorizations_and_minimality_corrected_source.zip">Download the corrected LaTeX source ZIP</a> · <a data-source-original href="./downloads/jlms-original.zip" download="v3Text_File_Article_for_JLMS___Antonio_Acuaviva.zip">Original archive</a></p><p>No full-paper PDF accompanies this archive. A PDF in the author’s format can be linked when available.</p><details><summary>Correction in Section 3</summary><p>The inequality in the definition of vanishing at infinity has been corrected from ≤ to ≥: the sets where |f(k)| ≥ ε must be compact for every ε > 0. This is the correction adopted for the thesis.</p></details></dialog>

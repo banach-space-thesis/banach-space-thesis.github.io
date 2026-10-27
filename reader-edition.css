@@ -2,6 +2,33 @@
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .paper-choice { display: block; flex: 1; min-width: 0; max-width: 440px; }
 .paper-choice select { width: 100%; max-width: 100%; text-overflow: ellipsis; border: 0; border-bottom: 1px solid #cabcaa; background: transparent; color: #514a40; font: 15px "Palatino Linotype", Georgia, serif; padding: 5px 17px 5px 0; cursor: pointer; }
+.running-location { display: flex; align-items: center; gap: 12px; min-width: 0; }
+#thesis-context { white-space: nowrap; padding: 6px 0; font: 11px var(--ui); color: #85664f; }
+.running-location-divider { color: #b5a996; font: 13px var(--book); }
+.running-location #current-section { min-width: 0; }
+#thesis-library-button { white-space: nowrap; }
+#thesis-library { position: fixed; inset: calc(var(--masthead) + 8px) auto auto 28px; margin: 0; width: 370px; max-width: calc(100vw - 20px); max-height: calc(100dvh - var(--masthead) - 24px); padding: 0; overflow: auto; border: 1px solid #cabcaa; box-shadow: 0 8px 24px #35251020; }
+.thesis-library-heading { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px 10px; border-bottom: 1px solid var(--rule); }
+.thesis-library-heading h2 { margin: 0; font: 18px/1.3 var(--book); }
+.thesis-library-heading > button { padding: 0 3px; font: 21px var(--ui); color: var(--muted); }
+#thesis-collections { padding: 6px 8px; }
+.thesis-collection-choice { display: block; width: 100%; padding: 12px 10px; text-align: left; }
+.thesis-collection-choice + .thesis-collection-choice { border-top: 1px solid var(--rule); }
+.thesis-collection-choice:hover, .thesis-collection-choice:focus-visible { background: #f3eee4; }
+.thesis-collection-choice > span { display: block; font: 17px/1.4 var(--book); }
+.thesis-collection-choice > small { display: block; margin-top: 3px; font: 12px/1.5 var(--ui); color: var(--muted); }
+.thesis-collection-preview { padding: 18px; font: 16px/1.55 var(--book); }
+.thesis-collection-preview h3 { margin: 0 0 12px; font: 21px/1.3 var(--book); }
+.thesis-collection-preview p { margin: 0 0 12px; }
+.thesis-collection-preview .thesis-awaiting { margin-bottom: 0; font: 12px var(--ui); color: var(--muted); }
+#thesis-library-back { padding: 10px 18px 14px; border-top: 1px solid var(--rule); }
+#thesis-library-back button { padding: 0; font: 13px var(--ui); color: var(--accent); }
+@media (max-width: 1050px) { .edition-mark { gap: 14px; }.running-location { gap: 8px; } }
+@media (max-width: 700px) {
+  #thesis-library { max-width: calc(100vw - 20px); }
+  body.split .running-location #current-section, body.split .running-location-divider { display: none; }
+}
+@media (max-width: 490px) { .edition-mark { gap: 8px; }#thesis-library-button { font-size: 10px; }.running-location-divider, .running-location #current-section { display: none; } }
 .proof-picker { display: block; margin: 0 0 22px; font: 12px/1.6 "Segoe UI", Arial, sans-serif; color: #75614b; }
 .proof-picker select { display: block; width: 100%; background: transparent; border: 0; border-bottom: 1px solid #cabcaa; border-radius: 0; padding: 9px 2px; color: #514a40; font: 17px/1.5 "Palatino Linotype", Georgia, serif; }
 .paper-choice + .journal-mark { display: none; }
@@ -21,8 +48,16 @@
 .edition-correction { margin: 18px 0; padding: 10px 14px; border-left: 2px solid #b49979; font: 15px/1.6 "Palatino Linotype", Georgia, serif; color: #75614b; }
 .edition-correction p { margin: 10px 0 0; }
 .edition-correction summary { cursor: pointer; }
+.paper-footnote { margin: 18px 0 6px; padding-top: 10px; border-top: 1px solid var(--rule); font: normal 14px/1.65 var(--book); color: var(--muted); }
+.paper-footnote > summary { cursor: pointer; font-style: normal; }
+.paper-footnote .footnote-number { color: var(--accent); padding-right: 4px; }
+.paper-footnote > div { padding: 8px 0 0; color: var(--ink); }
+.paper-footnote p { margin: 0 0 10px; }
+.paper-footnote p:last-child { margin-bottom: 0; }
+.edition-anchor { display: inline; }
 .reading-note-proof { padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 :root {
+  color-scheme: light;
   --paper: #fdfcf9;
   --notes: #f3f0e8;
   --ink: #292823;
@@ -319,3 +354,78 @@ dialog::backdrop { background: #32291f55; backdrop-filter: none; }
   .mathematical-paper { max-width: none; padding: 0; font-size: 11pt; }
   .paper-proof { border: 0; }.paper-section > summary { padding-top: 0; }
 }
+
+/* Day and night keep the same reading measure and passage positions. */
+.reading-tools #theme-toggle { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 34px; padding: 0; }
+#theme-toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+#theme-toggle .day-symbol { display: none; }
+:root[data-theme="night"] #theme-toggle .night-symbol { display: none; }
+:root[data-theme="night"] #theme-toggle .day-symbol { display: block; }
+
+@media screen {
+  :root[data-theme="night"] {
+    color-scheme: dark;
+    --paper: #1d1f1c;
+    --notes: #242722;
+    --ink: #e6e2d8;
+    --muted: #b4ae9f;
+    --rule: #46493f;
+    --blue: #e4ab92;
+    --accent: #e4ab92;
+    --night-secondary: #c5bdad;
+    --night-hover: #373a30;
+    --night-rule: #646858;
+    scrollbar-color: #6b6d60 var(--paper);
+  }
+  :root[data-theme="night"] ::selection { background: #625440; color: #fff5e5; }
+  :root[data-theme="night"] #paper-scroll { scrollbar-color: #6b6d60 transparent; }
+  :root[data-theme="night"] :is(.reader-bar, .paper-section > summary, .paper-proof, .reading-level, .lean-tabs, .formal-correspondence, .detail-steps > details, .detail-notation > div, .reading-preview-actions) { border-color: var(--rule); }
+  :root[data-theme="night"] :is(.paper-choice select, .proof-picker select, .lean-result-nav select, #source-search, .reading-question textarea) { color: var(--ink); border-color: var(--night-rule); }
+  :root[data-theme="night"] :is(select option, select optgroup) { background: var(--paper); color: var(--ink); }
+  :root[data-theme="night"] :is(.edition-mark > button, .reading-tools button, .mode-switch button, .type-controls button, .named-result, .selected-note, .reading-original > div, .detail-notation dd, .detail-example, .reading-convention, .reading-question, .lean-comment, .empty-lean, .proof-choices p, .verification p, .verification-facts dd),
+  :root[data-theme="night"] :is(#current-section, #about-dialog p) { color: var(--night-secondary); }
+  :root[data-theme="night"] :is(.publication, .volume, .affiliation, .section-fold, .inspect-result, .fold-result, .proof-jump span, .fold-label, .qed, .equation-number, .bibliography > li::before, .article-colophon, .lean-toc-section .toc-link > span, .lean-wordmark span, .reading-wordmark, .source-search-button, .follow-paper[aria-pressed=true], .close-lean, .reading-note > .companion-head > button, .reading-source, .reading-level button, .lean-tabs button, .detail-choice-label, .detail-choices button, .detail-editorial, .detail-basis, .detail-step-tools, .detail-step-hint, .detail-step-number, .detail-steps > details > summary::after, .reading-note-footer, .companion-footer, .source-meta, .line-number, .proof-choice span, .verification-facts dt, .reading-preview-head button, .toc-link .toc-number, .toc-link.sub, .dialog-top > span, .dialog-top button, .source-result span),
+  :root[data-theme="night"] :is(#thesis-context, #about-dialog details, #source-dialog label) { color: var(--muted); }
+  :root[data-theme="night"] :is(.mode-switch button[aria-pressed=true], #reading-preview h2, .toc-link, .detail-steps > details > summary, .empty-lean h3, .verification-state h3) { color: var(--ink); }
+  :root[data-theme="night"] :is(.correspondence, .reading-note-nav, .lean-result-nav label, .lean-toc-section h3, .detail-example h3, .reading-convention h3, .reading-related h3, .reading-related button, .reading-note-footer button, .companion-footer button, .reading-original > summary, .reading-question > summary, .reading-question label, .reading-question button, .passage-note-label, .correspondence-kind, .formal-correspondence h3, .source-actions, .source-breadcrumb, .context-details summary, .dependency-list button, .proof-choice strong, .reading-preview-actions, .contents-head, .contents-foot, .source-result strong) { color: var(--accent); }
+  :root[data-theme="night"] :is(button:hover, a:hover, .reading-tools button[aria-pressed=true], .reading-level button[aria-pressed=true], .lean-tabs button[aria-selected=true], .detail-choices button[aria-pressed=true], .toc-link.active) { color: var(--accent); }
+  :root[data-theme="night"] :is(.detail-example, .reading-convention, .edition-correction, .verification-state, .dependency-list button, .follow-paper:not([aria-pressed=true])) { border-color: var(--night-rule); }
+  :root[data-theme="night"] .edition-correction { color: var(--night-secondary); }
+  :root[data-theme="night"] :is(.reading-question textarea, #source-search) { background: var(--paper); }
+  :root[data-theme="night"] :is(dialog, #thesis-library) { border-color: var(--night-rule); box-shadow: 0 12px 36px #0007; }
+  :root[data-theme="night"] dialog::backdrop { background: #080a08aa; }
+  :root[data-theme="night"] .thesis-collection-choice:is(:hover, :focus-visible) { background: var(--night-hover); }
+  :root[data-theme="night"] #contents { background: var(--notes); border-color: var(--night-rule); box-shadow: 8px 0 26px #0004; }
+  :root[data-theme="night"] #reading-preview { background: #2b2e27; border-color: var(--night-rule); border-top-color: var(--accent); box-shadow: 0 8px 25px #0006; }
+  :root[data-theme="night"] #split-divider { background: var(--rule); }
+  :root[data-theme="night"] #split-divider::after { background: var(--muted); }
+  :root[data-theme="night"] #split-divider:hover { background: var(--night-rule); }
+  :root[data-theme="night"] :is(.lean-code, .audit-code) { background: #2b2e27; color: #e1e3d5; border-color: var(--rule); }
+  :root[data-theme="night"] .tok-key { color: #efb097; }
+  :root[data-theme="night"] .tok-type { color: #abd1af; }
+  :root[data-theme="night"] .tok-comment { color: #b5b8a8; }
+  :root[data-theme="night"] .tok-string { color: #e1c587; }
+  :root[data-theme="night"] .status-line { color: #e1c587; }
+  :root[data-theme="night"] :is(.status-line.proof, .status-line.definition) { color: #abd1af; }
+  :root[data-theme="night"] .status-line.error { color: #f2aaa0; }
+  :root[data-theme="night"] .cross-ref { border-color: #e4ab9277; }
+  :root[data-theme="night"] .reading-term { text-decoration-color: #b4ae9f88; }
+  :root[data-theme="night"] .reading-notation { border-color: var(--muted); }
+  :root[data-theme="night"] :is(.reading-term:hover, .reading-term[aria-expanded=true], .reading-notation:hover) { background: var(--night-hover); }
+  :root[data-theme="night"] .formula-reminder-line { stroke: var(--muted); }
+  :root[data-theme="night"] .reading-formula-token:is(:hover, :focus-visible) > .formula-hit { fill: #e4ab9225; }
+  :root[data-theme="night"] .reading-formula-token:has(.reading-formula-token:hover) > .formula-hit { fill: transparent; }
+  :root[data-theme="night"] .flash-target { animation-name: mark-result-night; }
+  :root[data-theme="night"] .paper-figure img[src$="factorization-diagram.png"] { filter: invert(1) brightness(.85); mix-blend-mode: screen; }
+  :root[data-theme="night"] #toast { background: #41483a; color: var(--ink); }
+  @keyframes mark-result-night { 0%,30% { background: #373a30; } 100% { background: transparent; } }
+}
+@media print { :root, body { color-scheme: light; background: white; } }
+
+/* A quiet edition notice stays visible in every reading mode. */
+:root { --toolbar-height: 62px; --notice-height: 30px; --masthead: calc(var(--toolbar-height) + var(--notice-height)); }
+.reader-bar { height: var(--toolbar-height); }
+.edition-notice { height: var(--notice-height); padding: 5px 18px; border-bottom: 1px solid var(--rule); background: var(--notes); color: var(--muted); text-align: center; font: 12px/19px var(--ui); }
+.edition-notice strong { font-weight: 600; color: var(--ink); margin-right: 4px; }
+@media (max-width: 700px) { :root { --toolbar-height: 96px; --notice-height: 48px; }.edition-notice { padding: 5px 16px; } }
+@media print { .edition-notice { display: none; } }

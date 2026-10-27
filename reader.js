@@ -2,6 +2,7 @@ import {publicUrl} from './public-reader.js';
 import {esc,highlight,sourceHTML,verificationHTML} from './lean-view.js';
 import {createReadingContext} from './reading-context.js';
 import {createPaperFollower} from './paper-follow.js';
+import {createThesisContext} from './thesis-context.js';
 const $=id=>document.getElementById(id);
 const requestedPaper=new URLSearchParams(location.hash.slice(1)).get('paper');
 const paperId=['jlms','pems','sigma','pfp','upfp','lpck','posets','jfa'].includes(requestedPaper)?requestedPaper:'jlms';
@@ -134,6 +135,58 @@ function updateResultNavigation(){
 function chooseLeanResult(id){pendingPaperPassage=id;inspect(id,{present:false,tab:selectedTab});toggleContents(false);}
 function choicesHTML(choices){return choices.map(d=>`<button class="proof-choice" data-proof-path="${esc(d.path)}" data-proof-name="${esc(d.name)}"><strong>${esc(d.label||d.name)}</strong><span>${esc(d.name)} · ${esc(d.path)}</span></button>`).join('');}
 function proofPickerHTML(choices,selected){return '<label class="proof-picker">Part of the formal argument<select aria-label="Choose a proof" data-choose-proof>'+choices.map((d,i)=>`<option value="${i}" data-proof-path="${esc(d.path)}" data-proof-name="${esc(d.name)}"${d.name===selected?' selected':''}>${esc(d.label||d.name)}</option>`).join('')+'</select></label>';}
+function applyReadingRevisions(){
+  // These are explicit thesis amendments to the reading text. The author
+  // archives and the Lean certificates retain their own source identities.
+  const revisions=article.editionManifest?.readingRevisions||[];
+  if(!revisions.length)return;
+  for(const revision of revisions){
+    const passage=$(revision.targetId);
+    let target=revision.selector?passage?.querySelector(revision.selector):passage?.querySelector(':scope > .result-body')||passage;
+    if(!target)throw Error('Missing passage for thesis amendment: '+revision.targetId);
+    if(revision.html!==undefined&&target.matches('p')){
+      const block=document.createElement('div');
+      for(const attribute of target.attributes)block.setAttribute(attribute.name,attribute.value);
+      target.replaceWith(block);target=block;
+    }
+    for(const selector of revision.remove||[])target.querySelectorAll(selector).forEach(el=>el.remove());
+    if(revision.html!==undefined){
+      const footer=target.querySelector(':scope > .result-footer');
+      const anchors=[...target.querySelectorAll('[id]')].map(el=>el.id);
+      target.innerHTML=revision.html;
+      // Retain the original reference destinations when a proof is expanded.
+      const present=new Set([...target.querySelectorAll('[id]')].map(el=>el.id));
+      for(const id of anchors)if(!present.has(id)){
+        const anchor=document.createElement('span');anchor.id=id;anchor.className='edition-anchor';anchor.setAttribute('aria-hidden','true');target.prepend(anchor);
+      }
+      if(footer)target.append(footer);
+    }
+    if(revision.proofTitle)target.closest('.paper-proof').querySelector(':scope > summary > span').textContent=revision.proofTitle;
+    for(const change of revision.replacements||[]){
+      const before=target.innerHTML;
+      if(before.split(change.before).length-1!==change.count)throw Error('Thesis amendment no longer matches: '+revision.targetId);
+      target.innerHTML=before.split(change.before).join(change.after);
+    }
+    if(revision.footnote){
+      const note=document.createElement('details');note.className='paper-footnote';
+      note.innerHTML=`<summary><span class="footnote-number">${esc(revision.footnote.number)}.</span> ${esc(revision.footnote.title)}</summary><div role="note">${revision.footnote.html}</div>`;
+      const footer=target.querySelector(':scope > .result-footer');
+      if(target.matches('p'))target.after(note);else target.insertBefore(note,footer);
+    }
+    if(revision.proof){
+      const result=article.results.find(r=>r.id===revision.proof.resultId);
+      if(!result||!$(revision.proof.id))throw Error('Missing amended proof: '+revision.proof.id);
+      result.proofs.push({id:revision.proof.id,section:revision.proof.section});
+      const link=document.createElement('button');link.className='proof-jump';link.dataset.target=revision.proof.id;
+      link.innerHTML='Read proof <span>§'+esc(revision.proof.section)+'</span>';
+      $(result.id).querySelector('.result-footer').append(link);article.proofCount++;
+    }
+  }
+  for(const result of article.results){
+    const body=$(result.id).querySelector(':scope > .result-body').cloneNode(true);
+    body.querySelector(':scope > .result-footer')?.remove();result.statementHtml=body.innerHTML;
+  }
+}
 function renderReadingNotes(){
   for(const note of article.editionManifest?.readingNotes||[]){
     const passage=article.results.find(r=>r.id===note.resultId);
@@ -297,7 +350,7 @@ async function init(){
     article=await get(api('article'));catalog={papers:[],modules:[]};
     renderEdition();
     $('article-title').innerHTML=article.title;$('abstract-text').innerHTML=article.abstract;$('article-body').innerHTML=article.html;$('loading').hidden=true;
-    renderReadingNotes();
+    applyReadingRevisions();renderReadingNotes();
     readingContext=createReadingContext({article,paper:$('paper'),side:$('lean-side'),typeset,jump,inspect,
       openSide:()=>setMode('split',{history:false,load:false}),closeSide:()=>setMode('paper'),
       showLean:()=>paperFollower?.enabled&&paperFollower.current()?paperFollower.resume():inspect(result?.id||article.results[0].id),selectPassage:id=>{result=article.results.find(r=>r.id===id)||result;},changed:(replace=false)=>remember(replace)});
@@ -344,6 +397,12 @@ function renderEdition(){
     working.parentElement.nextElementSibling.innerHTML='<a href="'+esc(edition.arxivUrl)+'" target="_blank" rel="noopener">View this version on arXiv ↗</a>';
     if(edition.corrections.length){const details=$('about-dialog').querySelector(':scope > details');details.hidden=false;details.innerHTML='<summary>Corrections in this reading edition</summary>'+edition.corrections.map(c=>'<p>'+esc(c.description)+'</p>').join('');}
   }
+  if(edition.readingRevisions?.length){
+    const details=$('about-dialog').querySelector(':scope > details');details.hidden=false;
+    details.innerHTML='<summary>Corrections and additions following the thesis</summary>'+edition.readingRevisions.filter(r=>r.footnote).map(r=>'<p>'+esc(r.footnote.number+'. '+r.footnote.title)+'</p>').join('')+'<p>The numbered notes beside the affected passages explain each amendment. Article numbering is retained. Downloads preserve the author source edition; these further thesis amendments belong to the reading text.</p>';
+    $('about-dialog').querySelector('a[data-source-author]').textContent='Author LaTeX source ZIP';
+  }
 }
 $('paper-select').onchange=e=>{location.hash=new URLSearchParams({paper:e.target.value,mode});location.reload();};
+createThesisContext({paperId,getMode:()=>mode});
 init();
