@@ -1,0 +1,54 @@
+import SurveyStatements.P5Assembly
+import SurveyStatements.P5HaarDensity
+import SurveyStatements.P5HaarCoordinates
+import SurveyStatements.P5HaarMultipliers
+import SurveyStatements.P5CompressionComposition
+import SurveyStatements.P5ConstructionAudit
+import SurveyStatements.P5MixedTreeAudit
+import SurveyStatements.P5ScalarStabilizationAudit
+import SurveyStatements.P5L1VariationTraceAudit
+import SurveyStatements.P5L1VariationLinftyAudit
+import SurveyStatements.P5RealScalarAudit
+import SurveyStatements.P5BiTreeStabilizationAudit
+import SurveyStatements.P5CaponGridRigidityAudit
+import SurveyStatements.P5FaithfulCompressionAudit
+import SurveyStatements.P5L1VariationChildAudit
+import SurveyStatements.P5GridScalarApproximationAudit
+
+/-! Audit the proved P5 components separately from the unfinished main proof. -/
+
+#print axioms SurveyStatements.P5.probabilityLpMean_natural
+#print axioms SurveyStatements.P5.cancellativeProjection_retraction
+#print axioms SurveyStatements.P5.norm_cancellativeProjection_le
+#print axioms SurveyStatements.P5.norm_tensorWith
+#print axioms SurveyStatements.P5.productHaarSpace_eq_doublyZeroMean
+#print axioms SurveyStatements.P5.dyadicHaarCoordinate_self
+#print axioms SurveyStatements.P5.productHaarCoordinate_tensor
+#print axioms SurveyStatements.P5.productHaarCoordinate_self
+#print axioms SurveyStatements.P5.norm_productHaarCoordinate_le
+#print axioms SurveyStatements.P5.dyadicHaarCoordinate_biorthogonal
+#print axioms SurveyStatements.P5.productHaarCoordinate_biorthogonal
+#print axioms SurveyStatements.P5.scalarHaarCoordinates_eq_zero
+#print axioms SurveyStatements.P5.productHaarCoordinates_eq_zero
+#print axioms SurveyStatements.P5.productHaarCoordinates_separate
+#print axioms SurveyStatements.P5Support.intervalLpHaarBasis
+#print axioms SurveyStatements.P5.norm_dyadicHaarCoordinate_mul_norm_le
+#print axioms SurveyStatements.P5.norm_productHaarCoordinate_mul_norm_le
+#print axioms SurveyStatements.P5.productHaar_operator_diagonal_norm_le
+#print axioms SurveyStatements.P5.cancellativeHaarCoordinate_biorthogonal
+#print axioms SurveyStatements.P5.cancellativeHaar_operator_diagonal_norm_le
+#print axioms SurveyStatements.P5.IsProductHaarMultiplier.diagonal
+#print axioms SurveyStatements.P5.IsProductHaarMultiplier.symbol_norm_le
+#print axioms SurveyStatements.P5.cancellativeOperators_eq_of_haar
+#print axioms SurveyStatements.P5.IsProductHaarMultiplier.unique
+#print axioms SurveyStatements.P5.IsProductHaarMultiplier.comp
+#print axioms SurveyStatements.P5.meanZeroCopy_retraction
+#print axioms SurveyStatements.P5.mixedCopy_retraction
+#print axioms SurveyStatements.P5.mixedCopyInjection_mem
+#print axioms SurveyStatements.P5.cancellativeCopy_retraction
+#print axioms SurveyStatements.P5.norm_cancellativeCopyInjection_le
+#print axioms SurveyStatements.P5.norm_cancellativeCopyRetraction_le
+#print axioms SurveyStatements.P5.scalarCompression_factor_dichotomy
+#print axioms SurveyStatements.P5.scalarCompression_of_two_stage_reduction
+#print axioms SurveyStatements.P5.mixedNorm_uniformPrimaryFactorization_of_scalarCompression
+#print axioms SurveyStatements.P5.mixedNorm_primary_of_uniformPrimaryFactorization

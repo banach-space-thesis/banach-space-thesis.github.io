@@ -1,0 +1,11 @@
+import SurveyStatements.P2SeparableRangeCalkin
+
+#print axioms SurveyStatements.P2.compactOperator_range_isSeparable
+#print axioms SurveyStatements.P2.isClosed_setOf_isSeparableRange
+#print axioms SurveyStatements.P2.separableRangeOperators_isClosed
+#print axioms SurveyStatements.P2.compactOperators_subset_separableRangeOperators
+#print axioms SurveyStatements.P2.separableRangeOperators_ne_top
+#print axioms SurveyStatements.P2.separableRangeCalkinIdeal_isClosed
+#print axioms SurveyStatements.P2.separableRangeCalkinIdeal_ne_top
+#print axioms SurveyStatements.P2.compact_of_separableRange_of_simple_calkin
+#print axioms SurveyStatements.P2.compact_of_separableRange_of_topologicallySimple_calkin

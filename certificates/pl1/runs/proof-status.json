@@ -1,0 +1,1544 @@
+{
+  "savedAtUTC": "2026-10-03T13:16:57.583160+00:00",
+  "mainTheoremStatus": {
+    "C_real": "proved unconditionally",
+    "C_complex": "proved unconditionally",
+    "D_real": "proved unconditionally",
+    "D_complex": "proved unconditionally",
+    "combinedStrongTarget": "proved unconditionally over both real and complex scalars"
+  },
+  "remainingMainHypothesis": {
+    "declaration": "PL1CD.StageAnalyticSeparation",
+    "fields": [
+      "vanishing"
+    ],
+    "witnessConstructed": true,
+    "witness": "PL1CD.stageAnalyticSeparation",
+    "obligation": "For different continuum indices a and b, every bounded map from Haar L1 into the range of the b projection has zero a variation.",
+    "paperArgumentsToFinish": []
+  },
+  "provedSupportingResults": [
+    "Concrete continuum almost-disjoint family and stage parameter estimates",
+    "Projection bounds, closed ranges, infinite dimension, and Schur property",
+    "Lemma 6.1 entropy contraction and bounded entropy gap on actual Haar L1",
+    "Exact cylinder refinement averages and the energy bound for the actual level seminorm, under nonnegativity, boundedness, and mass hypotheses",
+    "Lemma 6.4 maximal variation for the actual resolvents, both scalar fields",
+    "Common singular carrier and the exact reviewed supplementary range geometry",
+    "Closed two-sided generated ideals and TheoremDAdditionalSpec",
+    "Upper bound of 2^continuum for the cardinality of closed operator ideals",
+    "Positive truncation and an actual positive decomposition of every real Haar L1 operator",
+    "Proposition 6.2(i): noise and resolvent vanishing for arbitrary real and complex operators",
+    "Proposition 6.2(ii): vanishing in the full intrinsic range norm, with summable coordinate domination",
+    "Proposition 6.3: the stage growth criterion and unconditional off-diagonal range vanishing",
+    "Exact C/D and shared-witness strong endpoints without analytic premises"
+  ],
+  "additionalTerminologyObligation": "The formal complex Banach-lattice bridge remains separate; the reviewed Strong target states the underlying-real lattice obstruction.",
+  "mathematicalModuleCount": 69,
+  "auditModuleCount": 1,
+  "nativeChecksPassed": 70,
+  "compilerEvidence": "research-pl1cd\\checks\\20261003T130348Z",
+  "compilerReport": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+  "compilerReportsCoveringCurrentSources": [
+    "research-pl1cd\\checks\\20261003T130348Z\\results.json"
+  ],
+  "nativeCompilationCoverage": {
+    "PL1CD.EntropyScalar": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyScalar",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyScalar.olean",
+          "PL1CD\\EntropyScalar.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyScalar.olean",
+        "exitCode": 0,
+        "seconds": 9.094,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "31a3ac766d85bb9be0e1b9d4664d8e7c318e21a19a4f4a299e595420a8ce055c"
+      }
+    },
+    "PL1CD.EntropyGap": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyGap",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyGap.olean",
+          "PL1CD\\EntropyGap.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyGap.olean",
+        "exitCode": 0,
+        "seconds": 8.578,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "6d1ee283cf2d51ec49d0b81c7244e87b304f4436136e0604c8903a97a779fcf2"
+      }
+    },
+    "PL1CD.IntegralCauchySchwarz": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.IntegralCauchySchwarz",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntegralCauchySchwarz.olean",
+          "PL1CD\\IntegralCauchySchwarz.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntegralCauchySchwarz.olean",
+        "exitCode": 0,
+        "seconds": 8.984,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "05caca89f9d71d7a5492695473e306001c59807f57d8ef28ff3b676bea282eec"
+      }
+    },
+    "PL1CD.BoundedEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.BoundedEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BoundedEntropy.olean",
+          "PL1CD\\BoundedEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BoundedEntropy.olean",
+        "exitCode": 0,
+        "seconds": 10.156,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "3077dadf4f81a6a5bb539a296e56246e4370f86bd7cfa05a531fe489bd3b240d"
+      }
+    },
+    "PL1CD.EntropyAverage": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyAverage",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyAverage.olean",
+          "PL1CD\\EntropyAverage.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyAverage.olean",
+        "exitCode": 0,
+        "seconds": 8.781,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "39b62f49dc27085e918abc3b82d91df00e37f03d3dffe2f84782e3261d0499cf"
+      }
+    },
+    "PL1CD.LpEntropyGap": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.LpEntropyGap",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\LpEntropyGap.olean",
+          "PL1CD\\LpEntropyGap.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\LpEntropyGap.olean",
+        "exitCode": 0,
+        "seconds": 8.891,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "c6370304686def90bb5f157cb945d2dca571ba8e5e50d5e2be6f7e017a89e33c"
+      }
+    },
+    "PL1CD.FiniteEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.FiniteEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\FiniteEntropy.olean",
+          "PL1CD\\FiniteEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\FiniteEntropy.olean",
+        "exitCode": 0,
+        "seconds": 9.969,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "6835d527786bd1a47fc5f196034cb817c5be89cb46c0dd47b0c15ceed4af93a2"
+      }
+    },
+    "PL1CD.CylinderRefinement": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.CylinderRefinement",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CylinderRefinement.olean",
+          "PL1CD\\CylinderRefinement.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CylinderRefinement.olean",
+        "exitCode": 0,
+        "seconds": 10.203,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "ec7c8c53ef07a7dde3009ec1a4acd90a55c01993224ee21b5ab6abdf3473b448"
+      }
+    },
+    "PL1CD.PartitionEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PartitionEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PartitionEntropy.olean",
+          "PL1CD\\PartitionEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PartitionEntropy.olean",
+        "exitCode": 0,
+        "seconds": 10.406,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "0b26546f426f26525e85fa6d2ad48f2c687e13b307caffab60ed41bf92a82c1d"
+      }
+    },
+    "PL1CD.LimsupSeminorm": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.LimsupSeminorm",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\LimsupSeminorm.olean",
+          "PL1CD\\LimsupSeminorm.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\LimsupSeminorm.olean",
+        "exitCode": 0,
+        "seconds": 7.672,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "1b538feb89b0664837888e16ea8995eb4468129cee9f8b59a0786ac9944132c0"
+      }
+    },
+    "PL1CD.Variation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.Variation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Variation.olean",
+          "PL1CD\\Variation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Variation.olean",
+        "exitCode": 0,
+        "seconds": 12.047,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "b59c15bc1434a49c17dbf7094cfcab4217fb7497c59719a855250114d92f72fd"
+      }
+    },
+    "PL1CD.RefinementEnergy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RefinementEnergy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RefinementEnergy.olean",
+          "PL1CD\\RefinementEnergy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RefinementEnergy.olean",
+        "exitCode": 0,
+        "seconds": 15.937,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "00166c44285522e0989c506fd73a93f231a3f4cde165258d1877d41276deadb3"
+      }
+    },
+    "PL1CD.CubeEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.CubeEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CubeEntropy.olean",
+          "PL1CD\\CubeEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CubeEntropy.olean",
+        "exitCode": 0,
+        "seconds": 10.907,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "a006b16e65f4a8c6977a8104366488f846e62d6ce13b15847a36c9f866b3a3db"
+      }
+    },
+    "PL1CD.AnisotropicCubeEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.AnisotropicCubeEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AnisotropicCubeEntropy.olean",
+          "PL1CD\\AnisotropicCubeEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AnisotropicCubeEntropy.olean",
+        "exitCode": 0,
+        "seconds": 12.421,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d35d572b6031d6bcfc76d41d65328be56615d6edac1e10ae3a9d8dae7a28d147"
+      }
+    },
+    "PL1CD.HaarCubeEntropy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarCubeEntropy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarCubeEntropy.olean",
+          "PL1CD\\HaarCubeEntropy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarCubeEntropy.olean",
+        "exitCode": 0,
+        "seconds": 9.985,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "ec0d9e5676ca249abb1ef8d9e0e4d49327ab66bb3dc2d4c1885307e3c7b5f9dd"
+      }
+    },
+    "PL1CD.CubeApproximation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.CubeApproximation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CubeApproximation.olean",
+          "PL1CD\\CubeApproximation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CubeApproximation.olean",
+        "exitCode": 0,
+        "seconds": 10.0,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "7f51c1625545741111073fc69e08da6dcf7da0cedc0253eda804d2d385b6d718"
+      }
+    },
+    "PL1CD.EntropyContinuity": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyContinuity",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyContinuity.olean",
+          "PL1CD\\EntropyContinuity.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyContinuity.olean",
+        "exitCode": 0,
+        "seconds": 8.781,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d89ae74c12468def5e2e91a5212c943c51cb7ec27adf91d17a78b677b5f151d9"
+      }
+    },
+    "PL1CD.HaarEntropyContraction": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarEntropyContraction",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarEntropyContraction.olean",
+          "PL1CD\\HaarEntropyContraction.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarEntropyContraction.olean",
+        "exitCode": 0,
+        "seconds": 9.594,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "84e0307babeaceef5143b0bb3a8b089fedda0a392b59d30c24a8fb75e19c8df0"
+      }
+    },
+    "PL1CD.EntropyUpper": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyUpper",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyUpper.olean",
+          "PL1CD\\EntropyUpper.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyUpper.olean",
+        "exitCode": 0,
+        "seconds": 9.922,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "ba22acebbd14a61aeb4daea5b6877e4d73a9d921e1968a02a5c91a2249d5c241"
+      }
+    },
+    "PL1CD.PositiveHaarOperators": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PositiveHaarOperators",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveHaarOperators.olean",
+          "PL1CD\\PositiveHaarOperators.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveHaarOperators.olean",
+        "exitCode": 0,
+        "seconds": 11.39,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "e718735d85f0f6472991b4756d17b8ea33ec9628070d7ac0f4729b00b8cceb8a"
+      }
+    },
+    "PL1CD.PositiveKernelAverages": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PositiveKernelAverages",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveKernelAverages.olean",
+          "PL1CD\\PositiveKernelAverages.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveKernelAverages.olean",
+        "exitCode": 0,
+        "seconds": 11.047,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "7e0a1ddf83cee1f701b73e3298cfa411e9617958d843443bd10c49575351a427"
+      }
+    },
+    "PL1CD.RealL1Order": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RealL1Order",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealL1Order.olean",
+          "PL1CD\\RealL1Order.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealL1Order.olean",
+        "exitCode": 0,
+        "seconds": 9.875,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d1afc985c4d15f1c5627689e4112370dd672ce2f555b28d877b6abf2cf565463"
+      }
+    },
+    "PL1CD.HaarPartitions": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarPartitions",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitions.olean",
+          "PL1CD\\HaarPartitions.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitions.olean",
+        "exitCode": 0,
+        "seconds": 10.61,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "26efded1ba43749204e8be7bcf18ab18c869fc696be8fbe0001b81cd5c3dab90"
+      }
+    },
+    "PL1CD.HaarPartitionAlgebra": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarPartitionAlgebra",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitionAlgebra.olean",
+          "PL1CD\\HaarPartitionAlgebra.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitionAlgebra.olean",
+        "exitCode": 0,
+        "seconds": 10.703,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "46ddaafbcc1fd9c4d10b945f80602f310c2c758a36ddecc01fe775dddd3d5d91"
+      }
+    },
+    "PL1CD.RealL1FiniteOrder": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RealL1FiniteOrder",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealL1FiniteOrder.olean",
+          "PL1CD\\RealL1FiniteOrder.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealL1FiniteOrder.olean",
+        "exitCode": 0,
+        "seconds": 9.047,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "936ce384cb93ad448fe6c7b1455331a8e06f6841ff0cbd56021dee7d7a07bc5c"
+      }
+    },
+    "PL1CD.AbsoluteRefinement": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.AbsoluteRefinement",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteRefinement.olean",
+          "PL1CD\\AbsoluteRefinement.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteRefinement.olean",
+        "exitCode": 0,
+        "seconds": 9.796,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "7a4c720df7d115032d6000852b319f5bc4dc7ea001cc606163264bd6ba6d12cb"
+      }
+    },
+    "PL1CD.HaarPartitionExpansion": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarPartitionExpansion",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitionExpansion.olean",
+          "PL1CD\\HaarPartitionExpansion.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarPartitionExpansion.olean",
+        "exitCode": 0,
+        "seconds": 9.704,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "b12c59462b31537b128952c9c28275c62512a64f0d7901090e3ef2501ce3bcd4"
+      }
+    },
+    "PL1CD.StrongOperatorLimits": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StrongOperatorLimits",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StrongOperatorLimits.olean",
+          "PL1CD\\StrongOperatorLimits.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StrongOperatorLimits.olean",
+        "exitCode": 0,
+        "seconds": 9.781,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "1538ec884d42f54340520eebfa4dc332fb29d9755e3a125ddb768ba74fcb326b"
+      }
+    },
+    "PL1CD.AbsoluteOperatorLimit": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.AbsoluteOperatorLimit",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteOperatorLimit.olean",
+          "PL1CD\\AbsoluteOperatorLimit.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteOperatorLimit.olean",
+        "exitCode": 0,
+        "seconds": 10.156,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "5c72adb4d20caad7b44d91195121e68dc70375365c1d38ce1e3536faade39586"
+      }
+    },
+    "PL1CD.EntropyEnergy": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyEnergy",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyEnergy.olean",
+          "PL1CD\\EntropyEnergy.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyEnergy.olean",
+        "exitCode": 0,
+        "seconds": 10.766,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "673ca704d4a5c7220a1e8931131c7e1e53f3c3b3b4245056d3f309fb97994623"
+      }
+    },
+    "PL1CD.EntropyGrowth": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.EntropyGrowth",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyGrowth.olean",
+          "PL1CD\\EntropyGrowth.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\EntropyGrowth.olean",
+        "exitCode": 0,
+        "seconds": 10.0,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d553977249f09fdcbc4283b8a8e358b7d42951e6945cd7fa8f2f2f68beb300e1"
+      }
+    },
+    "PL1CD.AlmostDisjoint": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.AlmostDisjoint",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AlmostDisjoint.olean",
+          "PL1CD\\AlmostDisjoint.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AlmostDisjoint.olean",
+        "exitCode": 0,
+        "seconds": 6.015,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "92240c33538104d6c98865c184f8a33eaa638f7cf1c16d48cdf25990a35339fa"
+      }
+    },
+    "PL1CD.Statements": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.Statements",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Statements.olean",
+          "PL1CD\\Statements.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Statements.olean",
+        "exitCode": 0,
+        "seconds": 9.922,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "6c44b6aa5dc72a2c817a489a33d0658c27feb464610b69f4da295cef988fa549"
+      }
+    },
+    "PL1CD.ProjectionFamily": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.ProjectionFamily",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProjectionFamily.olean",
+          "PL1CD\\ProjectionFamily.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProjectionFamily.olean",
+        "exitCode": 0,
+        "seconds": 9.688,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "8f62390dcefc1791c8d198871a1a9267e3eeb2f8ebe0d1d8893ba42b65eae739"
+      }
+    },
+    "PL1CD.GeneratedIdeals": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.GeneratedIdeals",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\GeneratedIdeals.olean",
+          "PL1CD\\GeneratedIdeals.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\GeneratedIdeals.olean",
+        "exitCode": 0,
+        "seconds": 12.828,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "cb8d2b823eca39415553ea6e9d86e70a7a463ce02b951136cf5267ddf34369c2"
+      }
+    },
+    "PL1CD.DunfordPettisIdeals": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.DunfordPettisIdeals",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\DunfordPettisIdeals.olean",
+          "PL1CD\\DunfordPettisIdeals.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\DunfordPettisIdeals.olean",
+        "exitCode": 0,
+        "seconds": 9.843,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "4e280f6965bf85e0ae613fcf5d01c7409c5a891691cc9228cbd8f3d3706fdbf8"
+      }
+    },
+    "PL1CD.StageParameters": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageParameters",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageParameters.olean",
+          "PL1CD\\StageParameters.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageParameters.olean",
+        "exitCode": 0,
+        "seconds": 10.109,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "b2ce49ccd75589cebc840e11730237be401da0b74dcc28c6b340dc30a11a9ef4"
+      }
+    },
+    "PL1CD.StageFiltration": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageFiltration",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageFiltration.olean",
+          "PL1CD\\StageFiltration.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageFiltration.olean",
+        "exitCode": 0,
+        "seconds": 10.813,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "f70d3b91d7f0984cb5e9ac147246cd0a9dcf0590cb4f957cf47587ff2a09230c"
+      }
+    },
+    "PL1CD.StageAsymptotics": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageAsymptotics",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageAsymptotics.olean",
+          "PL1CD\\StageAsymptotics.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageAsymptotics.olean",
+        "exitCode": 0,
+        "seconds": 10.469,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "f3cbb7ec788cc7da4365d2c1a1c9d13530661849e6709948e4f11ec56c1f1445"
+      }
+    },
+    "PL1CD.StageBlockEvents": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageBlockEvents",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageBlockEvents.olean",
+          "PL1CD\\StageBlockEvents.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageBlockEvents.olean",
+        "exitCode": 0,
+        "seconds": 10.75,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "c7804252b6e9f82752871b5a931d8b9b1003d4d083a60fa863d18af8b53a0baf"
+      }
+    },
+    "PL1CD.BlockConcentration": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.BlockConcentration",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BlockConcentration.olean",
+          "PL1CD\\BlockConcentration.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BlockConcentration.olean",
+        "exitCode": 0,
+        "seconds": 10.188,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d8887509a5f568487efc03e245fdd32386c12b4419e97879cbe87f17fcd1b825"
+      }
+    },
+    "PL1CD.StageBlocks": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageBlocks",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageBlocks.olean",
+          "PL1CD\\StageBlocks.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageBlocks.olean",
+        "exitCode": 0,
+        "seconds": 9.765,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "b455363ffffb8604c92814d01ca93512f7fa188b738ff6028641f1ac68a90c1c"
+      }
+    },
+    "PL1CD.BoundedPositiveVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.BoundedPositiveVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BoundedPositiveVanishing.olean",
+          "PL1CD\\BoundedPositiveVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\BoundedPositiveVanishing.olean",
+        "exitCode": 0,
+        "seconds": 9.907,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "55c4b2f7e388157bd120aa235687775985804bf984a3a0d076b11025a0592328"
+      }
+    },
+    "PL1CD.PositiveTruncation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PositiveTruncation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveTruncation.olean",
+          "PL1CD\\PositiveTruncation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveTruncation.olean",
+        "exitCode": 0,
+        "seconds": 11.375,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "3fd1169dc95a2b25bd0af7c79ed264a357f70865eac328673fd541b367157382"
+      }
+    },
+    "PL1CD.PositiveVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PositiveVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveVanishing.olean",
+          "PL1CD\\PositiveVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PositiveVanishing.olean",
+        "exitCode": 0,
+        "seconds": 12.141,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "e4389399a19537fae5f595dcacd30b1955aede1ddd80591af0357ef397831bb7"
+      }
+    },
+    "PL1CD.AbsoluteMajorant": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.AbsoluteMajorant",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteMajorant.olean",
+          "PL1CD\\AbsoluteMajorant.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\AbsoluteMajorant.olean",
+        "exitCode": 0,
+        "seconds": 11.625,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "2fe110fd1b1047f52ab43ac719a25ecc7b3e7f77a665423ab9b0aca2c6800fe5"
+      }
+    },
+    "PL1CD.Cardinality": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.Cardinality",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Cardinality.olean",
+          "PL1CD\\Cardinality.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\Cardinality.olean",
+        "exitCode": 0,
+        "seconds": 9.109,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "e5b87a87d7728b7cf99f803be6db09bb7edaec70dc243b4a30dd3ddf21f1e852"
+      }
+    },
+    "PL1CD.PartitionNorms": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.PartitionNorms",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PartitionNorms.olean",
+          "PL1CD\\PartitionNorms.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\PartitionNorms.olean",
+        "exitCode": 0,
+        "seconds": 10.688,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "9b437a43ad43da55712619e5b123048907f99547444862238e94a3fc2d44f400"
+      }
+    },
+    "PL1CD.SumSeries": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.SumSeries",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\SumSeries.olean",
+          "PL1CD\\SumSeries.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\SumSeries.olean",
+        "exitCode": 0,
+        "seconds": 8.562,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "c32705bfe077e25e7da6f8de2a0c0f6934494dccc710ac19f69a396568951dc0"
+      }
+    },
+    "PL1CD.SemigroupVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.SemigroupVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\SemigroupVanishing.olean",
+          "PL1CD\\SemigroupVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\SemigroupVanishing.olean",
+        "exitCode": 0,
+        "seconds": 10.219,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "971904ea02a554c760956763ec7084809eece0733f94dbeae658efca930ad8af"
+      }
+    },
+    "PL1CD.RealOperatorVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RealOperatorVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealOperatorVanishing.olean",
+          "PL1CD\\RealOperatorVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealOperatorVanishing.olean",
+        "exitCode": 0,
+        "seconds": 10.063,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "01f927c6af64bda55c357fb7ee150e621a1b49f1da670195bb2af6364d38901e"
+      }
+    },
+    "PL1CD.ScalarOperatorVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.ScalarOperatorVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ScalarOperatorVanishing.olean",
+          "PL1CD\\ScalarOperatorVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ScalarOperatorVanishing.olean",
+        "exitCode": 0,
+        "seconds": 11.812,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "c8019f35ae6aadb04e03da9936d9ed4e78101c0f3c6fde874cb397620f2fb35a"
+      }
+    },
+    "PL1CD.RealInputVariation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RealInputVariation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealInputVariation.olean",
+          "PL1CD\\RealInputVariation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RealInputVariation.olean",
+        "exitCode": 0,
+        "seconds": 9.891,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "1a78c6d55cc07b18797caffe348e9e669b001f32dc65d1e485ac73248e042225"
+      }
+    },
+    "PL1CD.CoordinateVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.CoordinateVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CoordinateVanishing.olean",
+          "PL1CD\\CoordinateVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\CoordinateVanishing.olean",
+        "exitCode": 0,
+        "seconds": 11.187,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "827236e28ae9bbbcdb18eda0b821d47cbb3dbbd1014938cb159358cd690c88b8"
+      }
+    },
+    "PL1CD.FiniteExpectations": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.FiniteExpectations",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\FiniteExpectations.olean",
+          "PL1CD\\FiniteExpectations.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\FiniteExpectations.olean",
+        "exitCode": 0,
+        "seconds": 11.578,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "f158b429428a53f9cdbccdc5cb6c22206772d0c58adc5ce4bebb7c7c7d615dca"
+      }
+    },
+    "PL1CD.DensitySeparation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.DensitySeparation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\DensitySeparation.olean",
+          "PL1CD\\DensitySeparation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\DensitySeparation.olean",
+        "exitCode": 0,
+        "seconds": 10.625,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "9f9876b99bdeb2ffe02526368404eb72307c3acbbe0c8115a3cc0b0e7688ec5a"
+      }
+    },
+    "PL1CD.HaarTransport": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.HaarTransport",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarTransport.olean",
+          "PL1CD\\HaarTransport.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\HaarTransport.olean",
+        "exitCode": 0,
+        "seconds": 14.547,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "248e0ace6d7e5a41881468cc1f358ab5e0dbb8045b7fa9a47a2f7806247bceb8"
+      }
+    },
+    "PL1CD.IdealSeparation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.IdealSeparation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IdealSeparation.olean",
+          "PL1CD\\IdealSeparation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IdealSeparation.olean",
+        "exitCode": 0,
+        "seconds": 12.125,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "e3845e20ca76224159cf27ba33235ee45a9d95a0dc4c751c9e6eac0b6ac1f072"
+      }
+    },
+    "PL1CD.VariationComposition": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.VariationComposition",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\VariationComposition.olean",
+          "PL1CD\\VariationComposition.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\VariationComposition.olean",
+        "exitCode": 0,
+        "seconds": 12.0,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "44c253a5d72134b1ffd50dad8b9ed5cc07c8da741c3d74665dbac54b8f86f491"
+      }
+    },
+    "PL1CD.IntrinsicZeroVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.IntrinsicZeroVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntrinsicZeroVanishing.olean",
+          "PL1CD\\IntrinsicZeroVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntrinsicZeroVanishing.olean",
+        "exitCode": 0,
+        "seconds": 12.797,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "9b1981a9b4d95f46e631d94d436c8b8308feb9027948a12718a969a423168301"
+      }
+    },
+    "PL1CD.IntrinsicVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.IntrinsicVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntrinsicVanishing.olean",
+          "PL1CD\\IntrinsicVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\IntrinsicVanishing.olean",
+        "exitCode": 0,
+        "seconds": 13.422,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "619aab5ce6d688c9cba04b1db31e99f548cae750a5b454a731eeea6ff0310333"
+      }
+    },
+    "PL1CD.RangeVanishing": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.RangeVanishing",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RangeVanishing.olean",
+          "PL1CD\\RangeVanishing.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\RangeVanishing.olean",
+        "exitCode": 0,
+        "seconds": 19.578,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "0d571e1d98e9105944ee89ea6d1477391ffa9242e9a33a5dc39fc7b3f2198b41"
+      }
+    },
+    "PL1CD.StageGrowth": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageGrowth",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageGrowth.olean",
+          "PL1CD\\StageGrowth.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageGrowth.olean",
+        "exitCode": 0,
+        "seconds": 9.265,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "7600dff97b04b043dfafeac06dd88b24c37de6317930db336ecaf958ae6bd3d2"
+      }
+    },
+    "PL1CD.MaximalVariation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.MaximalVariation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\MaximalVariation.olean",
+          "PL1CD\\MaximalVariation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\MaximalVariation.olean",
+        "exitCode": 0,
+        "seconds": 11.047,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "5537e1f4860bcbd65bb6b55b847132eb1899a652855c7224c8b35508947aae44"
+      }
+    },
+    "PL1CD.StageSeparation": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageSeparation",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageSeparation.olean",
+          "PL1CD\\StageSeparation.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageSeparation.olean",
+        "exitCode": 0,
+        "seconds": 13.75,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "8fa54b13a35d57fd3be879a5ed5e44d609a813191376a2ee44279d990464a702"
+      }
+    },
+    "PL1CD.StageCarrier": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageCarrier",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageCarrier.olean",
+          "PL1CD\\StageCarrier.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageCarrier.olean",
+        "exitCode": 0,
+        "seconds": 9.891,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "d1fdd31227aacba39353fb12c7adbac505ac7eb509f7dd5439b0f1acdd5217c7"
+      }
+    },
+    "PL1CD.StageRangeGeometry": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.StageRangeGeometry",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageRangeGeometry.olean",
+          "PL1CD\\StageRangeGeometry.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\StageRangeGeometry.olean",
+        "exitCode": 0,
+        "seconds": 19.578,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "eb08afbfd26075603dc2488d7840dadca3b79484fab03b57c4f74251ca89fd95"
+      }
+    },
+    "PL1CD.ProofEndpoints": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.ProofEndpoints",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProofEndpoints.olean",
+          "PL1CD\\ProofEndpoints.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProofEndpoints.olean",
+        "exitCode": 0,
+        "seconds": 15.125,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "62d57b562d7372fdf679daad3ce5d0b7455428280fdf1dd681efdaad15dcf6c6"
+      }
+    },
+    "PL1CD.MainTheorems": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.MainTheorems",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\MainTheorems.olean",
+          "PL1CD\\MainTheorems.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\MainTheorems.olean",
+        "exitCode": 0,
+        "seconds": 13.344,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "98150096a75f55064b87953e8759231ef87e786d4a5034c254274c7c9345a4d1"
+      }
+    },
+    "PL1CD.ProofAudit": {
+      "report": "research-pl1cd\\checks\\20261003T130348Z\\results.json",
+      "stage": {
+        "module": "PL1CD.ProofAudit",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProofAudit.olean",
+          "PL1CD\\ProofAudit.lean"
+        ],
+        "artifactPath": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts\\PL1CD\\ProofAudit.olean",
+        "exitCode": 0,
+        "seconds": 12.594,
+        "sourceUnchangedDuringCheck": true,
+        "artifactSha256": "20dbf0cf87344f5a2c4b1fa100389e26d98f9e44b32e71e38367b292f20e4bc1"
+      }
+    }
+  },
+  "exactTypesAndAxiomReport": "research-pl1cd\\checks\\20261003T130348Z\\PL1CD.ProofAudit.stdout.txt",
+  "auditedDeclarations": 51,
+  "observedAxioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "hasProofPlaceholders": false,
+  "verificationScope": "All C/D source modules compiled in dependency order into an initially empty artifact directory; imports of C/D modules must come from this run. Pinned A/B, BanLat, Mathlib and toolchain artifacts are reused; this is not a full imported-dependency rebuild or kernel replay.",
+  "freshCDProofBuild": true,
+  "proofArtifactDirectory": "research-pl1cd\\checks\\20261003T130348Z\\fresh-artifacts",
+  "leanToolchain": "4.34.0-rc2",
+  "mathlibRevision": "4cbb42e75a050e830b7cf0f2ae748d7644f59cf7",
+  "approvedStatementsAndFormalExportUnchanged": true,
+  "statementSha256": "bc8645903ae2d1236c3fe494d5af7e43a2e4b44ed2c2fea2c2c3faa752cd2488",
+  "frozenSourceUnchanged": true,
+  "frozenSourceCount": 225,
+  "additionalPinnedDependencies": {
+    "Mathlib.Topology.ContinuousMap.SecondCountableSpace": {
+      "sourceSha256": "c539ac6a26c947b7bd6017aa43163fba3fd5631686ea84f2daa15e7557e1dda4",
+      "artifactSha256": "ceaa3e307de40847ba3664913832dfc50f5f76f25f6b1b860f6e5e1d2490aac5",
+      "compilationEvidence": "research-pl1cd\\checks\\20261003T080249Z",
+      "compilationStage": {
+        "module": "Mathlib.Topology.ContinuousMap.SecondCountableSpace",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\build\\Mathlib\\Topology\\ContinuousMap\\SecondCountableSpace.olean",
+          "Mathlib\\Topology\\ContinuousMap\\SecondCountableSpace.lean"
+        ],
+        "exitCode": 0,
+        "seconds": 6.656
+      }
+    },
+    "Mathlib.Analysis.SumOverResidueClass": {
+      "sourceSha256": "f679dd3bb0517829dc5cab12a32f10692e2dde81c5b56eee6e05388cede01b9e",
+      "artifactSha256": "8bd049262e8c75d8c616b2baaaace29986981c93e8b88369f38b474c2c007474",
+      "compilationEvidence": "research-pl1cd\\checks\\20261003T091750Z",
+      "compilationStage": {
+        "module": "Mathlib.Analysis.SumOverResidueClass",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\build\\Mathlib\\Analysis\\SumOverResidueClass.olean",
+          "Mathlib\\Analysis\\SumOverResidueClass.lean"
+        ],
+        "exitCode": 0,
+        "seconds": 8.719
+      }
+    },
+    "Mathlib.Analysis.Asymptotics.SpecificAsymptotics": {
+      "sourceSha256": "afd71e0c4080db33c4cc6efae1e5c1352f155f4e01e813412c7a1fa84d00021c",
+      "artifactSha256": "a1a5a570f70981514d24955ddabe6a6b6d82905ed7c7380ddbc95c6f3ed6efc6",
+      "compilationEvidence": "research-pl1cd\\checks\\20261003T091750Z",
+      "compilationStage": {
+        "module": "Mathlib.Analysis.Asymptotics.SpecificAsymptotics",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\build\\Mathlib\\Analysis\\Asymptotics\\SpecificAsymptotics.olean",
+          "Mathlib\\Analysis\\Asymptotics\\SpecificAsymptotics.lean"
+        ],
+        "exitCode": 0,
+        "seconds": 10.812
+      }
+    },
+    "Mathlib.Analysis.PSeries": {
+      "sourceSha256": "76d1ab329251e66231fb3e2612c166a0605492fe0c34450b7055a4b7846cc550",
+      "artifactSha256": "a7c05e54d0461f6e2b983f6cab97b3323874455b3d2e477bd42cfcf4b142425e",
+      "compilationEvidence": "research-pl1cd\\checks\\20261003T091750Z",
+      "compilationStage": {
+        "module": "Mathlib.Analysis.PSeries",
+        "command": [
+          ".\\IA-Stuff-Math\\tmp\\lean_library_definition_audit_2026-09-05\\lean-4.34.0-rc2-windows\\bin\\lean.exe",
+          "-j1",
+          "-M8192",
+          "-o",
+          "research-pl1cd\\build\\Mathlib\\Analysis\\PSeries.olean",
+          "Mathlib\\Analysis\\PSeries.lean"
+        ],
+        "exitCode": 0,
+        "seconds": 14.906
+      }
+    }
+  },
+  "sourceHashes": {
+    "PL1CD\\EntropyScalar.lean": "bcb4722a85a72c97b0ac8e6aabdf0748021d518917b0be14a002d30d942a5890",
+    "PL1CD\\EntropyGap.lean": "f0ccb3540edd62a501beb96ff271beb7a446059252675888d055240c6a3db46f",
+    "PL1CD\\IntegralCauchySchwarz.lean": "159d173af8dffa75d7b8cdae90a1323d82abd426a14669f730482f1e31f857fc",
+    "PL1CD\\BoundedEntropy.lean": "490a97b564b06ea31dbe6ddd41951d012da54ae333db7bd20bb68f1b1d9ed562",
+    "PL1CD\\EntropyAverage.lean": "bbab9ea7ac3eb8cc38e35e828d06573078560058efa7d82863f026cdcc25dafe",
+    "PL1CD\\LpEntropyGap.lean": "e65827e91856e0c2b096a52ffb2602599683b257d6a877566a711a11af8630bb",
+    "PL1CD\\FiniteEntropy.lean": "1904125f929062909e48d0ab398d8abff7b4af08880b1c1dcc30e41cbad04df7",
+    "PL1CD\\CylinderRefinement.lean": "8e709e3e791e6ad61afc064e0b820a26de76e827571372997327ae20567f2cd6",
+    "PL1CD\\PartitionEntropy.lean": "6227c77bc890dc6f3f3b6d4225a8cda28c73db12e5cba1e149e26a72af18f3a8",
+    "PL1CD\\LimsupSeminorm.lean": "91ede9aa4780ef398b0753bc42ab0cf94ec4359c7ab4c9dbc791ec5994e08179",
+    "PL1CD\\Variation.lean": "5bb417b25c4b3bef3ed3bd6b566deca624947fdf9a67967bfe02972269c32a71",
+    "PL1CD\\RefinementEnergy.lean": "7a2bdeab57d863f7de43e37af8139dafaed6d55bdb25ff70fb7616afe15b43db",
+    "PL1CD\\CubeEntropy.lean": "3d21acf8b881a45fcc02586caeaf268d8b344b597bad8dca43696e76eab95f24",
+    "PL1CD\\AnisotropicCubeEntropy.lean": "d873e8517ce3b8e11205b730a4efdd54d53c7b7289d0c0008a7f6c200b4ddc37",
+    "PL1CD\\HaarCubeEntropy.lean": "d2056d85164972519af5717556a6d7e1d919e92fcc753088542776e85ff8ff92",
+    "PL1CD\\CubeApproximation.lean": "48ff0f2c18705b4c8aef15dc6cf97f6d2f5a71d0f9dae33ece8f2d80fd089e42",
+    "PL1CD\\EntropyContinuity.lean": "d9bd23193e71b609db69c3532aa535533da42842f0991cdfd3bf8404ed5ed786",
+    "PL1CD\\HaarEntropyContraction.lean": "971cd285cc80f0e17423921bb12e8cc02a4342c103aabbfb094c5898d4cc765c",
+    "PL1CD\\EntropyUpper.lean": "f61a84373d1c77451c485a874cceafe95ae495231a74f23f62a912466ce3344d",
+    "PL1CD\\PositiveHaarOperators.lean": "c2ff00de9205edc111af8408a204b824b086b81c4264aa6e7e6b97be9385247c",
+    "PL1CD\\PositiveKernelAverages.lean": "87e20041b30f77ff440fe6c945405c67bb64e3bec1efc09e662b4c8d8484cd83",
+    "PL1CD\\RealL1Order.lean": "08111f18ef8f5cda6dd5916dc52b00a964751cf63eab733d4c51625f66b6673d",
+    "PL1CD\\HaarPartitions.lean": "f97c9bf1270155d3ee12cde30c629389dfc60b382c6cc8052aec06cbe0d01a47",
+    "PL1CD\\HaarPartitionAlgebra.lean": "50a3c91cafc30e9df96df139b685903353743da9d144dea7d32e0fddb8d27239",
+    "PL1CD\\RealL1FiniteOrder.lean": "de8166233440c8f1343091c889a079b794bfd83b0ac7773c3ef728f97baea81e",
+    "PL1CD\\AbsoluteRefinement.lean": "cdb68c6418cdb5f72850a263c19f79a09da9b1ec09198d535e17e453893bd707",
+    "PL1CD\\HaarPartitionExpansion.lean": "a5d6edf11d2407578bc67d204031b5c1b6d9499be195988eae4adaf31ec9735e",
+    "PL1CD\\StrongOperatorLimits.lean": "830a12b63a3ea3ab9376900186eaf24566d827f2606fcbcb1a065a995db29277",
+    "PL1CD\\AbsoluteOperatorLimit.lean": "f4023e66d12805a5822b2cac12d7bd9ea5bd2c5d410652b5206ba6d2fad84178",
+    "PL1CD\\EntropyEnergy.lean": "ea1b6a7a11132a3e6abe07fde2f49d83bcb5b8c60e5f04fbf4c56d3ba4e8d9a8",
+    "PL1CD\\EntropyGrowth.lean": "cfd087c92101cfcb4164a9dc9c87738861d4c3fcbea01d2be93cb8420375d8b1",
+    "PL1CD\\AlmostDisjoint.lean": "6a4e5d072afee3c4e75d266e30b26a178fcf561d0a11d25da63a8d8af073d0b1",
+    "PL1CD\\Statements.lean": "bc8645903ae2d1236c3fe494d5af7e43a2e4b44ed2c2fea2c2c3faa752cd2488",
+    "PL1CD\\ProjectionFamily.lean": "04aa4912fa2319826df10a963185011601b795d91d25d72c4e6b383f2925ca26",
+    "PL1CD\\GeneratedIdeals.lean": "ee2565ab18e32b434c4dcbcc15331aad3535d590a002c7cbb7b2f14ae4a58032",
+    "PL1CD\\DunfordPettisIdeals.lean": "59a90367cf3e29388af4bb3102ae9a0b7f38c02a81affb50f66c28c2077ebc3c",
+    "PL1CD\\StageParameters.lean": "039c7e09e9c265ba3ecbc8ed14f6a69eac2592a93e0e2bd0dbd997efcb2c7638",
+    "PL1CD\\StageFiltration.lean": "52c4e637ab02f9fcd4f0fb407e57d11a057190d8248a77597f08fa0277b0b82a",
+    "PL1CD\\StageAsymptotics.lean": "d2bc77a181093506dce25f7cc096c4e6bbfc7e600643b4d5c57ab7fb63422664",
+    "PL1CD\\StageBlockEvents.lean": "7002b41250067fa1d675c5f9c3125f5912a6975518dc4f7481db1d709ba6e0d4",
+    "PL1CD\\BlockConcentration.lean": "ab379a11a1ac32223db64990100498da0aac9897ea3aac6badfde897e3b0eb42",
+    "PL1CD\\StageBlocks.lean": "2caa7f5fa0005fc091075b9c1297b2ea97d70f0682d350ba4308ade41962076a",
+    "PL1CD\\BoundedPositiveVanishing.lean": "4cae5ca96e846fc9e33d7d4f1713285d71255edf1923c7219cf6929ec4720e03",
+    "PL1CD\\PositiveTruncation.lean": "73b8f0b534b30ad75287a58850394c9c9a62368f6bf5a8113902c9fdde5e6959",
+    "PL1CD\\PositiveVanishing.lean": "405b778e25ffae476181e33436cf042a50a691b6178aa5e12e8380edaaa01dda",
+    "PL1CD\\AbsoluteMajorant.lean": "142a347822258f210565a686db4464651e83d87039b001c381e544a32b361b2b",
+    "PL1CD\\Cardinality.lean": "701de6c17776be8db06756110a1985a454ae525d956d2eb1f64ddde80b48eab0",
+    "PL1CD\\PartitionNorms.lean": "2098f4e9e34292982a7afdfd46b3d463e52d910b14eb622d3eb8e9316f5ad4ae",
+    "PL1CD\\SumSeries.lean": "35d84b94906d1ce0d0227394dee625e99b771db646894442f70e7581f86c8d7e",
+    "PL1CD\\SemigroupVanishing.lean": "a08d12e0529a609933bb1dba8ae5f9917cf228f5352fa30007308be3a38f4492",
+    "PL1CD\\RealOperatorVanishing.lean": "9aba67588364c0c5232f288960d1ab0da2482e2af6c6acb15613dda8a1481240",
+    "PL1CD\\ScalarOperatorVanishing.lean": "74692a8db90dfef6347b680b693ee15588b3da6747ae4c70d8f92e33c2974aa2",
+    "PL1CD\\RealInputVariation.lean": "df0ee362addf947f5881a0327879a7761e5ed4a6e7a31caff66de2848dbc64a5",
+    "PL1CD\\CoordinateVanishing.lean": "1312e302c523e06df65920a03120e725c9e1da4c4fa0c2f7845cf7a9c9c75a80",
+    "PL1CD\\FiniteExpectations.lean": "78239e7209bfe9f52c0229455d24ca1c1f88059dfbb32bd8a578c170d150fb11",
+    "PL1CD\\DensitySeparation.lean": "1ea6c44123518c8ca67a3ac9ad60d13630459e8701a355e82bf7ba29187102ca",
+    "PL1CD\\HaarTransport.lean": "4ef73a0801c590257edbfc2340f7a98546c33d58bc506c16903a50defbd979c4",
+    "PL1CD\\IdealSeparation.lean": "791d17622ddec9fdb8040ddddfca163ee7133678f47132a6bcb26af53bade362",
+    "PL1CD\\VariationComposition.lean": "96f8481ec605d975b099b1fb6748e842b129f260ef4d9ad71941337b7797aaf6",
+    "PL1CD\\IntrinsicZeroVanishing.lean": "677d9a804c6b7b88c598ebfda3fea05e0001cfa06b9906608d4e9ba1cc321fcd",
+    "PL1CD\\IntrinsicVanishing.lean": "bad0bfc66c28e95f3ce43816adb03fe5b9886de3f6d3e2fc79faeedc9be96211",
+    "PL1CD\\RangeVanishing.lean": "a24717c0a627ca9bda371c50cad614f775557277a7586604952e35be87cdb400",
+    "PL1CD\\StageGrowth.lean": "30812d46d8bf63ddb8f79e989022353f97e788305c42582ad38935005bfcd371",
+    "PL1CD\\MaximalVariation.lean": "88552b365702b85bcad4b15d452f0ebd2bd98c0b24adac9233e4b23abc9b517c",
+    "PL1CD\\StageSeparation.lean": "4eb14ecbe7af2df0cc60d4b0fcaca19d42347436e4e77d1be781889d017a158d",
+    "PL1CD\\StageCarrier.lean": "394687fe11543d5172b6e4282700e0f0f2ab7a3e0558c8ab6c9ef18b9589b723",
+    "PL1CD\\StageRangeGeometry.lean": "672ba48abe7780d566f5706e1ada00ac247767156e0a0ad8a8bc3af490757b5f",
+    "PL1CD\\ProofEndpoints.lean": "ac60f6df31d12c95ed0c49f2196ac6e8b219af93f573e70f42755ff098817b8b",
+    "PL1CD\\MainTheorems.lean": "2159fb5b6f70b09de2844e50cf8edacddf46991bd6866d1042a1f422507c64d9",
+    "PL1CD\\ProofAudit.lean": "beff5ae56d8d2592b2de87dd7e86e1b54c82e7c491ee69c81dd4db405f2c1857"
+  },
+  "pdfSha256": "5c158e901bfee16b6d3011e6075d64a2a883757903815025743cc2c8d414a4c9",
+  "publicationPerformed": false,
+  "websiteModifiedByThisProofDevelopment": true,
+  "publicCheckoutHEAD": "008c8a6c725677dffb47d19183d002c27dd41e38",
+  "publicCheckoutClean": true
+}

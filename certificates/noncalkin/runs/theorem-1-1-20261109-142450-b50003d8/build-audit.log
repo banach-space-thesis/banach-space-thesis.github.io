@@ -1,0 +1,355 @@
+Up to date: NonCalkinAlgebra.OperatorIdeals
+Up to date: NonCalkinAlgebra.Statements
+Up to date: NonCalkinAlgebra.StatementLemmas
+Up to date: NonCalkinAlgebra.OperatorIdealMultiplication
+Up to date: NonCalkinAlgebra.MatrixObstruction
+Up to date: NonCalkinAlgebra.OperatorIdealReduction
+Up to date: NonCalkinAlgebra.QuotientAlgebra
+Up to date: NonCalkinAlgebra.MatrixUnits
+Up to date: NonCalkinAlgebra.MatrixRowEstimate
+Up to date: NonCalkinAlgebra.MatrixClosure
+Up to date: NonCalkinAlgebra.OneIdealCriterion
+Up to date: NonCalkinAlgebra.PrerequisiteStatements
+Up to date: NonCalkinAlgebra.NonunitalMatrixClosure
+Up to date: NonCalkinAlgebra.ClosedScalarExtension
+Up to date: NonCalkinAlgebra.UnitizedMatrixAlgebra
+Up to date: NonCalkinAlgebra.MatrixIdeal
+Up to date: NonCalkinAlgebra.MatrixEntries
+Up to date: NonCalkinAlgebra.MatrixEntrySeparation
+Up to date: NonCalkinAlgebra.ClosedIdealSubmodule
+Up to date: NonCalkinAlgebra.MatrixIdealStructure
+Up to date: NonCalkinAlgebra.ConstructedBanachAlgebra
+Up to date: NonCalkinAlgebra.DiagonalCorner
+Up to date: NonCalkinAlgebra.CornerModel
+Up to date: NonCalkinAlgebra.MatrixDensityLower
+Up to date: NonCalkinAlgebra.MetricCardinality
+Up to date: NonCalkinAlgebra.MatrixDensity
+Up to date: NonCalkinAlgebra.ConstructionTheorem
+Up to date: NonCalkinAlgebra.QuotientMatrixObstruction
+Up to date: NonCalkinAlgebra.RepresentationObstruction
+Up to date: NonCalkinAlgebra.CornerTransfer
+Up to date: NonCalkinAlgebra.BoundedRetraction
+Up to date: NonCalkinAlgebra.RetractionOperatorIdeals
+Up to date: NonCalkinAlgebra.QuotientLinearMap
+Up to date: NonCalkinAlgebra.RetractionCalkinCorner
+Up to date: NonCalkinAlgebra.ProjectionRange
+Up to date: NonCalkinAlgebra.CalkinCornerData
+Up to date: NonCalkinAlgebra.QuotientIsoEquiv
+Up to date: NonCalkinAlgebra.CalkinCornersFromLifting
+Up to date: NonCalkinAlgebra.SeparableCornerObstruction
+Up to date: NonCalkinAlgebra.SeparableRangeQuotient
+Up to date: NonCalkinAlgebra.MainReduction
+Up to date: NonCalkinAlgebra.IntrinsicMatrixIdeal
+Up to date: NonCalkinAlgebra.QuotientConventionReduction
+Up to date: NonCalkinAlgebra.CompactSpectralSupport
+Up to date: NonCalkinAlgebra.CompactSpectral
+Up to date: NonCalkinAlgebra.SpectralLiftingPreliminaries
+Up to date: NonCalkinAlgebra.CompactEigenspaces
+Up to date: NonCalkinAlgebra.IdempotentResolvent
+Up to date: NonCalkinAlgebra.ResolventIdentity
+Up to date: NonCalkinAlgebra.RieszCircleBasic
+Up to date: NonCalkinAlgebra.RieszCircleAnnulus
+Up to date: NonCalkinAlgebra.CauchyTransform
+Up to date: NonCalkinAlgebra.RieszCircleIdempotence
+Up to date: NonCalkinAlgebra.EigenvectorFlags
+Up to date: NonCalkinAlgebra.CompactSpectralFiniteness
+Up to date: NonCalkinAlgebra.EssentialIdempotentSpectrum
+Up to date: NonCalkinAlgebra.RieszCircleQuotient
+Up to date: NonCalkinAlgebra.IdempotentLifting
+Up to date: NonCalkinAlgebra.MainFromCoefficient
+Up to date: NonCalkinAlgebra.CalkinCornerTheorems
+Up to date: NonCalkinAlgebra.ApproximateSurjection
+Up to date: NonCalkinAlgebra.SeparableEllOneQuotient
+Up to date: NonCalkinAlgebra.EllOneSeparable
+Up to date: NonCalkinAlgebra.ClosedSubspaceCoding
+Up to date: NonCalkinAlgebra.CalkinCongruence
+Up to date: NonCalkinAlgebra.SeparableCalkinModels
+Up to date: NonCalkinAlgebra.CoefficientCounting
+Up to date: NonCalkinAlgebra.AFCoefficientStatements
+Up to date: NonCalkinAlgebra.RealOperatorIdeals
+Up to date: NonCalkinAlgebra.RealStatements
+Up to date: NonCalkinAlgebra.BanachComplexification
+Up to date: NonCalkinAlgebra.ComplexificationCoordinates
+Up to date: NonCalkinAlgebra.ComplexificationOperatorIdeals
+Up to date: NonCalkinAlgebra.ComplexificationApproximable
+Up to date: NonCalkinAlgebra.ComplexificationOperatorParts
+Up to date: NonCalkinAlgebra.ComplexificationIdealParts
+Up to date: NonCalkinAlgebra.RealOperatorIdealMultiplication
+Up to date: NonCalkinAlgebra.RealQuotientAlgebra
+Up to date: NonCalkinAlgebra.NormedQuotientMap
+Up to date: NonCalkinAlgebra.ComplexificationQuotientMaps
+Up to date: NonCalkinAlgebra.ComplexificationQuotientCoordinates
+Up to date: NonCalkinAlgebra.RealQuotientIsoEquiv
+Up to date: NonCalkinAlgebra.RealCalkinCornerAlgebra
+Up to date: NonCalkinAlgebra.ComplexLinearOfReal
+Up to date: NonCalkinAlgebra.RealCalkinCorner
+Up to date: NonCalkinAlgebra.RealMainReduction
+Up to date: NonCalkinAlgebra.CStarIdealApproximation
+Up to date: NonCalkinAlgebra.CStarIdeals
+Up to date: NonCalkinAlgebra.ClosedIdealQuotient
+Up to date: NonCalkinAlgebra.FiniteSpectrumEmbedding
+Up to date: NonCalkinAlgebra.FiniteCStarEmbedding
+Up to date: NonCalkinAlgebra.DenseMatrixSimplicity
+Up to date: NonCalkinAlgebra.ApproximatelyMatricial
+Up to date: NonCalkinAlgebra.CoefficientCardinality
+Up to date: NonCalkinAlgebra.CommutationChains
+Up to date: NonCalkinAlgebra.BinaryPhase
+Up to date: NonCalkinAlgebra.WeightedPermutation
+Up to date: NonCalkinAlgebra.TwistedRegular
+Up to date: NonCalkinAlgebra.TwistedRegularStar
+Up to date: NonCalkinAlgebra.ClosedTwistedAlgebra
+Up to date: NonCalkinAlgebra.FiniteSupportCocycle
+Up to date: NonCalkinAlgebra.OrderedCocycle
+Up to date: NonCalkinAlgebra.TwistedRegularCommutators
+Up to date: NonCalkinAlgebra.OrderedShiftChain
+Up to date: NonCalkinAlgebra.OrderedTwistedAlgebra
+Up to date: NonCalkinAlgebra.OrderedCocycleNondegenerate
+Up to date: NonCalkinAlgebra.TwistedFiniteSpan
+Up to date: NonCalkinAlgebra.TwistedAveraging
+Up to date: NonCalkinAlgebra.TwistedRightRegular
+Up to date: NonCalkinAlgebra.TwistedCoefficient
+Up to date: NonCalkinAlgebra.TwistedFiniteAveraging
+Up to date: NonCalkinAlgebra.TwistedSpanDensity
+Up to date: NonCalkinAlgebra.TwistedSimplicity
+Up to date: NonCalkinAlgebra.TwistedLocalSubalgebra
+Up to date: NonCalkinAlgebra.TwistedAF
+Up to date: NonCalkinAlgebra.OrderedTwistedStructure
+Up to date: NonCalkinAlgebra.SeparatedDensity
+Up to date: NonCalkinAlgebra.TwistedAlgebraDensity
+Up to date: NonCalkinAlgebra.OrderedTwistedDensity
+Up to date: NonCalkinAlgebra.OrderedCocycleSupport
+Up to date: NonCalkinAlgebra.TwistedConjugation
+Up to date: NonCalkinAlgebra.OrderedTwistedSkeleton
+Up to date: NonCalkinAlgebra.OrderedCoefficientModels
+Up to date: NonCalkinAlgebra.OrderInvariantFiberCounting
+Up to date: NonCalkinAlgebra.BoundedModelCounting
+Up to date: NonCalkinAlgebra.TraceParameters
+Up to date: NonCalkinAlgebra.FiniteBlockRefinement
+Up to date: NonCalkinAlgebra.FiniteBlockComposition
+Up to date: NonCalkinAlgebra.FiniteBlockIdentity
+Up to date: NonCalkinAlgebra.ProductBlockRefinement
+Up to date: NonCalkinAlgebra.BlockRefinementEntries
+Up to date: NonCalkinAlgebra.RootedBlockDiagram
+Up to date: NonCalkinAlgebra.TraceWeightRefinement
+Up to date: NonCalkinAlgebra.TraceStageGrowth
+Up to date: NonCalkinAlgebra.TraceParameterRefinements
+Up to date: NonCalkinAlgebra.TracePaddingDiagram
+Up to date: NonCalkinAlgebra.ProductBlockDiagram
+Up to date: NonCalkinAlgebra.FiniteProductSums
+Up to date: NonCalkinAlgebra.TraceFiniteMatrices
+Up to date: NonCalkinAlgebra.TraceCoefficientSelection
+Up to date: NonCalkinAlgebra.TraceIdempotents
+Up to date: NonCalkinAlgebra.TraceLocalIdempotents
+Up to date: NonCalkinAlgebra.WeightedBlockTrace
+Up to date: NonCalkinAlgebra.BlockTraceCompatibility
+Up to date: NonCalkinAlgebra.ProductTraceWeights
+Up to date: NonCalkinAlgebra.DiagramTraceLaw
+Up to date: NonCalkinAlgebra.TraceDiagramWeights
+Up to date: NonCalkinAlgebra.TraceWeightUniqueness
+Up to date: NonCalkinAlgebra.FiniteBlockTraceCoefficients
+Up to date: NonCalkinAlgebra.NormedStarDirectLimit
+Up to date: NonCalkinAlgebra.NormedStarCompletion
+Up to date: NonCalkinAlgebra.CompletedAFSystem
+Up to date: NonCalkinAlgebra.CompletedAFSimplicity
+Up to date: NonCalkinAlgebra.FiniteBlockSimplicity
+Up to date: NonCalkinAlgebra.ProductAFAlgebra
+Up to date: NonCalkinAlgebra.ProductCoordinateEmbedding
+Up to date: NonCalkinAlgebra.TraceCoordinateValue
+Up to date: NonCalkinAlgebra.ProductAFDensity
+Up to date: NonCalkinAlgebra.TraceMatrixRefinement
+Up to date: NonCalkinAlgebra.TraceMatrixSystem
+Up to date: NonCalkinAlgebra.TraceMatrixNorm
+Up to date: NonCalkinAlgebra.TraceCoordinateSeparation
+Up to date: NonCalkinAlgebra.CompletedAFTrace
+Up to date: NonCalkinAlgebra.ProductCompletedTrace
+Up to date: NonCalkinAlgebra.TraceCodedCoefficient
+Checking NonCalkinAlgebra
+Checking Audit
+def NonCalkinAlgebra.MainStatement.{v} : Prop :=
+∃ A,
+  NonCalkinAlgebra.HasDensityCharacter A.Carrier Cardinal.continuum ∧
+    NonCalkinAlgebra.HasExactlyOneNonzeroProperClosedIdeal A.Carrier ∧
+      ∀ (convention : NonCalkinAlgebra.QuotientConvention) (X : Type v) [inst : NormedAddCommGroup X]
+        [inst_1 : NormedSpace ℂ X] [CompleteSpace X],
+        ¬Nonempty (NonCalkinAlgebra.OperatorQuotientIso X convention A.Carrier)
+'NonCalkinAlgebra.controlled_calkin_matrix_units_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.norm_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.norm_scalarMatrixUnit_row_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.matrixClosure_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.one_ideal_of_scalar_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.matrixBanachAlgebra_density_and_ideal_structure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.matrixCornerModel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.controlled_quotient_matrix_units_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.not_representable_of_separableRange_in_operatorIdeal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.not_representable_of_finiteDimensional' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem NonCalkinAlgebra.main_from_prerequisites.{v} : NonCalkinAlgebra.CoefficientExistenceStatement →
+  NonCalkinAlgebra.IdempotentLiftingStatement → NonCalkinAlgebra.MainStatement :=
+fun hCoefficient hLift =>
+  Exists.casesOn hCoefficient fun D h =>
+    And.casesOn h fun hDnorm right =>
+      And.casesOn right fun hDdensity right =>
+        And.casesOn right fun hDsimple hDavoid =>
+          Exists.intro (NonCalkinAlgebra.matrixBanachAlgebra D.Carrier)
+            ⟨NonCalkinAlgebra.matrixAlgebra_density_continuum D.Carrier hDdensity,
+              ⟨NonCalkinAlgebra.matrixAlgebra_has_exactly_one_ideal D.Carrier hDsimple,
+                fun convention X [NormedAddCommGroup X] [NormedSpace ℂ X] [CompleteSpace X] =>
+                NonCalkinAlgebra.matrixAlgebra_not_representable_from_prerequisites D.Carrier hLift hDsimple convention
+                  (hDavoid convention) X⟩⟩
+'NonCalkinAlgebra.main_from_prerequisites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.matrixNonunitalAlgebra_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.simple_approximable_representation_implies_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.CompactSpectral.hasEigenvalue_iff_mem_spectrum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.spectrum_countable_of_defect_spectrum_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.compact_eigenspace_finiteDimensional' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.compact_spectrum_countable : ∀ {X : Type u_1} [inst : NormedAddCommGroup X] [inst_1 : NormedSpace ℂ X]
+  [CompleteSpace X] (T : X →L[ℂ] X), IsCompactOperator ⇑T → (spectrum ℂ T).Countable
+@NonCalkinAlgebra.rieszCircle_isIdempotent : ∀ {A : Type u_1} [inst : NormedRing A] [inst_1 : NormedAlgebra ℂ A]
+  [CompleteSpace A] (a : A) (r : ℝ),
+  0 < r →
+    (∀ z ∈ Metric.sphere 0 r, z ∈ resolventSet ℂ a) →
+      NonCalkinAlgebra.rieszCircle a r * NonCalkinAlgebra.rieszCircle a r = NonCalkinAlgebra.rieszCircle a r
+NonCalkinAlgebra.idempotent_lifting : NonCalkinAlgebra.IdempotentLiftingStatement
+'NonCalkinAlgebra.idempotent_lifting' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem NonCalkinAlgebra.main_of_coefficient_existence.{v} : NonCalkinAlgebra.CoefficientExistenceStatement →
+  NonCalkinAlgebra.MainStatement :=
+fun hD => NonCalkinAlgebra.main_from_prerequisites hD NonCalkinAlgebra.idempotent_lifting
+'NonCalkinAlgebra.main_of_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.separable_range_calkin_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+NonCalkinAlgebra.exists_ellOne_quotient_equiv : ∀ (X : Type u_1) [inst : NormedAddCommGroup X]
+  [inst_1 : NormedSpace ℂ X] [CompleteSpace X] [TopologicalSpace.SeparableSpace X], ∃ N, Nonempty (N.Quotient ≃L[ℂ] X)
+'NonCalkinAlgebra.cardinal_separableCalkinModel_le_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.coefficient_existence_of_large_simple_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+def NonCalkinAlgebra.AFCoefficientExistenceStatement.{v} : Prop :=
+∃ D,
+  NonCalkinAlgebra.IsApproximatelyFiniteDimensional D.Carrier ∧
+    NonCalkinAlgebra.HasDensityCharacter D.Carrier Cardinal.continuum ∧
+      NonCalkinAlgebra.IsTopologicallySimple D.Carrier ∧
+        ∀ (k : NonCalkinAlgebra.QuotientConvention) (Y : Type v) [inst : NormedAddCommGroup Y]
+          [inst_1 : NormedSpace ℂ Y] [CompleteSpace Y] [TopologicalSpace.SeparableSpace Y],
+          ¬Nonempty (NonCalkinAlgebra.OperatorQuotientIso Y k D.Carrier)
+def NonCalkinAlgebra.RealMainStatement.{v} : Prop :=
+∃ A,
+  NonCalkinAlgebra.HasDensityCharacter A.Carrier Cardinal.continuum ∧
+    NonCalkinAlgebra.HasExactlyOneNonzeroProperClosedIdeal A.Carrier ∧
+      ∀ (k : NonCalkinAlgebra.QuotientConvention) (X : Type v) [inst : NormedAddCommGroup X] [inst_1 : NormedSpace ℝ X]
+        [inst_2 : CompleteSpace X], ¬Nonempty (NonCalkinAlgebra.RealOperatorQuotientIso X k A.Carrier)
+'NonCalkinAlgebra.BanachComplexification.norm_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.BanachComplexification.operatorIdeal_operatorParts_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+NonCalkinAlgebra.BanachComplexification.quotientCoordinates : (X : Type u_1) →
+  [inst : NormedAddCommGroup X] →
+    [inst_1 : NormedSpace ℝ X] →
+      [inst_2 : CompleteSpace X] →
+        (k : NonCalkinAlgebra.QuotientConvention) →
+          NonCalkinAlgebra.OperatorQuotient (NonCalkinAlgebra.BanachComplexification X) k ≃L[ℝ]
+            NonCalkinAlgebra.RealOperatorQuotient X k × NonCalkinAlgebra.RealOperatorQuotient X k
+'NonCalkinAlgebra.RealCalkinCorner.model' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem NonCalkinAlgebra.real_main_of_complex_main.{v} : NonCalkinAlgebra.MainStatement →
+  NonCalkinAlgebra.RealMainStatement :=
+fun h =>
+  Exists.casesOn h fun A h =>
+    And.casesOn h fun hdensity right =>
+      And.casesOn right fun hideals havoid =>
+        Exists.intro (NonCalkinAlgebra.underlyingRealBanachAlgebra A)
+          ⟨NonCalkinAlgebra.underlying_real_density A Cardinal.continuum hdensity,
+            ⟨NonCalkinAlgebra.underlying_real_ideal_structure A hideals,
+              fun k X [NormedAddCommGroup X] [NormedSpace ℝ X] [CompleteSpace X] =>
+              NonCalkinAlgebra.not_real_representable_of_not_complex k (havoid k) X⟩⟩
+'NonCalkinAlgebra.real_main_of_complex_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.real_main_of_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.closed_twoSidedIdeal_star_mem : ∀ {A : Type u_1} [inst : CStarAlgebra A] (I : TwoSidedIdeal A),
+  IsClosed ↑I → ∀ {x : A}, x ∈ I → star x ∈ I
+'NonCalkinAlgebra.closed_twoSidedIdeal_star_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.norm_le_starAlgHom_of_finiteDimensional : ∀ {A : Type u_1} {B : Type u_2} [inst : CStarAlgebra A]
+  [FiniteDimensional ℂ A] [inst_2 : NormedRing B] [inst_3 : NormedAlgebra ℂ B] [CompleteSpace B] [NormOneClass B]
+  [inst_6 : StarRing B] [NormedStarGroup B] (f : A →⋆ₐ[ℂ] B), Function.Injective ⇑f → ∀ (a : A), ‖a‖ ≤ ‖f a‖
+@NonCalkinAlgebra.topologically_simple_of_dense_simple_finiteDimensional_starSubalgebras : ∀ {A : Type u_1}
+  [inst : CStarAlgebra A] [Nontrivial A] (S : Set (StarSubalgebra ℂ A)),
+  (∀ B ∈ S, FiniteDimensional ℂ ↥B) →
+    (∀ B ∈ S, IsSimpleRing ↥B) → Dense (⋃ B ∈ S, ↑B) → NonCalkinAlgebra.IsTopologicallySimple A
+'NonCalkinAlgebra.IsApproximatelyMatricial.isTopologicallySimple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.AF_coefficient_existence_of_large_AM_family : ∀ {J : Type}
+  (D : J → NonCalkinAlgebra.ComplexCStarAlgebra),
+  Cardinal.continuum < Cardinal.mk J →
+    (∀ (i j : J), Nonempty ((D i).Carrier ≃A[ℂ] (D j).Carrier) → i = j) →
+      (∀ (i : J), NonCalkinAlgebra.IsApproximatelyMatricial (D i).Carrier) →
+        (∀ (i : J), NonCalkinAlgebra.HasDensityCharacter (D i).Carrier Cardinal.continuum) →
+          NonCalkinAlgebra.AFCoefficientExistenceStatement
+'NonCalkinAlgebra.AF_coefficient_existence_of_large_AM_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.cardinal_eq_continuum_of_density_continuum : ∀ {E : Type} [inst : MetricSpace E],
+  NonCalkinAlgebra.HasDensityCharacter E Cardinal.continuum → Cardinal.mk E = Cardinal.continuum
+@NonCalkinAlgebra.CommutationChains.weaklySkeletonLike_of_value_supports : ∀ {A : Type u_1} {Λ : Type u_2}
+  [inst : NormedRing A] [inst_1 : Preorder Λ] (f : Λ → A × A),
+  (∀ (a : A × A),
+      ∃ S,
+        S.Countable ∧
+          ∀ (i j : Λ),
+            i ≤ j →
+              Disjoint (Set.Icc i j) S →
+                NonCalkinAlgebra.CommutationChains.Value a (f i) = NonCalkinAlgebra.CommutationChains.Value a (f j) ∧
+                  NonCalkinAlgebra.CommutationChains.Value (f i) a = NonCalkinAlgebra.CommutationChains.Value (f j) a) →
+    NonCalkinAlgebra.CommutationChains.WeaklySkeletonLike NonCalkinAlgebra.CommutationChains.Across f
+'NonCalkinAlgebra.CommutationChains.weaklySkeletonLike_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.CommutationChains.relationChain_of_value_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.OrderedTwistedAlgebra.continuum_model_properties : ∀ {Λ : Type} [inst : LinearOrder Λ] [Infinite Λ],
+  Cardinal.mk Λ = Cardinal.continuum →
+    NonCalkinAlgebra.IsApproximatelyFiniteDimensional (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier ∧
+      NonCalkinAlgebra.HasDensityCharacter (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier
+          Cardinal.continuum ∧
+        NonCalkinAlgebra.IsTopologicallySimple (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier ∧
+          NonCalkinAlgebra.CommutationChains.IsRelationChain NonCalkinAlgebra.CommutationChains.Across
+              (NonCalkinAlgebra.OrderedTwistedAlgebra.pair Λ) ∧
+            NonCalkinAlgebra.CommutationChains.WeaklySkeletonLike NonCalkinAlgebra.CommutationChains.Across
+              (NonCalkinAlgebra.OrderedTwistedAlgebra.pair Λ)
+'NonCalkinAlgebra.OrderedTwistedAlgebra.exists_simple_AF_continuum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.TwistedRegular.isTopologicallySimple_of_nondegenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.OrderedTwistedAlgebra.weaklySkeletonLike' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.OrderInvariantCounting.exists_large_membership_fiber : ∀ {A I : Type u_1} {κ : Cardinal.{u_1}},
+  Cardinal.aleph0 ≤ κ →
+    Cardinal.mk A ≤ κ →
+      κ < Cardinal.mk I → ∀ (s : I → Set A), Function.Injective s → ∃ a, κ < Cardinal.mk ↑{i | a ∈ s i}
+'NonCalkinAlgebra.OrderInvariantCounting.cardinal_le_of_disjoint_supported_sequences' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.AF_coefficient_existence_of_small_model_fibers : ∀ {I : Type}
+  (D : I → NonCalkinAlgebra.ComplexCStarAlgebra),
+  Cardinal.continuum < Cardinal.mk I →
+    (∀ (M : NonCalkinAlgebra.SeparableCalkinModel),
+        Cardinal.mk ↑{i | Nonempty (M.Carrier ≃A[ℂ] (D i).Carrier)} ≤ Cardinal.continuum) →
+      (∀ (i : I), NonCalkinAlgebra.IsApproximatelyFiniteDimensional (D i).Carrier) →
+        (∀ (i : I), NonCalkinAlgebra.HasDensityCharacter (D i).Carrier Cardinal.continuum) →
+          (∀ (i : I), NonCalkinAlgebra.IsTopologicallySimple (D i).Carrier) →
+            NonCalkinAlgebra.AFCoefficientExistenceStatement
+'NonCalkinAlgebra.AF_coefficient_existence_of_small_model_fibers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.AF_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.real_main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+PRELIMINARIES AUDIT PASSED: 2290 declarations; standard axioms only.
+THEOREM 1.1 AND REMARK 1.2 TYPE AND AXIOM AUDIT PASSED.

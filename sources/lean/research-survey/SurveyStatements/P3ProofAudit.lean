@@ -1,0 +1,17 @@
+import SurveyStatements.P3StrictCosingularity
+import SurveyStatements.P3FiniteInterpolation
+import SurveyStatements.P3ExtractionGeometry
+import SurveyStatements.P3Diagonal
+import SurveyStatements.P3Converse
+
+#print axioms SurveyStatements.P3.strictlyCosingular_of_adjoint_strictlySingular
+#print axioms SurveyStatements.P3.not_strictlyCosingular_of_surjective_comp
+#print axioms SurveyStatements.P3.preannihilator_quotient_infiniteDimensional
+#print axioms SurveyStatements.P3.not_strictlyCosingular_of_preannihilator_pairing
+#print axioms SurveyStatements.P3.finite_interpolation_norm_le_two
+#print axioms SurveyStatements.P3.operatorOfPreannihilatorPairing_adjoint
+#print axioms SurveyStatements.P3.exists_diagonal_sequences
+#print axioms SurveyStatements.P3.generatedDualSpace_infiniteDimensional
+#print axioms SurveyStatements.P3.exists_separable_extraction
+#print axioms SurveyStatements.P3.adjoint_strictlySingular_of_strictlyCosingular
+#print axioms SurveyStatements.P3.strictlyCosingular_iff_adjoint_strictlySingular

@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "sealedAtUTC": "2026-10-19T08:38:56.554156+00:00",
+  "finalAttempt": 2,
+  "finalDirectory": ".\\IA-Stuff-Math\\output\\pl1_full_fresh_20261003T133417Z\\verification\\Fresh-20261003T133417Z\\final-checks-2-recovery-20261019",
+  "completionRecovery": {
+    "originalDirectory": ".\\IA-Stuff-Math\\output\\pl1_full_fresh_20261003T133417Z\\verification\\Fresh-20261003T133417Z\\final-checks-2",
+    "originalStatusPreserved": true,
+    "originalIncompleteCheckpointPreserved": true,
+    "nativeChecksReexecuted": false,
+    "sourceBuildAndNativeChecksDate": "2026-10-03",
+    "completionDate": "2026-10-19",
+    "method": "Rehash every recorded original/copied source, compiler output, actual replay input, audit helper and native evidence file. Validate saved native exits and raw inspection semantics.",
+    "originalStatusSha256": "7A93704245CEE3591022B775711F722345A7E608A22294E80BA16AC8EDDE186F",
+    "originalStartedUtc": "2026-10-03T19:23:30.407605+00:00"
+  },
+  "finalCheckAttempts": [
+    {
+      "directory": "final-checks-1",
+      "attempt": 1,
+      "status": "FAILED CHECK",
+      "error": "RuntimeError('Malformed MODULE_PART line')"
+    },
+    {
+      "directory": "final-checks-2",
+      "attempt": 2,
+      "status": "RUNNING",
+      "error": null
+    },
+    {
+      "directory": "final-checks-2-recovery-20261019",
+      "attempt": 2,
+      "status": "PASS",
+      "error": null
+    }
+  ],
+  "build": {
+    "moduleCount": 3473,
+    "projectModules": 292,
+    "closureByPackage": {
+      "toolchain": 1552,
+      "mathlib": 2924,
+      "project": 292,
+      "aesop": 132,
+      "batteries": 74,
+      "LeanSearchClient": 4,
+      "importGraph": 10,
+      "proofwidgets": 10,
+      "Qq": 14,
+      "plausible": 13
+    },
+    "elapsedSeconds": 19261.344,
+    "nonToolchainCompiledArtifactsReused": false,
+    "initialArtifactDirectoryEmpty": true
+  },
+  "kernel": {
+    "command": [
+      "--fresh",
+      "--verbose",
+      "PL1FreshAudit"
+    ],
+    "nativeExit": 0,
+    "elapsedSeconds": 877.7766345,
+    "freshModules": 3474,
+    "retainedToolchainModules": 1552,
+    "officialChecker": true,
+    "emptyKernelEnvironment": true,
+    "independentKernelImplementation": false
+  },
+  "inspection": {
+    "status": "PASS",
+    "exactScalarTheoremTypes": 10,
+    "storedDefinitionBodies": 43,
+    "genericTheoremTypes": 5,
+    "claimedRootRecords": 208,
+    "distinctClaimedRoots": 206,
+    "allEligibleProjectTraversal": true,
+    "moduleCount": 5026,
+    "rawImportedAxioms": [
+      "RAW_IMPORTED_AXIOM\tClassical.choice\tmodule=Init.Prelude\tstandard=true\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcVoid\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcCast\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcErased\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tQuot.lcInv\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tLean.trustCompiler\tmodule=Init.Core\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tisScalarObj\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tLean.ofReduceBool\tmodule=Init.Core\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcProof\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tsorryAx\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tQuot.sound\tmodule=Init.Prelude\tstandard=true\tproject=false",
+      "RAW_IMPORTED_AXIOM\tpropext\tmodule=Init.Core\tstandard=true\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcAny\tmodule=Init.Prelude\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tLean.ofReduceNat\tmodule=Init.Core\tstandard=false\tproject=false",
+      "RAW_IMPORTED_AXIOM\tlcUnreachable\tmodule=Init.Prelude\tstandard=false\tproject=false"
+    ],
+    "officiallySkippedDeclarations": 3611,
+    "projectRecursionCompanions": 21,
+    "standardReachableAxiomWhitelist": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "sourceAndArtifactIdentity": "PASS",
+  "publicCheckoutUnchanged": true,
+  "published": false,
+  "trustBoundary": "Pinned Lean compiler, bundled standard libraries, runtime and operating system retained. All non-toolchain imports rebuilt. The kernel replay includes the imported bundled-library declarations. Unsafe and partial declarations are excluded by the official checker and inventoried separately.",
+  "proofTermLocation": ".\\IA-Stuff-Math\\tmp\\pl1_full_fresh_20261003T133417Z\\build\\lib\\lean",
+  "evidenceLocation": ".\\IA-Stuff-Math\\output\\pl1_full_fresh_20261003T133417Z\\verification\\Fresh-20261003T133417Z",
+  "complexLatticeScope": "The supplementary complex targets exclude an equivalent real lattice norm on the underlying real range. The general complex Banach-lattice terminology bridge remains unformalised."
+}

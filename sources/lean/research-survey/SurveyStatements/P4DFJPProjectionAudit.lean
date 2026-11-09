@@ -1,0 +1,13 @@
+import SurveyStatements.P4DFJPFiniteDecomposition
+
+#print axioms SurveyStatements.P4.DFJPSpace.inclusion_mem_closure_span
+#print axioms SurveyStatements.P4.DFJPSpace.contraction_neighborhood
+#print axioms SurveyStatements.P4.DFJPSpace.gauge_contraction
+#print axioms SurveyStatements.P4.DFJPSpace.norm_contraction_le_one
+#print axioms SurveyStatements.P4.DFJPSpace.contraction_hasFiniteRank
+#print axioms SurveyStatements.P4.DFJPSpace.tendsto_contractions
+#print axioms SurveyStatements.P4.DFJPSpace.hasBoundedApproximationProperty_of_contractions
+#print axioms SurveyStatements.P4.DFJPSpace.contraction_comp_of_eq
+#print axioms SurveyStatements.P4.ContractiveFiniteDecomposition.blockProjection_idempotent
+#print axioms SurveyStatements.P4.ContractiveFiniteDecomposition.blocks_tendsto
+#print axioms SurveyStatements.P4.DFJPSpace.finiteDecomposition_of_contractions

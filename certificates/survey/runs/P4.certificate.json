@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "PASSED",
+  "problem": "P4",
+  "theorem": "SurveyStatements.P4.weaklyCompact_basis_factorization",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "checkedBy": "KernelProofReplay into an empty kernel environment; Kernel.Environment.addDeclCore 0",
+  "kernelReplayExitCode": 0,
+  "replayedSafeNonPartialDeclarationCount": 49179,
+  "auditedSurveyDeclarationCount": 7192,
+  "axiomDependencies": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sourceBundlePath": "sources/SurveyStatements/P4BasisFactorization.lean",
+  "sourceSha256": "DB40AE86776EFDB7DD7B284FDE99218A15564EE9F67CA0D803A59609F6949454",
+  "proofArtifactBundlePath": "artifacts/SurveyStatements/P4BasisFactorization.olean",
+  "proofArtifactSha256": "184040FFBD4B455C926E067B20606879A511818B18407ADCC87009FDCAF72058",
+  "signatureAndAxiomReport": "kernel-replay.log",
+  "signatureAndAxiomReportSha256": "64BA47A44117492F6DE56CFFD97A6E39E602E0FC619EFC61209FB3706B3C212C",
+  "supportingLibraryArtifacts": "artifacts/",
+  "supportingLibraryManifest": "manifest.json",
+  "completedUtc": "2026-10-06T12:58:17.4596173Z"
+}

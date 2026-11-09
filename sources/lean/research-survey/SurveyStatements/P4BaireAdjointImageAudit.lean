@@ -1,0 +1,6 @@
+import SurveyStatements.P4BaireAdjointImage
+
+#print axioms SurveyStatements.P4.exists_continuous_extension_of_isometry_closed
+#print axioms SurveyStatements.P4.adjointImageRestriction_isometry
+#print axioms SurveyStatements.P4.adjointImageRestriction_apply
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_inverse_extension

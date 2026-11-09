@@ -1,0 +1,1 @@
+{"path":"research-csp/ComplementedSubspace/ComplexCorollaryAudit.lean","source":"import ComplementedSubspace.ComplexCorollary\n\n#print axioms ComplementedSubspace.complexCorollary\n","hash":"cb874e7ffb81312e608354f9a480da630c9b6a6925d489713825b6545459f046","modified":"2026-09-05T21:31:03.319725+00:00","declarations":[],"imports":["ComplementedSubspace.ComplexCorollary"]}

@@ -1,0 +1,6 @@
+import SurveyStatements.P4CompactInterpolation
+
+#print axioms SurveyStatements.P4.exists_finite_metric_partition
+#print axioms SurveyStatements.P4.finiteMetricSample_error_le
+#print axioms SurveyStatements.P4.continuous_finiteMetricSample
+#print axioms SurveyStatements.P4.exists_continuous_pointwise_norm_approximants

@@ -1,0 +1,26 @@
+import SurveyStatements.P4DFJPOperatorFactorization
+import SurveyStatements.P4FinitePath
+import SurveyStatements.P4PeriodicFiniteSums
+import SurveyStatements.P4Lp2Reflexivity
+
+#print axioms SurveyStatements.P4.bidual_unitBall_mem_image_of_smallRemainders
+#print axioms SurveyStatements.P4.summable_dfjpGauge_sq_of_mem
+#print axioms SurveyStatements.P4.DFJPScale.continuousLinearEquiv
+#print axioms SurveyStatements.P4.isClosed_dfjpDiagonal
+#print axioms SurveyStatements.P4.DFJPSpace.range_inclusion
+#print axioms SurveyStatements.P4.DFJPSpace.norm_ofMem_le
+#print axioms SurveyStatements.P4.DFJPSpace.inclusion_weaklyCompact
+#print axioms SurveyStatements.P4.summable_sq_lp2DualCoordinate_norm
+#print axioms SurveyStatements.P4.tendsto_lp2DualTruncation
+#print axioms SurveyStatements.P4.DFJPSpace.adjoint_inclusion_denseRange
+#print axioms SurveyStatements.P4.DFJPSpace.bidual_inclusion_injective
+#print axioms SurveyStatements.P4.DFJPSpace.summable_gauge_sq_of_bidual_image
+#print axioms SurveyStatements.P4.DFJPSpace.reflexive
+#print axioms SurveyStatements.P4.DFJPSpace.inclusion_comp_lift
+#print axioms SurveyStatements.P4.operatorGaugeData_weakCompact
+#print axioms SurveyStatements.P4.dfjp_reflexive_factorization
+#print axioms SurveyStatements.P4.repeatedFramePrefix_norm_le
+#print axioms SurveyStatements.P4.finitePrefixPath_injective
+#print axioms SurveyStatements.P4.finitePathProjection_norm_le_one
+#print axioms SurveyStatements.P4.sum_periodic_nat_prefix
+#print axioms SurveyStatements.P4.lp2_reflexive

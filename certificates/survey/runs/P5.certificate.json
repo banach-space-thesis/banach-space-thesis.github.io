@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "PASSED",
+  "problem": "P5",
+  "theorem": "SurveyStatements.P5.mixed_norm_uniform_primary_factorization",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "checkedBy": "KernelProofReplay into an empty kernel environment; Kernel.Environment.addDeclCore 0",
+  "kernelReplayExitCode": 0,
+  "replayedSafeNonPartialDeclarationCount": 49179,
+  "auditedSurveyDeclarationCount": 7192,
+  "axiomDependencies": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sourceBundlePath": "sources/SurveyStatements/P5MixedNormPrimariness.lean",
+  "sourceSha256": "0B28E584D0026AA1F00FF6A6A812952C2ED934EAF3F748A2C3EEE38FA354E3F8",
+  "proofArtifactBundlePath": "artifacts/SurveyStatements/P5MixedNormPrimariness.olean",
+  "proofArtifactSha256": "D4E901F04FAE0B725ED002E2AB72DB00BB2992F950E5636E9DF2B1A3126E42C0",
+  "signatureAndAxiomReport": "kernel-replay.log",
+  "signatureAndAxiomReportSha256": "64BA47A44117492F6DE56CFFD97A6E39E602E0FC619EFC61209FB3706B3C212C",
+  "supportingLibraryArtifacts": "artifacts/",
+  "supportingLibraryManifest": "manifest.json",
+  "completedUtc": "2026-10-06T12:58:17.4596173Z"
+}

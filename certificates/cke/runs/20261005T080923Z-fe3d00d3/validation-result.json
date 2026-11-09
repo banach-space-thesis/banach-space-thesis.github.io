@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "freshlyCompiledModules": 4972,
+  "declarationsRechecked": 400593,
+  "hashedFiles": 19844,
+  "targetTheorems": [
+    "CKEUPFP.transferTheorem",
+    "CKEUPFP.cantorQuantitativeTransfer",
+    "CKEUPFP.mixedSpaceUPFP",
+    "CKEUPFP.mixedSpacePrimariness"
+  ],
+  "certificateSha256": "82aa1e414da9f670238fabbc192479d9ba880857fc5f109e5f42867fe6ad583d",
+  "validatedAtUtc": "2026-10-28T17:42:02.821731+00:00",
+  "validatorSourceSha256": "83ac91c3f17b07fff77f7c8f7f8e7df5255998c6afb7e2ffcfbb7488aeb9e4cd",
+  "declarationsSkipped": 0,
+  "cachedProofObjectsReused": 0,
+  "negativeControl": "passed: in-memory corrupted imported theorem rejected",
+  "theoremAxiomAllowlist": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "bundledRuntimeImportProbe": "passed"
+}

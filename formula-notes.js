@@ -159,11 +159,20 @@ function paperTermAt(s,i,paper,section){
   return null;
 }
 
-export function annotateFormula(s,paper,exclude,hasReference=()=>true,section=0){
+export function annotateFormula(s,paper,exclude,hasReference=()=>true,section=0,notes=[]){
+  const rules=notes.filter(note=>note.formula);
+  function researchTermAt(s,i){
+    if(s[i-1]==='\\')return null;
+    for(const rule of rules){
+      const match=rule.argument?call(s,i,rule.formula,rule.id):token(s,i,rule.formula,rule.id);
+      if(match)return match;
+    }
+    return null;
+  }
   function annotate(s,skipFirst=false){
     let rendered='';
     for(let i=0;i<s.length;){
-      const term=!(skipFirst&&i===0)&&paperTermAt(s,i,paper,section);
+      const term=!(skipFirst&&i===0)&&(paperTermAt(s,i,paper,section)||researchTermAt(s,i));
       if(term){
         const original=s.slice(i,term.end),nested=annotate(original,true);
         rendered+=term.id!==exclude&&hasReference(term.id)?`\\readerterm{${term.id}}{${nested}}`:nested;

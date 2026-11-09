@@ -1,0 +1,21 @@
+import SurveyStatements.P4TailConvexRCLike
+import SurveyStatements.P4BaireRegularity
+import SurveyStatements.P4BaireFiniteRank
+
+#print axioms SurveyStatements.P4.adjoint_normBall_preimage_isClosed
+#print axioms SurveyStatements.P4.weakStarCompact_metrizable
+#print axioms SurveyStatements.P4.weakClosureRestriction_norm
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_range_isSeparable
+#print axioms SurveyStatements.P4.adjoint_open_preimage_countable_closed_cover
+#print axioms SurveyStatements.P4.adjoint_closed_preimage_isGδ
+#print axioms SurveyStatements.P4.finiteRank_adjoint_weakStar_norm_continuous
+#print axioms SurveyStatements.P4.convexHull_tail_coefficients
+#print axioms SurveyStatements.P4.weakNull_exists_small_convex_tail
+#print axioms SurveyStatements.P4.continuousMap_real_riesz_representation
+#print axioms SurveyStatements.P4.continuousMap_uniformlyBounded_pointwiseNull_apply
+#print axioms SurveyStatements.P4.continuousMap_uniformlyBounded_pointwiseNull_weak
+#print axioms SurveyStatements.P4.norm_dualEvaluation
+#print axioms SurveyStatements.P4.finiteConvexTail_tendsto
+#print axioms SurveyStatements.P4.parameter_tail_convexification_bounded
+#print axioms SurveyStatements.P4.parameter_tail_convexification
+#print axioms SurveyStatements.P4.parameter_tail_convexification_rclike

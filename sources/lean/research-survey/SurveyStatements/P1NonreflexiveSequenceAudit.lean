@@ -1,0 +1,8 @@
+import SurveyStatements.P1NonreflexiveSequence
+
+#print axioms SurveyStatements.P1.goldstine_finite_approximation
+#print axioms SurveyStatements.P1.closedSubmodule_exists_bounded_annihilator
+#print axioms SurveyStatements.P1.exists_goldstine_triangular_sequence
+#print axioms SurveyStatements.P1.weak_limit_mem_closedSubmodule
+#print axioms SurveyStatements.P1.bounded_functionals_vanish_on_closedSpan
+#print axioms SurveyStatements.P1.nonreflexive_exists_bounded_no_weakly_convergent_subsequence

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "PASSED",
+  "problem": "P3",
+  "theorem": "SurveyStatements.P3.strictlyCosingular_iff_adjoint_strictlySingular",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "checkedBy": "KernelProofReplay into an empty kernel environment; Kernel.Environment.addDeclCore 0",
+  "kernelReplayExitCode": 0,
+  "replayedSafeNonPartialDeclarationCount": 49179,
+  "auditedSurveyDeclarationCount": 7192,
+  "axiomDependencies": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sourceBundlePath": "sources/SurveyStatements/P3StrictCosingularity.lean",
+  "sourceSha256": "3707AF08E20EAD5C4B48295EC1E3BEC8866FC187F9122AB41D52D0970BF4B4FA",
+  "proofArtifactBundlePath": "artifacts/SurveyStatements/P3StrictCosingularity.olean",
+  "proofArtifactSha256": "A9EC5A2D520F4E70A82DE22636F13DFBDE330AEA6B112E13D2F8F3AFE01C846F",
+  "signatureAndAxiomReport": "kernel-replay.log",
+  "signatureAndAxiomReportSha256": "64BA47A44117492F6DE56CFFD97A6E39E602E0FC619EFC61209FB3706B3C212C",
+  "supportingLibraryArtifacts": "artifacts/",
+  "supportingLibraryManifest": "manifest.json",
+  "completedUtc": "2026-10-06T12:58:17.4596173Z"
+}

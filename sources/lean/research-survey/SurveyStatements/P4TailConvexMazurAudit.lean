@@ -1,0 +1,4 @@
+import SurveyStatements.P4TailConvexMazur
+
+#print axioms SurveyStatements.P4.convexHull_tail_coefficients
+#print axioms SurveyStatements.P4.weakNull_exists_small_convex_tail

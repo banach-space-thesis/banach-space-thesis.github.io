@@ -1,0 +1,118 @@
+Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)
+Checking LindenstraussRetraction\Definitions.lean
+Checking LindenstraussRetraction\SchauderBasis.lean
+Checking LindenstraussRetraction\Statements.lean
+Checking LindenstraussRetraction\SchauderBasisLemmas.lean
+Checking LindenstraussRetraction\QuotientLemmas.lean
+Checking LindenstraussRetraction\RetractionConstant.lean
+Checking LindenstraussRetraction\RadialRetraction.lean
+Checking LindenstraussRetraction\Correction.lean
+Checking LindenstraussRetraction\BidualMap.lean
+Checking LindenstraussRetraction\BidualIsometry.lean
+Checking LindenstraussRetraction\Renorming.lean
+Checking LindenstraussRetraction\SummationSpace.lean
+Checking LindenstraussRetraction\CoordinateTruncation.lean
+Checking LindenstraussRetraction\SummationQuotient.lean
+Checking LindenstraussRetraction\C0Sum.lean
+Checking LindenstraussRetraction\C0SumCoordinates.lean
+Checking LindenstraussRetraction\ConcreteConstruction.lean
+Checking LindenstraussRetraction\Stability.lean
+Checking LindenstraussRetraction\Interlacing.lean
+Checking LindenstraussRetraction\NoSectionGeometry.lean
+Checking LindenstraussRetraction\NoSection.lean
+Checking LindenstraussRetraction\BidualLifting.lean
+Checking LindenstraussRetraction\BidualProduct.lean
+Checking LindenstraussRetraction\AnisotropicBidual.lean
+Checking LindenstraussRetraction\ComplementedTransfer.lean
+Checking LindenstraussRetraction\CoordinateRetractions.lean
+Checking LindenstraussRetraction\SummationApproximation.lean
+Checking LindenstraussRetraction\BasisTransport.lean
+Checking LindenstraussRetraction\BimonotoneRenorm.lean
+Checking LindenstraussRetraction\C0SumSeparability.lean
+Checking LindenstraussRetraction\BasisSeparability.lean
+Checking LindenstraussRetraction\RenormedRetractionObstruction.lean
+Checking LindenstraussRetraction\AuxiliaryNoRetraction.lean
+Checking LindenstraussRetraction\BlockBasis.lean
+Checking LindenstraussRetraction\BlockDecomposition.lean
+Checking LindenstraussRetraction\RenormedBlockBasis.lean
+Checking LindenstraussRetraction\DirectSumBlockBasis.lean
+Checking LindenstraussRetraction\C0SumFDD.lean
+Checking LindenstraussRetraction\ConcreteFDD.lean
+Checking LindenstraussRetraction\MainFromBasis.lean
+Checking LindenstraussRetraction\MainTheorem.lean
+Checking LindenstraussRetraction\AmplificationCore.lean
+Checking LindenstraussRetraction\Amplification.lean
+Checking LindenstraussRetraction\SummationBidualProjection.lean
+Checking LindenstraussRetraction\TwoSidedConstant.lean
+Checking LindenstraussRetraction\SoftRadial.lean
+Checking LindenstraussRetraction\BasisApproximation.lean
+Checking LindenstraussRetraction\MainWithApproximation.lean
+Checking LindenstraussRetraction\AuditChecks.lean
+'LindenstraussRetraction.no_uniformSection_summationOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.no_uniformUnitBallRetraction_auxiliarySpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.norm_renormedBidualLift_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.exists_sphereApproximation_of_renormedRetraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.no_commonRenormedBallRetractions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.mainStatement_of_boundedBasis_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.mainTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.main_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.main_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.concreteAuxiliarySpaceTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking LindenstraussRetraction.lean
+Checking FinalKernelAudit.lean
+'LindenstraussRetraction.correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.summationOperator_isNormQuotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.norm_bidualMap_isometry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.mainUnitBallStatement_implies_mainStatement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.no_uniformSection_summationOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.summationBidualLift_rightInverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.bimonotoneBasis_isBimonotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.hasUniformUnitBallBidualRetraction_of_complemented' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.no_uniformUnitBallRetraction_auxiliarySpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.main_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.main_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.concreteAuxiliarySpaceTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.twoSidedRetractionConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.basis_has_one_lipschitz_compactRange_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.basis_lipschitz_approximation_optimal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.mainWithApproximation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.main_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.main_complex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.hasLipschitzBidualRetraction_implies_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LindenstraussRetraction.MainStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LindenstraussRetraction.CorrectionStatement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ComplementedTransferStatement : (𝕜 : Type u_2) →
+  [inst : RCLike 𝕜] →
+    (E : Type u_1) →
+      [inst_1 : NormedAddCommGroup E] →
+        [NormedSpace 𝕜 E] →
+          (Z : Type u_3) →
+            [inst_3 : NormedAddCommGroup Z] → [NormedSpace 𝕜 Z] → [CompleteSpace E] → [CompleteSpace Z] → Prop
+@CorrectionStatement : {𝕜 : Type u_2} →
+  [inst : RCLike 𝕜] →
+    (E : Type u_1) →
+      [inst_1 : NormedAddCommGroup E] →
+        [NormedSpace 𝕜 E] →
+          (W : Type u_3) →
+            [inst_3 : NormedAddCommGroup W] → [NormedSpace 𝕜 W] → [CompleteSpace E] → [CompleteSpace W] → Prop
+Replaying FinalKernelAudit and all safe mathematical declarations and dependencies in a fresh Lean kernel environment.
+replaying FinalKernelAudit with --fresh
+All 51 project modules and checks passed. Output: research-retraction\.lake\verification\20261004-225120\lib\lean

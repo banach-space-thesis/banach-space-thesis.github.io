@@ -1,0 +1,10 @@
+import SurveyStatements.P2EllOneSynthesis
+
+#print axioms SurveyStatements.P2.ellOne_synthesis_summable
+#print axioms SurveyStatements.P2.ellOneSynthesis
+#print axioms SurveyStatements.P2.norm_ellOneSynthesis_le
+#print axioms SurveyStatements.P2.ellOneSynthesis_single
+#print axioms SurveyStatements.P2.ellOneSynthesis_range_isSeparable
+#print axioms SurveyStatements.P2.ellOne_unitVectors_not_tendsto
+#print axioms SurveyStatements.P2.ellOne_lifts_separable_noncompact
+#print axioms SurveyStatements.P2.exists_separable_noncompact_of_ellOne_unit_lifts

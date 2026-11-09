@@ -1,0 +1,13 @@
+mixedSpaceUPFP : ∀ (𝕜 : Type u_1) [inst : RCLike 𝕜], MixedSpaceUPFP 𝕜
+mixedSpacePrimariness : ∀ (𝕜 : Type u_1) [inst : RCLike 𝕜], MixedSpacePrimariness 𝕜
+'CKEUPFP.mixedSpaceUPFP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.mixedSpacePrimariness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.scalarLp_containsNoCZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.scalarEllp_containsNoCZero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.scalarEllp_hasUPFP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.intervalLp_hasUPFP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.continuousMap_isPrimary_of_hasUPFP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.cantorCZeroRead_comp_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.cantorCZeroEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.continuousMapCZeroEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.scalarLpCountingIsometry' depends on axioms: [propext, Classical.choice, Quot.sound]

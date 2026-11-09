@@ -1,0 +1,41 @@
+import SurveyStatements.P4Approximation
+import SurveyStatements.P4ConvexTails
+import SurveyStatements.P4WeakMetric
+import SurveyStatements.P4BidualApproximation
+import SurveyStatements.P4FactorizationCalculus
+import SurveyStatements.P4DFJPProofAudit
+import SurveyStatements.P4CompactInterpolationAudit
+import SurveyStatements.P4DFJPProjectionAudit
+import SurveyStatements.P4FiniteProofAudit
+import SurveyStatements.P4BaireOneAdjointAudit
+import SurveyStatements.P4TailConvexAudit
+import SurveyStatements.P4TailConvexAdjointAudit
+import SurveyStatements.P4ConvergentDualAudit
+
+#print axioms SurveyStatements.P4.HasFiniteRank.comp_right
+#print axioms SurveyStatements.P4.HasFiniteRank.add
+#print axioms SurveyStatements.P4.HasFiniteRank.smul
+#print axioms SurveyStatements.P4.HasFiniteRank.sum
+#print axioms SurveyStatements.P4.finiteConvexCombination_tails_tendsto
+#print axioms SurveyStatements.P4.strong_convergence_of_dense_sequence
+#print axioms SurveyStatements.P4.HasBoundedApproximationProperty.sequential
+#print axioms SurveyStatements.P4.uniformly_approximates_on_compact
+#print axioms SurveyStatements.P4.boundedApproximation_iff_sequential
+#print axioms SurveyStatements.P4.exists_bounded_finiteRank_strong_approximants
+#print axioms SurveyStatements.P4.isEmbedding_weakBidualInclusion
+#print axioms SurveyStatements.P4.weaklyCompact_iff_compact_cover
+#print axioms SurveyStatements.P4.IsWeaklyCompactOperator.comp_left
+#print axioms SurveyStatements.P4.IsWeaklyCompactOperator.comp_right
+#print axioms SurveyStatements.P4.exists_countable_total_dual
+#print axioms SurveyStatements.P4.weakCompact_metrizable
+#print axioms SurveyStatements.P4.exists_weakly_convergent_subsequence
+#print axioms SurveyStatements.P4.weakDual_functional_eq_eval
+#print axioms SurveyStatements.P4.goldstine_unitBall
+#print axioms SurveyStatements.P4.gantmacher_iff_bidual_mem_image
+#print axioms SurveyStatements.P4.reflexive_iff_weaklyCompact_id
+#print axioms SurveyStatements.P4.IsWeaklyCompactOperator.banachAdjoint
+#print axioms SurveyStatements.P4.isClosed_setOf_isWeaklyCompactOperator
+#print axioms SurveyStatements.P4.bidual_approximants_tendsto
+#print axioms SurveyStatements.P4.adjoint_approximants_tendsto_weak
+#print axioms SurveyStatements.P4.exists_finiteRank_bidual_and_weak_adjoint_approximants
+#print axioms SurveyStatements.P4.FactorsThroughReflexiveBasisSpace.weaklyCompact

@@ -47,6 +47,18 @@ export function verificationHTML(evidence,result,{correspondenceShown=false}={})
       <section class="verification-slot"><h3>Certificate &amp; reproducibility</h3><p>Space for the certificate identifier, checked source hashes, Lean and mathlib versions, and the time of the run.</p></section>
       ${evidence.projectAuditAvailable?'<details class="context-details"><summary>Existing project audit (not a certificate for this result)</summary><button class="load-audit">Read project audit</button><div class="project-audit"></div></details>':''}</div>`;
   }
+  if(record.schemaVersion===4){
+    const fresh=record.mode==='fresh-kernel';
+    const matched=fresh?evidence.kernelVerified:evidence.sourceMatch&&evidence.evidenceMatch&&evidence.paperMatch&&evidence.declarationMatch!==false;
+    const artifacts=record.artifacts.map(a=>`<li><a target="_blank" rel="noopener" href="${publicUrl('/verification-file?paper='+encodeURIComponent(evidence.paperId)+'&path='+encodeURIComponent(a.path))}">${esc(a.label)} ↗</a></li>`).join('');
+    const axiomRows=Object.entries(record.axioms||{});
+    return `<div class="verification"><div class="verification-state"><h3>${matched?(fresh?'Saved fresh kernel verification':'Successful compilation recorded'):'Saved verification needs review'}</h3><p>${matched?'The linked Lean sources agree with the source hashes from the saved run, and the attached reports and reading edition agree with this correspondence record.':'The current Lean sources, reading edition or attached reports differ from this record. It cannot certify the displayed version.'}</p></div>
+      ${facts([['Proved declarations',record.declarations.join('\n')],['Recorded completion',record.checkedAt],['Lean',record.leanVersion],['Certificate',record.certificateId],['Matched source records',record.sourceFiles.length]])}
+      <section class="verification-slot"><h3>Scope of this result</h3><p>${esc(result.link.note)}</p></section>
+      <section class="verification-slot"><h3>What the saved run checked</h3><p>${esc(record.scopeText)}</p><p>${esc(record.limits)}</p><p>This reader attaches the completed records and checks file agreement. It has not run Lean again. The correspondence between mathematical prose and the formal statement remains a separate mathematical comparison.</p></section>
+      ${axiomRows.length?`<section class="verification-slot"><h3>Axioms</h3><pre class="audit-code">${esc(axiomRows.map(([name,axioms])=>name+'\n'+(axioms.join(', ')||'No axioms')).join('\n\n'))}</pre></section>`:''}
+      <details class="context-details"><summary>Certificates and reports</summary><ul>${artifacts}</ul>${record.artifacts.some(a=>a.originalSha256)?'<p>Some report copies use project-relative paths. The certificate record preserves the original report hashes.</p>':''}<p>SHA256 records identify the checked files; they are not digital signatures.</p>${evidence.changedSources?.length?'<pre class="audit-code">'+esc(evidence.changedSources.join('\n'))+'</pre>':''}</details></div>`;
+  }
   if(record.schemaVersion===3){
     const checked=evidence.kernelVerified;
     const scope=record.scope==='complete'?'Complete result':record.scope==='definition'?'Definition':'Related result';

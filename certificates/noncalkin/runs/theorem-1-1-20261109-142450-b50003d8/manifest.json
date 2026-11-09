@@ -1,0 +1,2603 @@
+{
+  "schemaVersion": 7,
+  "status": "THEOREM_1_1_PASSED",
+  "startedUtc": "2026-11-09T14:24:50.9511052Z",
+  "certifiesMainTheorem": true,
+  "certifiesRealMainTheorem": true,
+  "certifiesAFCoefficientExistence": true,
+  "certifiesWholePaper": false,
+  "certifiesIdempotentLifting": true,
+  "certifiesCoefficientCounting": true,
+  "certifiesComplexificationIdeals": true,
+  "certifiesRealReduction": true,
+  "certifiesCStarIdealFoundations": true,
+  "certifiesAMSimplicity": true,
+  "certifiesCommutationTransfer": true,
+  "certifiesConcreteOrderedCStarConstruction": true,
+  "certifiesConcreteAFAndSimplicity": true,
+  "certifiesConcreteContinuumDensity": true,
+  "certifiesConcreteCommutationSkeleton": true,
+  "certifiesCardinalCountingAuxiliaries": true,
+  "finalDeclarations": [
+    "NonCalkinAlgebra.AF_coefficient_existence",
+    "NonCalkinAlgebra.main_theorem",
+    "NonCalkinAlgebra.real_main_theorem"
+  ],
+  "conditionalMainReduction": "main_of_coefficient_existence : CoefficientExistenceStatement -> MainStatement",
+  "conditionalRealReduction": "real_main_of_complex_main : MainStatement -> RealMainStatement",
+  "scope": "Theorem 1.1 and Remark 1.2, the AF coefficient selection for both separable quotient conventions at every continuum cardinal, and the complete mathematical dependency closure of the public NonCalkinAlgebra declarations. Includes private helpers and the auxiliary survey and Mathlib libraries.",
+  "method": "SurveyKernel.replay: Kernel.Environment.addDeclCore 0; regenerated constructors, recursors and quotient primitives compared.",
+  "allowedAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "compactFredholmPortSourceRevision": "5ed2965256430c3649e86755f9576b54eca72435",
+  "paperVersion": "arXiv:2607.15075v1",
+  "paperArchiveSha256": "970327359125D999F5113C291BC1257D1184157B58381B285EC3DAA9D4DC8618",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "leanExecutable": {
+    "path": ".\\PhD Thesis\\tmp\\lean-runtime\\lean-4.24.0-windows\\bin\\lean.exe",
+    "bytes": 82432,
+    "sha256": "20BC808248E38CF072F84F4EB389F8F98E5925D703BCBFA400D9DD44F310C4DB"
+  },
+  "importedArtifactCount": 9328,
+  "sources": [
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra.lean",
+      "bytes": 1258,
+      "sha256": "B2CC350EFF7FFDA3C0FC72730961D9A123D52992A97D46188E7A3FB5CA25CB48",
+      "bundlePath": "sources/paper/NonCalkinAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\AFCoefficientStatements.lean",
+      "bytes": 3226,
+      "sha256": "B3CF448D83E13FD1454E0EB7717B214E0624DAE6E1B76D0F03F6ECB45E24F062",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\AFCoefficientStatements.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ApproximatelyMatricial.lean",
+      "bytes": 3257,
+      "sha256": "B9EA04362067BEEC8FF260FE25F0097DB0875A7463F5C3B1524945D60AE0E99F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ApproximatelyMatricial.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ApproximateSurjection.lean",
+      "bytes": 4049,
+      "sha256": "0C680139A9829197D2C0250D524E97EF96094AB046FFDE7E4D85838185CCDF3A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ApproximateSurjection.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BanachComplexification.lean",
+      "bytes": 8292,
+      "sha256": "4DD48A78CCC49B0D23DBE16A5B6296532F229A619076B54FF1C57E52860A6FA9",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BanachComplexification.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BinaryPhase.lean",
+      "bytes": 1305,
+      "sha256": "7296D49B6524D6F579475D3EEB8BFB2E61A75C2290C096EC93625947508ABF37",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BinaryPhase.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BlockRefinementEntries.lean",
+      "bytes": 6096,
+      "sha256": "B75E03D337C1765E9FA79F140ACD75FAF95270BB226984F381A8B75EC18A02F3",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BlockRefinementEntries.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BlockTraceCompatibility.lean",
+      "bytes": 3286,
+      "sha256": "2783F259A7B9B642CAA18E4C68B2ABB10B219DA7E33EA3B775A0A1DEDAECD1B1",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BlockTraceCompatibility.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BoundedModelCounting.lean",
+      "bytes": 4746,
+      "sha256": "E91E92C6CE410891A7AAD1F22DF3C92159DEDE529C6A727EFB3F9E1027698AEE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BoundedModelCounting.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\BoundedRetraction.lean",
+      "bytes": 3996,
+      "sha256": "71BA7F27A6F7A488A61A59804F20F518D4F518B3DC17AEF8188C96614E9C74F8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\BoundedRetraction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CalkinCongruence.lean",
+      "bytes": 2382,
+      "sha256": "392212F756FD6DBCB4BC067745B91F6A78573E72C0C1E6BD385F2478C08E508E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CalkinCongruence.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CalkinCornerData.lean",
+      "bytes": 1518,
+      "sha256": "77C8925EA351726D1D14ADC990D1DDEA7D82EE3934365CCFB933F8F44FFA2E48",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CalkinCornerData.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CalkinCornersFromLifting.lean",
+      "bytes": 3393,
+      "sha256": "BB905AFA83C63B6CB545E811397296FF54AFDD035BFDE403512DA55AC95F3C23",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CalkinCornersFromLifting.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CalkinCornerTheorems.lean",
+      "bytes": 1340,
+      "sha256": "57C39CE8802529D7969F59F9AA7C270C7524B3B77AC977B67D7A09FE7D557527",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CalkinCornerTheorems.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CauchyTransform.lean",
+      "bytes": 2138,
+      "sha256": "DCE85C493576ADF610F32E8286C397981E19F5C978DCA4F13B260A44A989569A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CauchyTransform.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ClosedIdealQuotient.lean",
+      "bytes": 7182,
+      "sha256": "103A8D513CC917AFA0B192AF2B63FD4FF40E1CD5272B267C9C52C99B14E40DAE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ClosedIdealQuotient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ClosedIdealSubmodule.lean",
+      "bytes": 943,
+      "sha256": "089926EAF4FB848ADE46FD194C7A4EADDF379B6B2B2304C732E6352A43377653",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ClosedIdealSubmodule.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ClosedScalarExtension.lean",
+      "bytes": 889,
+      "sha256": "48ABDCDBC435E5B8BA8105580555793722AA6770705C683850DAB8122497D8F4",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ClosedScalarExtension.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ClosedSubspaceCoding.lean",
+      "bytes": 2141,
+      "sha256": "EE83CDC614D7A07BCE13010CC3C318FEBCB37D93F3DAD544AFBC6C3CB1FCEF99",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ClosedSubspaceCoding.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ClosedTwistedAlgebra.lean",
+      "bytes": 2548,
+      "sha256": "E74F2A23E319537DC0DA779B02E56809162699BC63B3C419A7C7012FF9D43E0F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ClosedTwistedAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CoefficientCardinality.lean",
+      "bytes": 674,
+      "sha256": "691E7283FA4197BC769BC2E1F0D63169A86430461C20BA54150C9BA5AF5F59C3",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CoefficientCardinality.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CoefficientCounting.lean",
+      "bytes": 2568,
+      "sha256": "022051D55302055DB9083048DE8FE0E3F87678C84A21DD02A7445E033EB7272A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CoefficientCounting.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CommutationChains.lean",
+      "bytes": 3975,
+      "sha256": "FC47C0AA9E713FC4D5593ADB6A11DF2AEA593041FF92A62F3465856E737ADC9B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CommutationChains.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompactEigenspaces.lean",
+      "bytes": 2083,
+      "sha256": "6299CED3CB33DC534B67EF89841936B43293AF4133C81DE557E6FA8D5E2FBB6D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompactEigenspaces.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompactSpectral.lean",
+      "bytes": 13689,
+      "sha256": "1857D2899390D32D71320A336387B4C6326A1C7994252519F1F6B85B5C6A60C8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompactSpectral.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompactSpectralFiniteness.lean",
+      "bytes": 5502,
+      "sha256": "3D1BD8D39FCA56AAED6A15E84A535ACB8BB316BE3416206325D325572C78F88A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompactSpectralFiniteness.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompactSpectralSupport.lean",
+      "bytes": 3052,
+      "sha256": "A1BDC5CAA62AC1DD46F433851F80368679486CBEE10A4910A18FDB4EFA2FC263",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompactSpectralSupport.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompletedAFSimplicity.lean",
+      "bytes": 3010,
+      "sha256": "4B810FFBA7F49637EADA1BB91F4BDC5A0EB05573ADAF3A564E16033A29213DC8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompletedAFSimplicity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompletedAFSystem.lean",
+      "bytes": 3102,
+      "sha256": "69EB819283F5ACFA1142932200558705FE329E1BD91D09EFFBB044A591F27F12",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompletedAFSystem.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CompletedAFTrace.lean",
+      "bytes": 2688,
+      "sha256": "BDDF96D1F88D00321F9CD996599E3C70673F6B097FF74B6135FFF68FE16D1B42",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CompletedAFTrace.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationApproximable.lean",
+      "bytes": 4976,
+      "sha256": "A01901A2C86DC6441A268DEB03CF765915AC67E159BBF9B984C2AB5B17A94EC5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationApproximable.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationCoordinates.lean",
+      "bytes": 4384,
+      "sha256": "2C30C5E45378911F05C1342949E96CF090D5CC9B059E1711347C591DFE57A7DC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationCoordinates.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationIdealParts.lean",
+      "bytes": 2967,
+      "sha256": "55018B6CACF53A56569EF301808631E6F6A2F0E12F0D7536168DC3ACA23E4340",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationIdealParts.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationOperatorIdeals.lean",
+      "bytes": 4915,
+      "sha256": "A7BED996934405D15F2F74AFC314DA97B7353E80FD63B95F4F7533CDA657B1A7",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationOperatorIdeals.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationOperatorParts.lean",
+      "bytes": 4377,
+      "sha256": "7ED556AD0F7CA27088D680C79A9E54EF2DA75715E0536901D85F67500FB28EE5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationOperatorParts.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationQuotientCoordinates.lean",
+      "bytes": 5882,
+      "sha256": "EEE54C6A1843633DECE025CE1A4D61870EA8AEB947ABA49E203111DD73DB6934",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationQuotientCoordinates.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexificationQuotientMaps.lean",
+      "bytes": 5638,
+      "sha256": "89C712D8B25B214EBC6D3783935000BBBD3CB268B2EB5040CAABB148330F88E8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexificationQuotientMaps.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ComplexLinearOfReal.lean",
+      "bytes": 1499,
+      "sha256": "B1680498EBB13642B92BF243948C82CD1D02B5C8B4B1D4222342E41434E15E86",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ComplexLinearOfReal.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ConstructedBanachAlgebra.lean",
+      "bytes": 2223,
+      "sha256": "4C1B636ADE3BCFD7D8626554B198E1C11645702E36DF72B607BEE89F8B3CBB8F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ConstructedBanachAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ConstructionTheorem.lean",
+      "bytes": 898,
+      "sha256": "EECBAD9F25606E17725A0C6FCFDC73880A8066BBC6C165A809AF0F91506580E1",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ConstructionTheorem.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CornerModel.lean",
+      "bytes": 2993,
+      "sha256": "620CBC252BDCB38724FBF07FBAE2651099DC1E513B9BB770AFE300F025CE8EE0",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CornerModel.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CornerTransfer.lean",
+      "bytes": 4858,
+      "sha256": "6953A1D02FFEE840F825DA03FB006DD44693CB922240CC688D2BD27D7B866335",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CornerTransfer.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CStarIdealApproximation.lean",
+      "bytes": 3239,
+      "sha256": "0D38FA83CFFF3C6BE9E9E13F48C49245B553B68DC5A9BB19422965AC629ED450",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CStarIdealApproximation.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\CStarIdeals.lean",
+      "bytes": 2445,
+      "sha256": "CB23A595EEA3F94CE663B90466314119FD136666C96BCDBEC213BFB41CB358F5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\CStarIdeals.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\DenseMatrixSimplicity.lean",
+      "bytes": 2578,
+      "sha256": "791ED515B1E2D8962E02D5930D3D6020A98582511C31232BAF6F2440A2BC0D8E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\DenseMatrixSimplicity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\DiagonalCorner.lean",
+      "bytes": 2477,
+      "sha256": "674FA23B209556B12D35B98743161D0F4DC8EACB38BB7BDE766B94622220D559",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\DiagonalCorner.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\DiagramTraceLaw.lean",
+      "bytes": 3016,
+      "sha256": "18C3D6009BA87E6EECD0A6E1D4817014F33DDBF52894B22181A684223591FEEE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\DiagramTraceLaw.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\EigenvectorFlags.lean",
+      "bytes": 4403,
+      "sha256": "45CA07FC4C2446CBA2D52916B87BBC3176FC079DE671DD1C86911D0E3EC8D99B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\EigenvectorFlags.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\EllOneSeparable.lean",
+      "bytes": 1253,
+      "sha256": "5F01B5C85A6300AF7CD0E735A6470390643CA530EABCFE2E9C22CC8EA2920252",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\EllOneSeparable.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\EssentialIdempotentSpectrum.lean",
+      "bytes": 1445,
+      "sha256": "DF73AA1D9FD06A7DD62563B1D20A28822A021654BFBCD2C8B094BF38BAC8BE1D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\EssentialIdempotentSpectrum.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteBlockComposition.lean",
+      "bytes": 2704,
+      "sha256": "2F539ABA11158F07DE94DCAA542C21264DFC4ACFE81FD43C98AEBA0840B67D57",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteBlockComposition.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteBlockIdentity.lean",
+      "bytes": 2465,
+      "sha256": "35FD426242C686B7DD3CD9166B71530AB68B339223CF81340222A214BFD1B5A0",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteBlockIdentity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteBlockRefinement.lean",
+      "bytes": 4660,
+      "sha256": "3AE1BDDDC44361EF417A11B640FDA603F1B25DCB64A3974DBF59244F18A04E74",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteBlockRefinement.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteBlockSimplicity.lean",
+      "bytes": 2262,
+      "sha256": "CDDAAE24D88510A7058E0B34190ABF1C152C8F49F0C0CF7157098FEA9494EE7F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteBlockSimplicity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteBlockTraceCoefficients.lean",
+      "bytes": 3035,
+      "sha256": "C913E967063433685139083E1CC5BC4D5D5ED09DACE528E9B17B6991932406CE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteBlockTraceCoefficients.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteCStarEmbedding.lean",
+      "bytes": 1959,
+      "sha256": "874AAF00141598CEFC1DB665FC65EEB3CFBD6A21CCD52095BE8A030B91A0794C",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteCStarEmbedding.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteProductSums.lean",
+      "bytes": 2121,
+      "sha256": "DE3B6BA677954B25F6C98FFC82F994C92C28BF9BFB609DBD01B3A09DB7F4DCE2",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteProductSums.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteSpectrumEmbedding.lean",
+      "bytes": 1934,
+      "sha256": "FE491EF5D5EF3A1F81862B7EAFBE7DC461FA5F6D479C7F520A0DE952F07127FC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteSpectrumEmbedding.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\FiniteSupportCocycle.lean",
+      "bytes": 1961,
+      "sha256": "AD1ADA902D115B776A703AC0F6E3DC4967EA4CD229764B05F3A8018F9288F345",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\FiniteSupportCocycle.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\IdempotentLifting.lean",
+      "bytes": 1285,
+      "sha256": "7EE03E70A009F37CA7677851FDCC2C604C72245A48DB5031F950937268986F6A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\IdempotentLifting.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\IdempotentResolvent.lean",
+      "bytes": 4474,
+      "sha256": "272BF94B5B99CA13C6EE713D84216FC7545822623879518689A128840744F465",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\IdempotentResolvent.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\IntrinsicMatrixIdeal.lean",
+      "bytes": 8136,
+      "sha256": "331C5A7A3F58E8681030C3CE43E454353F4AA76E9692806D19FB764FA8388180",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\IntrinsicMatrixIdeal.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MainFromCoefficient.lean",
+      "bytes": 493,
+      "sha256": "706856585D5DC5A04C1F188D05EEC16835D7766ADF0B79E15895C58AFAA3542D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MainFromCoefficient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MainReduction.lean",
+      "bytes": 4718,
+      "sha256": "EFFD3E1D4B69FDE3339F41AE0B0D721D8FA93ABDC47EC7F7DDFFEFDC2E73D7C9",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MainReduction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixClosure.lean",
+      "bytes": 3802,
+      "sha256": "E605FAFE1F9DBD71545AD729BB71C5AD4AC309921C2AC52D6A3DF728FD092A1E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixClosure.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixDensity.lean",
+      "bytes": 5031,
+      "sha256": "F5F83AA1D9F31B1A4402F527CB9106CC7729693FB605C12FF66E741E5FAC790A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixDensityLower.lean",
+      "bytes": 1582,
+      "sha256": "23818085108C43F33E7ACE2C289A90AC6E72C17AEA66E6D9F0EE55B412F17896",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixDensityLower.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixEntries.lean",
+      "bytes": 3414,
+      "sha256": "978C8B93364A5CF45CBFF942A14F60D330C520359058DA4B357C17DAF680008A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixEntries.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixEntrySeparation.lean",
+      "bytes": 1710,
+      "sha256": "12F5E4B0533F0ACBB2DAF01D3F948A0CB85B3F6BD3B9960FDD51A7DF221E170B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixEntrySeparation.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixIdeal.lean",
+      "bytes": 4025,
+      "sha256": "2F518FE05DF9F4DC7067A9642905F91BE20BBE22F2F3F0858828D7C8E99323C3",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixIdeal.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixIdealStructure.lean",
+      "bytes": 6637,
+      "sha256": "282CE3F34D2ABD94994DFAC799279F5ADA098526622708D4C9287030CD08E24A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixIdealStructure.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixObstruction.lean",
+      "bytes": 4228,
+      "sha256": "A9601AE4B323EF75FFF07AEFA06150A2F2DC7730F7920059CD44E30544622646",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixObstruction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixRowEstimate.lean",
+      "bytes": 2602,
+      "sha256": "33CC7AA89360A1CBE0B0022A61864AFD77F4E6FDFEDA1315F448306BC57A0390",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixRowEstimate.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MatrixUnits.lean",
+      "bytes": 3625,
+      "sha256": "9002BB765EED3B2CE436E87BBCE1136398BF2DCF749BE8FC80FFC2B10E292047",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MatrixUnits.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\MetricCardinality.lean",
+      "bytes": 2473,
+      "sha256": "0190FE67FD2C2DF68B742CD7C0A8F728A98BEE02ECE6CC136839AFA972F78CFF",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\MetricCardinality.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\NonunitalMatrixClosure.lean",
+      "bytes": 3647,
+      "sha256": "AF130AB4E9FECC56BBE95CE605B2D41E0B0DA17A5C260383ADFA2FA9E32CCC2D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\NonunitalMatrixClosure.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\NormedQuotientMap.lean",
+      "bytes": 1681,
+      "sha256": "F95E1499619D25532338AE9BF8B29281F5F79E3AAC13A24BBB5302AD2658F820",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\NormedQuotientMap.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\NormedStarCompletion.lean",
+      "bytes": 3706,
+      "sha256": "C6C27ECE2C6922CEB587916F264E1E2EE972E2493BE2205281A04D0EE32E8810",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\NormedStarCompletion.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\NormedStarDirectLimit.lean",
+      "bytes": 5585,
+      "sha256": "4D637E46AEFC38F859A02300817ACA2A1D8FE33D0783CCCF012F9A3794CA44A1",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\NormedStarDirectLimit.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OneIdealCriterion.lean",
+      "bytes": 3672,
+      "sha256": "E81F39526943B469D696266F02FB782A27F839EAA859BB58705C56E50C4F1BA2",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OneIdealCriterion.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OperatorIdealMultiplication.lean",
+      "bytes": 2285,
+      "sha256": "8AFDC0D7C975C0CD6040307E280036BE1B2AB3F1EA97355CF76A91C423AFFE8E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OperatorIdealMultiplication.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OperatorIdealReduction.lean",
+      "bytes": 2305,
+      "sha256": "F196AC902CF88049E73880A292FBAA8D49E2A470AFC381A0C5BE108888ADD00A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OperatorIdealReduction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OperatorIdeals.lean",
+      "bytes": 5166,
+      "sha256": "7E794A97D410C5799CEFC4B94E9512E61CD977D47054075770D07A4413981F7D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OperatorIdeals.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedCocycle.lean",
+      "bytes": 1899,
+      "sha256": "9D90031CC71ADC222562F5C3DD43385F553E75AF155B5D9495F8C6C72768D3EE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedCocycle.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedCocycleNondegenerate.lean",
+      "bytes": 4084,
+      "sha256": "CED2196D9124788473DF22BC5BEB39B4BDA414687A2F1708196595CDFA5487ED",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedCocycleNondegenerate.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedCocycleSupport.lean",
+      "bytes": 3035,
+      "sha256": "99CAD681842BA9A41E673D45C2F5C124CB7149C0134740AD1E3F1B6ABF83A6E5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedCocycleSupport.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedCoefficientModels.lean",
+      "bytes": 1614,
+      "sha256": "8A6ACE969CCDF07F4480D9C38D501AA22C8E41BE1783931852FE149AEA1C604E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedCoefficientModels.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedShiftChain.lean",
+      "bytes": 1839,
+      "sha256": "8001040117A187E582B150E1AE9069FB2738219588B1A01D561C92D99BF4C542",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedShiftChain.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedTwistedAlgebra.lean",
+      "bytes": 1713,
+      "sha256": "BE8C7FA2B799E14E400DBDCB4E627460CEA4042684F12B11AF3BFFE694072507",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedTwistedAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedTwistedDensity.lean",
+      "bytes": 1965,
+      "sha256": "02549BCFA952848164109FD3CBC226651C4F3DD249272510858EF4046B0F1FA6",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedTwistedDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedTwistedSkeleton.lean",
+      "bytes": 3352,
+      "sha256": "9AB28546BF435804749AB3ACDA8B4615EDD04DFAC159598FFB9905A613531742",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedTwistedSkeleton.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderedTwistedStructure.lean",
+      "bytes": 1453,
+      "sha256": "BA5C69B1C107ECFF7AD000D11534B471DD739239B998801838B687B1C5C57DB3",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderedTwistedStructure.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\OrderInvariantFiberCounting.lean",
+      "bytes": 2733,
+      "sha256": "493DBBBB9DD15253420572BFA1AB47AD6F6527FC307B6949C1037322C23A6CBA",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\OrderInvariantFiberCounting.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\PrerequisiteStatements.lean",
+      "bytes": 1517,
+      "sha256": "F7C1C8CDDF65BF4E294BED1A07E98249906917C51477CD84E159708067073AAE",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\PrerequisiteStatements.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductAFAlgebra.lean",
+      "bytes": 2560,
+      "sha256": "E41137E1AB42775BE595A5C63B04D0D48B65DACDB4FA53622C5674C06C3FDC8B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductAFAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductAFDensity.lean",
+      "bytes": 2859,
+      "sha256": "83B1C7F5E375AE5EA9D26DF432E0B4DCB9008518438F3D561826B6380700B434",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductAFDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductBlockDiagram.lean",
+      "bytes": 5355,
+      "sha256": "6AFBD7DDBD91E2B6AB5C05DC5BC8C866C825946FD56FD30C3686BA5F23E06E38",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductBlockDiagram.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductBlockRefinement.lean",
+      "bytes": 2222,
+      "sha256": "5D421C429CBD750B400CE340303C69773F1644C0E349893EF8B9F042AF03D447",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductBlockRefinement.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductCompletedTrace.lean",
+      "bytes": 6236,
+      "sha256": "14797FCCBABF083C1F01A9F78DE9EDA3E4AB5DD452991B0B3418F7C3DA04F2F6",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductCompletedTrace.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductCoordinateEmbedding.lean",
+      "bytes": 9948,
+      "sha256": "F01E2AF95BD9A97FEC198B45750BDABB0EDEC6579E5BB3CDA6CB0FA164B4CEFF",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductCoordinateEmbedding.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProductTraceWeights.lean",
+      "bytes": 5164,
+      "sha256": "1A8E0AA70B0716728E3562644A4210932847655381D75F68FE7E2761A30D9181",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProductTraceWeights.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ProjectionRange.lean",
+      "bytes": 1807,
+      "sha256": "6843EECEEEB26212D4301862C4716952D14CDDAB7759BE869144727B42419F4C",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ProjectionRange.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\QuotientAlgebra.lean",
+      "bytes": 5485,
+      "sha256": "900485E4EB212FE7D129FD2110017BBCEE13A2A84B01CE971CCDB9C04777029F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\QuotientAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\QuotientConventionReduction.lean",
+      "bytes": 5751,
+      "sha256": "3851A775050744EBC3F8A55E8F578D81CFAB0F109E9CE3D29FD317116CD006B2",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\QuotientConventionReduction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\QuotientIsoEquiv.lean",
+      "bytes": 2378,
+      "sha256": "FBE1ADE75CDFAEF54F7FC80269B1CCE99521590F15A4AB10F08FFBB3A3D5613F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\QuotientIsoEquiv.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\QuotientLinearMap.lean",
+      "bytes": 1618,
+      "sha256": "2175A24E755C4D176D8C0BD16DDD15571BD228D357899B1509F7DF2C8E5299A0",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\QuotientLinearMap.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\QuotientMatrixObstruction.lean",
+      "bytes": 3426,
+      "sha256": "A1FDF3AD94B9B92CC5D869793BCD5E4EB232FF26562ECCFE8487B531FF60E5B3",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\QuotientMatrixObstruction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealCalkinCorner.lean",
+      "bytes": 5487,
+      "sha256": "C86A41EEC7AAE12EDD1340D93EF0C452686885AAE694DCBDFB998BB3C47EB1C0",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealCalkinCorner.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealCalkinCornerAlgebra.lean",
+      "bytes": 4616,
+      "sha256": "7409E1D400DEFCB1DDDDC90BA0C5F6EBC82889F716125480CA4F41C5C4F09255",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealCalkinCornerAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealMainReduction.lean",
+      "bytes": 2236,
+      "sha256": "BFC38E46AECCC1293259ED4D07C22D718FF3FB8E3295E794D1EDB65234A301DD",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealMainReduction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealOperatorIdealMultiplication.lean",
+      "bytes": 2284,
+      "sha256": "E9F45FD36BB6FE77A7D05BDFD73336107A89CE6DB25F56612261A513377B0102",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealOperatorIdealMultiplication.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealOperatorIdeals.lean",
+      "bytes": 3514,
+      "sha256": "A567F48F1FFD0A95DC0CD949DCB10508E68740A541636BC46A9D0B4DBAF8573E",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealOperatorIdeals.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealQuotientAlgebra.lean",
+      "bytes": 5684,
+      "sha256": "91D94CBE1F3A22AFE6577223243C85FF1E9E06931ADC3DB6D35C12E6428F87F8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealQuotientAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealQuotientIsoEquiv.lean",
+      "bytes": 1093,
+      "sha256": "EE6037FBEA215BFA780596DCCAE660857CBA755A62A8BB8DE080DC8B660680C5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealQuotientIsoEquiv.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RealStatements.lean",
+      "bytes": 2513,
+      "sha256": "17DDD458FDE6BD448D2988AE4D6E0790D94F6C5E43F265ABAAA23930AECCD8D2",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RealStatements.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RepresentationObstruction.lean",
+      "bytes": 3987,
+      "sha256": "06A945E5D191B51F57E5557F4785EA55DDE803BC77132B4F49B55A383503C130",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RepresentationObstruction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\ResolventIdentity.lean",
+      "bytes": 1982,
+      "sha256": "A7139373C7B68C19FC548121BDD98CDB4E6280BFE7B6D668D83800A69D18E565",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\ResolventIdentity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RetractionCalkinCorner.lean",
+      "bytes": 3803,
+      "sha256": "6A478256746DFDDC0335FF57C3C09A4DB77144649A3FEB4A1F2578961B1C84E9",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RetractionCalkinCorner.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RetractionOperatorIdeals.lean",
+      "bytes": 2552,
+      "sha256": "B7B006F7C9F68471301E9D0A09D8DFF8D918267EE563041C9DC290772A3678E8",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RetractionOperatorIdeals.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RieszCircleAnnulus.lean",
+      "bytes": 2646,
+      "sha256": "2B9F744F51BCC292DA4B68282014EFBFDEEF840674683130CD29F79C242454F2",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RieszCircleAnnulus.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RieszCircleBasic.lean",
+      "bytes": 5647,
+      "sha256": "42FE945F141244AE5EDB64FD4D29ED4DF1D9D2481331EEECC355643CB040A4C4",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RieszCircleBasic.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RieszCircleIdempotence.lean",
+      "bytes": 6063,
+      "sha256": "4E18EA632D29BCE27BB82DE3ECDB8ABAD078C9A494C5532DFE75B3FF1C60D6E4",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RieszCircleIdempotence.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RieszCircleQuotient.lean",
+      "bytes": 2971,
+      "sha256": "C43C8936FD7C3D477A8B10E52B149F9B201E1EABE7C495458BBD62528BFBA800",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RieszCircleQuotient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\RootedBlockDiagram.lean",
+      "bytes": 2855,
+      "sha256": "2B00B5D5B67CDE6B9087334DDBE3A5C0356DA70FE6953610AADD26B116213EE1",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\RootedBlockDiagram.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SeparableCalkinModels.lean",
+      "bytes": 1847,
+      "sha256": "9497D7BE4608DB208AB6DE120E0EF2C008C877C7DCAE57AF7895094945CA999B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SeparableCalkinModels.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SeparableCornerObstruction.lean",
+      "bytes": 2574,
+      "sha256": "FCB85E4FB6B312A81A5B6C139734842C8A64273FA542AD9ACB0B4882E1DB707B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SeparableCornerObstruction.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SeparableEllOneQuotient.lean",
+      "bytes": 4221,
+      "sha256": "7595B7342C0D5F875C34BCFA5F075C44BAEEDBA64D672D968E440156F64595EC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SeparableEllOneQuotient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SeparableRangeQuotient.lean",
+      "bytes": 4120,
+      "sha256": "5669EEDEFA04C2D987FCF258225F509C9868ACA55908A50B83CBB257E5322D8B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SeparableRangeQuotient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SeparatedDensity.lean",
+      "bytes": 1137,
+      "sha256": "DE4B9796595F8243183797F915849691D8AEA0C88F3EDA295DF2B1C16B51CCCC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SeparatedDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\SpectralLiftingPreliminaries.lean",
+      "bytes": 4336,
+      "sha256": "7DD06B2F340F73272AED71C80D1EAE07878838F59EE5D769563A700D31022F46",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\SpectralLiftingPreliminaries.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\StatementLemmas.lean",
+      "bytes": 2099,
+      "sha256": "694BAE602D4C94B44F272647A8F894B676793F8B60BC70AF1D6D81792F6AE06F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\StatementLemmas.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\Statements.lean",
+      "bytes": 1505,
+      "sha256": "4AA8615B89E60E97B6325B695F9535046DDBBD07A35149F7CF1595B190E0BF90",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\Statements.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceCodedCoefficient.lean",
+      "bytes": 6844,
+      "sha256": "7BF54895A714003BEEF620548C8A968835DFDAB00D8A7EA830BFC5ECB8610CBC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceCodedCoefficient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceCoefficientSelection.lean",
+      "bytes": 4923,
+      "sha256": "809C6FB370C9C878E15C26EB883D47B82A95E69EA226F80BC74958D83EE529BC",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceCoefficientSelection.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceCoordinateSeparation.lean",
+      "bytes": 7089,
+      "sha256": "0FB592719B2DAF3495F9128EA42E8FB67319DB37BCAF8C944979FBF0582158B1",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceCoordinateSeparation.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceCoordinateValue.lean",
+      "bytes": 8247,
+      "sha256": "E822882F7619A14BA2F333051C2CEC8A74189DF41C9F6CF14F5B27261191E9FB",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceCoordinateValue.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceDiagramWeights.lean",
+      "bytes": 4856,
+      "sha256": "BCB445965A34312D85C65B15BBCDDC4CE8FEA1CB3664E25FF12D95A7101214DF",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceDiagramWeights.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceFiniteMatrices.lean",
+      "bytes": 2563,
+      "sha256": "16F65ACB8414ECF559E0C43B55E0D34778260A8B0C53480C6EE42E07E0BA0302",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceFiniteMatrices.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceIdempotents.lean",
+      "bytes": 1810,
+      "sha256": "ED0749BC5C74C7F9FE80F153515BA25ACD3053326E5CC554ECFE9C04CBB788D5",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceIdempotents.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceLocalIdempotents.lean",
+      "bytes": 7615,
+      "sha256": "38B155E447152AFA5E206D6130502E15BDA1DA4FF853D9F1F7EE76D75C451C2A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceLocalIdempotents.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceMatrixNorm.lean",
+      "bytes": 3966,
+      "sha256": "BB5CCCC398588FE5C56ED577A3C6332F62DA22212EC27EBA7CCABDFCB528CF2A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceMatrixNorm.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceMatrixRefinement.lean",
+      "bytes": 4985,
+      "sha256": "DD137496639F860288E8D07A430D0D76C9E2E46246A46A0A3D0122729697B38F",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceMatrixRefinement.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceMatrixSystem.lean",
+      "bytes": 3587,
+      "sha256": "A08CC9C59E5000E8D23A55A7A35DA15638E3A1263C77E8606EA1D1DDD3D02787",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceMatrixSystem.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TracePaddingDiagram.lean",
+      "bytes": 1711,
+      "sha256": "90D50E7AFF799B3FC1E4B756015B9B1593787AC50388208B2D0D9E7D4676BF08",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TracePaddingDiagram.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceParameterRefinements.lean",
+      "bytes": 8806,
+      "sha256": "2897CB1B5AFB7D3FA377426205957CCD1E142BDF02BD8F057EC1EF818B33AD45",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceParameterRefinements.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceParameters.lean",
+      "bytes": 6057,
+      "sha256": "6AE0BD5F94722FF850A4F0E6FC1C9833B03C555B988268F55CF88D99CDBBD01A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceParameters.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceStageGrowth.lean",
+      "bytes": 2960,
+      "sha256": "F33A90510C9C7E2A5FD3911F7D43446E4ABC0CE0E8FC0B069616C0470FCAF26D",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceStageGrowth.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceWeightRefinement.lean",
+      "bytes": 5296,
+      "sha256": "CCCCD572507230A26AB3142D952852CDFB89816B90E8C4FDD156BFABFE64C4D4",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceWeightRefinement.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TraceWeightUniqueness.lean",
+      "bytes": 3574,
+      "sha256": "27AFB96FEB187B57843FAA305FEB4C8338DC944925BFF64556585315B571A729",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TraceWeightUniqueness.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedAF.lean",
+      "bytes": 2394,
+      "sha256": "FDEA47CDFA017412C456B2CEC7E14E6CBC99D79A5A99A6D7F1D8F76832681E46",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedAF.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedAlgebraDensity.lean",
+      "bytes": 3398,
+      "sha256": "1AA26C6F8783DFA84D1249722F502CF68BBA818AD15CC69F558EAB5C65162BE6",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedAlgebraDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedAveraging.lean",
+      "bytes": 4215,
+      "sha256": "09849996CB512939D759B3F3D93D3F89B06C418D1DC6A41A281843D46A8DC396",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedAveraging.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedCoefficient.lean",
+      "bytes": 3682,
+      "sha256": "E87E94CBBBB7C07BF48237F4D13224802186FCF431D62AADA6489AF3D549F14A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedCoefficient.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedConjugation.lean",
+      "bytes": 872,
+      "sha256": "3C05B2EDC3AA492BEA740459C1C7E9F13F5E8695A5D007EB53512D24223C1869",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedConjugation.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedFiniteAveraging.lean",
+      "bytes": 3432,
+      "sha256": "F72FD5358D914AE20B55A4A1777CB6DE592E282DA2070531103B85F431FF8B55",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedFiniteAveraging.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedFiniteSpan.lean",
+      "bytes": 3727,
+      "sha256": "32365B22FD338E59F595560E9E37CFE9F65B779634E0DDB878B071500DED6827",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedFiniteSpan.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedLocalSubalgebra.lean",
+      "bytes": 4224,
+      "sha256": "E9BBD1A3E5F39973AEA945A345F0679C2D36A909433963B97537437E8BBF1F03",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedLocalSubalgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedRegular.lean",
+      "bytes": 4517,
+      "sha256": "B8C75EB45BCA3408707C5F1D2E9F4B1542FD1C42B72FDAC9A9AB40224EA32DB7",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedRegular.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedRegularCommutators.lean",
+      "bytes": 1567,
+      "sha256": "0AAF2F76ED4FC93197CDDA894FB54A754E44F05E16CA92706F0C0BD42C7775FB",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedRegularCommutators.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedRegularStar.lean",
+      "bytes": 2240,
+      "sha256": "E123C7313C2A1E55FB1A5073D9FD10F3C5BB21DD2CFD7E3770AB51A592990CE7",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedRegularStar.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedRightRegular.lean",
+      "bytes": 4986,
+      "sha256": "C75E2D90004192479C557EAA7CF41A995A605C00A0C0AF7C34D49AC30C705BCF",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedRightRegular.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedSimplicity.lean",
+      "bytes": 3297,
+      "sha256": "3387C6F4B1E281AABC9E3CF9E28E25B4922FCC80167345E76C3E18F610E93E7B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedSimplicity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\TwistedSpanDensity.lean",
+      "bytes": 3147,
+      "sha256": "652686575712205DBA41D4AFC9879B8189274DD141298B39DC6AA4C62DB10F5A",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\TwistedSpanDensity.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\UnitizedMatrixAlgebra.lean",
+      "bytes": 5035,
+      "sha256": "BC336157DFC18A5D0EF9B6FC8EC64E7B14981058E8E1426CB467BD477D884AFF",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\UnitizedMatrixAlgebra.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\WeightedBlockTrace.lean",
+      "bytes": 2993,
+      "sha256": "BD1B2B0D62AB705C83CF57A6CD2434E68DF0108C9FABDF598C32838574ABC21B",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\WeightedBlockTrace.lean"
+    },
+    {
+      "path": "research-noncalkin\\NonCalkinAlgebra\\WeightedPermutation.lean",
+      "bytes": 1953,
+      "sha256": "25DC60806D3A692FF61C1E842E0639E47CA4B92C0B328DBFD4625B548EC90D65",
+      "bundlePath": "sources/paper/NonCalkinAlgebra\\WeightedPermutation.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Algebra\\Algebra\\StrictPositivity.lean",
+      "bytes": 3914,
+      "sha256": "7527157EEBBB35B5648D885F5BE0A95C1185BA6EF3E209AF7CA0B0B3393D537B",
+      "bundlePath": "sources/paper/Mathlib\\Algebra\\Algebra\\StrictPositivity.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Algebra\\Colimit\\DirectLimit.lean",
+      "bytes": 22013,
+      "sha256": "C5B1D757662F2E3031314BC98FB885A19C6F0B7843D5F98F02633060EF888512",
+      "bundlePath": "sources/paper/Mathlib\\Algebra\\Colimit\\DirectLimit.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\Analytic\\RadiusLiminf.lean",
+      "bytes": 2630,
+      "sha256": "A61C67AA3AF19561D8FF4F44E07A0FCF30E4F7AD3CBCC754330ADD8728475137",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\Analytic\\RadiusLiminf.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\Complex\\Convex.lean",
+      "bytes": 4198,
+      "sha256": "13CB17E00C85B990CF14BEB672339DFCB91C21EFFC6ED8B5C6D61A4B4955A12F",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\Complex\\Convex.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\Complex\\Spectrum.lean",
+      "bytes": 1244,
+      "sha256": "535C81E2111680ECC0F20D248FAC21B36FEACA1CA61214AF309C8FC63244DB0A",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\Complex\\Spectrum.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\Classes.lean",
+      "bytes": 5514,
+      "sha256": "EE465455148D310B99AB9D87E8E4D81D22936EE60F7B5B128BA92DE80D08D812",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\Classes.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Basic.lean",
+      "bytes": 24156,
+      "sha256": "0A745EC14CB32D1087C4C9812384039124AB2BEED7662CDC3565766794940281",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Basic.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Instances.lean",
+      "bytes": 19545,
+      "sha256": "FC8CF059E40F3F34FA89A13350EB06A7AD275D1FCCA402DDF8D1F199B2F4EFDB",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Instances.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Isometric.lean",
+      "bytes": 30993,
+      "sha256": "0432E52F4FA59AAE7A19D723C8BF6FF9EA26E4AE360D3D27B785EC2BE7D15AAF",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Isometric.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\NonUnital.lean",
+      "bytes": 39656,
+      "sha256": "CB5E456452BDED47F9A5FB27D3383B9A7FE68528921E4B92C8E233B9DEE520A4",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\NonUnital.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Restrict.lean",
+      "bytes": 16430,
+      "sha256": "E9BA76AE916B23C8848C39A172672128D3AADD92A28F621DE58E58925918E552",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Restrict.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unique.lean",
+      "bytes": 21693,
+      "sha256": "685BA78E6C400C13228B540E39730F4BD980CB4A48868574B3801E3CCDBA3763",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unique.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unital.lean",
+      "bytes": 52133,
+      "sha256": "E196588404D93790F712E5AD54D03794D49DF8BB44517A1C6C7C1D80A7DFC34E",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unital.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousMap.lean",
+      "bytes": 1629,
+      "sha256": "95566B2AE95F4836B5C983ACBBEF8AF493354A6A86AC7A04A82C1C67507683BA",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\ContinuousMap.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\GelfandDuality.lean",
+      "bytes": 13537,
+      "sha256": "E4B13F17FCE73260B8E4F44820C55A1B3672D083A81F58A0F4F10A70C22F05F7",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\GelfandDuality.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\Matrix.lean",
+      "bytes": 12222,
+      "sha256": "190BDEF0AA5E0C5685A064FE01E2A5D9561F59283C1377C28868E6276129AD11",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\Matrix.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\Spectrum.lean",
+      "bytes": 15044,
+      "sha256": "4BCB5E48CFF41CCC3DF7143813B3BEA01AFD1D87073A4DD96EF5A3F86B52A7FC",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\Spectrum.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\CStarAlgebra\\Unitization.lean",
+      "bytes": 9889,
+      "sha256": "FB91654B8FFDFF9D1836D64DE20C8F4EFD788CCBF0F1831F752C0957BC485831",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\CStarAlgebra\\Unitization.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\InnerProductSpace\\Adjoint.lean",
+      "bytes": 35107,
+      "sha256": "627B21B1022A03776F22694C7C5A8D494F8008E4F6D87A6E295616CCA6C7BA7E",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\InnerProductSpace\\Adjoint.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\Normed\\Algebra\\GelfandFormula.lean",
+      "bytes": 9580,
+      "sha256": "34E70B38B6F566768F6AE5F4D337FF86C52303FBE327F192172FDCBD96D44583",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\Normed\\Algebra\\GelfandFormula.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\Normed\\Algebra\\Unitization.lean",
+      "bytes": 13533,
+      "sha256": "ACE22E93CFA70B8AD907142643B3199E54F059044BB5AAB637CDABE89479C940",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\Normed\\Algebra\\Unitization.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Analysis\\SpecialFunctions\\ContinuousFunctionalCalculus\\PosPart\\Basic.lean",
+      "bytes": 15218,
+      "sha256": "1ED3D9F12E4A2E89ED1A2E08BDC339AB4AE8FAC4AE8EDE1668BC8E5E6E6F082F",
+      "bundlePath": "sources/paper/Mathlib\\Analysis\\SpecialFunctions\\ContinuousFunctionalCalculus\\PosPart\\Basic.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Data\\Real\\StarOrdered.lean",
+      "bytes": 1347,
+      "sha256": "A85200C3B3E0445BAF2C83F2E64AA8EC9866A35E45722638ADA7C9CBB262BDE9",
+      "bundlePath": "sources/paper/Mathlib\\Data\\Real\\StarOrdered.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\LinearAlgebra\\Matrix\\FiniteDimensional.lean",
+      "bytes": 1918,
+      "sha256": "7F5EC0B850A8A7C060412BBB712F21C19FA162C97A329D2CE15DB6D7E3373C2E",
+      "bundlePath": "sources/paper/Mathlib\\LinearAlgebra\\Matrix\\FiniteDimensional.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Order\\DirectedInverseSystem.lean",
+      "bytes": 24847,
+      "sha256": "846BA2C376332814141A0D02E73DE2BC76AAE3C4412D3802D9D8003FA77D4D96",
+      "bundlePath": "sources/paper/Mathlib\\Order\\DirectedInverseSystem.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\RingTheory\\SimpleRing\\Matrix.lean",
+      "bytes": 574,
+      "sha256": "BA626757A842C7CE6BA5F7D4DA0502C391275BC75F7499FE71368AE2BAA76B8F",
+      "bundlePath": "sources/paper/Mathlib\\RingTheory\\SimpleRing\\Matrix.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Topology\\ContinuousMap\\ContinuousSqrt.lean",
+      "bytes": 1661,
+      "sha256": "45D3A6B242036E0EBF298DD2521BCB91177A9DA7423EDE8665D085C594B9B47E",
+      "bundlePath": "sources/paper/Mathlib\\Topology\\ContinuousMap\\ContinuousSqrt.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Topology\\ContinuousMap\\StarOrdered.lean",
+      "bytes": 5556,
+      "sha256": "04FB598FA5B6462C748C2B83CD26CAF9985CEE609908CEEB183A28EB2A7FE377",
+      "bundlePath": "sources/paper/Mathlib\\Topology\\ContinuousMap\\StarOrdered.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Topology\\ContinuousMap\\Units.lean",
+      "bytes": 4447,
+      "sha256": "B79686BF826CC7DDEA189C58A225041FA4D0CB0E597C0DCC51E020559D14C2CE",
+      "bundlePath": "sources/paper/Mathlib\\Topology\\ContinuousMap\\Units.lean"
+    },
+    {
+      "path": "research-noncalkin\\Mathlib\\Topology\\UniformSpace\\Matrix.lean",
+      "bytes": 1653,
+      "sha256": "C1F71C74D9CCDC9E223216AF279F127EBBCD2483FEF812AAC008823266505BF1",
+      "bundlePath": "sources/paper/Mathlib\\Topology\\UniformSpace\\Matrix.lean"
+    },
+    {
+      "path": "research-survey\\KernelProofReplay.lean",
+      "bytes": 6731,
+      "sha256": "DF5DF673336EE576FBDC11D4B7F75832EB3FA6EE7D8F46C836D3C31088BA1649",
+      "bundlePath": "sources/survey/KernelProofReplay.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2AbsorbedRows.lean",
+      "bytes": 5455,
+      "sha256": "8E0F93EB2EB34EFF9D5B1162E39E71F0457E73FE5B02F2019A0D163B2F23B55D",
+      "bundlePath": "sources/survey/SurveyStatements\\P2AbsorbedRows.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2BanachIdeals.lean",
+      "bytes": 4658,
+      "sha256": "08C8A35F9E7903A3E50FE3D82381244DE0B86C19030331D6C65B8E3B501328FD",
+      "bundlePath": "sources/survey/SurveyStatements\\P2BanachIdeals.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2Calkin.lean",
+      "bytes": 6228,
+      "sha256": "0D219097253458D4A3C9A139DE2106221B87FC28CD75CFB67E5180B428EF9013",
+      "bundlePath": "sources/survey/SurveyStatements\\P2Calkin.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2CalkinCorrections.lean",
+      "bytes": 1290,
+      "sha256": "CC8503991DCF77E9CDC49D4E411EE40507D8BC767D25AE7BF04E73D97C5E8854",
+      "bundlePath": "sources/survey/SurveyStatements\\P2CalkinCorrections.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2CalkinMatrixUnits.lean",
+      "bytes": 4908,
+      "sha256": "7737924FAE393BFA64364E754E6D2C16FDEC3F7A2CEEA5D2371CDF0F44A74570",
+      "bundlePath": "sources/survey/SurveyStatements\\P2CalkinMatrixUnits.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2Cardinals.lean",
+      "bytes": 1216,
+      "sha256": "254DB53BF6E853B1356B93B84DD181EA3DFA4201F5DC8E08F9A476F5FF08F611",
+      "bundlePath": "sources/survey/SurveyStatements\\P2Cardinals.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2CardinalTrap.lean",
+      "bytes": 3127,
+      "sha256": "3639B67553D73D7DD1D7C9E7085EF5DFF2C05878D7206EF3441F3C7744694423",
+      "bundlePath": "sources/survey/SurveyStatements\\P2CardinalTrap.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2Definitions.lean",
+      "bytes": 3320,
+      "sha256": "90FDFEC870D8D40FE04343C6BC48AB77B02D202456F280E0E8D74624CFD7628A",
+      "bundlePath": "sources/survey/SurveyStatements\\P2Definitions.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2EllOneRows.lean",
+      "bytes": 3440,
+      "sha256": "245508C3B34CC351F9485D8C41211BE1E67CD219FADC75A00DAE005463EE17E3",
+      "bundlePath": "sources/survey/SurveyStatements\\P2EllOneRows.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2EllOneSynthesis.lean",
+      "bytes": 6166,
+      "sha256": "FF9EF2B1AFBC5252DD1583FB3A6E00560662368495EB576073F5FC1E48935542",
+      "bundlePath": "sources/survey/SurveyStatements\\P2EllOneSynthesis.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2InvariantAbsorption.lean",
+      "bytes": 3262,
+      "sha256": "3CC2C2B3ED71C1E9291C9927FDAE4EC48893E7AC1A744E66880F2EB746D9EF12",
+      "bundlePath": "sources/survey/SurveyStatements\\P2InvariantAbsorption.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2InvariantQuotient.lean",
+      "bytes": 4103,
+      "sha256": "CF8A99C6B156CF28D1D81AAB5322E04D612B7A1B29BA260F7FDD35ED3A1ABC6B",
+      "bundlePath": "sources/survey/SurveyStatements\\P2InvariantQuotient.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2MatrixEllOneLifts.lean",
+      "bytes": 2729,
+      "sha256": "4C9054EB475E08C155C19189F4D0D64C67D83D0BFD5E4BC8F2ADB94E123F5A68",
+      "bundlePath": "sources/survey/SurveyStatements\\P2MatrixEllOneLifts.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2MatrixErrorAbsorption.lean",
+      "bytes": 4772,
+      "sha256": "FDDEC50D60732CB0558DFE26E3638957F42F3058AB2E432A5CC1826D24C91BC0",
+      "bundlePath": "sources/survey/SurveyStatements\\P2MatrixErrorAbsorption.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2MatrixNonrepresentation.lean",
+      "bytes": 3883,
+      "sha256": "CD1D4AEF831560AEFFC249C5A7BC52A024956BC461413F9A5D472ED2570A8704",
+      "bundlePath": "sources/survey/SurveyStatements\\P2MatrixNonrepresentation.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2OppositeShift.lean",
+      "bytes": 5739,
+      "sha256": "31AD85E5EBDB5601536B4172CA7AC1EB88B718D0FD0AE09860061EB22A3B1742",
+      "bundlePath": "sources/survey/SurveyStatements\\P2OppositeShift.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2QuotientAlgebra.lean",
+      "bytes": 6228,
+      "sha256": "4E7EEC30BF49EC3E747F485AC4116EE517766FAE4C5AA98F2FCBB7A54EB29CF4",
+      "bundlePath": "sources/survey/SurveyStatements\\P2QuotientAlgebra.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2RationalCoefficients.lean",
+      "bytes": 1954,
+      "sha256": "B8FB2E1AC10F7B0F8A66AE79E7EB1774619A6C53D1E8C7CA6DBFED8A327B240E",
+      "bundlePath": "sources/survey/SurveyStatements\\P2RationalCoefficients.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2SeparableRange.lean",
+      "bytes": 5191,
+      "sha256": "54B89C32AB7BCD75A6EDEA1DA69E664028B68A4A46446A807169E92E6CEAAC8A",
+      "bundlePath": "sources/survey/SurveyStatements\\P2SeparableRange.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2SeparableRangeCalkin.lean",
+      "bytes": 5576,
+      "sha256": "616DAB2ADFA247D0173DFA8AC4904EDAF5AF6742459F08AA2C97C47E819D69D4",
+      "bundlePath": "sources/survey/SurveyStatements\\P2SeparableRangeCalkin.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2ShiftAlgebra.lean",
+      "bytes": 3481,
+      "sha256": "4FFB3CF03F3646665CDCC91073D1595DA74016AD3D198CAF1EF1083A150AC96D",
+      "bundlePath": "sources/survey/SurveyStatements\\P2ShiftAlgebra.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2ShiftMaximalIdeal.lean",
+      "bytes": 2681,
+      "sha256": "80B88ECD260797E7F2B880AD49A54C33A67B2804DCB03446CF735F00AAAD6728",
+      "bundlePath": "sources/survey/SurveyStatements\\P2ShiftMaximalIdeal.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2ShiftQuotient.lean",
+      "bytes": 4465,
+      "sha256": "28AAAA3697EDD718CAA28F1419FCB1516EC423456DD61B8463DCF59606DBC85A",
+      "bundlePath": "sources/survey/SurveyStatements\\P2ShiftQuotient.lean"
+    },
+    {
+      "path": "research-survey\\SurveyStatements\\P2Shifts.lean",
+      "bytes": 9585,
+      "sha256": "8C5914AB20D6670E6A3F8BD54CD287FF0D635C5A8276D6ED69FC9A25E078FC7D",
+      "bundlePath": "sources/survey/SurveyStatements\\P2Shifts.lean"
+    },
+    {
+      "path": "research-noncalkin\\KernelReplay.lean",
+      "bytes": 5952,
+      "sha256": "D65545312C8BD1A14E530BB50E03978CC4B46C0EF8A9CA01280DF7A37C1D4290",
+      "bundlePath": "sources/paper/KernelReplay.lean"
+    },
+    {
+      "path": "research-noncalkin\\DependencyInventory.lean",
+      "bytes": 244,
+      "sha256": "05BBA244C86363A42E90A81F5E2CE6C168EF521297BA4EE53DFAA5A5EBA2847E",
+      "bundlePath": "sources/paper/DependencyInventory.lean"
+    },
+    {
+      "path": "research-noncalkin\\Audit.lean",
+      "bytes": 5331,
+      "sha256": "771CE77E603353CD0A4AA2942F175AF1A120E5134D38C61D2FC361DB4F26C6F9",
+      "bundlePath": "sources/paper/Audit.lean"
+    },
+    {
+      "path": "research-noncalkin\\check.ps1",
+      "bytes": 2858,
+      "sha256": "A3C8C05357E450AFE1454198E4AF1C6DD6E6A1EDDE99AD8E09645B0A2E88A504",
+      "bundlePath": "sources/paper/check.ps1"
+    },
+    {
+      "path": "research-noncalkin\\verify-construction.ps1",
+      "bytes": 13814,
+      "sha256": "B85B13E56D7F6BE6AAE2B97389BEBE4027ECB227E3D7F2423C857D93DCC386B9",
+      "bundlePath": "sources/paper/verify-construction.ps1"
+    },
+    {
+      "path": "research-noncalkin\\build-cstar-auxiliaries.ps1",
+      "bytes": 9083,
+      "sha256": "B5E6840CC55592781F3B7CA186CDEA642240D47CD8947A946587AB0B8B712BC2",
+      "bundlePath": "sources/paper/build-cstar-auxiliaries.ps1"
+    },
+    {
+      "path": "research-noncalkin\\lakefile.toml",
+      "bytes": 229,
+      "sha256": "6CCFDF49B5D4DC77575FFB568102D1FB389127FE2AB132D9B06DB9B6DDF03A31",
+      "bundlePath": "sources/paper/lakefile.toml"
+    },
+    {
+      "path": "research-noncalkin\\lean-toolchain",
+      "bytes": 25,
+      "sha256": "42779D67B81608AF8A12AA4328D2AB47CA201925B3B2BD68369587B5340BB434",
+      "bundlePath": "sources/paper/lean-toolchain"
+    },
+    {
+      "path": "research-noncalkin\\README.md",
+      "bytes": 10874,
+      "sha256": "1FC9FD9218ABD1CB3FE05BD26F78B92B0CB3B1120C5D47455E26AB094E151E56",
+      "bundlePath": "sources/paper/README.md"
+    },
+    {
+      "path": "research-noncalkin\\RESUME.md",
+      "bytes": 19938,
+      "sha256": "664640FA499897B7250585CDF36E3EAC5ED8BE953AC970BADD32EDED8125C759",
+      "bundlePath": "sources/paper/RESUME.md"
+    },
+    {
+      "path": "research-noncalkin\\verification\\statement-correspondence.md",
+      "bytes": 19979,
+      "sha256": "265CB638FFBC790420F46B22557B29ACBFDE44911CF798CD09C1FB18A6E56C71",
+      "bundlePath": "sources/paper/verification/statement-correspondence.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\00README.json",
+      "bytes": 213,
+      "sha256": "D1F6B1A71C9ACCB812EC5121D1FFF7910C025CA7BB201948BACDB40941BC14E5",
+      "bundlePath": "sources/paper/source\\00README.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\1-Introduction.tex",
+      "bytes": 10363,
+      "sha256": "C999160E97AB66C33EE9F65C4193BD80E7045D7990C4178A4981831CA923AAFF",
+      "bundlePath": "sources/paper/source\\1-Introduction.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\2-Preliminaries-and-definitions.tex",
+      "bytes": 7411,
+      "sha256": "1658A93BC994ECDED81F2487836397723F2B4397E7FD00D9A83BB40BD524EA42",
+      "bundlePath": "sources/paper/source\\2-Preliminaries-and-definitions.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\3-Calkin-corners.tex",
+      "bytes": 6629,
+      "sha256": "9301018E604EB0516B55DBDDBD5DFDCFC84548A3FCFB471E6A92B6FA0BE8A1A0",
+      "bundlePath": "sources/paper/source\\3-Calkin-corners.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\4-Matrix-unit-obstruction.tex",
+      "bytes": 12392,
+      "sha256": "0EE350914684A47BD98D8861A15293387220400CAAADD77990AEF852F2C227BC",
+      "bundlePath": "sources/paper/source\\4-Matrix-unit-obstruction.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\5-One-ideal-algebra.tex",
+      "bytes": 12295,
+      "sha256": "C2BB06C3A8B0B4E47B87DC71C2F1613881C27C125F6752F5D7C9A8E8B18C0FB4",
+      "bundlePath": "sources/paper/source\\5-One-ideal-algebra.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\arxiv-2607.15075v1.tar",
+      "bytes": 16330,
+      "sha256": "970327359125D999F5113C291BC1257D1184157B58381B285EC3DAA9D4DC8618",
+      "bundlePath": "sources/paper/source\\arxiv-2607.15075v1.tar"
+    },
+    {
+      "path": "research-noncalkin\\source\\bibliography.tex",
+      "bytes": 2241,
+      "sha256": "4C0CA1F7F643BE0982B2BC881671C4DC331A380D33CD79CA4A4193BB1BF0B876",
+      "bundlePath": "sources/paper/source\\bibliography.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\main.tex",
+      "bytes": 4611,
+      "sha256": "03EB7BA94FCEBA4F42ECDDB975F6A651BF6947C1FA1B0E451D83A12DB01893B3",
+      "bundlePath": "sources/paper/source\\main.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-katsura\\arxiv-1301.6152v1.tar",
+      "bytes": 22579,
+      "sha256": "FBC053FA39A25858631230EF62EFD578F26BF7B60F02358FBCA3CD0F65D1FA65",
+      "bundlePath": "sources/paper/source\\farah-katsura\\arxiv-1301.6152v1.tar"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-katsura\\README.md",
+      "bytes": 1558,
+      "sha256": "987224244852E99AA6E6C0B4E019AD5CE7F924A6269D0DFE3334191C435EEE58",
+      "bundlePath": "sources/paper/source\\farah-katsura\\README.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-katsura\\source-uncompressed.tar",
+      "bytes": 81920,
+      "sha256": "AD48328C896D448AE56250712221794340A1580CB5D1BEFBEED69ADB7462EA6A",
+      "bundlePath": "sources/paper/source\\farah-katsura\\source-uncompressed.tar"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-katsura\\uhf2-final",
+      "bytes": 67955,
+      "sha256": "47E9EE681968665F83B8D160653A3E3436EDCCE16A658EBBBCE2EA5485744413",
+      "bundlePath": "sources/paper/source\\farah-katsura\\uhf2-final"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-katsura\\uhf2-final.bbl",
+      "bytes": 5539,
+      "sha256": "EF9EE43D2E9B8169A2BE224D831611960841BFCCB6B7A1DD4C18CBFA68E7A9B5",
+      "bundlePath": "sources/paper/source\\farah-katsura\\uhf2-final.bbl"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-shelah\\arxiv-0912.0406v1.tar",
+      "bytes": 33954,
+      "sha256": "0554CC0CAFAB77C13AFBBBA7D8B3B7B2F3B8F8FD661DDAAB31931893898D41EC",
+      "bundlePath": "sources/paper/source\\farah-shelah\\arxiv-0912.0406v1.tar"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-shelah\\farah-shelah-v1.tex",
+      "bytes": 122804,
+      "sha256": "67FB416D9848E90C18FBF417A6A9F29321A2927B9269ED98BDA04FD9B6928244",
+      "bundlePath": "sources/paper/source\\farah-shelah\\farah-shelah-v1.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\farah-shelah\\README.md",
+      "bytes": 3386,
+      "sha256": "2A1261BBF3073FF9BEE88537862D2461D5D36C8A243FC45444B537294555E4DE",
+      "bundlePath": "sources/paper/source\\farah-shelah\\README.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\gardner\\README.md",
+      "bytes": 1413,
+      "sha256": "F9E11FA8433DD7AB78F7CA1B421069DEBB9A4074F7924CF97C6116C358600810",
+      "bundlePath": "sources/paper/source\\gardner\\README.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\horvath-kania\\arxiv-2101.09950v2.tar",
+      "bytes": 10123,
+      "sha256": "17D0F2D06DB5C53B67E50B9FCE1EFDFC660295B255A893BDCA7BEA13D52661A4",
+      "bundlePath": "sources/paper/source\\horvath-kania\\arxiv-2101.09950v2.tar"
+    },
+    {
+      "path": "research-noncalkin\\source\\horvath-kania\\horvath-kania.tex",
+      "bytes": 30610,
+      "sha256": "1BD000CA55438E64557E8CA9F43F2B803459C2C42B7C90C96A3E34019588FDCD",
+      "bundlePath": "sources/paper/source\\horvath-kania\\horvath-kania.tex"
+    },
+    {
+      "path": "research-noncalkin\\source\\lomonosov\\InvariantSubspaceLomonosov.lean",
+      "bytes": 25798,
+      "sha256": "195E4DACF0DD5B91E01F76D54F513AE68A42809FD812A67B6E84730711D57A67",
+      "bundlePath": "sources/paper/source\\lomonosov\\InvariantSubspaceLomonosov.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\lomonosov\\LICENSE",
+      "bytes": 11358,
+      "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30",
+      "bundlePath": "sources/paper/source\\lomonosov\\LICENSE"
+    },
+    {
+      "path": "research-noncalkin\\source\\lomonosov\\README.md",
+      "bytes": 8523,
+      "sha256": "F48A9A7458F8CB1922D608A9E07CF19ED8249787E617D64153692CA9C8D55E60",
+      "bundlePath": "sources/paper/source\\lomonosov\\README.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\lomonosov\\tree-8b43adc.json",
+      "bytes": 3156,
+      "sha256": "4D433FB6CC205D7F8F07CD6AAF2A75953149BDFB0525FC5CB5DE4292B42FFA1A",
+      "bundlePath": "sources/paper/source\\lomonosov\\tree-8b43adc.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-cstar\\build-manifest.json",
+      "bytes": 29805,
+      "sha256": "7F4D82656263BA15E8F99BDC41063E79F5C9FB0E8DAF67B5C88F7A680AE2E438",
+      "bundlePath": "sources/paper/source\\mathlib-cstar\\build-manifest.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-cstar\\cached-runtime-snapshot.json",
+      "bytes": 5659973,
+      "sha256": "9B24B7A1CCC1F1F7DB123BA3D81CFA0B1B72532E2C48D492B4C1F19ABEF56D94",
+      "bundlePath": "sources/paper/source\\mathlib-cstar\\cached-runtime-snapshot.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-cstar\\LICENSE",
+      "bytes": 11558,
+      "sha256": "E03BA41D7FAB20700769FE4118BAB50D800CB74F990353A05D2F5FFF1C228363",
+      "bundlePath": "sources/paper/source\\mathlib-cstar\\LICENSE"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-cstar\\README.md",
+      "bytes": 1963,
+      "sha256": "C4D62213C7BC288EE1B116B214F5D6875BEE94CA1220EE46805D847E264C93E7",
+      "bundlePath": "sources/paper/source\\mathlib-cstar\\README.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-cstar\\source-ports.json",
+      "bytes": 463,
+      "sha256": "3F4757C839B3649B45D176B33F9BA6B85EFDA923A3B087C901DEDC6203F74090",
+      "bundlePath": "sources/paper/source\\mathlib-cstar\\source-ports.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_Banach.lean",
+      "bytes": 28100,
+      "sha256": "536901AFFE7BB431E39EF1384233F3E0EE65C3D1C8DD6F9A3157818488B1C38B",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_Banach.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_BoundedLinearMaps.lean",
+      "bytes": 25123,
+      "sha256": "5EDCA0E233A81357A3D614F6BB3318E9E112B96E6D59D9E23A337EC043AA447D",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_BoundedLinearMaps.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_Basic.lean",
+      "bytes": 24073,
+      "sha256": "2B83E756D8C12FD569EAE9F2A519086F333E7407F4168F4CE188A7A95FEBA37F",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_Basic.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_FiniteDimension.lean",
+      "bytes": 1683,
+      "sha256": "5388A8F51E0D86541F75D694A2D25B055AB37239EDF50490FDE88F86C42AF5A8",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_FiniteDimension.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_FredholmAlternative.lean",
+      "bytes": 12836,
+      "sha256": "2CC61D4A105BA216737E47BC98EDF5F6A1507011D3603E5EE6694F6EF65DFF82",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_Compact_FredholmAlternative.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\Analysis_Normed_Operator_FredholmAlternative.lean",
+      "bytes": 385,
+      "sha256": "A374AB2AADB835E0B22E9292FA0CC90A5D0FE3DEBF435D6ECB38FFBC91F4FD21",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\Analysis_Normed_Operator_FredholmAlternative.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\GelfandFormula-pinned.lean",
+      "bytes": 9580,
+      "sha256": "34E70B38B6F566768F6AE5F4D337FF86C52303FBE327F192172FDCBD96D44583",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\GelfandFormula-pinned.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\LICENSE",
+      "bytes": 11558,
+      "sha256": "E03BA41D7FAB20700769FE4118BAB50D800CB74F990353A05D2F5FFF1C228363",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\LICENSE"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\PORT.md",
+      "bytes": 1810,
+      "sha256": "570A33C27D4F2152901D5891F72078FFCA969E54BD2F6BDB05CD2526B92EA7F6",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\PORT.md"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-spectral\\tree-5ed2965.json",
+      "bytes": 2784878,
+      "sha256": "B2B745B65AC1B4AD080482C381FD4FAFD18A5AC4FCF1BC403EB3760E0B973834",
+      "bundlePath": "sources/paper/source\\mathlib-spectral\\tree-5ed2965.json"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-universal\\Banach-pinned.lean",
+      "bytes": 27168,
+      "sha256": "4AA87F513DB8831F25D008D6105A558961A1AF3C500034EA8C64BE2AB22682F7",
+      "bundlePath": "sources/paper/source\\mathlib-universal\\Banach-pinned.lean"
+    },
+    {
+      "path": "research-noncalkin\\source\\mathlib-universal\\LICENSE",
+      "bytes": 11558,
+      "sha256": "E03BA41D7FAB20700769FE4118BAB50D800CB74F990353A05D2F5FFF1C228363",
+      "bundlePath": "sources/paper/source\\mathlib-universal\\LICENSE"
+    }
+  ],
+  "savedArtifacts": [
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra.olean",
+      "sha256": "47FF37F5D626BF35BB2948E903760D5A4CD805A438FD1502193EF4FDC610F084"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\AFCoefficientStatements.olean",
+      "sha256": "80ED1AD74990EBC1CEAAE8A442A30224541C01459175D1CD067223ACEC9161E5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ApproximatelyMatricial.olean",
+      "sha256": "963F7BE8CB4F50C21B35A5FE3AC149387C2DA2C8CD506AC02DDFEDA0D16D00E5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ApproximateSurjection.olean",
+      "sha256": "091EB4A0D29ACA8E508D1E877279FCAF1887BD7A252968403D2E249D306A08E9"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BanachComplexification.olean",
+      "sha256": "ACF1E592EC35A38ABC4ADE70F47D7262DB9B06F70C78CE681AFB1A29560682A1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BinaryPhase.olean",
+      "sha256": "4BBAFF01EB6BEBA995C42F25B4A5BB89168B52FF10A7A56BDB753DE29896F5C8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BlockRefinementEntries.olean",
+      "sha256": "FED88BFEC74981ECCBD8A754E942690B1941DC1902889EF80275DE110D6639AC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BlockTraceCompatibility.olean",
+      "sha256": "DF4141CF3C3A8DEE2119105F2BD5BE08CADECEB1448D8DEDD22F1A6EEB743651"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BoundedModelCounting.olean",
+      "sha256": "1758ED72DB06C3EEF910C8316BD1FFB886B57E34DBAB127ED32A6AE9FC1299F9"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\BoundedRetraction.olean",
+      "sha256": "86A03E4E44CB2C6C4FEA10E7482698460FB7A2BC4AC193E80568EB416C5D0771"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CalkinCongruence.olean",
+      "sha256": "516B91508D0C5ABD4300C130F52924F2D6B0F90E6C97C22FB7365B869C3BD6E1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CalkinCornerData.olean",
+      "sha256": "C42EF3A4778E325AA023F7D09E14D33CAC495E37C610364F79DE659AF3884D26"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CalkinCornersFromLifting.olean",
+      "sha256": "0B9556319D9F3D299154214B2E075487C4C8E33FB38CFB367537074F388FF1F2"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CalkinCornerTheorems.olean",
+      "sha256": "F8FC498BF216507084B66A45B6168A39A64CC2EE6C180E57FDC19B566018E25C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CauchyTransform.olean",
+      "sha256": "B0F3A06966FC373464B8564EB8BBB655CF9C14D3F5027911F3FB789632369EBF"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ClosedIdealQuotient.olean",
+      "sha256": "2DE1C3D7AFD95D0C362BE241BE6ADAA91560B7604B3C9D60A3D2C7C780B43DCC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ClosedIdealSubmodule.olean",
+      "sha256": "A7C27D2EA6CB2FABD02661E2678BF9E3BBE4EDB68F957F70C87DBBCF7C0CB9C3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ClosedScalarExtension.olean",
+      "sha256": "73315733C3A7CCFA21D0658D7483B9F8BA9B0F27FB01CFA440FC81FDFB2409AC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ClosedSubspaceCoding.olean",
+      "sha256": "F935CAF66BC75F15869722E802C2372ECA24231852DA62C7EF22EC91A7CAD7E7"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ClosedTwistedAlgebra.olean",
+      "sha256": "FC7CD7BFA8D4FF6796CDEC14043A36296FC04F41518BB5AE771F7BF63A0051CF"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CoefficientCardinality.olean",
+      "sha256": "2C683F416E61746C4986C0CE9F4B35B21E635ADD307C409083CDA5FB09BF044C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CoefficientCounting.olean",
+      "sha256": "7AF40D8240E917242BF3334B23C516809DED6E06FEC5651DC86C9396B04DA69C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CommutationChains.olean",
+      "sha256": "7E490DCDD7234DC56000BD6C7A9D1ED4E9B4B5981F343F3536C8897E1B195E1B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompactEigenspaces.olean",
+      "sha256": "173444BF18B0C556B20488FACC66E76BEBEF6C1AC92294DF4212AA263CC2B8F4"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompactSpectral.olean",
+      "sha256": "267D0ECA9484D81DF366EDD0DE38DB8CA94C1376E8F46839BBB6BE5D3177B1F8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompactSpectralFiniteness.olean",
+      "sha256": "CB59FFCFB6603B0B5ED5BC1470DA9D371E1D263D9E9F6CDCDDCAF0E4E248CFB8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompactSpectralSupport.olean",
+      "sha256": "A47437C3762D204DE76F5C7389D1E6B05209EC64667D00A29F33EEEAAEF66DD6"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompletedAFSimplicity.olean",
+      "sha256": "1FB21343036EBEA20ACD3E81CD0066D885477747C260219D51C8F758AB68B517"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompletedAFSystem.olean",
+      "sha256": "0C4E922025FC615A3A74383E8A6888CBDC391DB46EEA4986A3FB7DB4627FAB81"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CompletedAFTrace.olean",
+      "sha256": "F4E78F81D50B9B2E463665D0F32B868E748DBA6FC55820978AA15CBECDF777C3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationApproximable.olean",
+      "sha256": "F355746C61A5F02F40EA9A1125584A53141B5B02867A3812DAA12C3E29C3AF18"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationCoordinates.olean",
+      "sha256": "1CF8EDE40036D283D37DE84309C11C56E6389B57C8B9D788DAACEA328E4EA76E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationIdealParts.olean",
+      "sha256": "C969001D611431063C289EBBD4D443CBFDC61B522B0B4818FEDBEC4E964034E3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationOperatorIdeals.olean",
+      "sha256": "9BB5781CA19084EA36FA331FA17D8D5787B9A21AE8E579BD7D79183ABCEA3D42"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationOperatorParts.olean",
+      "sha256": "9EE5B8346769DCED11E26975E1882A11475280EBE13232BB3CD55F52FFD403BC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationQuotientCoordinates.olean",
+      "sha256": "4493D1B5469114101C4D5A3CE01F16FFC8372F0EF4C14EF0E3D25300AE4E3474"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexificationQuotientMaps.olean",
+      "sha256": "EAD9A3334A87045DA3B166FB6A4B0EDD3E655AB953B2DBEB558DB2256926188F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ComplexLinearOfReal.olean",
+      "sha256": "02AD1320C6BFA4A861BB8A91CB7F170E4642902864EA3BFFE6B287C62BB5712D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ConstructedBanachAlgebra.olean",
+      "sha256": "11CAA479A8928A7A7C602EC66D45F0FDEE424CB9EB6E65B99D5E596A03EA037B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ConstructionTheorem.olean",
+      "sha256": "80B547112B264F5467593A157D532CC173146F1C12E10D03148CA5CE3319B234"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CornerModel.olean",
+      "sha256": "9594D62799F454A65E585942FF0DFC81EC11CAA48504C469C171D768250483B5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CornerTransfer.olean",
+      "sha256": "CEFCF4720DA1FAF509FB19B5DEDEAA9F43EDFB02F492B59A4EBE982F560E090A"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CStarIdealApproximation.olean",
+      "sha256": "B0DABCB603DF42F2354771C749E5DDABF6012FC21B9BD020BC43721B52D27BBB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\CStarIdeals.olean",
+      "sha256": "971E6974E34296BFCFFB944918DED825AEF3F5A1B20FB4BBEE102FA6981F6267"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\DenseMatrixSimplicity.olean",
+      "sha256": "EA74BB92734ECB7FAB3234816C18B411559025C299F3C61AA66C57DD1C5AA2D5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\DiagonalCorner.olean",
+      "sha256": "BE9840B4E6D52CA9BAA9C48C944F398FCA47F8B1D1CFF5ED032160B072993FE4"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\DiagramTraceLaw.olean",
+      "sha256": "AAF800099DAB46155C15F730DBF993AAA6BD86529198A6E71793CC2CDADF6602"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\EigenvectorFlags.olean",
+      "sha256": "32EB40CEF439C800C266BDAA4FF774D8CA3E631D23D00B8B62EFB89E12A02693"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\EllOneSeparable.olean",
+      "sha256": "C7690B2729D349CB4877F436425FA471C69FA0E7CAA732F0686F954C751552B9"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\EssentialIdempotentSpectrum.olean",
+      "sha256": "2AF5F55FB1A01915BC7F903E83DFF2A881D8298A9F44C5B4F4437055BA0A248E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteBlockComposition.olean",
+      "sha256": "2498F3F8835F8C553757D161B06C29D07071A9422213AD806B4E9D5164A04152"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteBlockIdentity.olean",
+      "sha256": "56378F58041DE0553ACA61C729C17E2EB2F512CD3D69CEEB72DF483E40C99E21"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteBlockRefinement.olean",
+      "sha256": "B6AB42B538F8E22935190D98EB947ADBF056C6518F408B3AA2AAFA798C9F8D47"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteBlockSimplicity.olean",
+      "sha256": "F4A418F41C1ABD89A8EEE75118F4B75B2BA12194DB7ED00F9B0F0EB55B692FB6"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteBlockTraceCoefficients.olean",
+      "sha256": "77571885220E35663DE0F0E6D87AC871132C8AAAFD836799824A570C4392E514"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteCStarEmbedding.olean",
+      "sha256": "8C0C3947D0514E8AC17BBEF51E9FA9A3732269ADE013EB9E5F8CB290C5EB1EC5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteProductSums.olean",
+      "sha256": "C82763CEC55A8B1E86AA46C044EC5837CFCF36E7EF985F411CE8454042E4395B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteSpectrumEmbedding.olean",
+      "sha256": "4434E12F39F41FB5A478CD71516A9A493CB493B1C8976568376A79FDC27F4AAC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\FiniteSupportCocycle.olean",
+      "sha256": "C3BE74DF37E5082CEC2CFE592FDAC466824AF4CB96995BC920E41940B6DDE2C5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\IdempotentLifting.olean",
+      "sha256": "65EAF74157648D3CC077801D4F5AE25CC3EC5532EB371AE64A722636638EB6EC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\IdempotentResolvent.olean",
+      "sha256": "61B4001A5A21297DC3B613AC29EAA2A68076164EB76AB64B8C525F2E2F5DBC3E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\IntrinsicMatrixIdeal.olean",
+      "sha256": "E57B7C6C62159795753D7D7CDE4C73572BA9A791EE961F64FBAE7F056FBB9296"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MainFromCoefficient.olean",
+      "sha256": "B08A371AE2949E428E59F315884303F3275B652E53E9A55D012F9BE097657071"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MainReduction.olean",
+      "sha256": "41F3775D46643B6837F06724EB6A9FF46B1B90A3B9B4E5D4C623DDA14DEADBAD"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixClosure.olean",
+      "sha256": "3336DFCCFECCF5666C159BE94406908558EE56D8AA69AD17D1935D6810042173"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixDensity.olean",
+      "sha256": "82702C2115F2DA8E461BF57973D2CDD438EBDB02431392469ECEA091B401DA16"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixDensityLower.olean",
+      "sha256": "7ADFB8E20A8C18F60ADBAF130866195835C89D637DE4297891817C8932FE58B8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixEntries.olean",
+      "sha256": "955F8572A196E209026D7283757A7E08BDDB89AE033CD188018C81B5BD0B4944"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixEntrySeparation.olean",
+      "sha256": "893AFD8E1C80424117DDFEF5AF7384BA0EF62023F90A9CD2CD842FC0E0E56D61"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixIdeal.olean",
+      "sha256": "E1FDE7BA91C872C24BFAE2D208752293A0FDF0D3E9A739C34A4D2E3D06993496"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixIdealStructure.olean",
+      "sha256": "F60CA6629E6490195AC0BB2EA27B2505AB4BC1D72B7C6B380579F3BE8948FB86"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixObstruction.olean",
+      "sha256": "FD4AE82733D619404623501E05573E05652CD30E3D6B819C8B1069C82EF96E4B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixRowEstimate.olean",
+      "sha256": "4A05C98F0AC0059DB63510EEA12143095758496911BD370B31C52B0A265D1B6B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MatrixUnits.olean",
+      "sha256": "C1C3873CB39C66CBF28FF78CA441E0F803A4194978D0A3D35C392F21FD8B3E4C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\MetricCardinality.olean",
+      "sha256": "712F9E2BEC25DCB3F8A345ACD4B0D6EE10F5CEB0BABE7448B9263196C0228602"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\NonunitalMatrixClosure.olean",
+      "sha256": "3B9C2D2896B08968B4F4EB8812DF4F3F8E86823E45602C10F0C3277C24A8284C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\NormedQuotientMap.olean",
+      "sha256": "C8453F260B5636D44550382A7F25094FB5732179E948A3BFB5FCDB42A82492A6"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\NormedStarCompletion.olean",
+      "sha256": "4CCDCE69DFE9C0F14AAE6503DF28BC029A540A929DECC8B83572AAAFACA692B8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\NormedStarDirectLimit.olean",
+      "sha256": "97C6DF89267F07D6DAA3C3B501087C1D8F6E4EF0B175071D7D22041D72ADE3AB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OneIdealCriterion.olean",
+      "sha256": "FB3B327721627179126FBDB5644DF021359C02BA9C1774F1E4A363B966CFD7D1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OperatorIdealMultiplication.olean",
+      "sha256": "845BCF6A2509B3FD4308897547CEB6CA4ADDE2B69352CF91A3A714092CD34A1F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OperatorIdealReduction.olean",
+      "sha256": "33817146CEA87F9512ED05FFF1368E5B2D33C3033E5FEE5B3AA9FE127B5383E2"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OperatorIdeals.olean",
+      "sha256": "0CD5C96F46FC3ADD511A0294735D632930EE86D90F69EC9C198AB6EE5AD435D2"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedCocycle.olean",
+      "sha256": "0EC0C888A3C16D9D3D68EBCE3506CC2F4AD60A29B3DECFE91FCAC580EAB2EEE8"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedCocycleNondegenerate.olean",
+      "sha256": "AF6525F262A8E16012ADF7A9D9E410C720ED2933C274DD02CD9B2448D23DEE7D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedCocycleSupport.olean",
+      "sha256": "48A93C0D0DC8A08DE93CA87F2BEB54D522565E7FAA80CF3A4631021ABBBC3B4D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedCoefficientModels.olean",
+      "sha256": "0D99912BF8CEE212B7BED6D16D28013E2F5D257FF79D551212792BFED6405143"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedShiftChain.olean",
+      "sha256": "70ED9FF04CD2E21B61A04DC1B2A96511D1C54B0405E8BA9B5220C243BD63EF53"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedTwistedAlgebra.olean",
+      "sha256": "FBBC5EBE2F7DEABB1BA619EE00C22F05B527329F7A73E65AD010044DAD47652F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedTwistedDensity.olean",
+      "sha256": "285D49C3CFD3C817C8CE832D031BB9D5252DB4CCB97BCF9F96CD8F768AE8AD8C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedTwistedSkeleton.olean",
+      "sha256": "FFE49DAD8A3D6D1A7298619A79F5D6309E9EC6D46CEFD4BF03A087EC34B5EDD3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderedTwistedStructure.olean",
+      "sha256": "7FA4DFFA6D3F091803656ACBC115061809A611EC7C82469B13EC2F657377050B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\OrderInvariantFiberCounting.olean",
+      "sha256": "70B446F110432D5BA572B6FB3B1CA64ACB67207EAB32699875CD166474D65A07"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\PrerequisiteStatements.olean",
+      "sha256": "D0D06BA332B72E7DC53536BEF0EAE0E5B49DC6EE85974B051BAAA94249495B84"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductAFAlgebra.olean",
+      "sha256": "7F99B9D172DCCE2E14262F4655C18D65033A5E7290D42F6AC6DF566CB3720B3B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductAFDensity.olean",
+      "sha256": "29535AEF8F6AEFA8C5CA636F05020DA8357288B2234AD672FA6D02346918E1D3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductBlockDiagram.olean",
+      "sha256": "C198D5BD8F3500495890A13D2188406A94D3EAA203843F3134055BB98145CF0E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductBlockRefinement.olean",
+      "sha256": "40376765F5E4BE207E62C47F06AEC355DA2B60D61AF40DAFDBB069B3201819D4"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductCompletedTrace.olean",
+      "sha256": "B972AEFA5875796F47EA1ED6537D26EDADDEFA5328F9510415E779D654241A76"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductCoordinateEmbedding.olean",
+      "sha256": "0D633F5EB3E739651141274C7890FFC0EB373A56F4EC2050CB4AAA6BA42766A0"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProductTraceWeights.olean",
+      "sha256": "AD3A9117C2873B17DF7DE2136605F358890454226EDA80C96CFE2D7E0AD97959"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ProjectionRange.olean",
+      "sha256": "734B2ACA83530D98158D48C04C8F8013DFF92F08416A0D258BC39A9F9DA357AC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\QuotientAlgebra.olean",
+      "sha256": "4EF7227E1A04DF1C84690637E3BD3D5E48BD20D6704AA5B71FA18F56B26804DA"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\QuotientConventionReduction.olean",
+      "sha256": "DD685CB24C59D187F541B9ECE500DD716E3E08C6AED2A29806879A4B05B334DD"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\QuotientIsoEquiv.olean",
+      "sha256": "E53F6F5146E018EA1CBBE1E6B5CC7A12CDB9B57E4C96228B9A7461161D22DEFB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\QuotientLinearMap.olean",
+      "sha256": "E8CF3601A8DD1A278D0EB5AF78105268DB8E63A168B3707039F128199EEF7A7B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\QuotientMatrixObstruction.olean",
+      "sha256": "45CA19C59C36F534E0D31D6498466A743B93FE0D9E4942A33E2CB9CA594202D4"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealCalkinCorner.olean",
+      "sha256": "638E3A815029F92674626E25BAA278DCF3C91A48CB2707F4FD95E41739DE5292"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealCalkinCornerAlgebra.olean",
+      "sha256": "9945EA9D0BC0E0AA6E969948294943290F6270E2649E0F783FA7C0F0DBA6CCFC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealMainReduction.olean",
+      "sha256": "3D5FD7231754A38DED5B68939A604B6AE60B60A9053F6586D8CE5FE3CED8FF07"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealOperatorIdealMultiplication.olean",
+      "sha256": "F35132FE00EF1647FA1B65470DC6ECD57E8F224694A69B36BC0B32F270A24BB2"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealOperatorIdeals.olean",
+      "sha256": "991A4E04B832AA8F4022B3813B5E60F60D5FCF922A102D89D767339A201AD898"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealQuotientAlgebra.olean",
+      "sha256": "49A544A2F23F56925B6C9588D2FD380A970F01C963ABC3A2A6A5235CE980E894"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealQuotientIsoEquiv.olean",
+      "sha256": "496756B00DDB514E01663D15478257B1FDEE2F7FE24AA31A2D8A1289E5947C38"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RealStatements.olean",
+      "sha256": "F0A0D253DC2F8551E5432E7B87CE5C19D0336FABF51740059446B49176C68D5F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RepresentationObstruction.olean",
+      "sha256": "A08644D0827B7595F6B6F9A24286223B660DB05D90150106667BA8FB75FEDFB1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\ResolventIdentity.olean",
+      "sha256": "6CE72E426808C5FF786BFA87CF2E36838A0471200958BDF678B912C13D95714E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RetractionCalkinCorner.olean",
+      "sha256": "9F6CBE8EAC56AAA9FAA5E885D10988497689C31E0214766DD6EFEA010FE21EAB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RetractionOperatorIdeals.olean",
+      "sha256": "C9B133D3CF39890875B742688A17A9FCF235B1F447160E20F3D1337BFD0A9783"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RieszCircleAnnulus.olean",
+      "sha256": "5039C64FA69C2C5F9DCFE4247558D359A63532C15676E6E82A34D1EC52E289CC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RieszCircleBasic.olean",
+      "sha256": "FD32A32C1583DC9F501313B2F2D7F40066D4785C5AB365CD2EE6E50216E442A6"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RieszCircleIdempotence.olean",
+      "sha256": "E2484D88277B173EA5162BE8C9453D5A6591AEA8009A1452F536CCEA8C95FAE7"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RieszCircleQuotient.olean",
+      "sha256": "E3AAC1336C9491BD53CC99EDB9CB9B3E27C46D0DE4CE867F2AAE39CA92733C08"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\RootedBlockDiagram.olean",
+      "sha256": "DD388058D6ADF42452F50395FDFF41120212C85FB6200198DA5E9D08729779D3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SeparableCalkinModels.olean",
+      "sha256": "B4E9100490B9CAC92138A7C475637726C9904BFAE3666282738A869A7072B654"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SeparableCornerObstruction.olean",
+      "sha256": "DEDD0833903F1754A02C79B4738DCE1162D6141250D5F3815E1CDE0B83193CBC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SeparableEllOneQuotient.olean",
+      "sha256": "ED6320722F561CF7434723CEC2BACAFCCFF28812BDB02FDE9471B02CABDB4972"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SeparableRangeQuotient.olean",
+      "sha256": "EA3EBA8D5F9505A9C1E23C33007970F4AD2DD6ADD222DF278FA9E1060BD9FE9A"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SeparatedDensity.olean",
+      "sha256": "84516724C369263366ACC73C23A13B9EC2B75AF4CE25C6565825D9AF4DEA6027"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\SpectralLiftingPreliminaries.olean",
+      "sha256": "F19406A02A90354C73263956F3EBC5075D3379B1CD25C7D39C799E829759770D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\StatementLemmas.olean",
+      "sha256": "DA971D73E8A86F740EF64C93A9F867B55390685CA30B820FB883C2251A054E75"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\Statements.olean",
+      "sha256": "7AEE78520D711816A2978768825536BC0F0E7BEE9E619A0B9DE5AD7FE44AC816"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceCodedCoefficient.olean",
+      "sha256": "88A01ADB40E34785688B59A76429F2CD4B0C4D8C087963A250B80C7AD087BA73"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceCoefficientSelection.olean",
+      "sha256": "C1AF8B1E14E1DC64E5EFF66EA0A6CADCF51E407CFBE5DCEB8218667F3E724077"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceCoordinateSeparation.olean",
+      "sha256": "68C80CC7DB89CC59BB8B655C97101D125716618BFC436CA3A2F25A7FD24E7405"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceCoordinateValue.olean",
+      "sha256": "B799E5BDC8741202BD0D22888B1700AD4431AF7E32D20F69F9632447FBD3E8A5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceDiagramWeights.olean",
+      "sha256": "A78A3F70211BD3D968762D7834657E67EE20E0A01CC004602C675F73A7816252"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceFiniteMatrices.olean",
+      "sha256": "578317988663D646FDD3A797F9C99EA9D2B64F2F397C8D3E93308A9C90C1A40F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceIdempotents.olean",
+      "sha256": "87F5A8F49A18FC3176FBF185FF1E7F50B7F6113AAE96AD1CDB1F96AAFB7E4F75"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceLocalIdempotents.olean",
+      "sha256": "B46FB44859FD5F25B67AAC4F7C7479A9E4E5549249FFC9ECF8827ED73FA7A263"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceMatrixNorm.olean",
+      "sha256": "8D500D68F6BC5448AA12B41229B3E979DE42F62278B33ADA17FE75667C87EDA6"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceMatrixRefinement.olean",
+      "sha256": "024A82308C9A3BBDB13679FD2006B6F92C0611CC99866ED7DBEF9CCB12713590"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceMatrixSystem.olean",
+      "sha256": "99FF24A43CDCC78428B52829645B925C856938D515B27BBB9B2493B22FF77A64"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TracePaddingDiagram.olean",
+      "sha256": "85A1E25C1294A4601C4D10E7256E76DB0D392EA383AC88FF6B69D0E8976083DE"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceParameterRefinements.olean",
+      "sha256": "5B890B6912B1BCE06C156A7C40C265E26D8B3622ACF31E1A0BB00A2D9218356D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceParameters.olean",
+      "sha256": "6F1F75F9917D6F6873C18355CFD63CFDFBB1CAEE12A0209FCB2CB80CCA18F991"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceStageGrowth.olean",
+      "sha256": "2BB823EA777A197F156BB839B3F3B58781BDC11D5CA2CBA8B89459DE1B5F63F1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceWeightRefinement.olean",
+      "sha256": "08ED25BE7BFFE64A3A366E22C310F878A1D3DC81D454C2460C5EFE1B4EB85D55"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TraceWeightUniqueness.olean",
+      "sha256": "D1A51FD3EBBAF281449BC10E5B6CAC68757BE68CD377FDBBB6521CEC28372034"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedAF.olean",
+      "sha256": "044C3B649A4A22243C9884F14510724C4E0B13301DD88BDD28AE2663CAD46391"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedAlgebraDensity.olean",
+      "sha256": "98455E3089D8EC03BA9D73ADE60FACF7A7D9CF2EA112566A1C06BDD160F6822C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedAveraging.olean",
+      "sha256": "1741813D7C9C35B5C8520AD0168C9AB1F44BBE65D7AED573EEF4AD76F81AD49C"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedCoefficient.olean",
+      "sha256": "94AB49FEBB86DAEEF7114B0903E331F55AB1DBB31330DDF437A3BDCCC0E5327D"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedConjugation.olean",
+      "sha256": "C3429109F8EB93387039C073EC31754D73901381B0FAA32BC4E938BF4D486322"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedFiniteAveraging.olean",
+      "sha256": "1F821E3F727BB555C2D4F89381A2B60D405C0D66EB1AB4971771B1A96353EC33"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedFiniteSpan.olean",
+      "sha256": "66696958FDC2179505B6FB490542601ADB3D048A990DA9DE6053775BD57B9DEF"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedLocalSubalgebra.olean",
+      "sha256": "E6B2E7560137F9E9DCC602FFC34B986CD0727D37DAC0A98DE28F62928222A395"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedRegular.olean",
+      "sha256": "22FD6D8252C629875E4606C9CBA0B4E964CB577FE5587169C05A335CC30AE1BA"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedRegularCommutators.olean",
+      "sha256": "93ED02789E00BF881D86738F3D97FB51DB8829AAAEE0C7AEDA8F5036102A8482"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedRegularStar.olean",
+      "sha256": "8224909D6A61486BF3F23BC16B128FB0F28F61C42B60993341F6BA6D8B10C6C5"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedRightRegular.olean",
+      "sha256": "23BB15259CE5D07D1B616A1BF24FB044579266C1C2B053510CD689452B2592CA"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedSimplicity.olean",
+      "sha256": "0F4C435E03087E219AA6FDAE2434951CA5AE9DECE730847FCA66ADF55F1E0521"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\TwistedSpanDensity.olean",
+      "sha256": "136392E040F5B2F50FB1D722B77A46C64F65ADC22D1E93CE5EA8C6F52C8B1600"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\UnitizedMatrixAlgebra.olean",
+      "sha256": "3F955C825CC14B0CA28503C2F6ABF41301FED6BC329F7D56D62ECBE2D237DDDB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\WeightedBlockTrace.olean",
+      "sha256": "279F6923FA1FC02EF554C4C29632FBC66ADE9DA386D4BC9D800673AB31B13241"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\NonCalkinAlgebra\\WeightedPermutation.olean",
+      "sha256": "EFAD344BF23CAEBE7A1978308E5FED8B6F09E02F8BEB914D5CDDB82441A4C2C2"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Algebra\\Algebra\\StrictPositivity.olean",
+      "sha256": "A54E750E71EA31905DA698778A04EF591D840FBEF5215BBD35D961BA5ABBEEB0"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Algebra\\Colimit\\DirectLimit.olean",
+      "sha256": "44C07CD4FAE9A07DC063D484A1C4EDE6D4A4E731C517BF905601E8768FBB65A1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\Analytic\\RadiusLiminf.olean",
+      "sha256": "A407CD71D1BC0A981DE4573842EB8FB2A39350801C1149D291546732FF0DEEA7"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\Complex\\Convex.olean",
+      "sha256": "C478C1C3E51F6D21F6BA3A139D31A1CC301CF6BAB8B2F4DE78AD79E6B504BC46"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\Complex\\Spectrum.olean",
+      "sha256": "967CEB9EA97F33BF15E1EFDE47D6D86E304E05DB45916B07E252240040878B3F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\Classes.olean",
+      "sha256": "2AD7D04C7F98ECB7CF88E9EA2F93A1F3D7B9B673B0B6C07BA0139F11E0E9AD49"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Basic.olean",
+      "sha256": "C084F9BBB9D2D5677B9D6EC91F27303A730E3E0E31222F4637C57F1C385A2224"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Instances.olean",
+      "sha256": "421819AA0390207AB55DC4E31E251CF62C9F357F27417E8EDC77E562EF132461"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Isometric.olean",
+      "sha256": "D5B3B49F1B8E58F3E2C2E7D7FADB5BF25ED1EA9A5B148235CD4189A7B36FC4E7"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\NonUnital.olean",
+      "sha256": "86744CADE04C31421B9D0D8CA66BBF45D84B12982FDF027FFE5EC3DFB9AC8760"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Restrict.olean",
+      "sha256": "6E67DE3077BE81EC5C8E80782DCDD396091186AA48D2807887EB067113713DB9"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unique.olean",
+      "sha256": "A6DBE25B118FECDB8FD7A0FBEA3369511C838D9D5C76E5BEE42294250C3916E9"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousFunctionalCalculus\\Unital.olean",
+      "sha256": "D1B9D3F21DD977DED520F4E960C2E425400D75D9E0EC546139CDAD7655DE4BAC"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\ContinuousMap.olean",
+      "sha256": "01B2C0699B83CC1BEBD0B91661D18F021CC2C7FE03B95CD78CDFE0196D11B316"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\GelfandDuality.olean",
+      "sha256": "DDBA87B061E74A84DEA3B88289C0C053E859D31FAD6D3C4516FFE3EFFE7BD30B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\Matrix.olean",
+      "sha256": "23917C2BFA00B32D185C5E2B90F0C53A7F0EC1CCD402989A9FEED03680DB24F3"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\Spectrum.olean",
+      "sha256": "23904056CF555250A6E237A8B93D56FFC32C3AFEEE8DF4045ACC2EE229FCC52B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\CStarAlgebra\\Unitization.olean",
+      "sha256": "BB16CC1B2B7252007BF25143E78A182A6FF2CE26CCDC0375BEE12BF03854178E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\InnerProductSpace\\Adjoint.olean",
+      "sha256": "9DDAD19EE0D8B96626F26D5B6B12C2A18B841010270D1384871D9C079A24B879"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\Normed\\Algebra\\GelfandFormula.olean",
+      "sha256": "5A90FC34812D20047A1DD047DA61EC24BD5AB67931274DC6A7CDCED6C6CEAFAB"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\Normed\\Algebra\\Unitization.olean",
+      "sha256": "F0952D884A34299A013198CEB1D8E259710946444D8C4D91AE7F75BABD65C9E1"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Analysis\\SpecialFunctions\\ContinuousFunctionalCalculus\\PosPart\\Basic.olean",
+      "sha256": "9348D289A731107836BEC6E8B90BBBC02A1B9B91199B1C97F610B2993B2150DE"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Data\\Real\\StarOrdered.olean",
+      "sha256": "2D5E550EDFB97BA902207F16EE5D574FE740254AD009DB7D0A8FDA838C23787B"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\LinearAlgebra\\Matrix\\FiniteDimensional.olean",
+      "sha256": "77A44CD1F6BD65436A23A7851064F97DF6736D8F7FDA3890C0FAB1A11D73C07E"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Order\\DirectedInverseSystem.olean",
+      "sha256": "E587BE7374D575EEC050FDE1C5A6D4CAB11A731D058059963AFBF8954198A325"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\RingTheory\\SimpleRing\\Matrix.olean",
+      "sha256": "B4E300B97B56E7DFB3E85FA69543E5BFA84A9DC49B501D227486FC1704ADFCA4"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Topology\\ContinuousMap\\ContinuousSqrt.olean",
+      "sha256": "E7E964263F720952EA737D719AEB054CFB0061E4E704A7CB00382DE73CCB0739"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Topology\\ContinuousMap\\StarOrdered.olean",
+      "sha256": "76D7020ED17DF7C41E52C32415E4225F4E92D94906AF507B1C39FAA4A3FC3790"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Topology\\ContinuousMap\\Units.olean",
+      "sha256": "1279144D88B39C92A3B0EBD68BAA635CDF9FF085AE315BE8423A82F9ED0BCD3F"
+    },
+    {
+      "bundlePath": "artifacts\\paper\\Mathlib\\Topology\\UniformSpace\\Matrix.olean",
+      "sha256": "9C9B489A8431E84604156A8AC6658AB39CF0A648CA8B33DC0A967B2BDE4BF52D"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\KernelProofReplay.olean",
+      "sha256": "EC0895335C290633518073C8A1DE08DB18415E20DC9F6443AFB8655241A2DBC7"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2AbsorbedRows.olean",
+      "sha256": "593E629C367374665301E6DF2B0C6D9A33C7881FFF037ABA2EDF1F9187CB5A9F"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2BanachIdeals.olean",
+      "sha256": "03C68394053F81422CFF530E77EF785FFE0B18351DDAA8A4063A1D3369839BE9"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2Calkin.olean",
+      "sha256": "C4DC63FF58726A6622EE77391AB6137378899EF8DE5923F90141661EF95753CD"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2CalkinCorrections.olean",
+      "sha256": "C8F450B727DDA751FCAA17BDDFC7256314425016813560944B2E4248D9DAAC20"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2CalkinMatrixUnits.olean",
+      "sha256": "90C9B72438A18B5E719FB2741196D4A44847392D732DB94ACC2AAAE64EB7F19A"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2Cardinals.olean",
+      "sha256": "056F6E93BE2CBF872E52093D909754B3D72E6817200E9D6A3F99857F56CC5691"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2CardinalTrap.olean",
+      "sha256": "3C3E6D735E2444BB292C20340781557127021A0153FE1A17D61236F3B4F6FF84"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2Definitions.olean",
+      "sha256": "E505786000D6D5B6E6DD1D88137BFA60FA6762EA310BDEB37750C2DA6F97F2FD"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2EllOneRows.olean",
+      "sha256": "FC37BC97D387B1D78C06240D56921D5B3F2BABF5DA2E4EA94D6D06870033BB4A"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2EllOneSynthesis.olean",
+      "sha256": "33EE972A79A7BFD65056F0BABD15D96EBEE8FCC473CD742AB767B8A4B958399E"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2InvariantAbsorption.olean",
+      "sha256": "753388B5E8585AC68CD962A1CB4C234667DB2110966E0417F758ED407CD26122"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2InvariantQuotient.olean",
+      "sha256": "F585DF65CB2E318DD13E8B3D6A6AA25319279B4D333C2F6FAD638B0A5FCB54B9"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2MatrixEllOneLifts.olean",
+      "sha256": "9A77F9610323B1D408AC9E7AB56AF9DB2142C6CC97B41B91FF3FB1B2C938375F"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2MatrixErrorAbsorption.olean",
+      "sha256": "6AD61A2B2BA43B8A3D72C7C8484FBAD6E9F9A87BAB57A33B0EF161912F599F09"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2MatrixNonrepresentation.olean",
+      "sha256": "0491FF8BA79A3DA237833A8722413923D5F7897F26A436A4806CC6B34652C292"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2OppositeShift.olean",
+      "sha256": "4F4C63039D85978DB0A87FC8971E5AADD9E1C23D611CBEFF46DBF34556E3C8B9"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2QuotientAlgebra.olean",
+      "sha256": "F5A554BD9A720B4DB5DD551D774D7D23B29F0393501BABC0AA06280AD3274284"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2RationalCoefficients.olean",
+      "sha256": "606B4409DE246EEABF682AC2239942C8D8E17D20C499794DE32BB793FC1BA915"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2SeparableRange.olean",
+      "sha256": "3E562423AABD6421575D910B7FD69D722B536B512A9976999F6B909580DD1E8C"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2SeparableRangeCalkin.olean",
+      "sha256": "76A5D538A0371ACC4DD66947CD77F3DDFB8A4096A50CDBD9329A5BC9B3B0328C"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2ShiftAlgebra.olean",
+      "sha256": "FDBD98CA91059E1CEBF0435B93B28390FAD58E065CF5ADECDE681187B346ACBA"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2ShiftMaximalIdeal.olean",
+      "sha256": "B13E505F2957A0492FA5394FE0D64F37EC28B94FD2319AEA8A338B855A822D4A"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2ShiftQuotient.olean",
+      "sha256": "75965279DD0AB786E59CA2D4E515A45ACA7736B3DBBC396EC8E11393250EBAB1"
+    },
+    {
+      "bundlePath": "artifacts\\survey\\SurveyStatements\\P2Shifts.olean",
+      "sha256": "E493AFA09C2BBD838477776507BDA831AB555E8CFD2B2D3C5622566E4997DAE3"
+    }
+  ],
+  "kernelReplayExitCode": 0,
+  "replayedDeclarationCount": 54630,
+  "auditedDeclarationCount": 2290,
+  "evidence": [
+    {
+      "path": "research-noncalkin\\verification\\certificates\\theorem-1-1-20261109-142450-b50003d8\\build-audit.log",
+      "bytes": 21831,
+      "sha256": "80AD2C76AACFB1B88F6A851749D011603AC429753B271D6904B1AC6BB3D33A2F"
+    },
+    {
+      "path": "research-noncalkin\\verification\\certificates\\theorem-1-1-20261109-142450-b50003d8\\kernel-replay.log",
+      "bytes": 16463,
+      "sha256": "3F685F7FAA078A939EBD23A47C3D07D613A9981A5159205192F8EBFB8E8971C5"
+    },
+    {
+      "path": "research-noncalkin\\verification\\certificates\\theorem-1-1-20261109-142450-b50003d8\\imported-dependencies.txt",
+      "bytes": 673503,
+      "sha256": "E5B7EA04F2BB177E2E6EE8BCF3CD287C6B7C8CB86C1FA75B14533A498250394C"
+    },
+    {
+      "path": "research-noncalkin\\verification\\certificates\\theorem-1-1-20261109-142450-b50003d8\\imported-artifact-hashes.json",
+      "bytes": 2683637,
+      "sha256": "709273F07787180E8DDD3E7FBC26E37D8875747F33D16E607D4FEEACAD2A16BF"
+    },
+    {
+      "path": "research-noncalkin\\verification\\certificates\\theorem-1-1-20261109-142450-b50003d8\\KernelReplay.olean",
+      "bytes": 36888,
+      "sha256": "082B22F6A7CCC31E44C9E33D49961D8763AF9EB59C91BA4567C5055908F8FB04"
+    }
+  ],
+  "finishedUtc": "2026-11-09T14:40:57.6012360Z"
+}

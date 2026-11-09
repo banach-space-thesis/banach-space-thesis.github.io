@@ -1,0 +1,19 @@
+import SurveyStatements.P4ReflexiveFDDBridge
+import SurveyStatements.P4BasisTransport
+
+#print axioms SurveyStatements.P4.convergentFreeze_tendsto
+#print axioms SurveyStatements.P4.convergentLift_weaklyCompact_of_dualDensity
+#print axioms SurveyStatements.P4.convergentLift_shrinking
+#print axioms SurveyStatements.P4.lp1Sum
+#print axioms SurveyStatements.P4.lp1Sum_adjoint_factorization
+#print axioms SurveyStatements.P4.lp1Sum_weaklyCompact_of_adjoint_tendsto
+#print axioms SurveyStatements.P4.lp1Sum_comp_fold
+#print axioms SurveyStatements.P4.operatorGaugeData_preserved
+#print axioms SurveyStatements.P4.convergentFreeze_lift_finiteRank
+#print axioms SurveyStatements.P4.convergentFreezeSum_weaklyCompact
+#print axioms SurveyStatements.P4.convergentHull_lift_mem
+#print axioms SurveyStatements.P4.convergentHull_preserved
+#print axioms SurveyStatements.P4.convergentHull_closedSpan_finiteRange
+#print axioms SurveyStatements.P4.twoSided_reflexive_fdd_factorization
+#print axioms SurveyStatements.P4.weaklyCompact_reflexive_fdd_factorization
+#print axioms SurveyStatements.P4.ReflexiveBanachSpaceWithBasis.ulift

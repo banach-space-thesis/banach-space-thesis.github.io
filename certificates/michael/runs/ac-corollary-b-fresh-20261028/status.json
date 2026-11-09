@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "startedUtc": "2026-10-28T10:53:29.229803+00:00",
+  "sourceSnapshot": "CorollaryB-20261028",
+  "fullFreshDependencyRebuild": true,
+  "nonToolchainCompiledArtifactsReused": false,
+  "build": {
+    "status": "PASS",
+    "startedUtc": "2026-10-28T10:59:45.443873+00:00",
+    "totalModules": 3232,
+    "completedModules": 3232,
+    "jobs": 1,
+    "activeModules": [],
+    "failureModules": [],
+    "finishedUtc": "2026-11-09T14:23:29.006125+00:00"
+  },
+  "freshKernelReplay": {
+    "status": "PASS",
+    "startedUtc": "2026-11-09T14:32:24.149073+00:00",
+    "command": [
+      "leanchecker",
+      "--fresh",
+      "--verbose",
+      "FreshVerification"
+    ],
+    "checkerSha256": "B7C503A7A984F32F04C1BADB79E53E350DDB72AED530DA12699E4B06357CE149",
+    "nonToolchainSearchPath": [
+      "build"
+    ],
+    "replayDriverSha256": "A75D0FCF8D1F36760553C5EC2CCD81212B70651AEF80B4909D3DCE89ECEA71A8",
+    "scope": "Fresh official Lean kernel environment; eligible declarations in the aggregate and its imported closure, including retained toolchain declarations.",
+    "checkerSkips": "Unsafe and partial implementation declarations are skipped by the official checker. Declared axioms are accepted; target and project transitive axioms are checked separately.",
+    "independentlyImplementedKernel": false,
+    "exitCode": 0,
+    "finishedUtc": "2026-11-09T14:49:12.233248+00:00",
+    "elapsedSeconds": 1008.0470000000023
+  },
+  "finalAudits": {
+    "status": "PASS",
+    "exactTarget": "AutomaticContinuity.theoremA : AutomaticContinuity.TheoremAStatement.{u}",
+    "exactCorollary": "AutomaticContinuity.corollaryB : AutomaticContinuity.CorollaryBStatement.{u}",
+    "sourceIdentity": "PASS",
+    "definitionIdentity": "Exact frozen Statement.lean plus printed definitions in FreshVerification.",
+    "projectDeclarations": 3206,
+    "projectTheorems": 2483,
+    "allowedTransitiveAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "originalAudit": "PASS",
+    "completionAudit": "PASS",
+    "expandedAudit": "PASS",
+    "coverageRecord": "evidence/coverage.json",
+    "checks": [
+      {
+        "module": "Audit",
+        "startedUtc": "2026-11-09T14:49:12.253834+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "Audit.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:49:56.287398+00:00",
+        "elapsedSeconds": 44.03099999999904,
+        "requiredMarkerPresent": true
+      },
+      {
+        "module": "CompletionAudit",
+        "startedUtc": "2026-11-09T14:49:56.356902+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "CompletionAudit.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:50:05.015491+00:00",
+        "elapsedSeconds": 8.639999999999418,
+        "requiredMarkerPresent": true
+      },
+      {
+        "module": "FreshVerification",
+        "startedUtc": "2026-11-09T14:50:05.037537+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "FreshVerification.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:50:15.739160+00:00",
+        "elapsedSeconds": 10.687000000001717,
+        "requiredMarkerPresent": true
+      }
+    ]
+  },
+  "finishedUtc": "2026-11-09T14:52:02.374429+00:00"
+}

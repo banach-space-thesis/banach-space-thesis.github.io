@@ -1,0 +1,23 @@
+import SurveyStatements.P4FiniteComplementBasis
+import SurveyStatements.P4BlockIndex
+import SurveyStatements.P4ProductReflexivity
+import SurveyStatements.P4SchauderCriterion
+
+#print axioms SurveyStatements.P4.repeatedPathLinearMap_norm_le
+#print axioms SurveyStatements.P4.repeatedPathLinearMap_last
+#print axioms SurveyStatements.P4.finitePathBasis_prefix_norm_le_one
+#print axioms SurveyStatements.P4.exists_repeatedFrame_extension
+#print axioms SurveyStatements.P4.finiteBasis_isSchauder
+#print axioms SurveyStatements.P4.finiteDimensional_reflexive
+#print axioms SurveyStatements.P4.exists_finiteBasisExtension
+#print axioms SurveyStatements.P4.FiniteBasisExtension.complement_reflexive
+#print axioms SurveyStatements.P4.FiniteBasisExtension.norm_splitLinearEquiv_le
+#print axioms SurveyStatements.P4.FiniteBasisExtension.norm_splitLinearEquiv_symm_le
+#print axioms SurveyStatements.P4.finiteBasisPrefix_map
+#print axioms SurveyStatements.P4.FiniteBasisExtension.norm_complementBasis_prefix_le
+#print axioms SurveyStatements.P4.reflexive_prod
+#print axioms SurveyStatements.P4.blockIndexSet_isLowerSet
+#print axioms SurveyStatements.P4.blockEncode_injective
+#print axioms SurveyStatements.P4.blockEncode_surjective
+#print axioms SurveyStatements.P4.blockEncode_lt_offset_iff
+#print axioms SurveyStatements.P4.isSchauderBasis_of_biorthogonal_uniform_bound

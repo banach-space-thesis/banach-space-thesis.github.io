@@ -2,12 +2,14 @@ import {esc} from './lean-view.js';
 import {detailNotes as jlmsNotes,detailHTML as renderDetail} from './reader-details.js';
 import {paperNotes,addPaperGlossary,paperNotation} from './paper-notes.js';
 import {annotateFormula,activateFormulaReferences,addFormulaGlossary} from './formula-notes.js';
+import {researchNotes} from './assets/research-notes.js';
 
 // These correspondences are deliberately explicit. In particular, the support
 // of a neighbourhood family and the support of a functional are different.
 export function createReadingContext({article, paper, side, typeset, openSide, closeSide, jump, inspect, showLean, selectPassage, changed}) {
   const entries=new Map(), results=new Map(article.results.map(r=>[r.id,r]));
   const words=[];
+  const research=researchNotes[article.paperId];
   const detailNotes=article.paperId==='jlms'?jlmsNotes:(paperNotes[article.paperId]||{});
   const detailHTML=(id,topic,escape)=>renderDetail(id,topic,escape,detailNotes);
   function resultPart(id){const r=results.get(id);if(!r)throw Error('Missing reading reference: '+id);return r.statementHtml;}
@@ -85,6 +87,19 @@ export function createReadingContext({article, paper, side, typeset, openSide, c
     '(?<!weak\\s)essential\\s+norms?',operator.outerHTML+equation.outerHTML,{related:['dual-essential-norm']});
   }else addPaperGlossary(article.paperId,{definition,glossary,add,resultPart,paper});
   addFormulaGlossary(article,{glossary,paper});
+  for(const item of research||article.readingGlossary||[]){
+    const original=results.get(item.target)?.statementHtml;
+    glossary(item.id,item.title,'Notation and terminology in the paper',item.target,item.html,item.pattern,original);
+  }
+  if(research){
+    // Use the author's own emphasised term in a definition. A whole italicised
+    // statement is never treated as the name of a concept.
+    for(const r of article.results.filter(r=>r.type==='Definition')){
+      const template=document.createElement('template');template.innerHTML=r.statementHtml;
+      const term=[...template.content.querySelectorAll('em')].find(n=>n.textContent.length<70&&!n.querySelector('.math'))?.textContent.trim();
+      if(term&&term.length>3)definition(r.id,term,term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/\s+/g,'\\s+'));
+    }
+  }
   // A numbered cross-reference uses the same source statement as the paper.
   for(const r of article.results)if(!entries.has(r.id))add(r.id,`${r.type} ${r.number}`,`${r.type} ${r.number} · §${r.number.split('.')[0]}`,r.id,r.statementHtml,null,{leanResult:r.id});
   for(const r of article.results)words.push({id:r.id,pattern:r.type+'\\s+'+r.number.replaceAll('.','\\.')});
@@ -150,7 +165,7 @@ export function createReadingContext({article, paper, side, typeset, openSide, c
       if(math.querySelector('mjx-container'))continue;
       const original=math.textContent;
       const section=Number(math.closest('.paper-section.level-1')?.id.replace('section-',''))||0;
-      const annotated=annotateFormula(original,article.paperId,exclude,id=>entries.has(id),section);
+      const annotated=annotateFormula(original,article.paperId,exclude,id=>entries.has(id),section,research);
       if(annotated!==original){math.textContent=annotated;continue;}
       const tex=math.textContent.replace(/^\\\(|\\\)$/g,'').trim();let id;
       if(article.paperId!=='jlms')id=paperNotation(article.paperId,tex);

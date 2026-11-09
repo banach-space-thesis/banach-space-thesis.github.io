@@ -1,0 +1,116 @@
+import SurveyStatements.P1ToroidalEltonOdell
+import SurveyStatements.P1WeakCauchyBidual
+
+/-!
+The original main theorem and every independently proved result below must
+exclude admissions. `P1CompleteAudit` enforces the strict transitive check
+against exactly the three standard Lean axioms.
+-/
+
+#print axioms SurveyStatements.P1.toroidal_elton_odell
+#print axioms SurveyStatements.P1.le_toroidalDistance_iff
+#print axioms SurveyStatements.P1.toroidalDistance_symm
+#print axioms SurveyStatements.P1.separated_perturbation
+#print axioms SurveyStatements.P1.norm_unitNormalize_sub_le
+#print axioms SurveyStatements.P1.denseRange_separation_transfer
+#print axioms SurveyStatements.P1.almostIsometric_transfer_bound
+#print axioms SurveyStatements.P1.transfer_bound_gt_one
+#print axioms SurveyStatements.P1.almostIsometric_transfer
+#print axioms SurveyStatements.P1.l1_toroidal_elton_odell
+#print axioms SurveyStatements.P1.c0_toroidal_elton_odell
+#print axioms SurveyStatements.P1.completion_infiniteDimensional
+#print axioms SurveyStatements.P1.completion_separation_transfer
+#print axioms SurveyStatements.P1.orderedSeries_terms_tendsto_zero
+#print axioms SurveyStatements.P1.phasedSeries_not_convergent
+#print axioms SurveyStatements.P1.boundedlyComplete_phased_obstruction
+#print axioms SurveyStatements.P1.stronglySumming_coefficients_tendsto_zero
+#print axioms SurveyStatements.P1.finite_toroidal_cover
+#print axioms SurveyStatements.P1.finite_norming_family
+#print axioms SurveyStatements.P1.finite_functionals_common_kernel
+#print axioms SurveyStatements.P1.exists_uniform_partialSum_sequence
+#print axioms SurveyStatements.P1.basicSequence_of_uniform_partialSum
+#print axioms SurveyStatements.P1.exists_normalized_basicSequence
+#print axioms SurveyStatements.P1.rapid_backward_error
+#print axioms SurveyStatements.P1.weakCauchy_unitDifferences_tendsto_zero
+#print axioms SurveyStatements.P1.finiteFamily_phase_compactness
+#print axioms SurveyStatements.P1.exists_asymptoticallyMonotone_with_bound
+#print axioms SurveyStatements.P1.reflexive_bounded_sequence_weakCluster
+#print axioms SurveyStatements.P1.boundedlyComplete_of_reflexive_uniform_partialSum
+#print axioms SurveyStatements.P1.reflexive_exists_asymptoticallyMonotone_boundedlyComplete
+#print axioms SurveyStatements.P1.sparse_initial_projection_bound
+#print axioms SurveyStatements.P1.finite_sparse_flat_cover
+#print axioms SurveyStatements.P1.exists_rapidCoverData
+#print axioms SurveyStatements.P1.rapid_finite_backward_choices
+#print axioms SurveyStatements.P1.rapid_infinite_choices_of_covers
+#print axioms SurveyStatements.P1.rapid_flatBlock_alternative
+#print axioms SurveyStatements.P1.boundedlyComplete_uniform_orderedBlock_obstruction
+#print axioms SurveyStatements.P1.reflexive_toroidal_elton_odell
+#print axioms SurveyStatements.P1.orderedFlatBlockCoefficients_not_tendsto_zero
+#print axioms SurveyStatements.P1.complex_uniform_boundedness
+#print axioms SurveyStatements.P1.weakCauchy_norm_bounded
+#print axioms SurveyStatements.P1.noncauchy_successive_pairs
+#print axioms SurveyStatements.P1.weakNull_exists_asymptoticallyMonotone_subsequence_with_bound
+#print axioms SurveyStatements.P1.weakCauchy_nonconvergent_asymptoticallyMonotone_pairs
+#print axioms SurveyStatements.P1.exists_bounded_nonvanishing_flat_coefficients
+#print axioms SurveyStatements.P1.normalizedPairCoefficients_bounded
+#print axioms SurveyStatements.P1.normalizedPairCoefficients_tendsto_zero_imp
+#print axioms SurveyStatements.P1.stronglySumming_toroidal_elton_odell
+#print axioms SurveyStatements.P1.l1TailLowerNorm_stabilizes
+#print axioms SurveyStatements.P1.l1_equivalent_sequence_toroidal_elton_odell
+#print axioms SurveyStatements.P1.l1_embedding_toroidal_elton_odell
+#print axioms SurveyStatements.P1.l1_isomorphicCopy_toroidal_elton_odell
+#print axioms SurveyStatements.P1.c0TailUpperNorm_stabilizes
+#print axioms SurveyStatements.P1.c0_normingFunctional_offBlock_bound
+#print axioms SurveyStatements.P1.finsuppBlockSynthesis_coeff_bound
+#print axioms SurveyStatements.P1.c0_disjointBlocks_finite_lower
+#print axioms SurveyStatements.P1.c0_disjointBlocks_finite_upper
+#print axioms SurveyStatements.P1.c0_embedding_toroidal_elton_odell
+#print axioms SurveyStatements.P1.c0_isomorphicCopy_toroidal_elton_odell
+#print axioms SurveyStatements.P1.weakCauchyLimitBidual_tendsto
+#print axioms SurveyStatements.P1.weakCauchy_weakly_convergent_iff_bidual_mem_range
+#print axioms SurveyStatements.P1.goldstine_finite_approximation
+#print axioms SurveyStatements.P1.closedSubmodule_exists_bounded_annihilator
+#print axioms SurveyStatements.P1.exists_goldstine_triangular_sequence
+#print axioms SurveyStatements.P1.weak_limit_mem_closedSubmodule
+#print axioms SurveyStatements.P1.bounded_functionals_vanish_on_closedSpan
+#print axioms SurveyStatements.P1.nonreflexive_exists_bounded_no_weakly_convergent_subsequence
+
+#print axioms SurveyStatements.P1.infiniteSet_exists_strictMono_sequence
+#print axioms SurveyStatements.P1.infiniteSet_inter_Ioi
+#print axioms SurveyStatements.P1.nestedInfiniteSets_exists_diagonal
+#print axioms SurveyStatements.P1.nestedSubsequences_exists_diagonal
+#print axioms SurveyStatements.P1.exists_infinite_subset_decides_finite_family
+#print axioms SurveyStatements.P1.RamseyAccepts.finite_rejected_extensions
+#print axioms SurveyStatements.P1.ramsey_exists_decision_fusion
+#print axioms SurveyStatements.P1.exists_infinite_subset_decides_all_prefixes
+#print axioms SurveyStatements.P1.ramsey_accepted_prefix_exists_extension
+#print axioms SurveyStatements.P1.ramsey_acceptance_exists_good_sequence
+#print axioms SurveyStatements.P1.closedRamsey_exists_infinite_good_subset
+#print axioms SurveyStatements.P1.closedRamsey_from_infinite_branches
+#print axioms SurveyStatements.P1.bounded_sequence_upper_l1_estimate
+#print axioms SurveyStatements.P1.no_lower_l1_estimate_iff_small_unit_mass_blocks
+#print axioms SurveyStatements.P1.real_coefficient_mass_le_two
+#print axioms SurveyStatements.P1.exists_complex_coefficient_subset
+#print axioms SurveyStatements.P1.exists_complex_unit_mass_subset
+#print axioms SurveyStatements.P1.complex_pattern_coefficient_estimate
+#print axioms SurveyStatements.P1.exists_complex_pattern_coefficient_estimate
+#print axioms SurveyStatements.P1.bounded_complex_tail_oscillation_cluster_pair
+#print axioms SurveyStatements.P1.bounded_complex_not_cauchy_cluster_pair
+#print axioms SurveyStatements.P1.scalar_cluster_exists_far_close
+#print axioms SurveyStatements.P1.scalar_clusters_exists_alternating_branch
+#print axioms SurveyStatements.P1.bounded_complex_not_cauchy_exists_alternating_branch
+#print axioms SurveyStatements.P1.nestedSubsequences_scalar_diameter_diagonal
+#print axioms SurveyStatements.P1.coefficientScalarSum_norm_le_mass
+#print axioms SurveyStatements.P1.disjoint_small_blocks_exists_small_scalar_sum
+#print axioms SurveyStatements.P1.not_scalar_tail_diameter_exists_unit_functional
+#print axioms SurveyStatements.P1.no_weakCauchy_subsequence_exists_stable_scalar_obstruction
+#print axioms SurveyStatements.P1.strictMono_finset_rank_image
+#print axioms SurveyStatements.P1.strictMono_prefix_rank
+#print axioms SurveyStatements.P1.stable_scalar_obstruction_exists_alternating_patterns
+#print axioms SurveyStatements.P1.coefficientL1Mass_mapDomain
+#print axioms SurveyStatements.P1.no_lower_l1_subsequence_exists_small_tail_block
+#print axioms SurveyStatements.P1.small_tail_blocks_exists_disjoint_sequence
+#print axioms SurveyStatements.P1.no_lower_l1_subsequence_exists_small_scalar_block
+#print axioms SurveyStatements.P1.exists_parity_padding
+#print axioms SurveyStatements.P1.stable_scalar_obstruction_exists_arbitrary_patterns
+#print axioms SurveyStatements.P1.complex_rosenthal_l1_or_weakCauchy

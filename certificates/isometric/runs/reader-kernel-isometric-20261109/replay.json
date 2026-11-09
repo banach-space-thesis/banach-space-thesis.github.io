@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "startedAt": "2026-11-09T15:29:40.726227+00:00",
+  "completedAt": "2026-11-09T15:40:42.305146+00:00",
+  "roots": [
+    "BanachIsometric.complexTheoremA",
+    "BanachIsometric.Quaternionic.theoremA",
+    "BanachIsometric.complexCorollaryB",
+    "BanachIsometric.complex_completion_corollaryB_homological",
+    "BanachIsometric.complex_complete_corollaryB_homological",
+    "BanachIsometric.Quaternionic.corollaryB",
+    "BanachIsometric.Quaternionic.completionCorollaryB_homological",
+    "BanachIsometric.Quaternionic.completeCorollaryB_homological",
+    "BanachIsometric.complexTheoremC",
+    "BanachIsometric.complex_exists_cofinal_hilbert_inverseLimit_homological",
+    "BanachIsometric.Quaternionic.theoremC",
+    "BanachIsometric.Quaternionic.exists_cofinal_hilbert_inverseLimit_homological",
+    "BanachIsometric.realTheoremD",
+    "BanachIsometric.realTheoremD_normable",
+    "BanachIsometric.complexTheoremD",
+    "BanachIsometric.complex_simultaneous_seminorms_norm_model_homological",
+    "BanachIsometric.complex_simultaneous_seminorms_hilbert_model_homological",
+    "BanachIsometric.Quaternionic.theoremD",
+    "BanachIsometric.Quaternionic.separating_rightSeminorm_family_normable_homological",
+    "BanachIsometric.MetricGeometry.realTheoremE",
+    "BanachIsometric.MetricGeometry.realTheoremE_radial_profile",
+    "BanachIsometric.complexTheoremE",
+    "BanachIsometric.Quaternionic.theoremE",
+    "BanachIsometric.complex_exists_hilbert_metric_model_of_convex_balls_homological",
+    "BanachIsometric.complex_exists_hilbert_metric_model_of_radial_balls_homological",
+    "BanachIsometric.complex_exists_radial_metric_profile_of_convex_balls_homological",
+    "BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_convex_balls_homological",
+    "BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_radial_balls_homological",
+    "BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological"
+  ],
+  "exitCode": 0,
+  "sourceCertificateSha256": "06fa7eb059108de4455da06f36860f9bc35b55507accd796e42dc3195b644adf",
+  "auditLogSha256": "3df7b6982c44548ce11ab96c47bd9e3e04d0e1157ef05def4313c49c83d8c45b",
+  "driverSha256": "660984788215dcf4cd0d5326ffe05be61aeefe10fa7879de75d959c52c025fee",
+  "checkerSha256": "43c7ebe0aaa5675f9c89f72b97da80c161b52befb27a0aa49c612ed2dac14358",
+  "runtimeSha256": "20bc808248e38cf072f84f4eb389f8f98e5925d703bcbfa400d9dd44f310c4db",
+  "mathlib": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "logSha256": "c1c9cd4d4625a0d0c697ec2a79c63d4d0bc46660a5d9eb22eb4cd28f41a64bc8",
+  "replayCommand": [
+    "lean",
+    "-j",
+    "1",
+    "-M",
+    "8192",
+    "--run",
+    "replay_reader.lean",
+    "modules.txt",
+    "roots.txt"
+  ],
+  "declarationsRechecked": 63290,
+  "axioms": {
+    "BanachIsometric.complexTheoremA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.theoremA": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complexCorollaryB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_completion_corollaryB_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_complete_corollaryB_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.corollaryB": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.completionCorollaryB_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.completeCorollaryB_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complexTheoremC": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_exists_cofinal_hilbert_inverseLimit_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.theoremC": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.exists_cofinal_hilbert_inverseLimit_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.realTheoremD": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.realTheoremD_normable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complexTheoremD": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_simultaneous_seminorms_norm_model_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_simultaneous_seminorms_hilbert_model_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.theoremD": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.separating_rightSeminorm_family_normable_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.MetricGeometry.realTheoremE": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.MetricGeometry.realTheoremE_radial_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complexTheoremE": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.theoremE": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_exists_hilbert_metric_model_of_convex_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_exists_hilbert_metric_model_of_radial_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.complex_exists_radial_metric_profile_of_convex_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_convex_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_radial_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sourceAndObjectHashesMatched": true
+}

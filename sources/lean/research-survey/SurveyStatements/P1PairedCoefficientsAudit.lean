@@ -1,0 +1,6 @@
+import SurveyStatements.P1PairedCoefficients
+
+#print axioms SurveyStatements.P1.normalizedPairBlock_linearCombination
+#print axioms SurveyStatements.P1.normalizedPairCoefficients_bounded
+#print axioms SurveyStatements.P1.normalizedPairCoefficients_tendsto_zero_imp
+#print axioms SurveyStatements.P1.normalizedPairCoefficients_not_tendsto_zero

@@ -1,0 +1,7 @@
+import SurveyStatements.P5HaarDensity
+
+#print axioms SurveyStatements.P5.haarDensityStepSpace_closure_eq_top
+#print axioms SurveyStatements.P5.haarDensityAugmentedSpan_closure
+#print axioms SurveyStatements.P5.haarDensityCenter_mem_closedSpan
+#print axioms SurveyStatements.P5.haarDensity_tensor_closedSpan
+#print axioms SurveyStatements.P5.productHaarSpace_eq_doublyZeroMean

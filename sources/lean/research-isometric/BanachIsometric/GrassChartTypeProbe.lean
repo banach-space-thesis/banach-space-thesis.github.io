@@ -1,0 +1,8 @@
+import BanachIsometric.GrassmannianGraphChart
+import BanachIsometric.AnalyticChartModelChange
+namespace BanachIsometric
+set_option pp.explicit true in
+#check @realGrassmannian_graph_transition_contDiffOn
+set_option pp.explicit true in
+#check @contDiffOn_transition_postcompose_linearModels
+end BanachIsometric

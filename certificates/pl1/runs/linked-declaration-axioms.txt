@@ -1,0 +1,8 @@
+RAW_REACHABILITY	PL1.theoremAComplexStrong	roots=1	visited=54074	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1.theoremAReal	roots=1	visited=54074	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1.theoremBComplexStrong	roots=1	visited=53760	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1.theoremBReal	roots=1	visited=53760	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1CD.theoremCComplex	roots=1	visited=52973	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1CD.theoremCReal	roots=1	visited=52973	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1CD.theoremDComplex	roots=1	visited=54207	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]
+RAW_REACHABILITY	PL1CD.theoremDReal	roots=1	visited=54207	unsafe=0	partial=0	missing=0	axioms=#[propext, Classical.choice, Quot.sound]

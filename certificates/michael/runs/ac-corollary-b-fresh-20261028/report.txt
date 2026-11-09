@@ -1,0 +1,29 @@
+Fresh verification of Theorem A and Corollary B
+
+Result: PASS
+Completed: 2026-11-09T14:52:02.374429+00:00
+Theorem: AutomaticContinuity.theoremA : AutomaticContinuity.TheoremAStatement.{u}
+Corollary: AutomaticContinuity.corollaryB : AutomaticContinuity.CorollaryBStatement.{u}
+
+All 3,232 modules compiled from source: 2,975 imported library modules, 253 mathematical project modules and 4 roots or audits. No compiled non-toolchain files from earlier runs were reused. The dependency revisions are pinned, and every source header was checked with Lean's import parser.
+
+The build began with two compiler workers and resumed with one. On 9 November it resumed from the saved checkpoint of 3,143 completed modules. The restored official Lean installation matched the original toolchain hashes. Completed work from this same fresh run was retained after source and artifact hashes were rechecked. The original attempt records are preserved, with interruptions documented in worker-schedule.json and resume-20261109.json. Every module in the final result has a successful native compiler exit. The elapsed build time includes the gap between sessions.
+
+The matching official checker then ran leanchecker --fresh --verbose FreshVerification. Its native exit code was zero. The replay included the newly compiled proofs and eligible imported declarations from the retained Lean distribution. It uses Lean's own kernel; the compiler itself was not rebuilt.
+
+The exact-statement and axiom audits passed again after replay. Both results have their stated universe-polymorphic types with no extra mathematical hypotheses. Corollary B proves continuity and the bound by one member of every increasing defining sequence of submultiplicative seminorms, with constant one. It does not require an identity in the algebra.
+
+The project audit covers 3,206 declarations, including 2,483 theorems. The only transitive axioms are propext, Classical.choice and Quot.sound. There are no unsafe project declarations. The official checker skips partial and unsafe implementation declarations; the project's 5 partial compiler helpers are listed separately and passed the axiom audit. The two final theorems are safe and nonpartial.
+
+Project and dependency sources, compiled proofs and retained toolchain artifacts were unchanged through the checks. Theorem A and its original definitions are unchanged from the September development. Corollary B follows from boundedness on bounded sets and the power argument. This verifies the formal statements, not every intermediate argument in the manuscript.
+
+Source build began: 2026-10-28T10:59:45.443873+00:00
+Source build finished: 2026-11-09T14:23:29.006125+00:00
+Source build wall-clock seconds: 1049023.56
+Fresh replay seconds: 1008.05
+Lean: leanprover/lean4:v4.34.0-rc2
+Mathlib revision: 4cbb42e75a050e830b7cf0f2ae748d7644f59cf7
+Theorem A statement SHA-256: FF6BF9029A3CCC3E4E6CF261CCD645ACC8B96D813BE55962A7EA0081AD530285
+Corollary B statement SHA-256: 66D44199D4D08CD16551620F5AF2C859639B2B731D0182EF43175464A255C8A9
+
+These are separately prepared public copies. Original records remain unchanged. Private file locations are replaced with logical directory labels; PUBLIC_COPY_MANIFEST.json records both hashes. File hashes identify versions and do not replace proof checking. Preliminary checks using older compiled dependencies are excluded from this fresh verification package.

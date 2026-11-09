@@ -81,18 +81,28 @@
       <option value="posets">C(K)-spaces with few operators relative to posets</option>
       <option value="jfa">Operators on injective tensor products of separable Banach spaces and spaces with few operators</option>
       </optgroup>
+      <optgroup label="AI-assisted research" data-local-research>
+      <option value="retraction">A separable Banach space with a Schauder basis which is not a Lipschitz retract of its bidual</option>
+      <option value="noncalkin">A unital Banach algebra which is not a Calkin algebra</option>
+      <option value="cke">The uniform primary factorisation property for C(K, E)</option>
+      <option value="isometric">Banach’s isometric conjecture over the complex field</option>
+      <option value="csp">A negative solution to the complemented subspace problem for Banach spaces with unconditional bases</option>
+      <option value="pl1">On complemented subspaces of L₁[0,1]</option>
+      <option value="michael">A solution to Michael’s problem for Fréchet algebras</option>
+      <option value="survey">Mathematical discovery in the wild: AI-guided proofs in Banach space theory</option>
+      </optgroup>
     </select></label><a href="#top" class="journal-mark" aria-label="Beginning of paper">Paper <span>Author manuscript</span></a></div>
     <nav class="mode-switch" aria-label="Reading mode"><button id="paper-mode" aria-pressed="true">Paper</button><button id="split-mode" aria-pressed="false">Paper + Lean</button><button id="lean-mode" aria-pressed="false">Lean &amp; certificates</button></nav>
     <div class="reading-tools"><button id="fold-proofs" aria-pressed="false">Fold proofs</button><button id="fold-sections" aria-pressed="false">Fold sections</button><button id="theme-toggle" aria-label="Switch to night mode" title="Switch to night mode"><svg class="night-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/></svg><svg class="day-symbol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button><button id="about-button" aria-label="About this edition">⋯</button></div>
   </header>
-  <aside class="edition-notice" aria-label="Edition status"><strong>Work in progress.</strong> This interactive edition is under construction.<span id="pems-fresh-kernel-link" hidden> · <a href="./#paper=pems&mode=lean&result=theorem-1-1&tab=verification">Kernel certificate</a></span></aside>
+  <aside class="edition-notice" aria-label="Edition status"><strong>Work in progress.</strong> This interactive edition is under construction.</aside>
   <nav id="contents" aria-label="Contents" hidden><div class="contents-head"><span>CONTENTS</span><button id="close-contents" aria-label="Close table of contents">×</button></div><div id="toc-list"></div><div id="lean-toc-list" hidden></div><div class="contents-foot"><button data-target="top">Title &amp; abstract</button><button data-target="references">References</button></div></nav>
   <main id="reading-desk">
     <section id="paper-column" aria-label="Paper">
       <div class="running-head"><div class="running-location"><button id="thesis-context" aria-haspopup="dialog" aria-controls="thesis-library">Thesis</button><span class="running-location-divider" aria-hidden="true">/</span><button id="current-section" aria-label="Current section; open contents">The paper</button></div><div class="type-controls" role="group" aria-label="Text size"><button id="text-smaller" aria-label="Smaller text" title="Smaller text">A−</button><button id="text-larger" aria-label="Larger text" title="Larger text">A+</button></div></div>
     <div id="paper-scroll" tabindex="0" aria-label="Mathematical paper">
       <article id="paper" class="mathematical-paper">
-        <header id="top" class="paper-title-block"><p class="publication">AUTHOR MANUSCRIPT · INTERACTIVE EDITION</p><h1 id="article-title">Factorizations and minimality of the Calkin Algebra norm for <i>C(K)</i>-spaces</h1><p class="author">Antonio Acuaviva</p><p class="affiliation">Lancaster University</p><div class="title-rule"></div><section class="abstract"><h2>Abstract.</h2><div id="abstract-text"></div></section></header>
+        <header id="top" class="paper-title-block"><p class="publication">AUTHOR MANUSCRIPT · INTERACTIVE EDITION</p><h1 id="article-title">Factorizations and minimality of the Calkin Algebra norm for <i>C(K)</i>-spaces</h1><div id="paper-byline" class="paper-byline"></div><div class="title-rule"></div><section class="abstract"><h2>Abstract.</h2><div id="abstract-text"></div></section></header>
         <p id="loading" role="status">Preparing the mathematical text…</p>
         <div id="article-body"></div>
         <footer class="article-colophon"><span>Author manuscript · interactive edition</span><button id="edition-details">Source &amp; edition details</button></footer>
@@ -114,14 +124,22 @@
   </template>
   <dialog id="thesis-library" aria-labelledby="thesis-library-title" aria-modal="false">
     <header class="thesis-library-heading"><h2 id="thesis-library-title">Thesis &amp; papers</h2><button data-close-thesis-library aria-label="Close thesis and papers" autofocus>×</button></header>
-    <nav id="thesis-collections" aria-label="Research collections">
-      <button class="thesis-collection-choice" data-thesis-view="thesis"><span>The full thesis</span><small>Interactive edition to follow</small></button>
-      <button class="thesis-collection-choice" data-choose-papers><span>Papers · Parts I–III</span><small>Choose a paper from the grouped list</small></button>
-      <button class="thesis-collection-choice" data-thesis-view="later"><span>AI-assisted research</span><small>A separate collection of later work</small></button>
+    <nav id="thesis-library-menu" aria-label="Thesis and papers">
+      <button data-choose-paper>Choose a paper</button>
+      <button data-thesis-view="guide">Guide to the Lean companion</button>
+      <button data-thesis-view="thesis">The full thesis</button>
     </nav>
     <section id="thesis-full-preview" class="thesis-collection-preview" hidden><h3>Factorisation, Primariness and Few Operators in Banach Spaces</h3><p>The complete thesis will have its own interactive reading edition here.</p><p class="thesis-awaiting">To be added.</p></section>
-    <section id="thesis-later-preview" class="thesis-collection-preview" hidden><h3>AI-assisted research</h3><p>Later papers will be collected here, alongside the thesis’s Afterword.</p><p class="thesis-awaiting">No papers added yet.</p></section>
-    <footer id="thesis-library-back" hidden><button data-thesis-view="collections">‹ Back</button></footer>
+    <section id="thesis-guide" class="thesis-collection-preview" aria-labelledby="thesis-guide-title" hidden>
+      <h3 id="thesis-guide-title">Guide to the Lean companion</h3>
+      <h4>Thesis · Parts I–III</h4>
+      <p>Lean covers all the main theorems of Parts I–III and the development of their proofs, including intermediate lemmas and propositions. The eight papers here are the reading editions for these parts. The full thesis edition is to follow.</p>
+      <h4>AI-assisted research</h4>
+      <p>Lean covers the main results. A formal proof may use a different argument from the paper, and individual steps of the paper’s proof may have no separate Lean counterpart.</p>
+      <h4>Reading a certificate</h4>
+      <p>Click a result to see its Lean statement and proof. The <strong>Verification</strong> tab gives the saved kernel check for the linked declarations. The correspondence note explains any difference in hypotheses or scope.</p>
+    </section>
+    <footer id="thesis-library-back" hidden><button data-thesis-view="menu">‹ Back</button></footer>
   </dialog>
   <dialog id="citation-dialog" aria-label="Reference"><div class="dialog-top"><span>REFERENCE</span><button data-close-dialog aria-label="Close reference">×</button></div><div id="citation-content"></div><button id="citation-jump">Go to bibliography</button></dialog>
   <dialog id="source-dialog" aria-label="Lean source browser"><div class="dialog-top"><h2>JLMS Lean library</h2><button data-close-dialog aria-label="Close source browser">×</button></div><label for="source-search">Declaration or module</label><input type="search" id="source-search" placeholder="essentialNorm, Rudin, factorization…"><div id="source-results"></div></dialog>

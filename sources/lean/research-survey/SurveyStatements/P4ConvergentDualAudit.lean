@@ -1,0 +1,7 @@
+import SurveyStatements.P4ConvergentDualRepresentation
+
+#print axioms SurveyStatements.P4.convergentDualZeroTruncate_tendsto
+#print axioms SurveyStatements.P4.convergentDualCoordinate_sum_norm_le
+#print axioms SurveyStatements.P4.convergentDualCoordinate_summable_norm
+#print axioms SurveyStatements.P4.convergentDual_representation
+#print axioms SurveyStatements.P4.convergentDual_coordinate_span_dense

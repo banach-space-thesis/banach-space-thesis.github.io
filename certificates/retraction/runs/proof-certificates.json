@@ -1,0 +1,267 @@
+{
+  "format": "Lean .olean proof artifacts",
+  "artifactCount": 51,
+  "lean": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "verificationRecord": "verification.json",
+  "verificationRecordSHA256": "4686FDBC0E494B5053B866E45F0E2053EC4D4502D0DD6E4EE14EF67DBDCEE7E2",
+  "archive": "proof-certificates.zip",
+  "archiveSHA256": "59E52D50B973313F46E5F41CBE53FC1B92F2505A4AEDF25127EDC08D7CBE6966",
+  "artifacts": [
+    {
+      "path": "FinalKernelAudit.olean",
+      "bytes": 36064,
+      "sha256": "3DCAFD3B115E84B6DDBCCA5E13A7497309FC0B894BDC92B011EDA4BD0F541FEA"
+    },
+    {
+      "path": "LindenstraussRetraction.olean",
+      "bytes": 41592,
+      "sha256": "B9D1D73EDF4F07CD796FB82900A9DD02620E8BC4A9D3F2D55E718D5FEE4A8304"
+    },
+    {
+      "path": "LindenstraussRetraction/Amplification.olean",
+      "bytes": 372480,
+      "sha256": "EA1FD848E95B36E8C44C3ECF143DFC56258E6ABC5559776D7F791BEC111D9807"
+    },
+    {
+      "path": "LindenstraussRetraction/AmplificationCore.olean",
+      "bytes": 904584,
+      "sha256": "A4F299AB9EAA0067037EC2793CAB5B13F92A2F44619E86610A6165793DC276F2"
+    },
+    {
+      "path": "LindenstraussRetraction/AnisotropicBidual.olean",
+      "bytes": 520352,
+      "sha256": "E42878445EAE7D8F06128E94A80554EB8FDDE5AFABC5FDB06A9542695A4074D9"
+    },
+    {
+      "path": "LindenstraussRetraction/AuditChecks.olean",
+      "bytes": 140152,
+      "sha256": "D95E733E1EEEFC9D94744F0FDA7C6B27DBC24C707E271840B36F389A63E3EB38"
+    },
+    {
+      "path": "LindenstraussRetraction/AuxiliaryNoRetraction.olean",
+      "bytes": 364464,
+      "sha256": "43565C8B4545220EF3E3517D34882563300F008A35C2D32A9D78750C55874F3B"
+    },
+    {
+      "path": "LindenstraussRetraction/BasisApproximation.olean",
+      "bytes": 620512,
+      "sha256": "A90E4B3378FEA7EB3851D1E5BD8770C6D71DB364B7720C367FFC0818EE8BEB1E"
+    },
+    {
+      "path": "LindenstraussRetraction/BasisSeparability.olean",
+      "bytes": 125208,
+      "sha256": "CF7E9C5A40FBB73F11CA4485BA3C884D33288CBC0ADB4FB6645238A6F736523F"
+    },
+    {
+      "path": "LindenstraussRetraction/BasisTransport.olean",
+      "bytes": 258880,
+      "sha256": "0559ACAB070C839834A98A7A79A36E8F48DA196F6A9ACD7786F0FD3926020737"
+    },
+    {
+      "path": "LindenstraussRetraction/BidualIsometry.olean",
+      "bytes": 452488,
+      "sha256": "4497632F73E8F069B9940306C6F4F0385689DF67AA4A6F895725C5808C3EEDFA"
+    },
+    {
+      "path": "LindenstraussRetraction/BidualLifting.olean",
+      "bytes": 604088,
+      "sha256": "04D516AE96BFD4BC4655D9F0522C27405636C968D0DC753E95B121FA9DB78319"
+    },
+    {
+      "path": "LindenstraussRetraction/BidualMap.olean",
+      "bytes": 423872,
+      "sha256": "3EF33E273C7145A0F14579BF8AEB0DEC2B5FE4463F3D707CA6F7A81E06B9F375"
+    },
+    {
+      "path": "LindenstraussRetraction/BidualProduct.olean",
+      "bytes": 904120,
+      "sha256": "7D7CD7797CB58120C8080101BC1EBC1CE767A265D6EB424770140F4B27FF7299"
+    },
+    {
+      "path": "LindenstraussRetraction/BimonotoneRenorm.olean",
+      "bytes": 573056,
+      "sha256": "5EC52386C2C55C8620B798CB0795DBB7A1E41D44095F289EA69E7EA2103D2FFA"
+    },
+    {
+      "path": "LindenstraussRetraction/BlockBasis.olean",
+      "bytes": 1010104,
+      "sha256": "07ACCC7D35C30BD39B21B32717302D3431438D1F25FCCE9F8C588FC75BCDE38D"
+    },
+    {
+      "path": "LindenstraussRetraction/BlockDecomposition.olean",
+      "bytes": 1192288,
+      "sha256": "1114F64FEB2C90DEB865622987117F5AE138DB039DAD02401899029A399875A5"
+    },
+    {
+      "path": "LindenstraussRetraction/C0Sum.olean",
+      "bytes": 260696,
+      "sha256": "24205DB737B258849C307C857D4719923B1371CD765E1339C3F726BC43F1471D"
+    },
+    {
+      "path": "LindenstraussRetraction/C0SumCoordinates.olean",
+      "bytes": 367840,
+      "sha256": "FED746406DED3CD3A2053B86B8303EB35468E1D970D08AA7619DB96AF48FEA38"
+    },
+    {
+      "path": "LindenstraussRetraction/C0SumFDD.olean",
+      "bytes": 660976,
+      "sha256": "89612FD860D1EE5F61855C440E09B73EFF247BD95595BBACA1AF22369D88EEE7"
+    },
+    {
+      "path": "LindenstraussRetraction/C0SumSeparability.olean",
+      "bytes": 139616,
+      "sha256": "66B591BE3BD3A4059AC191C1EC49EFACDD6C6E27F405EC60F7417E04D8675D91"
+    },
+    {
+      "path": "LindenstraussRetraction/ComplementedTransfer.olean",
+      "bytes": 415248,
+      "sha256": "86BDA52AE2852014D26A5103157CFD52571CFDF6FC06BF749B497B89090505D8"
+    },
+    {
+      "path": "LindenstraussRetraction/ConcreteConstruction.olean",
+      "bytes": 235776,
+      "sha256": "027D0F08B17D6E6018ADD47AD335FEF5D84D8AA227CAEFADF2530FD99E18B403"
+    },
+    {
+      "path": "LindenstraussRetraction/ConcreteFDD.olean",
+      "bytes": 455200,
+      "sha256": "890640F7B7567A8D345DC1D7291B1BE993510711EAE48A70756F31994926CB9A"
+    },
+    {
+      "path": "LindenstraussRetraction/CoordinateRetractions.olean",
+      "bytes": 594688,
+      "sha256": "0A306DBF83C598171527384A29BED97D9D3515EDD312733B7FC6B1B23A9ECB98"
+    },
+    {
+      "path": "LindenstraussRetraction/CoordinateTruncation.olean",
+      "bytes": 313296,
+      "sha256": "B2CDBA12666D50E79D40F174AC0BE89C9C585DCABE6FDCBE73E02B58934F4409"
+    },
+    {
+      "path": "LindenstraussRetraction/Correction.olean",
+      "bytes": 1043080,
+      "sha256": "584B73EEE83AD9659EA2A06F1CFC220006F7E4B6DAABD844774BD9E92EB4BA33"
+    },
+    {
+      "path": "LindenstraussRetraction/Definitions.olean",
+      "bytes": 232240,
+      "sha256": "B2B5B67B9597C9E3252F94E9E626A2EE7972E2617E1806047DC701F7565626B8"
+    },
+    {
+      "path": "LindenstraussRetraction/DirectSumBlockBasis.olean",
+      "bytes": 840064,
+      "sha256": "BFDFF62F030390F0CBDD7EE3E35CF2A25A2172FFB210FB41D17D75718AACD42B"
+    },
+    {
+      "path": "LindenstraussRetraction/Interlacing.olean",
+      "bytes": 562264,
+      "sha256": "60DEB8206C46AD40254BD1F1562F33692A359303512705F9639BF1772C323B04"
+    },
+    {
+      "path": "LindenstraussRetraction/MainFromBasis.olean",
+      "bytes": 93864,
+      "sha256": "FCD1E89BAEAA130781DC9C486F11A94CA76BC943CF72E18579A4C3438D67BFAD"
+    },
+    {
+      "path": "LindenstraussRetraction/MainTheorem.olean",
+      "bytes": 223008,
+      "sha256": "75877433E438438F1F8A878DC377A08C5A64DFC8D0C0EF56EE97AF0CBF28F980"
+    },
+    {
+      "path": "LindenstraussRetraction/MainWithApproximation.olean",
+      "bytes": 234984,
+      "sha256": "FFCE9047442613D759E17EDA67083CE48A04F14639D6D94F8CC172AE45652994"
+    },
+    {
+      "path": "LindenstraussRetraction/NoSection.olean",
+      "bytes": 453608,
+      "sha256": "CDBE34FF9483B11D80BCB1ABD04DADEE600DF7471D6CF3DE678DDB45BD4671D8"
+    },
+    {
+      "path": "LindenstraussRetraction/NoSectionGeometry.olean",
+      "bytes": 509536,
+      "sha256": "A4EE4C9A857A37698D8D88F470EE638C3CCB08AE0D0E177988B6E2CC09C571E1"
+    },
+    {
+      "path": "LindenstraussRetraction/QuotientLemmas.olean",
+      "bytes": 323344,
+      "sha256": "6573621EAE2CD1A2425551578E56BD40D34774B4AD149E23157E96033274C667"
+    },
+    {
+      "path": "LindenstraussRetraction/RadialRetraction.olean",
+      "bytes": 366664,
+      "sha256": "901156373EE93D506BD80E2A60F6D7051E12188E5475808FF59D8D1D64B5A1D0"
+    },
+    {
+      "path": "LindenstraussRetraction/RenormedBlockBasis.olean",
+      "bytes": 198392,
+      "sha256": "5DBEEA366FB0CEFB93E3637C5D92169F869966F882BD6E5FA4E6ED7695DC2141"
+    },
+    {
+      "path": "LindenstraussRetraction/RenormedRetractionObstruction.olean",
+      "bytes": 970728,
+      "sha256": "8980A1EF6668ED9D3A18EF8512C76BF18CB96C986E40376EB271E640784C6C6E"
+    },
+    {
+      "path": "LindenstraussRetraction/Renorming.olean",
+      "bytes": 450120,
+      "sha256": "B9A344EF77A76D7F7A5297E27F2033B70F015CD4CF107CE07083EC94B0D139C9"
+    },
+    {
+      "path": "LindenstraussRetraction/RetractionConstant.olean",
+      "bytes": 196544,
+      "sha256": "25D280D2125695941171B10DD91893D046019E8230B91E1B578E910418B0F3FA"
+    },
+    {
+      "path": "LindenstraussRetraction/SchauderBasis.olean",
+      "bytes": 416592,
+      "sha256": "514068CCDA29D5FAB2406D0A3487F1F6DCE3001516A104B22A2EE659C5EB671D"
+    },
+    {
+      "path": "LindenstraussRetraction/SchauderBasisLemmas.olean",
+      "bytes": 312616,
+      "sha256": "E2C97BCA9406A269C28B02CFF176D2488BBBC259A0D558E5387F7214FFB4917F"
+    },
+    {
+      "path": "LindenstraussRetraction/SoftRadial.olean",
+      "bytes": 453928,
+      "sha256": "C1072C2E61BD0C0EFFC9DB3980296B1F0D435D446B9512293AA2A6B6EDBB0375"
+    },
+    {
+      "path": "LindenstraussRetraction/Stability.olean",
+      "bytes": 329936,
+      "sha256": "8F67348BAA776FB81606F13E8EE54D6D523C12FB47BE68A9AB15269EF1B4D2C8"
+    },
+    {
+      "path": "LindenstraussRetraction/Statements.olean",
+      "bytes": 160328,
+      "sha256": "AC765125293E0160967E2DD09F11AD205CC7CD4B7D3394A1A67CEFC542E249A6"
+    },
+    {
+      "path": "LindenstraussRetraction/SummationApproximation.olean",
+      "bytes": 830112,
+      "sha256": "7D452A32A9BB8E9A1244932177AE1E0910E0B2CB7E2556ED99AC720590F7C95F"
+    },
+    {
+      "path": "LindenstraussRetraction/SummationBidualProjection.olean",
+      "bytes": 717976,
+      "sha256": "D0DDBC1CD92169092845B3E0B58CE1A73B1F078D26EB2FB9DE1BD009F5A2C7B9"
+    },
+    {
+      "path": "LindenstraussRetraction/SummationQuotient.olean",
+      "bytes": 568688,
+      "sha256": "5E4C687A58B828CAC20ED71982743A3BF4D3131E26E7EC34107EAB3240B41D68"
+    },
+    {
+      "path": "LindenstraussRetraction/SummationSpace.olean",
+      "bytes": 317280,
+      "sha256": "F508C6070347A3F061D728332D541EC2D012937A5F923421AAA8BF3921954FB0"
+    },
+    {
+      "path": "LindenstraussRetraction/TwoSidedConstant.olean",
+      "bytes": 772176,
+      "sha256": "2E82F1C8A567AC97AE3776B1FCBFF3B6E7E50D038A819B6B0DD42E50E8EC8228"
+    }
+  ]
+}

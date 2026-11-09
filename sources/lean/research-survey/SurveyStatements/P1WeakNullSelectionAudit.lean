@@ -1,0 +1,5 @@
+import SurveyStatements.P1WeakNullSelection
+
+#print axioms SurveyStatements.P1.weakNull_finite_selection_step
+#print axioms SurveyStatements.P1.exists_weakNull_oneStep_subsequence
+#print axioms SurveyStatements.P1.weakNull_exists_asymptoticallyMonotone_subsequence_with_bound

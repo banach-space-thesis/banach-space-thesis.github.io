@@ -1,0 +1,6 @@
+import SurveyStatements.P4BaireAdjoint
+
+#print axioms SurveyStatements.P4.adjoint_normBall_preimage_isClosed
+#print axioms SurveyStatements.P4.weakStarCompact_metrizable
+#print axioms SurveyStatements.P4.weakClosureRestriction_norm
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_range_isSeparable

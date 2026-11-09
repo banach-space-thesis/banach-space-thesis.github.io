@@ -1,0 +1,34 @@
+Replaying 29 roots from 5601 imported modules
+Checked 1/29: BanachIsometric.complexTheoremA
+Checked 21/29: BanachIsometric.MetricGeometry.realTheoremE_radial_profile
+Checked 29/29: BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological
+AXIOMS BanachIsometric.complexTheoremA: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.theoremA: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complexCorollaryB: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_completion_corollaryB_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_complete_corollaryB_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.corollaryB: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.completionCorollaryB_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.completeCorollaryB_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complexTheoremC: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_exists_cofinal_hilbert_inverseLimit_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.theoremC: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.exists_cofinal_hilbert_inverseLimit_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.realTheoremD: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.realTheoremD_normable: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complexTheoremD: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_simultaneous_seminorms_norm_model_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_simultaneous_seminorms_hilbert_model_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.theoremD: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.separating_rightSeminorm_family_normable_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.MetricGeometry.realTheoremE: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.MetricGeometry.realTheoremE_radial_profile: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complexTheoremE: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.theoremE: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_exists_hilbert_metric_model_of_convex_balls_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_exists_hilbert_metric_model_of_radial_balls_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.complex_exists_radial_metric_profile_of_convex_balls_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_convex_balls_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_radial_balls_homological: propext, Classical.choice, Quot.sound
+AXIOMS BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological: propext, Classical.choice, Quot.sound
+PASS: 63290 declarations replayed from an empty environment

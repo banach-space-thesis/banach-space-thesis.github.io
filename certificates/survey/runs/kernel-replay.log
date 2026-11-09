@@ -1,0 +1,78 @@
+SurveyStatements.P1.toroidal_elton_odell.{u} (X : Type u) [NormedAddCommGroup X] [NormedSpace ℂ X]
+  (hX : ¬FiniteDimensional ℂ X) :
+  ∃ ε, 0 < ε ∧ ∃ x, (∀ (n : ℕ), ‖x n‖ = 1) ∧ SurveyStatements.P1.IsToroidallySeparated ε x
+SurveyStatements.P2.exists_non_calkin_unital_banach_algebra.{v} :
+  ∃ A,
+    ∀ (X : Type v) [inst : NormedAddCommGroup X] [inst_1 : NormedSpace ℂ X] [CompleteSpace X],
+      ¬Nonempty (SurveyStatements.P2.CalkinBanachAlgebraIso X A.Carrier)
+SurveyStatements.P3.strictlyCosingular_iff_adjoint_strictlySingular.{u_1, u_2, u_3} {𝕜 : Type u_1} [RCLike 𝕜]
+  {X : Type u_2} {Y : Type u_3} [NormedAddCommGroup X] [NormedSpace 𝕜 X] [NormedAddCommGroup Y] [NormedSpace 𝕜 Y]
+  [CompleteSpace X] [CompleteSpace Y] [TopologicalSpace.SeparableSpace Y] (T : X →L[𝕜] Y) :
+  SurveyStatements.P3.IsStrictlyCosingular T ↔ SurveyStatements.P3.IsStrictlySingular (SurveyStatements.P3.adjoint T)
+SurveyStatements.P4.weaklyCompact_basis_factorization.{u, v, w} (𝕜 : Type u) [RCLike 𝕜] {X : Type v} {Y : Type w}
+  [NormedAddCommGroup X] [NormedSpace 𝕜 X] [CompleteSpace X] [NormedAddCommGroup Y] [NormedSpace 𝕜 Y] [CompleteSpace Y]
+  [TopologicalSpace.SeparableSpace Y] (hBAP : SurveyStatements.P4.HasBoundedApproximationProperty 𝕜 Y) (T : X →L[𝕜] Y)
+  (hT : SurveyStatements.P4.IsWeaklyCompactOperator 𝕜 T) : SurveyStatements.P4.FactorsThroughReflexiveBasisSpace 𝕜 T
+SurveyStatements.P5.mixed_norm_uniform_primary_factorization.{u} (𝕜 : Type u) [RCLike 𝕜] (p : ENNReal) (hp : 1 < p)
+  (hp_finite : p < ⊤) :
+  SurveyStatements.P5.HasUniformPrimaryFactorization 𝕜 ↥(SurveyStatements.P5.MixedNorm 𝕜 p) ∧
+    SurveyStatements.P5.IsPrimary 𝕜 ↥(SurveyStatements.P5.MixedNorm 𝕜 p)
+'SurveyStatements.P1.toroidal_elton_odell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurveyStatements.P2.exists_non_calkin_unital_banach_algebra' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurveyStatements.P3.strictlyCosingular_iff_adjoint_strictlySingular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SurveyStatements.P4.weaklyCompact_basis_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SurveyStatements.P5.mixed_norm_uniform_primary_factorization' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Audited 7192 survey declarations; 0 unfinished proofs and no unapproved axioms.
+KERNEL REPLAY PASSED: 49179 safe, non-partial declarations rechecked from an empty environment, including all required mathematical auxiliary libraries.
+Starting empty-environment kernel replay: 49179 safe, non-partial declarations in the complete mathematical dependency closure of 7186 survey mathematical declarations; 6 unsafe or partial implementation declarations excluded.
+Kernel progress: 1000 declaration blocks checked; [Nat.lt_succ_of_le]
+Kernel progress: 2000 declaration blocks checked; [PosMulReflectLT]
+Kernel progress: 3000 declaration blocks checked; [List.map_id_fun']
+Kernel progress: 4000 declaration blocks checked; [Lean.Grind.NatModule.one_nsmul]
+Kernel progress: 5000 declaration blocks checked; [Std.IsLinearOrder]
+Kernel progress: 6000 declaration blocks checked; [BiheytingAlgebra.sdiff_le_iff]
+Kernel progress: 7000 declaration blocks checked; [Real.ratCast_lt]
+Kernel progress: 8000 declaration blocks checked; [PseudoMetricSpace.dist_triangle]
+Kernel progress: 9000 declaration blocks checked; [ConditionallyCompleteLattice.le_csInf]
+Kernel progress: 10000 declaration blocks checked; [Real.normedField._proof_13]
+Kernel progress: 11000 declaration blocks checked; [ULift.smul]
+Kernel progress: 12000 declaration blocks checked; [Complex.normSq_zero]
+Kernel progress: 13000 declaration blocks checked; [Multiset.Rel.casesOn]
+Kernel progress: 14000 declaration blocks checked; [NNReal.coe_le_coe._simp_1]
+Kernel progress: 15000 declaration blocks checked; [Transitive]
+Kernel progress: 16000 declaration blocks checked; [UniformSpace.ext_iff]
+Kernel progress: 17000 declaration blocks checked; [MeasureTheory.OuterMeasure.measureOf]
+Kernel progress: 18000 declaration blocks checked; [MeasureTheory.inducedOuterMeasure_eq']
+Kernel progress: 19000 declaration blocks checked; [sdiff_sup]
+Kernel progress: 20000 declaration blocks checked; [Equiv.Set.union'.match_3]
+Kernel progress: 21000 declaration blocks checked; [AddEquiv.symm]
+Kernel progress: 22000 declaration blocks checked; [WithTop.instIsOrderedRing]
+Kernel progress: 23000 declaration blocks checked; [NonUnitalSubsemiringClass.toNonUnitalNonAssocSemiring._proof_4]
+Kernel progress: 24000 declaration blocks checked; [Ideal.comap._simp_2]
+Kernel progress: 25000 declaration blocks checked; [Homeomorph.piUnique._proof_1]
+Kernel progress: 26000 declaration blocks checked; [LinearMap.instNeg]
+Kernel progress: 27000 declaration blocks checked; [SurveyStatements.P5Support.lpHaarCell_disjoint_sameLevel]
+Kernel progress: 28000 declaration blocks checked; [isPiSystem_prod]
+Kernel progress: 29000 declaration blocks checked; [Real.finiteSpanningSetsInIooRat._proof_1]
+Kernel progress: 30000 declaration blocks checked; [Filter.Germ.const]
+Kernel progress: 31000 declaration blocks checked; [cbiSup_eq_of_not_forall]
+Kernel progress: 32000 declaration blocks checked; [MeasureTheory.DominatedFinMeasAdditive.of_measure_le]
+Kernel progress: 33000 declaration blocks checked; [Fin.instNeZeroHAddNatOfNat_mathlib]
+Kernel progress: 34000 declaration blocks checked; [CompleteLattice.Iic_coatomic_of_compact_element._simp_1_4]
+Kernel progress: 35000 declaration blocks checked; [LinearMap.toSpanSingleton]
+Kernel progress: 36000 declaration blocks checked; [norm_inner_le_norm]
+Kernel progress: 37000 declaration blocks checked; [Finset.Nonempty.image]
+Kernel progress: 38000 declaration blocks checked; [SurveyStatements.P5.caponLocalizedImage._proof_1]
+Kernel progress: 39000 declaration blocks checked; [SurveyStatements.P5OperatorReduction.currentSplitHistory]
+Kernel progress: 40000 declaration blocks checked; [AddEquiv.prodComm]
+Kernel progress: 41000 declaration blocks checked; [SurveyStatements.P5.haarDensityCell_is_child._proof_1_2]
+Kernel progress: 42000 declaration blocks checked; [ContinuousLinearMap.comp_smulₛₗ]
+Kernel progress: 43000 declaration blocks checked; [SurveyStatements.P1.exists_weighted_color_fiber]
+Kernel progress: 44000 declaration blocks checked; [SurveyStatements.P3.generatedDualSpace]
+Kernel progress: 45000 declaration blocks checked; [gauge_lt_one_subset_self.match_1_1]
+Kernel progress: 46000 declaration blocks checked; [SurveyStatements.P5Support.lpHaarRawVector.eq_1]
+Kernel progress: 47000 declaration blocks checked; [min_left_comm]

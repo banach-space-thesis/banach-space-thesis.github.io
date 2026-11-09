@@ -1,0 +1,217 @@
+'NonCalkinAlgebra.controlled_calkin_matrix_units_impossible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.matrixAlgebra_has_exactly_one_ideal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.diagonal_corner_eq_theta_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.norm_scalarMatrixUnit_row_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+NonCalkinAlgebra.matrixBanachAlgebra_density_and_ideal_structure : ∀ (D : Type) [inst : NormedRing D]
+  [inst_1 : NormedAlgebra ℂ D] [NormOneClass D] [inst_3 : Nontrivial D] [inst_4 : CompleteSpace D],
+  NonCalkinAlgebra.HasDensityCharacter D Cardinal.continuum →
+    NonCalkinAlgebra.IsTopologicallySimple D →
+      NonCalkinAlgebra.HasDensityCharacter (NonCalkinAlgebra.matrixBanachAlgebra D).Carrier Cardinal.continuum ∧
+        NonCalkinAlgebra.HasExactlyOneNonzeroProperClosedIdeal (NonCalkinAlgebra.matrixBanachAlgebra D).Carrier
+NonCalkinAlgebra.matrixCornerModel : (D : Type u_1) →
+  [inst : NormedRing D] →
+    [inst_1 : NormedAlgebra ℂ D] →
+      [NormOneClass D] →
+        (i : ℕ) →
+          NonCalkinAlgebra.CornerModel D (↥(NonCalkinAlgebra.matrixAlgebra D))
+            (NonCalkinAlgebra.canonicalMatrixUnit D i i)
+NonCalkinAlgebra.controlled_quotient_matrix_units_impossible : ∀ (X : Type u_1) [inst : NormedAddCommGroup X]
+  [inst_1 : NormedSpace ℂ X] [inst_2 : CompleteSpace X] (convention : NonCalkinAlgebra.QuotientConvention),
+  (∀ (T : SurveyStatements.P2.BoundedOperators X),
+      TopologicalSpace.IsSeparable (Set.range ⇑T) → T ∈ NonCalkinAlgebra.operatorIdeal X convention) →
+    ∀ (e : ℕ → ℕ → NonCalkinAlgebra.OperatorQuotient X convention),
+      (∀ (i j k l : ℕ), e i j * e k l = if j = k then e i l else 0) →
+        e 0 0 ≠ 0 →
+          ∀ (Cr Cc : ℝ),
+            0 ≤ Cr →
+              0 ≤ Cc →
+                (∀ (F : Finset ℕ) (a : { x // x ∈ F } → ℂ), ‖∑ j, a j • e 0 ↑j‖ ≤ Cr * ‖a‖) →
+                  (∀ (i : ℕ), ‖e i 0‖ ≤ Cc) → False
+'NonCalkinAlgebra.matrixBanachAlgebra_density_and_ideal_structure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.controlled_quotient_matrix_units_impossible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+NonCalkinAlgebra.not_representable_of_separableRange_in_operatorIdeal : ∀ (D : Type u_1) [inst : NormedRing D]
+  [inst_1 : NormedAlgebra ℂ D] [NormOneClass D] [Nontrivial D] (X : Type u_2) [inst_4 : NormedAddCommGroup X]
+  [inst_5 : NormedSpace ℂ X] [CompleteSpace X] (convention : NonCalkinAlgebra.QuotientConvention),
+  (∀ (T : SurveyStatements.P2.BoundedOperators X),
+      TopologicalSpace.IsSeparable (Set.range ⇑T) → T ∈ NonCalkinAlgebra.operatorIdeal X convention) →
+    ¬Nonempty (NonCalkinAlgebra.OperatorQuotientIso X convention ↥(NonCalkinAlgebra.matrixAlgebra D))
+NonCalkinAlgebra.not_representable_of_finiteDimensional : ∀ (D : Type u_1) [inst : NormedRing D]
+  [inst_1 : NormedAlgebra ℂ D] [NormOneClass D] [Nontrivial D] (X : Type u_2) [inst_4 : NormedAddCommGroup X]
+  [inst_5 : NormedSpace ℂ X] [CompleteSpace X] [FiniteDimensional ℂ X]
+  (convention : NonCalkinAlgebra.QuotientConvention),
+  ¬Nonempty (NonCalkinAlgebra.OperatorQuotientIso X convention ↥(NonCalkinAlgebra.matrixAlgebra D))
+'NonCalkinAlgebra.not_representable_of_separableRange_in_operatorIdeal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.not_representable_of_finiteDimensional' depends on axioms: [propext, Classical.choice, Quot.sound]
+NonCalkinAlgebra.main_from_prerequisites : NonCalkinAlgebra.CoefficientExistenceStatement →
+  NonCalkinAlgebra.IdempotentLiftingStatement → NonCalkinAlgebra.MainStatement
+'NonCalkinAlgebra.main_from_prerequisites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.matrixNonunitalAlgebra_simple' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.simple_approximable_representation_implies_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.CompactSpectral.hasEigenvalue_iff_mem_spectrum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.spectrum_countable_of_defect_spectrum_countable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.compact_eigenspace_finiteDimensional' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.compact_spectrum_countable : ∀ {X : Type u_1} [inst : NormedAddCommGroup X] [inst_1 : NormedSpace ℂ X]
+  [CompleteSpace X] (T : X →L[ℂ] X), IsCompactOperator ⇑T → (spectrum ℂ T).Countable
+@NonCalkinAlgebra.rieszCircle_isIdempotent : ∀ {A : Type u_1} [inst : NormedRing A] [inst_1 : NormedAlgebra ℂ A]
+  [CompleteSpace A] (a : A) (r : ℝ),
+  0 < r →
+    (∀ z ∈ Metric.sphere 0 r, z ∈ resolventSet ℂ a) →
+      NonCalkinAlgebra.rieszCircle a r * NonCalkinAlgebra.rieszCircle a r = NonCalkinAlgebra.rieszCircle a r
+NonCalkinAlgebra.idempotent_lifting : NonCalkinAlgebra.IdempotentLiftingStatement
+'NonCalkinAlgebra.idempotent_lifting' depends on axioms: [propext, Classical.choice, Quot.sound]
+NonCalkinAlgebra.main_of_coefficient_existence : NonCalkinAlgebra.CoefficientExistenceStatement →
+  NonCalkinAlgebra.MainStatement
+'NonCalkinAlgebra.main_of_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.separable_range_calkin_corner' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.cardinal_separableCalkinModel_le_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.coefficient_existence_of_large_simple_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.BanachComplexification.operatorIdeal_operatorParts_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+NonCalkinAlgebra.BanachComplexification.quotientCoordinates : (X : Type u_1) →
+  [inst : NormedAddCommGroup X] →
+    [inst_1 : NormedSpace ℝ X] →
+      [inst_2 : CompleteSpace X] →
+        (k : NonCalkinAlgebra.QuotientConvention) →
+          NonCalkinAlgebra.OperatorQuotient (NonCalkinAlgebra.BanachComplexification X) k ≃L[ℝ]
+            NonCalkinAlgebra.RealOperatorQuotient X k × NonCalkinAlgebra.RealOperatorQuotient X k
+'NonCalkinAlgebra.RealCalkinCorner.model' depends on axioms: [propext, Classical.choice, Quot.sound]
+NonCalkinAlgebra.real_main_of_complex_main : NonCalkinAlgebra.MainStatement → NonCalkinAlgebra.RealMainStatement
+'NonCalkinAlgebra.real_main_of_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.closed_twoSidedIdeal_star_mem : ∀ {A : Type u_1} [inst : CStarAlgebra A] (I : TwoSidedIdeal A),
+  IsClosed ↑I → ∀ {x : A}, x ∈ I → star x ∈ I
+'NonCalkinAlgebra.closed_twoSidedIdeal_star_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.norm_le_starAlgHom_of_finiteDimensional : ∀ {A : Type u_1} {B : Type u_2} [inst : CStarAlgebra A]
+  [FiniteDimensional ℂ A] [inst_2 : NormedRing B] [inst_3 : NormedAlgebra ℂ B] [CompleteSpace B] [NormOneClass B]
+  [inst_6 : StarRing B] [NormedStarGroup B] (f : A →⋆ₐ[ℂ] B), Function.Injective ⇑f → ∀ (a : A), ‖a‖ ≤ ‖f a‖
+'NonCalkinAlgebra.IsApproximatelyMatricial.isTopologicallySimple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.AF_coefficient_existence_of_large_AM_family : ∀ {J : Type}
+  (D : J → NonCalkinAlgebra.ComplexCStarAlgebra),
+  Cardinal.continuum < Cardinal.mk J →
+    (∀ (i j : J), Nonempty ((D i).Carrier ≃A[ℂ] (D j).Carrier) → i = j) →
+      (∀ (i : J), NonCalkinAlgebra.IsApproximatelyMatricial (D i).Carrier) →
+        (∀ (i : J), NonCalkinAlgebra.HasDensityCharacter (D i).Carrier Cardinal.continuum) →
+          NonCalkinAlgebra.AFCoefficientExistenceStatement
+'NonCalkinAlgebra.AF_coefficient_existence_of_large_AM_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.cardinal_eq_continuum_of_density_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.CommutationChains.weaklySkeletonLike_of_value_supports' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.CommutationChains.weaklySkeletonLike_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.CommutationChains.relationChain_of_value_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.OrderedTwistedAlgebra.continuum_model_properties : ∀ {Λ : Type} [inst : LinearOrder Λ] [Infinite Λ],
+  Cardinal.mk Λ = Cardinal.continuum →
+    NonCalkinAlgebra.IsApproximatelyFiniteDimensional (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier ∧
+      NonCalkinAlgebra.HasDensityCharacter (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier
+          Cardinal.continuum ∧
+        NonCalkinAlgebra.IsTopologicallySimple (NonCalkinAlgebra.OrderedTwistedAlgebra.algebra Λ).Carrier ∧
+          NonCalkinAlgebra.CommutationChains.IsRelationChain NonCalkinAlgebra.CommutationChains.Across
+              (NonCalkinAlgebra.OrderedTwistedAlgebra.pair Λ) ∧
+            NonCalkinAlgebra.CommutationChains.WeaklySkeletonLike NonCalkinAlgebra.CommutationChains.Across
+              (NonCalkinAlgebra.OrderedTwistedAlgebra.pair Λ)
+'NonCalkinAlgebra.OrderedTwistedAlgebra.exists_simple_AF_continuum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.TwistedRegular.isTopologicallySimple_of_nondegenerate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.OrderedTwistedAlgebra.weaklySkeletonLike' depends on axioms: [propext, Classical.choice, Quot.sound]
+@NonCalkinAlgebra.OrderInvariantCounting.exists_large_membership_fiber : ∀ {A I : Type u_1} {κ : Cardinal.{u_1}},
+  Cardinal.aleph0 ≤ κ →
+    Cardinal.mk A ≤ κ →
+      κ < Cardinal.mk I → ∀ (s : I → Set A), Function.Injective s → ∃ a, κ < Cardinal.mk ↑{i | a ∈ s i}
+'NonCalkinAlgebra.OrderInvariantCounting.cardinal_le_of_disjoint_supported_sequences' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@NonCalkinAlgebra.AF_coefficient_existence_of_small_model_fibers : ∀ {I : Type}
+  (D : I → NonCalkinAlgebra.ComplexCStarAlgebra),
+  Cardinal.continuum < Cardinal.mk I →
+    (∀ (M : NonCalkinAlgebra.SeparableCalkinModel),
+        Cardinal.mk ↑{i | Nonempty (M.Carrier ≃A[ℂ] (D i).Carrier)} ≤ Cardinal.continuum) →
+      (∀ (i : I), NonCalkinAlgebra.IsApproximatelyFiniteDimensional (D i).Carrier) →
+        (∀ (i : I), NonCalkinAlgebra.HasDensityCharacter (D i).Carrier Cardinal.continuum) →
+          (∀ (i : I), NonCalkinAlgebra.IsTopologicallySimple (D i).Carrier) →
+            NonCalkinAlgebra.AFCoefficientExistenceStatement
+'NonCalkinAlgebra.AF_coefficient_existence_of_small_model_fibers' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'NonCalkinAlgebra.AF_coefficient_existence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NonCalkinAlgebra.real_main_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+CONSTRUCTION AXIOM AUDIT PASSED: 2290 declarations; standard axioms only.
+CONSTRUCTION KERNEL REPLAY PASSED: 54630 declarations checked from an empty environment using Kernel.Environment.addDeclCore 0.
+THEOREM 1.1 AND REMARK 1.2 REPLAY PASSED.
+Starting construction replay: 2287 roots; 54630 declarations including all mathematical auxiliary libraries.
+Kernel progress: 1000 declaration blocks checked; [InvImage.accessible]
+Kernel progress: 2000 declaration blocks checked; [StrictMono.compares]
+Kernel progress: 3000 declaration blocks checked; [Lean.Omega.LinearCombo.neg]
+Kernel progress: 4000 declaration blocks checked; [Lean.Grind.IntModule.one_zsmul]
+Kernel progress: 5000 declaration blocks checked; [Lean.Grind.NatModule.nsmul_zero]
+Kernel progress: 6000 declaration blocks checked; [HNot]
+Kernel progress: 7000 declaration blocks checked; [StarSubalgebra.copy._proof_1]
+Kernel progress: 8000 declaration blocks checked; [CauSeq.inv_aux.match_1_7]
+Kernel progress: 9000 declaration blocks checked; [GaloisCoinsertion.u_l_le]
+Kernel progress: 10000 declaration blocks checked; [AddMonoidHom.mul]
+Kernel progress: 11000 declaration blocks checked; [NonUnitalNormedRing.toMetricSpace]
+Kernel progress: 12000 declaration blocks checked; [ENNReal.div_self]
+Kernel progress: 13000 declaration blocks checked; [Lean.Grind.CommRing.Mon.denoteAsIntModule_go_eq_denote]
+Kernel progress: 14000 declaration blocks checked; [LawfulMonad.toLawfulApplicative]
+Kernel progress: 15000 declaration blocks checked; [Filter.TendstoIxxClass]
+Kernel progress: 16000 declaration blocks checked; [EMetricSpace.ofT0PseudoEMetricSpace]
+Kernel progress: 17000 declaration blocks checked; [Real.neg_pi_div_two_le_arcsin]
+Kernel progress: 18000 declaration blocks checked; [Filter.map_prod._simp_1_4]
+Kernel progress: 19000 declaration blocks checked; [Finsupp.instFunLike._proof_1]
+Kernel progress: 20000 declaration blocks checked; [Topology.IsOpenEmbedding.map_nhds_eq]
+Kernel progress: 21000 declaration blocks checked; [RCLike.real_smul_eq_coe_mul]
+Kernel progress: 22000 declaration blocks checked; [NonCalkinAlgebra.TwistedRegular.shift._proof_1]
+Kernel progress: 23000 declaration blocks checked; [SurveyStatements.P2.ComplexBanachAlgebra]
+Kernel progress: 24000 declaration blocks checked; [hasSum_geometric_of_lt_one]
+Kernel progress: 25000 declaration blocks checked; [TensorProduct.tmul_smul]
+Kernel progress: 26000 declaration blocks checked; [Filter.Germ.instAddMonoid._proof_3]
+Kernel progress: 27000 declaration blocks checked; [discreteTopology_iff_orderTopology_of_pred_succ]
+Kernel progress: 28000 declaration blocks checked; [StrictConcaveOn.secant_strict_mono]
+Kernel progress: 29000 declaration blocks checked; [MeasureTheory.SimpleFunc.pair_preimage]
+Kernel progress: 30000 declaration blocks checked; [mul_boole]
+Kernel progress: 31000 declaration blocks checked; [UniformContinuous₂]
+Kernel progress: 32000 declaration blocks checked; [IsCompact.disjoint_nhdsSet_left]
+Kernel progress: 33000 declaration blocks checked; [Ideal.sub_mem]
+Kernel progress: 34000 declaration blocks checked; [Homeomorph.sumPiEquivProdPi._proof_1]
+Kernel progress: 35000 declaration blocks checked; [TopologicalSpace.Opens.frameMinimalAxioms._proof_4]
+Kernel progress: 36000 declaration blocks checked; [Set.Ioo_eq_empty]
+Kernel progress: 37000 declaration blocks checked; [ENNReal.le_of_forall_nnreal_lt]
+Kernel progress: 38000 declaration blocks checked; [AbstractCompletion.funext]
+Kernel progress: 39000 declaration blocks checked; [ContinuousWithinAt.mem_closure]
+Kernel progress: 40000 declaration blocks checked; [Units.mulAction'._proof_2]
+Kernel progress: 41000 declaration blocks checked; [LeftCancelMonoid.toIsLeftCancelMul]
+Kernel progress: 42000 declaration blocks checked; [Prod.normedRing._proof_2]
+Kernel progress: 43000 declaration blocks checked; [BoxIntegral.Box.splitUpper.eq_1]
+Kernel progress: 44000 declaration blocks checked; [FaithfulSMul.algebraMap_injective]
+Kernel progress: 45000 declaration blocks checked; [ENNReal.coe_finset_prod._simp_1]
+Kernel progress: 46000 declaration blocks checked; [StarAlgEquiv.symm._proof_2]
+Kernel progress: 47000 declaration blocks checked; [BoundedContinuousFunction.coe_zsmulRec]
+Kernel progress: 48000 declaration blocks checked; [ContinuousMap.instLatticeOfTopologicalLattice._proof_1]
+Kernel progress: 49000 declaration blocks checked; [ConnectedSpace.toPreconnectedSpace]
+Kernel progress: 50000 declaration blocks checked; [NonCalkinAlgebra.calkinCongruence._proof_2]
+Kernel progress: 51000 declaration blocks checked; [WithBot.unbotD_bot]
+Kernel progress: 52000 declaration blocks checked; [NonCalkinAlgebra.IsApproximatelyMatricial._proof_1]
+Kernel progress: 53000 declaration blocks checked; [RingEquiv.bijective]

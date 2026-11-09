@@ -1,0 +1,6 @@
+{"status": "passed: corrupted proof rejected",
+ "sourceTheorem": "CKEUPFP.transferTheorem",
+ "mutation":
+ "Copied theorem renamed; its proof body replaced by Sort 0. No mutation is added to the success environment.",
+ "kernelException":
+ "(kernel) declaration type mismatch, 'FreshKernelAuditCorruptedProof' has type\n  Type\nbut it is expected to have type\n  ∀ (𝕜 : Type u_1) (K : Type u_2) (E : Type u_3) [inst : RCLike 𝕜] [inst_1 : TopologicalSpace K]\n    [inst_2 : CompactSpace K] [inst_3 : TopologicalSpace.MetrizableSpace K] [inst_4 : Uncountable K]\n    [inst_5 : NormedAddCommGroup E] [inst_6 : NormedSpace 𝕜 E] [inst_7 : CompleteSpace E]\n    [inst_8 : TopologicalSpace.SeparableSpace E], CKEUPFP.TransferTheorem 𝕜 K E"}

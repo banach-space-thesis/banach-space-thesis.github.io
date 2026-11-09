@@ -1,0 +1,28 @@
+transferTheorem ℝ K ℝ : TransferTheorem ℝ K ℝ
+transferTheorem ℂ K ℂ : TransferTheorem ℂ K ℂ
+cantorQuantitativeTransfer : CantorQuantitativeTransfer ℝ ℝ
+cantorQuantitativeTransfer : CantorQuantitativeTransfer ℂ ℂ
+transferTheorem : ∀ (𝕜 : Type u_1) (K : Type u_2) (E : Type u_3) [inst : RCLike 𝕜] [inst_1 : TopologicalSpace K]
+  [inst_2 : CompactSpace K] [inst_3 : MetrizableSpace K] [inst_4 : Uncountable K] [inst_5 : NormedAddCommGroup E]
+  [inst_6 : NormedSpace 𝕜 E] [inst_7 : CompleteSpace E] [inst_8 : SeparableSpace E], TransferTheorem 𝕜 K E
+@cantorQuantitativeTransfer : ∀ {𝕜 : Type u_1} {E : Type u_2} [inst : RCLike 𝕜] [inst_1 : NormedAddCommGroup E]
+  [inst_2 : NormedSpace 𝕜 E] [inst_3 : CompleteSpace E] [inst_4 : SeparableSpace E], CantorQuantitativeTransfer 𝕜 E
+'CKEUPFP.transferTheorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.cantorQuantitativeTransfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.noCZero_tail_norms_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.noCZero_disjoint_rows_tendsto_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.norm_cantorAtomField_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.measurable_cantorAtomField_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.exists_cantorCylinder_localDefect_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.StrongOperatorBall.measurable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.StrongOperatorBall.continuous_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.closed_relation_continuous_cantor_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.measurable_continuous_on_cantor_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.continuous_cp_fp_factor_selection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.localDefect_measurable_of_measurable_evaluation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.selected_local_factors_on_cantor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.cantor_supported_contractive_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.factorsThroughWith_of_compression' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.cantor_factorisation_of_selected_fields' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.continuousMapVectorEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CKEUPFP.milutinVectorEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+import SurveyStatements.P4BaireOneAdjoint
+
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_inverse_extension
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_isNormBaireOne
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_isNormBaireOne_on

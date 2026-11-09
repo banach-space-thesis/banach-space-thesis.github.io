@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "preparedUtc": "2026-11-09T14:53:59.138339+00:00",
+  "sourceSnapshot": "CorollaryB-20261028",
+  "archiveFile": "corollary-b-fresh-evidence.zip",
+  "archiveBytes": 9457796,
+  "archiveSha256": "3C4B560FC64E86F2942D77089053A2EF02D4C06D4BE3D9A6C9E74638047E49A1",
+  "archiveMembers": 9770,
+  "evidenceManifestSha256": "07D9A11672699EC3FBF932F18A78C9E0D0F365E60A259B0FAB5AC64451A0C26B",
+  "reportSha256": "27DBAA45E6DE7B811B2E040B7F7FDF46E8DFF102CCFB98A9C084D13318F59944",
+  "originalFinalStatusSha256": "D34E284631147F8FC41135E321CE57DD80CFCC382CECCB21897FF2B961292508",
+  "originalRecordsPreserved": true,
+  "allPublicCopiesPrivacyChecked": true,
+  "archiveIntegrityChecked": true,
+  "published": false
+}

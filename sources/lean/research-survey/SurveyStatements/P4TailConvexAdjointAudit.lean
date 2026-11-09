@@ -1,0 +1,5 @@
+import SurveyStatements.P4TailConvexAdjoint
+
+#print axioms SurveyStatements.P4.weaklyCompact_adjoint_isNormBaireOne
+#print axioms SurveyStatements.P4.parameter_tail_convexification_rclike
+#print axioms SurveyStatements.P4.exists_twoSided_finiteRank_approximants

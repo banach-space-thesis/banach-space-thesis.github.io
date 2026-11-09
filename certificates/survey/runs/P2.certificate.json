@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "PASSED",
+  "problem": "P2",
+  "theorem": "SurveyStatements.P2.exists_non_calkin_unital_banach_algebra",
+  "leanVersion": "Lean (version 4.24.0, x86_64-w64-windows-gnu, commit 797c613eb9b6d4ec95db23e3e00af9ac6657f24b, Release)",
+  "mathlibRevision": "f897ebcf72cd16f89ab4577d0c826cd14afaafc7",
+  "checkedBy": "KernelProofReplay into an empty kernel environment; Kernel.Environment.addDeclCore 0",
+  "kernelReplayExitCode": 0,
+  "replayedSafeNonPartialDeclarationCount": 49179,
+  "auditedSurveyDeclarationCount": 7192,
+  "axiomDependencies": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sourceBundlePath": "sources/SurveyStatements/P2NonCalkin.lean",
+  "sourceSha256": "82E15E16195B843801B71635D3525E49C26F122042210F89B6872539F75A1889",
+  "proofArtifactBundlePath": "artifacts/SurveyStatements/P2NonCalkin.olean",
+  "proofArtifactSha256": "EA905A655860ACF0C56CF2890ACFF2212021754203632FD44691369123B32A72",
+  "signatureAndAxiomReport": "kernel-replay.log",
+  "signatureAndAxiomReportSha256": "64BA47A44117492F6DE56CFFD97A6E39E602E0FC619EFC61209FB3706B3C212C",
+  "supportingLibraryArtifacts": "artifacts/",
+  "supportingLibraryManifest": "manifest.json",
+  "completedUtc": "2026-10-06T12:58:17.4596173Z"
+}

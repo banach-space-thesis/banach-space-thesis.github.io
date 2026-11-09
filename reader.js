@@ -4,10 +4,9 @@ import {createReadingContext} from './reading-context.js';
 import {createPaperFollower} from './paper-follow.js';
 import {createThesisContext} from './thesis-context.js';
 const $=id=>document.getElementById(id);
+const availablePapers=new Set([...$('paper-select').options].map(option=>option.value));
 const requestedPaper=new URLSearchParams(location.hash.slice(1)).get('paper');
-const paperId=['jlms','pems','sigma','pfp','upfp','lpck','posets','jfa'].includes(requestedPaper)?requestedPaper:'jlms';
-const pemsCertificateLink=$('pems-fresh-kernel-link');
-if(pemsCertificateLink)pemsCertificateLink.hidden=paperId!=='pems';
+const paperId=availablePapers.has(requestedPaper)?requestedPaper:'jlms';
 const api=name=>'/api/'+name+'?paper='+paperId;
 const leanPath=link=>link.path||article.project+'/'+link.file;
 const companion=$('lean-template').content.firstElementChild.cloneNode(true);
@@ -124,7 +123,7 @@ function renderResultNavigation(){
   const sections=new Map();
   for(const r of article.results){const section=r.number.split('.')[0];if(!sections.has(section))sections.set(section,[]);sections.get(section).push(r);}
   q('#lean-result-select').innerHTML=[...sections].map(([section,results])=>`<optgroup label="Section ${esc(section)}">${results.map(r=>`<option value="${esc(r.id)}">${esc(r.type+' '+r.number)}</option>`).join('')}</optgroup>`).join('');
-  $('lean-toc-list').innerHTML=[...sections].map(([section,results])=>`<section class="lean-toc-section"><h3>Section ${esc(section)}</h3>${results.map(r=>`<button class="toc-link" data-lean-result="${esc(r.id)}">${esc(r.type+' '+r.number)}<span>${article.links[r.id]?.scope==='supporting'?'Related result':article.links[r.id]?.scope==='discussion'?'Note':article.links[r.id]?.scope==='cited'?'Cited result':''}</span></button>`).join('')}</section>`).join('');
+  $('lean-toc-list').innerHTML=[...sections].map(([section,results])=>`<section class="lean-toc-section"><h3>Section ${esc(section)}</h3>${results.map(r=>`<button class="toc-link" data-lean-result="${esc(r.id)}">${esc(r.type+' '+r.number)}<span>${article.links[r.id]?.scope==='supporting'?'Related result':article.links[r.id]?.scope==='discussion'?'Note':''}</span></button>`).join('')}</section>`).join('');
   updateResultNavigation();
 }
 function updateResultNavigation(){
@@ -190,7 +189,11 @@ function applyReadingRevisions(){
   }
 }
 function renderReadingNotes(){
-  for(const note of article.editionManifest?.readingNotes||[]){
+  const notes=[...(article.editionManifest?.readingNotes||[])];
+  for(const [resultId,link] of Object.entries(article.links)){
+    if(link.readingNote)notes.push({...link.readingNote,resultId});
+  }
+  for(const note of notes){
     const passage=article.results.find(r=>r.id===note.resultId);
     const footer=$(note.resultId)?.querySelector('.result-footer');
     if(!passage||!footer)throw Error('Missing passage for reading note: '+note.resultId);
@@ -215,7 +218,7 @@ async function inspect(id,{present=true,history=true,trigger=null,tab='statement
   q('.formal-correspondence p').textContent=link?.note||'';
   q('.correspondence summary').textContent=link?.relation==='related'?'Related development · correspondence':'Correspondence with the paper';
   for(const name of ['statement','proof','verification'])panel(name).innerHTML=link?.file?'<p class="selected-note">Reading the current source…</p>':'';
-  panel('note').innerHTML=link?.file?'':'<p class="passage-note-label">'+(link?.scope==='cited'?'Cited background':'In the formalisation')+'</p><p>'+esc(link?.note||'No corresponding declaration has been identified.')+'</p>';
+  panel('note').innerHTML=link?.file?'':'<p class="passage-note-label">In the formalisation</p><p>'+esc(link?.note||'No corresponding declaration has been identified.')+'</p>';
   showTab(tab);if(present)presentCompanion(anchor);if(history)remember();
   typeset(q('.paper-statement-preview'));
   try{
@@ -339,7 +342,8 @@ function resize(value){value=Math.max(35,Math.min(70,value));document.documentEl
 $('split-divider').addEventListener('pointerdown',e=>{const divider=$('split-divider');divider.setPointerCapture(e.pointerId);const drag=ev=>resize(ev.clientX/innerWidth*100);const end=()=>{divider.removeEventListener('pointermove',drag);divider.removeEventListener('pointerup',end);};divider.addEventListener('pointermove',drag);divider.addEventListener('pointerup',end);});
 $('split-divider').addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();resize(Number($('split-divider').getAttribute('aria-valuenow'))+(e.key==='ArrowRight'?3:-3));}});
 function restoreRoute(route){
-  if((route.get('paper')||'jlms')!==paperId){location.reload();return;}
+  const paper=route.get('paper');
+  if((availablePapers.has(paper)?paper:'jlms')!==paperId){location.reload();return;}
   result=article.results.find(r=>r.id===route.get('result'))||null;
   selectedTab=['statement','proof','verification'].includes(route.get('tab'))?route.get('tab'):'statement';
   setMode(['split','lean'].includes(route.get('mode'))?route.get('mode'):'paper',{history:false,load:false});
@@ -353,6 +357,16 @@ async function init(){
     renderEdition();
     $('article-title').innerHTML=article.title;$('abstract-text').innerHTML=article.abstract;$('article-body').innerHTML=article.html;$('loading').hidden=true;
     applyReadingRevisions();renderReadingNotes();
+    for(const proof of $('article-body').querySelectorAll('details.paper-proof')){
+      const label=proof.querySelector(':scope > summary > span')?.textContent.trim().replace(/[.:]$/,'');
+      const start=proof.querySelector(':scope > .proof-body > p:first-child');
+      const heading=start?.firstElementChild;
+      if(!label||!heading?.matches('em, i, strong'))continue;
+      const before=heading.previousSibling;
+      if(before?.textContent.trim())continue;
+      const wording=heading.textContent.trim().replace(/[.:]\s*$/,'').replace(/\s+/g,' ');
+      if(wording===label||wording==='Proof')heading.remove();
+    }
     readingContext=createReadingContext({article,paper:$('paper'),side:$('lean-side'),typeset,jump,inspect,
       openSide:()=>setMode('split',{history:false,load:false}),closeSide:()=>setMode('paper'),
       showLean:()=>paperFollower?.enabled&&paperFollower.current()?paperFollower.resume():inspect(result?.id||article.results[0].id),selectPassage:id=>{result=article.results.find(r=>r.id===id)||result;},changed:(replace=false)=>remember(replace)});
@@ -383,28 +397,30 @@ function renderEdition(){
   $('paper-select').title=$('paper-select').selectedOptions[0].textContent;
   document.title=article.paperLabel+' · Paper and Lean';
   document.body.dataset.paper=paperId;
-  document.querySelector('.author').textContent=article.author||'Antonio Acuaviva';
+  const byline=Object.entries(article.affiliations||{});
+  $('paper-byline').innerHTML=(byline.length?byline:[[article.author||'Antonio Acuaviva',[]]])
+    .map(([name,affiliations])=>`<div><p class="author">${esc(name)}</p>${affiliations
+      .map(affiliation=>`<p class="affiliation">${esc(affiliation)}</p>`).join('')}</div>`).join('');
   q('.companion-footer span').textContent=article.paperLabel+' · Lean library';
   $('source-dialog').querySelector('h2').textContent=article.paperLabel+' Lean library';
   $('source-search').placeholder='Find a definition, theorem or module…';
   if(paperId!=='jlms'){
-    document.querySelector('.affiliation').hidden=true;
     $('about-dialog').querySelector(':scope > p').textContent=edition.editionNote;
     $('about-dialog').querySelector(':scope > details').hidden=true;
     const original=$('about-dialog').querySelector('a[data-source-original]');
-    original.href=publicUrl('/paper-source-original.zip?id='+paperId);original.download='arxiv-'+edition.arxivVersion+'.tar.gz';
-    original.textContent='Original arXiv archive';
+    original.hidden=!edition.arxivUrl;
+    if(edition.arxivUrl){original.href=publicUrl('/paper-source-original.zip?id='+paperId);original.download='arxiv-'+edition.arxivVersion+'.tar.gz';original.textContent='Original arXiv archive';}
     const working=$('about-dialog').querySelector('a[data-source-author]');
-    working.href=publicUrl('/paper-source.zip?id='+paperId);working.download=paperId+'-arxiv-source.zip';working.textContent='LaTeX source ZIP';
-    working.parentElement.nextElementSibling.innerHTML='<a href="'+esc(edition.arxivUrl)+'" target="_blank" rel="noopener">View this version on arXiv ↗</a>';
+    working.href=publicUrl('/paper-source.zip?id='+paperId);working.download=paperId+'-author-source.zip';working.textContent='LaTeX source ZIP';
+    working.parentElement.nextElementSibling.innerHTML=edition.arxivUrl?'<a href="'+esc(edition.arxivUrl)+'" target="_blank" rel="noopener">View this version on arXiv ↗</a>':'Author manuscript · AI-assisted research';
     if(edition.corrections.length){const details=$('about-dialog').querySelector(':scope > details');details.hidden=false;details.innerHTML='<summary>Corrections in this reading edition</summary>'+edition.corrections.map(c=>'<p>'+esc(c.description)+'</p>').join('');}
   }
   if(edition.readingRevisions?.length){
     const details=$('about-dialog').querySelector(':scope > details');details.hidden=false;
-    details.innerHTML='<summary>Notes on this reading edition</summary>'+edition.readingRevisions.filter(r=>r.footnote).map(r=>'<p>'+esc(r.footnote.number+'. '+r.footnote.title)+'</p>').join('')+'<p>The numbered notes explain corrections, conventions and additions. The article numbering and downloadable author sources are preserved.</p>';
+    details.innerHTML='<summary>Corrections and additions following the thesis</summary>'+edition.readingRevisions.filter(r=>r.footnote).map(r=>'<p>'+esc(r.footnote.number+'. '+r.footnote.title)+'</p>').join('')+'<p>The numbered notes beside the affected passages explain each amendment. Article numbering is retained. Downloads preserve the author source edition; these further thesis amendments belong to the reading text.</p>';
     $('about-dialog').querySelector('a[data-source-author]').textContent='Author LaTeX source ZIP';
   }
 }
 $('paper-select').onchange=e=>{location.hash=new URLSearchParams({paper:e.target.value,mode});location.reload();};
-createThesisContext({paperId,getMode:()=>mode});
+createThesisContext({paperId});
 init();

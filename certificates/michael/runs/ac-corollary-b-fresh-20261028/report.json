@@ -1,0 +1,281 @@
+{
+  "title": "Fresh verification of Theorem A and Corollary B",
+  "status": "PASS",
+  "finishedUtc": "2026-11-09T14:52:02.374429+00:00",
+  "originalStatusSha256": "D34E284631147F8FC41135E321CE57DD80CFCC382CECCB21897FF2B961292508",
+  "sourceSnapshot": "CorollaryB-20261028",
+  "statementSha256": "FF6BF9029A3CCC3E4E6CF261CCD645ACC8B96D813BE55962A7EA0081AD530285",
+  "corollaryStatementSha256": "66D44199D4D08CD16551620F5AF2C859639B2B731D0182EF43175464A255C8A9",
+  "provedDeclaration": "AutomaticContinuity.theoremA : AutomaticContinuity.TheoremAStatement.{u}",
+  "provedCorollary": "AutomaticContinuity.corollaryB : AutomaticContinuity.CorollaryBStatement.{u}",
+  "lean": "leanprover/lean4:v4.34.0-rc2",
+  "mathlib": "4cbb42e75a050e830b7cf0f2ae748d7644f59cf7",
+  "build": {
+    "status": "PASS",
+    "sourceCompilations": 3232,
+    "importedDependencyModules": 2975,
+    "mathematicalProjectModules": 253,
+    "combinedAndAuditModules": 4,
+    "attemptRecords": 3236,
+    "successfulAttemptRecords": 3232,
+    "failedAttemptRecords": 0,
+    "incompleteAttemptRecords": 4,
+    "startedUtc": "2026-10-28T10:59:45.443873+00:00",
+    "finishedUtc": "2026-11-09T14:23:29.006125+00:00",
+    "elapsedSeconds": 1049023.562252,
+    "previousNonToolchainCompiledArtifactsReused": false
+  },
+  "freshKernelReplay": {
+    "status": "PASS",
+    "startedUtc": "2026-11-09T14:32:24.149073+00:00",
+    "command": [
+      "leanchecker",
+      "--fresh",
+      "--verbose",
+      "FreshVerification"
+    ],
+    "checkerSha256": "B7C503A7A984F32F04C1BADB79E53E350DDB72AED530DA12699E4B06357CE149",
+    "nonToolchainSearchPath": [
+      "build"
+    ],
+    "replayDriverSha256": "A75D0FCF8D1F36760553C5EC2CCD81212B70651AEF80B4909D3DCE89ECEA71A8",
+    "scope": "Fresh official Lean kernel environment; eligible declarations in the aggregate and its imported closure, including retained toolchain declarations.",
+    "checkerSkips": "Unsafe and partial implementation declarations are skipped by the official checker. Declared axioms are accepted; target and project transitive axioms are checked separately.",
+    "independentlyImplementedKernel": false,
+    "exitCode": 0,
+    "finishedUtc": "2026-11-09T14:49:12.233248+00:00",
+    "elapsedSeconds": 1008.0470000000023
+  },
+  "finalAudits": {
+    "status": "PASS",
+    "exactTarget": "AutomaticContinuity.theoremA : AutomaticContinuity.TheoremAStatement.{u}",
+    "exactCorollary": "AutomaticContinuity.corollaryB : AutomaticContinuity.CorollaryBStatement.{u}",
+    "sourceIdentity": "PASS",
+    "definitionIdentity": "Exact frozen Statement.lean plus printed definitions in FreshVerification.",
+    "projectDeclarations": 3206,
+    "projectTheorems": 2483,
+    "allowedTransitiveAxioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "originalAudit": "PASS",
+    "completionAudit": "PASS",
+    "expandedAudit": "PASS",
+    "coverageRecord": "evidence/coverage.json",
+    "checks": [
+      {
+        "module": "Audit",
+        "startedUtc": "2026-11-09T14:49:12.253834+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "Audit.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:49:56.287398+00:00",
+        "elapsedSeconds": 44.03099999999904,
+        "requiredMarkerPresent": true
+      },
+      {
+        "module": "CompletionAudit",
+        "startedUtc": "2026-11-09T14:49:56.356902+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "CompletionAudit.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:50:05.015491+00:00",
+        "elapsedSeconds": 8.639999999999418,
+        "requiredMarkerPresent": true
+      },
+      {
+        "module": "FreshVerification",
+        "startedUtc": "2026-11-09T14:50:05.037537+00:00",
+        "arguments": [
+          "lean",
+          "-j1",
+          "-M6144",
+          "-DautoImplicit=false",
+          "FreshVerification.lean"
+        ],
+        "status": "PASS",
+        "exitCode": 0,
+        "finishedUtc": "2026-11-09T14:50:15.739160+00:00",
+        "elapsedSeconds": 10.687000000001717,
+        "requiredMarkerPresent": true
+      }
+    ]
+  },
+  "compilerSchedule": {
+    "changedUtc": "2026-10-28T12:13:32.1294413Z",
+    "initialWorkers": 2,
+    "resumedWorkers": 1,
+    "perModuleCompilerOptionsUnchanged": true,
+    "completedModulesBeforeInterruption": 1237,
+    "reason": "Compiler concurrency reduced; completed checks from this same fresh run are retained only after source and artifact hashes are revalidated.",
+    "interruptedAttempts": [
+      {
+        "record": "evidence/build/Mathlib.LinearAlgebra.LinearIndependent.Defs/attempt-001.json",
+        "module": "Mathlib.LinearAlgebra.LinearIndependent.Defs",
+        "recordSha256": "26ADF5D6ADF07D7DEC7114A43F30A2706705A12E727F224AA245831E4A63505D",
+        "recordedStatus": "RUNNING",
+        "actualOutcome": "Interrupted by stopping the verification supervisor and its compiler children; no native exit code was captured.",
+        "nativeExitCodeCaptured": false,
+        "mustRecompile": true
+      },
+      {
+        "record": "evidence/build/Mathlib.Tactic.Algebra.Basic/attempt-001.json",
+        "module": "Mathlib.Tactic.Algebra.Basic",
+        "recordSha256": "AB08EF827DC26C8C27603133DC8ED78A88B5ED073A88625210D2528A9B12CE95",
+        "recordedStatus": "RUNNING",
+        "actualOutcome": "Interrupted by stopping the verification supervisor and its compiler children; no native exit code was captured.",
+        "nativeExitCodeCaptured": false,
+        "mustRecompile": true
+      }
+    ],
+    "historicalAttemptRecordsPreservedUnchanged": true
+  },
+  "resumedCheckpoint": {
+    "observedUtc": "2026-11-09T12:26:58.925782+00:00",
+    "savedCompletedModules": 3143,
+    "plannedModules": 3232,
+    "liveBuildOrReplayProcessFound": false,
+    "resumedCompilerWorkers": 1,
+    "interruptedAttempt": {
+      "record": "evidence/build/AutomaticContinuity.ThinRectangleTransferDomains/attempt-001.json",
+      "module": "AutomaticContinuity.ThinRectangleTransferDomains",
+      "recordSha256": "556EE7A64450D7CF65FEC1F0A40DDE10FECF3BAA6C7E86071F4303C1589E312B",
+      "recordedStatus": "RUNNING",
+      "nativeExitCodeCaptured": false,
+      "mustRecompile": true
+    },
+    "localAccessRestart": {
+      "observedUtc": "2026-11-09T13:07:50.8162022Z",
+      "completedModules": 3146,
+      "activeModules": [
+        "AutomaticContinuity.FixedExtendingSection"
+      ],
+      "comparisonModule": "AutomaticContinuity.ThinRectangleTransferDomains",
+      "comparisonReadOnlyExitCode": 0,
+      "comparisonReadOnlySeconds": 234.2,
+      "savedRunCompilationSeconds": 688.9,
+      "compilerOptionsUnchanged": true,
+      "reason": "Resume with direct local file access after slow reads."
+    }
+  },
+  "toolchainRestoration": {
+    "checkedUtc": "2026-11-09T12:36:14.186025+00:00",
+    "archiveUrl": "https://github.com/leanprover/lean4/releases/download/v4.34.0-rc2/lean-4.34.0-rc2-windows.tar.zst",
+    "archiveSha256": "B777ECCEB5EDF651EE0840B7EF455098844B44203BAD09310A661CF1A73FFB10",
+    "matchesOriginalToolchainRecord": true,
+    "verifiedBinaries": [
+      {
+        "path": "bin/lean.exe",
+        "sha256": "37DFE799F69B990251F3B6BCFF8A1C10C1AFE2ADCDECC5C580CC6726FFB63433",
+        "bytes": 83456
+      },
+      {
+        "path": "bin/leanchecker.exe",
+        "sha256": "B7C503A7A984F32F04C1BADB79E53E350DDB72AED530DA12699E4B06357CE149",
+        "bytes": 115712
+      },
+      {
+        "path": "bin/lake.exe",
+        "sha256": "5AFAF2AD866C1AA6C1EDA7BDB84EBD99E1DE8BE3A95A219094654DFA00B47C0A",
+        "bytes": 87552
+      },
+      {
+        "path": "bin/libleanshared.dll",
+        "sha256": "D38C48733FDF206D563E0ED4AD5EE9F2B8902170448DC1610AF696A818CE1428",
+        "bytes": 70409216
+      },
+      {
+        "path": "bin/libleanshared_1.dll",
+        "sha256": "C2FDCF27B5BBB5F5D7D8494AC7D8A300B8420AD59AAD4E454813ED0276031106",
+        "bytes": 52663296
+      },
+      {
+        "path": "bin/libleanshared_2.dll",
+        "sha256": "287296A726CB8FFBD88C4D3ED666636AF5CD0CE21F83A6DC70FB442989CBBD47",
+        "bytes": 59419648
+      },
+      {
+        "path": "bin/libInit_shared.dll",
+        "sha256": "8B5A4A6770496F59863DE2FF4F3D03078F13DAF44B4D96E0EBC652D96BF74449",
+        "bytes": 28350976
+      }
+    ]
+  },
+  "coverage": {
+    "observation": "Compilation of FreshVerification; its local witness is recorded separately. The checker imports the compiled aggregate as well.",
+    "summary": {
+      "currentModule": {
+        "declarations": 2,
+        "partial": 0,
+        "safeNonpartial": 2,
+        "theorems": 2,
+        "unsafe": 0
+      },
+      "effectiveImports": 4783,
+      "mainModule": "FreshVerification",
+      "project": {
+        "declarations": 3206,
+        "partial": 5,
+        "safeNonpartial": 3201,
+        "theorems": 2483,
+        "unsafe": 0
+      },
+      "trustLevel": 1025,
+      "wholeEnvironment": {
+        "declarations": 424028,
+        "partial": 2943,
+        "safeNonpartial": 420432,
+        "theorems": 275987,
+        "unsafe": 653
+      }
+    },
+    "projectPartialCompilerHelpers": [
+      {
+        "isPartial": true,
+        "isUnsafe": false,
+        "module": "AutomaticContinuity.FiniteFlowHolomorphy",
+        "name": "AutomaticContinuity.FiniteFlowHolomorphy.compose._unsafe_rec"
+      },
+      {
+        "isPartial": true,
+        "isUnsafe": false,
+        "module": "AutomaticContinuity.FiniteCauchyIntegral",
+        "name": "AutomaticContinuity.FiniteCauchy.coefficient._unsafe_rec"
+      },
+      {
+        "isPartial": true,
+        "isUnsafe": false,
+        "module": "AutomaticContinuity.PolynomialCutoff",
+        "name": "AutomaticContinuity.PolynomialCutoff.iterate._unsafe_rec"
+      },
+      {
+        "isPartial": true,
+        "isUnsafe": false,
+        "module": "AutomaticContinuity.FiniteFlowComposition",
+        "name": "AutomaticContinuity.FiniteFlowComposition.applyFactors._unsafe_rec"
+      },
+      {
+        "isPartial": true,
+        "isUnsafe": false,
+        "module": "AutomaticContinuity.FiniteFlowLocal",
+        "name": "AutomaticContinuity.FiniteFlowLocal.compose._unsafe_rec"
+      }
+    ]
+  },
+  "retainedToolchain": "The pinned compiler and bundled libraries were retained for compilation. Their eligible imported declarations were included in the fresh kernel replay.",
+  "scope": "The complete imported non-toolchain source closure was rebuilt. Compiler bootstrapping and unrelated library modules were outside the run. The official checker uses Lean’s own kernel.",
+  "publicCopyManifest": "PUBLIC_COPY_MANIFEST.json"
+}

@@ -1,0 +1,67 @@
+{
+  "certificateSha256": "82aa1e414da9f670238fabbc192479d9ba880857fc5f109e5f42867fe6ad583d",
+  "declarationLedgerSha256": "c96dd141417e4f88569eeca0a6635c19304cd1b848370ec1585f61e1ba56adc8",
+  "results": {
+    "theorem-1-1": [
+      "CKEUPFP.transferTheorem"
+    ],
+    "corollary-1-2": [
+      "CKEUPFP.mixedSpaceUPFP",
+      "CKEUPFP.mixedSpacePrimariness"
+    ]
+  },
+  "coverage": {
+    "CKEUPFP.TransferTheorem": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "CKEUPFP.TransferTheorem",
+      "partial": false,
+      "unsafe": false
+    },
+    "CKEUPFP.transferTheorem": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "CKEUPFP.transferTheorem",
+      "partial": false,
+      "unsafe": false
+    },
+    "CKEUPFP.mixedSpaceUPFP": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "CKEUPFP.mixedSpaceUPFP",
+      "partial": false,
+      "unsafe": false
+    },
+    "CKEUPFP.MixedSpacePrimariness": {
+      "kind": "Lean.ConstantKind.defn",
+      "method": "kernel_definition_body",
+      "name": "CKEUPFP.MixedSpacePrimariness",
+      "partial": false,
+      "unsafe": false
+    },
+    "CKEUPFP.mixedSpacePrimariness": {
+      "kind": "Lean.ConstantKind.thm",
+      "method": "kernel_theorem_proof",
+      "name": "CKEUPFP.mixedSpacePrimariness",
+      "partial": false,
+      "unsafe": false
+    }
+  },
+  "axiomReports": {
+    "CKEUPFP.mixedSpacePrimariness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CKEUPFP.mixedSpaceUPFP": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CKEUPFP.transferTheorem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

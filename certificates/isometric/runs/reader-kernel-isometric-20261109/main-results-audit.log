@@ -1,0 +1,460 @@
+Checked 6551 main-result project declarations with axioms [propext, Classical.choice, Quot.sound]
+def BanachIsometric.ComplexFunctionalStatement.{u} : {X : Type u} → [inst : AddCommGroup X] → [Module ℂ X] → Prop :=
+fun {X} [AddCommGroup X] [Module ℂ X] =>
+  ∀ (n : ℕ) (p : X → ℝ),
+    2 ≤ n →
+      ↑n < Module.rank ℂ X →
+        BanachIsometric.IsDefiniteComplexHomogeneous p →
+          BanachIsometric.ComplexSphereLipschitz n p →
+            BanachIsometric.RealEquivalentSections n p → BanachIsometric.HasHermitianSquare p
+def BanachIsometric.Quaternionic.FunctionalStatement.{u_1} : {E : Type u_1} →
+  [inst : AddCommGroup E] → [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ E] → Prop :=
+fun {E} [AddCommGroup E] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ E] =>
+  ∀ (n : ℕ) (p : E → ℝ),
+    2 ≤ n →
+      ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ E →
+        BanachIsometric.Quaternionic.IsDefiniteHomogeneous p →
+          BanachIsometric.Quaternionic.SphereLipschitz n p →
+            BanachIsometric.Quaternionic.RealEquivalentSections n p → BanachIsometric.Quaternionic.HasHermitianSquare p
+def BanachIsometric.MetricSubspaceHomogeneity.{u, u_1} : (𝕜 : Type u_1) →
+  [inst : RCLike 𝕜] → (X : Type u) → [inst_1 : NormedAddCommGroup X] → [NormedSpace 𝕜 X] → ℕ → Prop :=
+fun 𝕜 [RCLike 𝕜] X [NormedAddCommGroup X] [NormedSpace 𝕜 X] n =>
+  ∀ (E F : Submodule 𝕜 X), Module.rank 𝕜 ↥E = ↑n → Module.rank 𝕜 ↥F = ↑n → Nonempty (↥E ≃ᵢ ↥F)
+def BanachIsometric.Quaternionic.MetricSubspaceHomogeneity.{u_2} : {V : Type u_2} →
+  [inst : NormedAddCommGroup V] → [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] → ℕ → Prop :=
+fun {V} [NormedAddCommGroup V] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] n =>
+  ∀ (Y Z : Submodule BanachIsometric.Quaternionic.Hᵐᵒᵖ V),
+    Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥Y = ↑n →
+      Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥Z = ↑n → Nonempty (↥Y ≃ᵢ ↥Z)
+def BanachIsometric.ComplexCorollaryBAt.{u} : (X : Type u) →
+  [inst : NormedAddCommGroup X] → [NormedSpace ℂ X] → ℕ → Prop :=
+fun X [NormedAddCommGroup X] [NormedSpace ℂ X] n =>
+  2 ≤ n →
+    ↑n < Module.rank ℂ X →
+      BanachIsometric.MetricSubspaceHomogeneity ℂ X n → BanachIsometric.HasInnerProductForGivenScalarAction ℂ X
+def BanachIsometric.Quaternionic.NormedCorollaryBAt.{u_2} : {V : Type u_2} →
+  [inst : NormedAddCommGroup V] →
+    [inst_1 : Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] →
+      [NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ V] → ℕ → Prop :=
+fun {V} [NormedAddCommGroup V] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V]
+    [NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ V] n =>
+  2 ≤ n →
+    ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ V →
+      BanachIsometric.Quaternionic.MetricSubspaceHomogeneity n → BanachIsometric.Quaternionic.HasHermitianSquare norm
+def BanachIsometric.ReducedNIsometric.{u_1} : {X : Type u_1} →
+  [inst : AddCommGroup X] → [inst_1 : Module ℂ X] → (ℕ → Seminorm ℂ X) → ℕ → Prop :=
+fun {X} [AddCommGroup X] [Module ℂ X] p n =>
+  ∀ (k : ℕ),
+    ↑n < Module.rank ℂ (BanachIsometric.SeminormQuotient (p k)) →
+      BanachIsometric.MetricSubspaceHomogeneity ℂ (BanachIsometric.SeminormQuotient (p k)) n
+def BanachIsometric.Quaternionic.ReducedNIsometric.{u_1} : {X : Type u_1} →
+  [inst : AddCommGroup X] →
+    [inst_1 : Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] →
+      [inst_2 : Module ℝ X] → (ℕ → BanachIsometric.Quaternionic.RightSeminorm X) → ℕ → Prop :=
+fun {X} [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X] p n =>
+  ∀ (k : ℕ),
+    ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ (BanachIsometric.Quaternionic.SeminormQuotient (p k)) →
+      BanachIsometric.Quaternionic.MetricSubspaceHomogeneity n
+def BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity.{u_1, u_2} : {R : Type u_1} →
+  {X : Type u_2} → [inst : DivisionRing R] → [inst_1 : AddCommGroup X] → [Module R X] → [MetricSpace X] → ℕ → Prop :=
+fun {R} {X} [DivisionRing R] [AddCommGroup X] [Module R X] [MetricSpace X] n =>
+  ∀ (E F : Submodule R X), Module.finrank R ↥E = n → Module.finrank R ↥F = n → ∃ T, Isometry ⇑T
+def BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections.{u_1, u_2} : {R : Type u_1} →
+  {X : Type u_2} →
+    [inst : NormedDivisionRing R] →
+      [inst_1 : NormedAlgebra ℝ R] →
+        [inst_2 : AddCommGroup X] →
+          [inst_3 : Module R X] → [inst_4 : Module ℝ X] → [IsScalarTower ℝ R X] → [MetricSpace X] → ℝ → Prop :=
+fun {R} {X} [NormedDivisionRing R] [NormedAlgebra ℝ R] [AddCommGroup X] [Module R X] [Module ℝ X] [IsScalarTower ℝ R X]
+    [MetricSpace X] r =>
+  ∀ (Y : Submodule R X),
+    FiniteDimensional R ↥Y →
+      Y ≠ ⊥ → ∃ d, Nonempty (BanachIsometric.MetricGeometry.RadialBallSection r (Submodule.restrictScalars ℝ Y) d)
+def BanachIsometric.MetricGeometry.ScalarCircled.{u_1, u_2} : {R : Type u_1} →
+  {X : Type u_2} → [inst : NormedDivisionRing R] → [inst_1 : AddCommGroup X] → [Module R X] → Set X → Prop :=
+fun {R} {X} [NormedDivisionRing R] [AddCommGroup X] [Module R X] s => ∀ (a : R), ‖a‖ = 1 → a • s = s
+BanachIsometric.complexTheoremA.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℂ X] :
+  BanachIsometric.ComplexFunctionalStatement
+BanachIsometric.Quaternionic.theoremA.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] : BanachIsometric.Quaternionic.FunctionalStatement
+BanachIsometric.complexCorollaryB.{u_1} {V : Type u_1} [NormedAddCommGroup V] [NormedSpace ℂ V] (n : ℕ) :
+  BanachIsometric.ComplexCorollaryBAt V n
+BanachIsometric.complex_completion_corollaryB_homological.{u_1} {V : Type u_1} [NormedAddCommGroup V] [NormedSpace ℂ V]
+  (n : ℕ) (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ V) (hm : BanachIsometric.MetricSubspaceHomogeneity ℂ V n) :
+  BanachIsometric.ComplexIsHilbertForNorm
+BanachIsometric.complex_complete_corollaryB_homological.{u_1} {V : Type u_1} [NormedAddCommGroup V] [NormedSpace ℂ V]
+  [CompleteSpace V] (n : ℕ) (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ V)
+  (hm : BanachIsometric.MetricSubspaceHomogeneity ℂ V n) : BanachIsometric.ComplexIsHilbertForNorm
+BanachIsometric.Quaternionic.corollaryB.{u_1} {V : Type u_1} [NormedAddCommGroup V]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] [NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ V] (n : ℕ) :
+  BanachIsometric.Quaternionic.NormedCorollaryBAt n
+BanachIsometric.Quaternionic.completionCorollaryB_homological.{u_1} {V : Type u_1} [NormedAddCommGroup V]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] [NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ V] (n : ℕ) (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ V)
+  (hmetric : BanachIsometric.Quaternionic.MetricSubspaceHomogeneity n) : BanachIsometric.Quaternionic.IsHilbertForNorm
+BanachIsometric.Quaternionic.completeCorollaryB_homological.{u_1} {V : Type u_1} [NormedAddCommGroup V]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ V] [NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ V] [CompleteSpace V]
+  (n : ℕ) (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ V)
+  (hmetric : BanachIsometric.Quaternionic.MetricSubspaceHomogeneity n) : BanachIsometric.Quaternionic.IsHilbertForNorm
+BanachIsometric.complexTheoremC.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℂ X] [UniformSpace X]
+  [IsUniformAddGroup X] [CompleteSpace X] [T0Space X] (n : ℕ) (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X) :
+  BanachIsometric.AdmitsHilbertianGrading ↔ BanachIsometric.AdmitsReducedNIsometricGrading n
+BanachIsometric.complex_exists_cofinal_hilbert_inverseLimit_homological.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module ℂ X] [UniformSpace X] [IsUniformAddGroup X] [CompleteSpace X] [T0Space X] (p : ℕ → Seminorm ℂ X)
+  (hmono : Monotone p) (hp : WithSeminorms p) (n : ℕ) (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X)
+  (hReduced : BanachIsometric.ReducedNIsometric p n) :
+  ∃ k₀,
+    (∀ (k : ℕ), BanachIsometric.SeminormIsHilbertian (p (k + k₀)) ∧ BanachIsometric.ComplexIsHilbertForNorm) ∧
+      (∀ (i j : ℕ) (hij : i ≤ j), DenseRange ⇑(BanachIsometric.completedSeminormFactor ⋯)) ∧
+        Nonempty (X ≃L[ℂ] ↥(BanachIsometric.seminormLimitSubmodule (fun k => p (k + k₀)) ⋯))
+BanachIsometric.Quaternionic.theoremC.{u_1} {X : Type u_1} [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X]
+  [Module ℝ X] [UniformSpace X] [IsUniformAddGroup X] [CompleteSpace X] [T0Space X] (n : ℕ) (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X) :
+  BanachIsometric.Quaternionic.AdmitsHilbertianGrading ↔ BanachIsometric.Quaternionic.AdmitsReducedNIsometricGrading n
+BanachIsometric.Quaternionic.exists_cofinal_hilbert_inverseLimit_homological.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X] [UniformSpace X] [IsUniformAddGroup X] [CompleteSpace X]
+  [T0Space X] (p : ℕ → BanachIsometric.Quaternionic.RightSeminorm X) (hmono : Monotone fun i => (p i).toRealSeminorm)
+  (hp : WithSeminorms fun i => (p i).toRealSeminorm) (n : ℕ) (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hmetric : BanachIsometric.Quaternionic.ReducedNIsometric p n) :
+  ∃ k₀,
+    (∀ (k : ℕ),
+        BanachIsometric.Quaternionic.SeminormIsHilbertian (p (k + k₀)) ∧
+          BanachIsometric.Quaternionic.IsHilbertForNorm) ∧
+      (∀ (i j : ℕ) (hij : i ≤ j), DenseRange ⇑(BanachIsometric.Quaternionic.completedSeminormFactor ⋯)) ∧
+        Nonempty
+          (X ≃L[BanachIsometric.Quaternionic.Hᵐᵒᵖ]
+            ↥(BanachIsometric.Quaternionic.seminormLimitSubmodule (fun k => p (k + k₀)) ⋯))
+BanachIsometric.realTheoremD.{u_1, u_2} {X : Type u_1} [AddCommGroup X] [Module ℝ X] {ι : Type u_2}
+  (p : ι → Seminorm ℝ X) {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℝ X)
+  (hseparating : ∀ (x : X), x ≠ 0 → ∃ i, (p i) x ≠ 0)
+  (hsim :
+    ∀ (E F : Submodule ℝ X),
+      Module.finrank ℝ ↥E = n →
+        Module.finrank ℝ ↥F = n → ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i) ↑(T x) = c * (p i) ↑x) :
+  ∃ i₀ _D, ∀ (i : ι), (∀ (x : X), (p i) x = 0) ∨ ∃ a, 0 < a ∧ ∀ (x : X), (p i) x = a * (p i₀) x
+BanachIsometric.realTheoremD_normable.{u_1, u_2} {X : Type u_1} [AddCommGroup X] [Module ℝ X] [UniformSpace X]
+  [IsUniformAddGroup X] {ι : Type u_2} (p : ι → Seminorm ℝ X) (hp : WithSeminorms p) {n : ℕ} (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank ℝ X) (hseparating : ∀ (x : X), x ≠ 0 → ∃ i, (p i) x ≠ 0)
+  (hsim :
+    ∀ (E F : Submodule ℝ X),
+      Module.finrank ℝ ↥E = n →
+        Module.finrank ℝ ↥F = n → ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i) ↑(T x) = c * (p i) ↑x) :
+  ∃ i₀ D,
+    (∃ e, UniformContinuous ⇑e ∧ UniformContinuous ⇑e.symm ∧ ∀ (x : X), ‖e x‖ = (p i₀) x) ∧
+      (∀ (i : ι), (∀ (x : X), (p i) x = 0) ∨ ∃ a, 0 < a ∧ ∀ (x : X), (p i) x = a * (p i₀) x) ∧
+        (CompleteSpace X → CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D))
+BanachIsometric.complexTheoremD.{u_1, u_2} {X : Type u_1} [AddCommGroup X] [Module ℂ X] {ι : Type u_2}
+  (p : ι → Seminorm ℂ X) {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X)
+  (hseparating : ∀ (x : X), (∀ (i : ι), (p i) x = 0) → x = 0)
+  (hsim :
+    ∀ (E F : Submodule ℂ X),
+      Module.finrank ℂ ↥E = n →
+        Module.finrank ℂ ↥F = n → ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i) ↑(T x) = c * (p i) ↑x) :
+  ∃ i₀,
+    BanachIsometric.HasHermitianSquare ⇑(p i₀) ∧
+      ∀ (i : ι), (∀ (x : X), (p i) x = 0) ∨ ∃ a, 0 < a ∧ ∀ (x : X), (p i) x = a * (p i₀) x
+BanachIsometric.complex_simultaneous_seminorms_norm_model_homological.{u_1, u_2} {ι : Type u_1} {X : Type u_2}
+  [AddCommGroup X] [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X] [UniformSpace X] [IsUniformAddGroup X]
+  (p : ι → Seminorm ℂ X) (hp : WithSeminorms fun i => Seminorm.restrictScalars ℝ (p i)) {n : ℕ} (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank ℂ X) (hseparating : ∀ (x : X), (∀ (i : ι), (p i) x = 0) → x = 0)
+  (hsim :
+    ∀ (E F : Submodule ℂ X),
+      Module.finrank ℂ ↥E = n →
+        Module.finrank ℂ ↥F = n → ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i) ↑(T x) = c * (p i) ↑x) :
+  ∃ i₀ D,
+    NormSMulClass ℂ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+      BanachIsometric.HasHermitianSquare norm ∧
+        ∃ e,
+          (∀ (x : X), ‖e x‖ = (p i₀) x) ∧
+            ∀ (i : ι), (∀ (x : X), (p i) x = 0) ∨ ∃ a, 0 < a ∧ ∀ (x : X), (p i) x = a * (p i₀) x
+BanachIsometric.complex_simultaneous_seminorms_hilbert_model_homological.{u_1, u_2} {ι : Type u_1} {X : Type u_2}
+  [AddCommGroup X] [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X] [UniformSpace X] [IsUniformAddGroup X]
+  [CompleteSpace X] (p : ι → Seminorm ℂ X) (hp : WithSeminorms fun i => Seminorm.restrictScalars ℝ (p i)) {n : ℕ}
+  (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X) (hseparating : ∀ (x : X), (∀ (i : ι), (p i) x = 0) → x = 0)
+  (hsim :
+    ∀ (E F : Submodule ℂ X),
+      Module.finrank ℂ ↥E = n →
+        Module.finrank ℂ ↥F = n → ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i) ↑(T x) = c * (p i) ↑x) :
+  ∃ i₀ D,
+    NormSMulClass ℂ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+      CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        BanachIsometric.HasHermitianSquare norm ∧
+          ∃ e,
+            (∀ (x : X), ‖e x‖ = (p i₀) x) ∧
+              ∀ (i : ι), (∀ (x : X), (p i) x = 0) ∨ ∃ a, 0 < a ∧ ∀ (x : X), (p i) x = a * (p i₀) x
+BanachIsometric.Quaternionic.theoremD.{u_1, u_2} {ι : Type u_1} {X : Type u_2} [AddCommGroup X]
+  [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X] (p : ι → BanachIsometric.Quaternionic.RightSeminorm X)
+  {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hseparating : ∀ (x : X), x ≠ 0 → ∃ i, (p i).toRealSeminorm x ≠ 0)
+  (hsim :
+    ∀ (E F : Submodule BanachIsometric.Quaternionic.Hᵐᵒᵖ X),
+      Module.finrank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥E = n →
+        Module.finrank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥F = n →
+          ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i).toRealSeminorm ↑(T x) = c * (p i).toRealSeminorm ↑x) :
+  ∃ i₀,
+    BanachIsometric.Quaternionic.HasHermitianSquare ⇑(p i₀).toRealSeminorm ∧
+      ∀ (i : ι),
+        (∀ (x : X), (p i).toRealSeminorm x = 0) ∨
+          ∃ a, 0 < a ∧ ∀ (x : X), (p i).toRealSeminorm x = a * (p i₀).toRealSeminorm x
+BanachIsometric.Quaternionic.separating_rightSeminorm_family_normable_homological.{u_1, u_2} {ι : Type u_1}
+  {X : Type u_2} [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X] [UniformSpace X]
+  [IsUniformAddGroup X] (p : ι → BanachIsometric.Quaternionic.RightSeminorm X)
+  (hp : WithSeminorms fun i => (p i).toRealSeminorm) {n : ℕ} (hn : 2 ≤ n)
+  (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hseparating : ∀ (x : X), x ≠ 0 → ∃ i, (p i).toRealSeminorm x ≠ 0)
+  (hsim :
+    ∀ (E F : Submodule BanachIsometric.Quaternionic.Hᵐᵒᵖ X),
+      Module.finrank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥E = n →
+        Module.finrank BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥F = n →
+          ∃ T, ∀ (i : ι), ∃ c, 0 < c ∧ ∀ (x : ↥E), (p i).toRealSeminorm ↑(T x) = c * (p i).toRealSeminorm ↑x) :
+  ∃ i₀,
+    ∃ (hdef : ∀ (x : X), (p i₀).toRealSeminorm x = 0 ↔ x = 0),
+      BanachIsometric.Quaternionic.HasHermitianSquare ⇑(p i₀).toRealSeminorm ∧
+        BanachIsometric.Quaternionic.HasHermitianSquare norm ∧
+          (∀ (i : ι),
+              (∀ (x : X), (p i).toRealSeminorm x = 0) ∨
+                ∃ a, 0 < a ∧ ∀ (x : X), (p i).toRealSeminorm x = a * (p i₀).toRealSeminorm x) ∧
+            (∃ e, ∀ (x : X), ‖e x‖ = (p i₀).toRealSeminorm x) ∧
+              (CompleteSpace X →
+                CompleteSpace (BanachIsometric.MetricGeometry.DefiniteSeminormModel (p i₀).oppositeSeminorm hdef))
+BanachIsometric.MetricGeometry.realTheoremE.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℝ X] [MetricSpace X]
+  [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℝ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hballs :
+    (∀ r ∈ Radii, Balanced ℝ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) ∨
+      Odd n ∧
+        ∀ r ∈ Radii,
+          BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections r ∧
+            ∀ (Y : Submodule ℝ X),
+              FiniteDimensional ℝ ↥Y →
+                Y ≠ ⊥ → BanachIsometric.MetricGeometry.ScalarCircled (⇑Y.subtype ⁻¹' Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        ∃ e, ∀ (x : X), ‖e x‖ = BanachIsometric.MetricGeometry.centeredBallGauge r₀ x
+BanachIsometric.MetricGeometry.realTheoremE_radial_profile.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℝ X]
+  [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℝ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X)
+  (hballs : ∀ (r : ℝ), 0 < r → Balanced ℝ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) :
+  ∃ r₀ > 0,
+    ∃ D,
+      CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        ∃ e,
+          (∀ (x : X), ‖e x‖ = BanachIsometric.MetricGeometry.centeredBallGauge r₀ x) ∧
+            ∃ φ,
+              Continuous φ ∧
+                Monotone φ ∧
+                  φ 0 = 0 ∧
+                    (∀ (t : NNReal), 0 < t → 0 < φ t) ∧
+                      (∀ (s t : NNReal), φ (s + t) ≤ φ s + φ t) ∧ ∀ (x y : X), dist x y = ↑(φ ‖e x - e y‖₊)
+BanachIsometric.complexTheoremE.{u_1} {X : Type u_1} [AddCommGroup X] [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X]
+  [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X)
+  (hm : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hballs :
+    (∀ r ∈ Radii, Balanced ℂ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) ∨
+      ∀ r ∈ Radii,
+        BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections r ∧
+          ∀ (Y : Submodule ℂ X),
+            FiniteDimensional ℂ ↥Y →
+              Y ≠ ⊥ → BanachIsometric.MetricGeometry.ScalarCircled (⇑Y.subtype ⁻¹' Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass ℂ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.HasHermitianSquare norm ∧ Nonempty (X ≃L[ℂ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.Quaternionic.theoremE.{u_1} {X : Type u_1} [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X]
+  [Module ℝ X] [IsScalarTower ℝ BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [MetricSpace X] [IsTopologicalAddGroup X]
+  [ContinuousSMul ℝ X] {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hballs :
+    (∀ r ∈ Radii,
+        Balanced BanachIsometric.Quaternionic.Hᵐᵒᵖ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) ∨
+      ∀ r ∈ Radii,
+        BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections r ∧
+          ∀ (Y : Submodule BanachIsometric.Quaternionic.Hᵐᵒᵖ X),
+            FiniteDimensional BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥Y →
+              Y ≠ ⊥ → BanachIsometric.MetricGeometry.ScalarCircled (⇑Y.subtype ⁻¹' Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.Quaternionic.HasHermitianSquare norm ∧
+            Nonempty (X ≃L[BanachIsometric.Quaternionic.Hᵐᵒᵖ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.complex_exists_hilbert_metric_model_of_convex_balls_homological.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ}
+  (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X) (hm : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hballs : ∀ r ∈ Radii, Balanced ℂ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass ℂ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.HasHermitianSquare norm ∧ Nonempty (X ≃L[ℂ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.complex_exists_hilbert_metric_model_of_radial_balls_homological.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ}
+  (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X) (hm : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hsections : ∀ r ∈ Radii, BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections r)
+  (hcircled :
+    ∀ r ∈ Radii,
+      ∀ (Y : Submodule ℂ X),
+        FiniteDimensional ℂ ↥Y →
+          Y ≠ ⊥ → BanachIsometric.MetricGeometry.ScalarCircled (⇑Y.subtype ⁻¹' Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass ℂ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.HasHermitianSquare norm ∧ Nonempty (X ≃L[ℂ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.complex_exists_radial_metric_profile_of_convex_balls_homological.{u_1} {X : Type u_1} [AddCommGroup X]
+  [Module ℂ X] [Module ℝ X] [IsScalarTower ℝ ℂ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X] {n : ℕ}
+  (hn : 2 ≤ n) (hdim : ↑n < Module.rank ℂ X) (hm : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X)
+  (hballs : ∀ (r : ℝ), 0 < r → Balanced ℂ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) :
+  ∃ r₀,
+    0 < r₀ ∧
+      ∃ D,
+        BanachIsometric.HasHermitianSquare (BanachIsometric.MetricGeometry.centeredBallGauge r₀) ∧
+          CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+            (∃ e, ∀ (x : X), ‖e x‖ = BanachIsometric.MetricGeometry.centeredBallGauge r₀ x) ∧
+              ∃ φ,
+                Continuous φ ∧
+                  Monotone φ ∧
+                    φ 0 = 0 ∧
+                      (∀ (t : NNReal), 0 < t → 0 < φ t) ∧
+                        (∀ (s t : NNReal), φ (s + t) ≤ φ s + φ t) ∧
+                          ∀ (x y : X), dist x y = ↑(φ ⟨BanachIsometric.MetricGeometry.centeredBallGauge r₀ (x - y), ⋯⟩)
+BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_convex_balls_homological.{u_1} {X : Type u_1}
+  [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X]
+  [IsScalarTower ℝ BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X]
+  {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hballs :
+    ∀ r ∈ Radii,
+      Balanced BanachIsometric.Quaternionic.Hᵐᵒᵖ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.Quaternionic.HasHermitianSquare norm ∧
+            Nonempty (X ≃L[BanachIsometric.Quaternionic.Hᵐᵒᵖ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_radial_balls_homological.{u_1} {X : Type u_1}
+  [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X]
+  [IsScalarTower ℝ BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X]
+  {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X) (Radii : Set ℝ)
+  (hRpos : Radii ⊆ Set.Ioi 0) (hRzero : 0 ∈ closure Radii)
+  (hsections : ∀ r ∈ Radii, BanachIsometric.MetricGeometry.FiniteScalarRadialBallSections r)
+  (hcircled :
+    ∀ r ∈ Radii,
+      ∀ (Y : Submodule BanachIsometric.Quaternionic.Hᵐᵒᵖ X),
+        FiniteDimensional BanachIsometric.Quaternionic.Hᵐᵒᵖ ↥Y →
+          Y ≠ ⊥ → BanachIsometric.MetricGeometry.ScalarCircled (⇑Y.subtype ⁻¹' Metric.closedBall 0 r)) :
+  ∃ r₀ ∈ Radii,
+    ∃ D,
+      NormSMulClass BanachIsometric.Quaternionic.Hᵐᵒᵖ (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+        CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+          BanachIsometric.Quaternionic.HasHermitianSquare norm ∧
+            Nonempty (X ≃L[BanachIsometric.Quaternionic.Hᵐᵒᵖ] BanachIsometric.MetricGeometry.GaugeNormModel D)
+BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological.{u_1} {X : Type u_1}
+  [AddCommGroup X] [Module BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [Module ℝ X]
+  [IsScalarTower ℝ BanachIsometric.Quaternionic.Hᵐᵒᵖ X] [MetricSpace X] [IsTopologicalAddGroup X] [ContinuousSMul ℝ X]
+  {n : ℕ} (hn : 2 ≤ n) (hdim : ↑n < Module.rank BanachIsometric.Quaternionic.Hᵐᵒᵖ X)
+  (hmetric : BanachIsometric.MetricGeometry.LinearMetricSubspaceHomogeneity n)
+  (hTI : BanachIsometric.MetricGeometry.TranslationInvariant) (hcomplete : CompleteSpace X)
+  (hballs :
+    ∀ (r : ℝ),
+      0 < r → Balanced BanachIsometric.Quaternionic.Hᵐᵒᵖ (Metric.closedBall 0 r) ∧ Convex ℝ (Metric.closedBall 0 r)) :
+  ∃ r₀,
+    0 < r₀ ∧
+      ∃ D,
+        BanachIsometric.Quaternionic.HasHermitianSquare (BanachIsometric.MetricGeometry.centeredBallGauge r₀) ∧
+          CompleteSpace (BanachIsometric.MetricGeometry.GaugeNormModel D) ∧
+            (∃ e, ∀ (x : X), ‖e x‖ = BanachIsometric.MetricGeometry.centeredBallGauge r₀ x) ∧
+              ∃ φ,
+                Continuous φ ∧
+                  Monotone φ ∧
+                    φ 0 = 0 ∧
+                      (∀ (t : NNReal), 0 < t → 0 < φ t) ∧
+                        (∀ (s t : NNReal), φ (s + t) ≤ φ s + φ t) ∧
+                          ∀ (x y : X), dist x y = ↑(φ ⟨BanachIsometric.MetricGeometry.centeredBallGauge r₀ (x - y), ⋯⟩)
+'BanachIsometric.bodyIdentityComponent_rawDegreeHomologyBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.SingularPrism.rawHomologyMap_even_sphere_image_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.SingularPrism.ae_canonicalGaugeSuspensionConedChain_count_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.ExactSectionPrincipalData.exists_lipschitz_canonical_homological_lift_of_even_equator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.ExactSectionPrincipalData.exists_ambient_quadraticForm_of_homological_clutching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.complexTheoremA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.theoremA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complexCorollaryB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complex_completion_corollaryB_homological' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complex_complete_corollaryB_homological' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.corollaryB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.completionCorollaryB_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.completeCorollaryB_homological' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complexTheoremC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complex_exists_cofinal_hilbert_inverseLimit_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.theoremC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.exists_cofinal_hilbert_inverseLimit_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.realTheoremD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.realTheoremD_normable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complexTheoremD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complex_simultaneous_seminorms_norm_model_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.complex_simultaneous_seminorms_hilbert_model_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.theoremD' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.separating_rightSeminorm_family_normable_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.MetricGeometry.realTheoremE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.MetricGeometry.realTheoremE_radial_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complexTheoremE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.Quaternionic.theoremE' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BanachIsometric.complex_exists_hilbert_metric_model_of_convex_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.complex_exists_hilbert_metric_model_of_radial_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.complex_exists_radial_metric_profile_of_convex_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_convex_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.exists_hilbert_metric_model_of_radial_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'BanachIsometric.Quaternionic.exists_radial_metric_profile_of_convex_balls_homological' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
