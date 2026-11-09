@@ -1,0 +1,10 @@
+Replaying 6 roots from 5188 imported modules
+Checked 1/6: PEMS.dualWeakEssentialNorm_eq_fixesCZeroSup_complex
+Checked 6/6: PEMS.real_finite_attained_weis_formula
+AXIOMS PEMS.dualWeakEssentialNorm_eq_fixesCZeroSup_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.dualWeakEssentialNorm_eq_fixesCZeroSup_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.lemma_4_11_nonzero_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_25_nonzero: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_21_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.real_finite_attained_weis_formula: propext, Classical.choice, Quot.sound
+PASS: 44768 declarations replayed from an empty environment

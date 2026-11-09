@@ -1,0 +1,3 @@
+LPCK.Printed.corollary_3_2_normalized
+LPCK.Printed.lemma_3_1_normalized
+LPCK.Printed.lemma_3_3_normalized

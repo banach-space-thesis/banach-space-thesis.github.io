@@ -1,0 +1,22 @@
+Replaying 18 roots from 5018 imported modules
+Checked 1/18: SigmaNonprimarity.Admissible
+Checked 18/18: ThesisCommon.IsCNorming
+AXIOMS SigmaNonprimarity.Admissible: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.PairedSeparated: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.Proposition_3_4: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.Theorem_1_1: Quot.sound, propext, Classical.choice
+AXIOMS SigmaNonprimarity.ckClass_not_primary_completed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.ckCounterexample_completed: Quot.sound, propext, Classical.choice
+AXIOMS SigmaNonprimarity.complex_ckCounterexample_completed: Quot.sound, propext, Classical.choice
+AXIOMS SigmaNonprimarity.complex_theorem_1_1_completed: Quot.sound, propext, Classical.choice
+AXIOMS SigmaNonprimarity.latticeClass_not_primary_completed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.lemma_4_2_printed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.lemma_4_3_printed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.lemma_4_5_printed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.lemma_4_7_printed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.proposition_3_4_completed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.proposition_4_4_printed: propext, Classical.choice, Quot.sound
+AXIOMS SigmaNonprimarity.theorem_1_1_completed: Quot.sound, propext, Classical.choice
+AXIOMS ThesisCommon.DesiredProperty: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.IsCNorming: propext, Classical.choice, Quot.sound
+PASS: 39618 declarations replayed from an empty environment

@@ -216,3 +216,7 @@ import Posets.PFPOrdinalUncountableCofinalPreservation
 import Posets.OrdinalAnchoredSupportedAssembly
 import Posets.OrdinalFinalClassificationReduction
 import Posets.OrdinalPropositionComplete
+import Posets.UltrafilterBimodulePrinted
+import Posets.CompactificationLiftExact
+import Posets.EmptyPosetNormCounterexample
+import Posets.EmptyFactorIdealCountCounterexample

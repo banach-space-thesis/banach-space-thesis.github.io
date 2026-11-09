@@ -1,0 +1,11 @@
+Replaying 7 roots from 4972 imported modules
+Checked 1/7: PEMS.Section44Decomposition.alpha_eq_inf_tail
+Checked 7/7: PEMS.section44_adjoint_modulus_at_one
+AXIOMS PEMS.Section44Decomposition.alpha_eq_inf_tail: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Section44Decomposition.decomposition_eq: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Section44Decomposition.norm_tailOperator_eq_essSup: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Section44Decomposition.singularAdjointMass_isLUB: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Section44Partition.adjointOne_pairing: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_17: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.section44_adjoint_modulus_at_one: propext, Classical.choice, Quot.sound
+PASS: 39430 declarations replayed from an empty environment

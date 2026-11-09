@@ -1,0 +1,86 @@
+{
+  "version": "1.1.0",
+  "packages": [
+    {
+      "type": "path",
+      "name": "plausible",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/plausible",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "LeanSearchClient",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/LeanSearchClient",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "importGraph",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/importGraph",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "proofwidgets",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/proofwidgets",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.lean"
+    },
+    {
+      "type": "path",
+      "name": "aesop",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/aesop",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "Qq",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/Qq",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "batteries",
+      "scope": "leanprover-community",
+      "dir": "../jlms/.lake/packages/batteries",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "Cli",
+      "scope": "leanprover",
+      "dir": "../jlms/.lake/packages/Cli",
+      "inherited": true,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.toml"
+    },
+    {
+      "type": "path",
+      "name": "mathlib",
+      "scope": "",
+      "dir": "../jlms/.lake/packages/mathlib",
+      "inherited": false,
+      "manifestFile": "lake-manifest.json",
+      "configFile": "lakefile.lean"
+    }
+  ]
+}

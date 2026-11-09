@@ -1,0 +1,37 @@
+Replaying 32 roots from 4993 imported modules
+Checked 1/32: JFA.Corollary_1_2
+Checked 21/32: JFA.mrowka_isScattered
+Checked 32/32: JFA.theorem_1_6
+AXIOMS JFA.Corollary_1_2: propext, Classical.choice, Quot.sound
+AXIOMS JFA.Corollary_1_3: propext, Classical.choice, Quot.sound
+AXIOMS JFA.Mrowka: 
+AXIOMS JFA.ReasonableCrossnorm: propext, Classical.choice, Quot.sound
+AXIOMS JFA.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS JFA.Theorem_1_4: propext, Classical.choice, Quot.sound
+AXIOMS JFA.Theorem_1_6: propext, Classical.choice, Quot.sound
+AXIOMS JFA.UniformCrossnorm: propext, Classical.choice, Quot.sound
+AXIOMS JFA.corollary_1_2: propext, Classical.choice, Quot.sound
+AXIOMS JFA.corollary_1_3: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_3_4: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_3_5: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_3_6: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_3_7: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_4_5: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_4_6: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_4_7: propext, Classical.choice, Quot.sound
+AXIOMS JFA.mrowkaFunctionSupport: propext, Classical.choice, Quot.sound
+AXIOMS JFA.mrowka_function_support_countable: propext, Classical.choice, Quot.sound
+AXIOMS JFA.mrowka_inl_denseRange: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_isScattered: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_locallyCompactSpace: Quot.sound, propext, Classical.choice
+AXIOMS JFA.mrowka_remainder_discreteTopology: Quot.sound, propext, Classical.choice
+AXIOMS JFA.mrowka_remainder_isClosed: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_t2Space: Quot.sound, propext, Classical.choice
+AXIOMS JFA.projection_factorization_complemented: propext, Classical.choice, Quot.sound
+AXIOMS JFA.proposition_4_9: propext, Classical.choice, Quot.sound
+AXIOMS JFA.tensorContinuousEquiv: propext, Classical.choice, Quot.sound
+AXIOMS JFA.tensorContinuousFunction_apply: propext, Classical.choice, Quot.sound
+AXIOMS JFA.theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS JFA.theorem_1_4: propext, Classical.choice, Quot.sound
+AXIOMS JFA.theorem_1_6: propext, Classical.choice, Quot.sound
+PASS: 41874 declarations replayed from an empty environment

@@ -73,3 +73,4 @@ import ThesisCommon.Analysis.SigmaComplexChargeSeries
 import Sigma.ComplexRealMainAssembly
 import Sigma.ComplexMainConsequences
 import Sigma.ComplexConcreteConsequences
+import Sigma.PrintedSectionFour

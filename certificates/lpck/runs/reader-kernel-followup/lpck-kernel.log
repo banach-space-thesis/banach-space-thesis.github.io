@@ -1,0 +1,9 @@
+Replaying 5 roots from 5670 imported modules
+Checked 1/5: LPCK.theorem_2_10_infinite
+Checked 5/5: ThesisCommon.ordinal_characteristic_one_cover_homeomorph
+AXIOMS LPCK.theorem_2_10_infinite: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_coordinate_norm_tendsto_zero_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_forward_column_selection_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_strong_forward_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_characteristic_one_cover_homeomorph: Quot.sound, propext, Classical.choice
+PASS: 41905 declarations replayed from an empty environment

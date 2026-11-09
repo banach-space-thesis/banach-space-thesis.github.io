@@ -1,0 +1,11 @@
+JFA.compactTensorProductEquiv
+JFA.compactTensorProductEquiv_pure
+JFA.lemma_4_7
+JFA.mrowka_inl_denseRange
+JFA.mrowka_isScattered
+JFA.mrowka_locallyCompactSpace
+JFA.mrowka_remainder_discreteTopology
+JFA.mrowka_remainder_isClosed
+JFA.mrowka_t2Space
+JFA.tensorContinuousEquiv
+JFA.tensorContinuousFunction_pure

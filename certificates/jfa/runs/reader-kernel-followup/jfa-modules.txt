@@ -1,0 +1,6 @@
+JFA.CompactMrowkaProjection
+JFA.CompactTensorProduct
+JFA.ContinuousTensor
+JFA.ContinuousTensorDensity
+JFA.MrowkaScattered
+JFA.MrowkaTopology

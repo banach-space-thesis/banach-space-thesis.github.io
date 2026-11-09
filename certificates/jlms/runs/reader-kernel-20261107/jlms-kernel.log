@@ -1,0 +1,40 @@
+Replaying 35 roots from 4924 imported modules
+Checked 1/35: JLMS.Corollary_1_4
+Checked 21/35: JLMS.printed_corollary_5_5
+Checked 35/35: JLMS.theorem_4_8
+AXIOMS JLMS.Corollary_1_4: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.NeighborhoodFamily: Quot.sound, propext, Classical.choice
+AXIOMS JLMS.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.Theorem_1_3: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.Theorem_1_5: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.Theorem_1_6: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.Theorem_1_7: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.atomicRestriction: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.atomicRestriction_norm_le: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.atomicRestriction_norm_union: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.corollary_1_4: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.corollary_9_2: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.disjointFunctionsHalf: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.dualNormalizedBlockNull_of_not_containsEllOne: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.exists_cZero_retract: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.exists_normalizedBlock_pointwise_null: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.exists_summable_factor_maps: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.lemma_4_5: Quot.sound, propext, Classical.choice
+AXIOMS JLMS.lemma_4_7: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.neighborhoodProjection: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_corollary_5_5: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_corollary_7_3: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_lemma_5_4: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_lemma_6_1: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_proposition_5_2: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_proposition_7_1: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.printed_proposition_9_1_with_matrix_norms: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.restrictionL1_union: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.simultaneousFactorizations_of_factor_two: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_1_3: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_1_5: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_1_6: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_1_7: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.theorem_4_8: propext, Classical.choice, Quot.sound
+PASS: 40454 declarations replayed from an empty environment

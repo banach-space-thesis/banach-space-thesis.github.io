@@ -1,0 +1,46 @@
+Replaying 41 roots from 5866 imported modules
+Checked 1/41: LPCK.Corollary_1_3
+Checked 21/41: ThesisCommon.interval_infinity_lower_diagonal_blocks
+Checked 41/41: UPFP.theorem_1_1_proof
+AXIOMS LPCK.Corollary_1_3: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_4_1_cZero: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_4_1_infinity: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_4_1_lp: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_5_1_ordinal: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.proposition_3_5_general: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.proposition_3_6: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.proposition_3_7: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.proposition_4_2_cZero: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.proposition_4_2_lp: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Theorem_1_2: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.corollary_1_3_proof: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.theorem_1_1_proof: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.theorem_1_2_proof: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.FactorsIdentityWith: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasUPFP: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.cZero_to_lp_forward_coordinate: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_hasUPFP: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_infinity_forward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_infinity_lower_diagonal_blocks: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_infinity_lower_dichotomy: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_infinity_upper_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_lp_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_lp_lower_triangular: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.interval_lp_upper_dichotomy: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_cZero_upper_triangular: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_coordinate_norm_tendsto_zero_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_forward_column_selection_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_strong_forward_of_scalar_compact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_characteristic_one_cover_homeomorph: Quot.sound, propext, Classical.choice
+AXIOMS ThesisCommon.ordinal_characteristic_one_lp_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_exists_norm_one_extension: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_infinity_lower_diagonal_blocks: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_infinity_lower_dichotomy: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_infinity_upper_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_lp_lower_triangular: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ordinal_lp_upper_dichotomy: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.unitInterval_closed_cover_contains_copy: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.theorem_1_1_proof: propext, Classical.choice, Quot.sound
+PASS: 49783 declarations replayed from an empty environment

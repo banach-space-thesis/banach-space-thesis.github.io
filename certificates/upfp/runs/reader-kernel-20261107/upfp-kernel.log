@@ -1,0 +1,65 @@
+Replaying 59 roots from 6070 imported modules
+Checked 1/59: ThesisCommon.FactorsIdentityWith
+Checked 21/59: UPFP.Corollary_1_5
+Checked 41/59: UPFP.lemma_5_6
+Checked 59/59: UPFP.theorem_1_6_proof
+AXIOMS ThesisCommon.FactorsIdentityWith: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasFiniteCotype.dual_ellOne_diagonal_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasFiniteCotype.dual_ellOne_lower_triangular: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasFiniteCotype.dual_ellOne_upper_triangular: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasRademacherCotype.dual_ellOne_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.HasUPFP: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.cZero_to_ellOne_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.cZero_to_ellOne_forward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_cZero_backward_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_cZero_diagonal_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_cZero_forward_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_lp_backward_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_lp_diagonal_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ellOne_lp_forward_selection: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.hajnal_free_set: Quot.sound, propext, Classical.choice
+AXIOMS ThesisCommon.infinity_to_ellOne_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.infinity_to_ellOne_forward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_to_ellOne_backward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.lp_to_ellOne_forward_reduction: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Corollary_1_3: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Corollary_1_5: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Printed.lemma_6_3_complex: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Printed.lemma_6_3_real: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Printed.lemma_6_5_complex: Quot.sound, propext, Classical.choice
+AXIOMS UPFP.Printed.lemma_6_5_real: Quot.sound, propext, Classical.choice
+AXIOMS UPFP.Printed.proposition_6_6: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Theorem_1_2: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.Theorem_1_6: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.corollary_1_3_proof: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.corollary_1_5_proof: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.corollary_6_2_L1_hasUPFP: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_3_4_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_3_4_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_3_7_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_3_7_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_4_6_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_4_6_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_4_8_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_4_8_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.lemma_5_6: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_3_5_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_3_5_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_3_8_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_3_8_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_4_7_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_4_7_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_4_9_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_4_9_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_3_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_3_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_4_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_4_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_5_cZero: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_5_ellOne: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.proposition_5_5_infinity: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.theorem_1_1_proof: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.theorem_1_2_proof: propext, Classical.choice, Quot.sound
+AXIOMS UPFP.theorem_1_6_proof: propext, Classical.choice, Quot.sound
+PASS: 52713 declarations replayed from an empty environment

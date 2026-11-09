@@ -1,0 +1,14 @@
+name = "sigma_nonprimarity"
+version = "0.1.0"
+defaultTargets = ["Sigma"]
+
+[[require]]
+name = "thesis_common"
+path = "../common"
+
+[[require]]
+name = "jlms_statements"
+path = "../jlms"
+
+[[lean_lib]]
+name = "Sigma"

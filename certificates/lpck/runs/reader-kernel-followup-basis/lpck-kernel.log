@@ -1,0 +1,7 @@
+Replaying 3 roots from 4727 imported modules
+Checked 1/3: LPCK.Printed.corollary_3_2_normalized
+Checked 3/3: LPCK.Printed.lemma_3_3_normalized
+AXIOMS LPCK.Printed.corollary_3_2_normalized: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_3_1_normalized: propext, Classical.choice, Quot.sound
+AXIOMS LPCK.Printed.lemma_3_3_normalized: propext, Classical.choice, Quot.sound
+PASS: 19083 declarations replayed from an empty environment

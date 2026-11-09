@@ -133,3 +133,11 @@ import PEMS.RealStrictlyLocalizableWeis
 import PEMS.ComplexSigmaFiniteInputWeis
 import PEMS.EllOneFactorizationUpperBound
 import PEMS.NearDisjointFactorization
+
+import PEMS.ExactSection3
+import PEMS.ExactSection4A
+import PEMS.ExactSection4B
+import PEMS.ExactSection5
+import PEMS.ExactSection6Complementation
+import PEMS.ExactSection6Regularity
+import PEMS.ExactSection6Rosenthal

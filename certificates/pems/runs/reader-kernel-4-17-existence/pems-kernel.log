@@ -1,0 +1,6 @@
+Replaying 2 roots from 4973 imported modules
+Checked 1/2: PEMS.exists_section44_decomposition
+Checked 2/2: PEMS.proposition_4_17
+AXIOMS PEMS.exists_section44_decomposition: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_17: propext, Classical.choice, Quot.sound
+PASS: 39426 declarations replayed from an empty environment

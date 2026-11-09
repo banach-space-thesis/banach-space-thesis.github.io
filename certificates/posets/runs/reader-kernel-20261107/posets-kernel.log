@@ -1,0 +1,111 @@
+Replaying 102 roots from 5861 imported modules
+Checked 1/102: JFA.Mrowka
+Checked 21/102: Posets.Lemma_4_8
+Checked 41/102: Posets.Theorem_1_8
+Checked 61/102: Posets.lemma_6_17_proof
+Checked 81/102: Posets.proposition_6_6_proof
+Checked 101/102: ThesisCommon.ShortExact
+Checked 102/102: ThesisCommon.StronglySplit
+AXIOMS JFA.Mrowka: 
+AXIOMS Posets.Admits: propext, Classical.choice, Quot.sound
+AXIOMS Posets.BoundedExtension: 
+AXIOMS Posets.BoundedRowsOn: propext, Classical.choice, Quot.sound
+AXIOMS Posets.CanonicalEmbeddingExists: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_1_2: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_1_7: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_3_3: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_4_10: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_6_19: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Corollary_8_6: propext, Classical.choice, Quot.sound
+AXIOMS Posets.FewOperators: propext, Classical.choice, Quot.sound
+AXIOMS Posets.HasBoundedRows: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_15: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_17: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_18: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_3: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_4: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_5: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_6: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_4_8: Quot.sound, propext, Classical.choice
+AXIOMS Posets.Lemma_5_1: Quot.sound, propext, Classical.choice
+AXIOMS Posets.Lemma_5_2: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_6_17: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_6_18: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_6_20: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Lemma_6_21: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_1_10: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_1_3: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_3_1: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_3_4: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_6_11: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_6_15: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_6_22: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_6_6: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_6_8: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_8_4: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Proposition_8_5: propext, Quot.sound, Classical.choice
+AXIOMS Posets.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Theorem_1_5: propext, Classical.choice, Quot.sound
+AXIOMS Posets.Theorem_1_8: propext, Classical.choice, Quot.sound
+AXIOMS Posets.canonicalEmbeddingExists_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_1_2_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_1_7_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_3_3: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_4_10_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_6_19_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.corollary_8_6_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.familySupport: propext, Classical.choice, Quot.sound
+AXIOMS Posets.incidenceOperators: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_15_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_17_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_18_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_3_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_4_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_5_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_6_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_4_8_proof: Quot.sound, propext, Classical.choice
+AXIOMS Posets.lemma_5_1_proof: Quot.sound, propext, Classical.choice
+AXIOMS Posets.lemma_5_2_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_6_17_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_6_18_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_6_20_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_6_21_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_8_1_exact_proof: propext, Quot.sound, Classical.choice
+AXIOMS Posets.lemma_8_2_exact_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.lemma_8_3_exact_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.matrixTail: propext, Classical.choice, Quot.sound
+AXIOMS Posets.nat_incidence_iff_upperTriangular: propext, Classical.choice, Quot.sound
+AXIOMS Posets.nat_oppositeIncidence_iff_lowerTriangular: propext, Classical.choice, Quot.sound
+AXIOMS Posets.oppositeIncidenceSubalgebra: propext, Classical.choice, Quot.sound
+AXIOMS Posets.oppositeIncidenceSubalgebra_carrier: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_1_10_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_1_3_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_3_1_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_3_1_regular_belowSquare: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_3_4_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_6_11_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_6_15_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_6_22_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_6_6_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_6_8_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_8_4_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.proposition_8_5_proof: propext, Quot.sound, Classical.choice
+AXIOMS Posets.reducedMatrix: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_1_4_closed_ideal_cases: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_1_4_strict_chain: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_1_6_continuous_right_inverse: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_1_6_single_factor_equiv: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_1_6_single_factor_mul: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_4_14_acceptance_iff: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_4_7_discontinuous_onePoint_extension: Quot.sound, propext, Classical.choice
+AXIOMS Posets.remark_6_23_countable_incidence_quotient: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_6_2_embedding_injective: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_6_3_off_order_zero: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_6_5_convolution: propext, Classical.choice, Quot.sound
+AXIOMS Posets.remark_6_5_zero_pattern: propext, Classical.choice, Quot.sound
+AXIOMS Posets.theorem_1_1_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.theorem_1_5_proof: propext, Classical.choice, Quot.sound
+AXIOMS Posets.theorem_1_8_proof: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.ShortExact: propext, Classical.choice, Quot.sound
+AXIOMS ThesisCommon.StronglySplit: propext, Classical.choice, Quot.sound
+PASS: 62852 declarations replayed from an empty environment

@@ -1,0 +1,5 @@
+PEMS.ContinuousMapCZeroFixing
+PEMS.FiniteWeisBestApproximation
+PEMS.KernelSmallSetWitness
+PEMS.LocalizedNormWitness
+PEMS.WeakCompactSigmaFiniteRange

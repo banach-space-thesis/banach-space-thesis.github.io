@@ -6,6 +6,8 @@ import {createThesisContext} from './thesis-context.js';
 const $=id=>document.getElementById(id);
 const requestedPaper=new URLSearchParams(location.hash.slice(1)).get('paper');
 const paperId=['jlms','pems','sigma','pfp','upfp','lpck','posets','jfa'].includes(requestedPaper)?requestedPaper:'jlms';
+const pemsCertificateLink=$('pems-fresh-kernel-link');
+if(pemsCertificateLink)pemsCertificateLink.hidden=paperId!=='pems';
 const api=name=>'/api/'+name+'?paper='+paperId;
 const leanPath=link=>link.path||article.project+'/'+link.file;
 const companion=$('lean-template').content.firstElementChild.cloneNode(true);
@@ -122,7 +124,7 @@ function renderResultNavigation(){
   const sections=new Map();
   for(const r of article.results){const section=r.number.split('.')[0];if(!sections.has(section))sections.set(section,[]);sections.get(section).push(r);}
   q('#lean-result-select').innerHTML=[...sections].map(([section,results])=>`<optgroup label="Section ${esc(section)}">${results.map(r=>`<option value="${esc(r.id)}">${esc(r.type+' '+r.number)}</option>`).join('')}</optgroup>`).join('');
-  $('lean-toc-list').innerHTML=[...sections].map(([section,results])=>`<section class="lean-toc-section"><h3>Section ${esc(section)}</h3>${results.map(r=>`<button class="toc-link" data-lean-result="${esc(r.id)}">${esc(r.type+' '+r.number)}<span>${article.links[r.id]?.scope==='supporting'?'Related result':article.links[r.id]?.scope==='discussion'?'Note':''}</span></button>`).join('')}</section>`).join('');
+  $('lean-toc-list').innerHTML=[...sections].map(([section,results])=>`<section class="lean-toc-section"><h3>Section ${esc(section)}</h3>${results.map(r=>`<button class="toc-link" data-lean-result="${esc(r.id)}">${esc(r.type+' '+r.number)}<span>${article.links[r.id]?.scope==='supporting'?'Related result':article.links[r.id]?.scope==='discussion'?'Note':article.links[r.id]?.scope==='cited'?'Cited result':''}</span></button>`).join('')}</section>`).join('');
   updateResultNavigation();
 }
 function updateResultNavigation(){
@@ -213,7 +215,7 @@ async function inspect(id,{present=true,history=true,trigger=null,tab='statement
   q('.formal-correspondence p').textContent=link?.note||'';
   q('.correspondence summary').textContent=link?.relation==='related'?'Related development · correspondence':'Correspondence with the paper';
   for(const name of ['statement','proof','verification'])panel(name).innerHTML=link?.file?'<p class="selected-note">Reading the current source…</p>':'';
-  panel('note').innerHTML=link?.file?'':'<p class="passage-note-label">In the formalisation</p><p>'+esc(link?.note||'No corresponding declaration has been identified.')+'</p>';
+  panel('note').innerHTML=link?.file?'':'<p class="passage-note-label">'+(link?.scope==='cited'?'Cited background':'In the formalisation')+'</p><p>'+esc(link?.note||'No corresponding declaration has been identified.')+'</p>';
   showTab(tab);if(present)presentCompanion(anchor);if(history)remember();
   typeset(q('.paper-statement-preview'));
   try{
@@ -399,7 +401,7 @@ function renderEdition(){
   }
   if(edition.readingRevisions?.length){
     const details=$('about-dialog').querySelector(':scope > details');details.hidden=false;
-    details.innerHTML='<summary>Corrections and additions following the thesis</summary>'+edition.readingRevisions.filter(r=>r.footnote).map(r=>'<p>'+esc(r.footnote.number+'. '+r.footnote.title)+'</p>').join('')+'<p>The numbered notes beside the affected passages explain each amendment. Article numbering is retained. Downloads preserve the author source edition; these further thesis amendments belong to the reading text.</p>';
+    details.innerHTML='<summary>Notes on this reading edition</summary>'+edition.readingRevisions.filter(r=>r.footnote).map(r=>'<p>'+esc(r.footnote.number+'. '+r.footnote.title)+'</p>').join('')+'<p>The numbered notes explain corrections, conventions and additions. The article numbering and downloadable author sources are preserved.</p>';
     $('about-dialog').querySelector('a[data-source-author]').textContent='Author LaTeX source ZIP';
   }
 }

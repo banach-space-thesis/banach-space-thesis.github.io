@@ -72,3 +72,8 @@ import JFA.ProjectionComparisonKernel
 import JFA.ProjectionComparisonAbsorption
 import JFA.FiniteProjectionModels
 import JFA.ComplementedClassification
+import JFA.CoordinateLemmas
+import JFA.CountableSupportLemma
+import JFA.FinitePowerClassification
+import JFA.MrowkaSeparableHull
+import JFA.CompactMrowkaProjection

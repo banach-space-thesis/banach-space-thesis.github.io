@@ -1,0 +1,6 @@
+PEMS.dualWeakEssentialNorm_eq_fixesCZeroSup_complex
+PEMS.dualWeakEssentialNorm_eq_fixesCZeroSup_real
+PEMS.lemma_4_11_nonzero_proof
+PEMS.lemma_4_25_nonzero
+PEMS.proposition_4_21_real
+PEMS.real_finite_attained_weis_formula

@@ -1,0 +1,82 @@
+Replaying 75 roots from 5458 imported modules
+Checked 1/75: PEMS.Corollary_1_11
+Checked 21/75: PEMS.corollary_1_7_complex
+Checked 41/75: PEMS.lemma_5_1_real
+Checked 61/75: PEMS.theorem_1_14_complex
+Checked 75/75: PEMS.weakEssentialNorm_eq_localized_real_strictlyLocalizable
+AXIOMS PEMS.Corollary_1_11: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_12: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_13: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_2: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_7: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_8: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Corollary_1_9: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.StrictlyLocalizable: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Theorem_1_1: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Theorem_1_14: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Theorem_1_4: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.Theorem_1_5: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_1_11_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_1_11_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_1_12_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_12_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_13_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_13_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_2_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_2_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_7_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_1_7_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_1_8_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_8_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_9_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_1_9_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.corollary_4_19_exact: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_5_14_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.corollary_5_14_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.exists_real_sigmaFinite_supported_bestApproximation: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.exists_real_strictlyLocalizable_weaklyCompact_bestApproximation: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_11_nonzero_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_13_countable_range: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_24_exact: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_3_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_8_modulus_rich: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_8_simultaneous_modulus_rich: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_4_9_singular_rich: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_10_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_1_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_1_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_3_complex_subsequence_splitting: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_3_real_subsequence_splitting: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_5_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_5_5_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.lemma_6_2_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.lemma_6_2_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.proposition_3_10: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_3_14_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_3_1_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_3_2_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_3_9_finite: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_3_9_strictlyLocalizable: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_10_real_finite: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_16_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_4_21_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_5_11_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_5_11_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.proposition_5_2: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.rich_family_countable_intersection: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_14_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_14_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_1_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_1_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_4_complex: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_4_real: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_1_5_complex: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.theorem_1_5_real: Quot.sound, propext, Classical.choice
+AXIOMS PEMS.theorem_3_15_real_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_3_7_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_4_18_exact: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_4_4_real_proof: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_6_5_printed: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.theorem_6_7_printed: propext, Classical.choice, Quot.sound
+AXIOMS PEMS.weakEssentialNorm_eq_localized_real_strictlyLocalizable: propext, Classical.choice, Quot.sound
+PASS: 49147 declarations replayed from an empty environment

@@ -1,0 +1,7 @@
+PEMS.Section44Decomposition.alpha_eq_inf_tail
+PEMS.Section44Decomposition.decomposition_eq
+PEMS.Section44Decomposition.norm_tailOperator_eq_essSup
+PEMS.Section44Decomposition.singularAdjointMass_isLUB
+PEMS.Section44Partition.adjointOne_pairing
+PEMS.proposition_4_17
+PEMS.section44_adjoint_modulus_at_one

@@ -1,0 +1,7 @@
+Replaying 3 roots from 4776 imported modules
+Checked 1/3: JLMS.exists_cZero_retract
+Checked 3/3: JLMS.lemma_8_2_infinite
+AXIOMS JLMS.exists_cZero_retract: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.lemma_4_11_finite_family: propext, Classical.choice, Quot.sound
+AXIOMS JLMS.lemma_8_2_infinite: propext, Classical.choice, Quot.sound
+PASS: 35273 declarations replayed from an empty environment

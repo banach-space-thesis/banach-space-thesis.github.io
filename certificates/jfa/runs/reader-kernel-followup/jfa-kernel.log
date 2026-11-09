@@ -1,0 +1,15 @@
+Replaying 11 roots from 3858 imported modules
+Checked 1/11: JFA.compactTensorProductEquiv
+Checked 11/11: JFA.tensorContinuousFunction_pure
+AXIOMS JFA.compactTensorProductEquiv: propext, Classical.choice, Quot.sound
+AXIOMS JFA.compactTensorProductEquiv_pure: propext, Classical.choice, Quot.sound
+AXIOMS JFA.lemma_4_7: propext, Classical.choice, Quot.sound
+AXIOMS JFA.mrowka_inl_denseRange: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_isScattered: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_locallyCompactSpace: Quot.sound, propext, Classical.choice
+AXIOMS JFA.mrowka_remainder_discreteTopology: Quot.sound, propext, Classical.choice
+AXIOMS JFA.mrowka_remainder_isClosed: propext, Quot.sound, Classical.choice
+AXIOMS JFA.mrowka_t2Space: Quot.sound, propext, Classical.choice
+AXIOMS JFA.tensorContinuousEquiv: propext, Classical.choice, Quot.sound
+AXIOMS JFA.tensorContinuousFunction_pure: propext, Classical.choice, Quot.sound
+PASS: 28370 declarations replayed from an empty environment
